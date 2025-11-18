@@ -46,11 +46,11 @@ export default async function LocaleLayout({ children, params }: Props) {
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          ></ThemeProvider>
+          >
           {/* <Header /> */}
           {children}
           <Footer />
-          <ThemeProvider />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

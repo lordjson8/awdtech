@@ -24,6 +24,7 @@ import {
 import { ChevronDown, Phone, PlayCircle } from "lucide-react";
 import Image from "next/image";
 import LanguageButton from "../locale-toggler";
+import { ThemeToggler } from "../theme-toggler";
 
 const products = [
   {
@@ -160,10 +161,11 @@ export default function Header() {
             Company
           </a>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden gap-3 lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm/6 font-semibold text-white">
             <LanguageButton />
           </a>
+          <ThemeToggler/>
         </div>
       </nav>
       <Dialog
