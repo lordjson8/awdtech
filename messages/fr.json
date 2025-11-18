@@ -1,5 +1,48 @@
 {
   "HomePage": {
-    "title": "Hello Monde!"
+    "title": "AWD Tech - Solutions Web Innovantes",
+    "description": "Nous créons des applications web modernes, réactives et évolutives pour aider votre entreprise à se développer.",
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus"
+  },
+  "Projects": {
+    "title": "Nos Projets Récents",
+    "project1": {
+      "title": "Projet Un",
+      "description": "Description du projet un."
+    },
+    "project2": {
+      "title": "Projet Deux",
+      "description": "Description du projet deux."
+    },
+    "project3": {
+      "title": "Projet Trois",
+      "description": "Description du projet trois."
+    },
+    "viewProject": "Voir le Projet"
+  },
+  "Header": {
+    "services": "Services",
+    "features": "Fonctionnalités",
+    "marketplace": "Place de marché",
+    "company": "Entreprise",
+    "product": "Produit",
+    "logIn": "Se connecter"
+  },
+  "Products": {
+    "title": "Nos Produits",
+    "description": "Nous proposons une large gamme de produits pour vous aider dans votre entreprise.",
+    "product1": {
+      "title": "Développement Web",
+      "description": "Nous créons des applications web modernes, réactives et évolutives pour aider votre entreprise à se développer. Nous utilisons les dernières technologies pour garantir que votre site web est rapide, sécurisé et facile à maintenir."
+    },
+    "product2": {
+      "title": "Développement Mobile",
+      "description": "Nous créons des applications mobiles natives et hybrides pour iOS et Android. Nous utilisons les dernières technologies pour garantir que votre application est rapide, sécurisée et facile à maintenir."
+    },
+    "product3": {
+      "title": "Conception Graphique",
+      "description": "Nous créons des designs magnifiques et attrayants pour votre entreprise. Nous pouvons vous aider avec tout, des logos et de l'image de marque aux supports marketing and aux graphiques pour les médias sociaux."
+    }
   }
 }

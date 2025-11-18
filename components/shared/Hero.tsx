@@ -1,32 +1,37 @@
-import React from 'react'
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
 export default function Hero() {
+  const t = useTranslations('HomePage');
   return (
-    <section className="bg-white lg:grid lg:h-[70vh] lg:place-content-center dark:bg-gray-900">
-  <div className="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-    <div className="mx-auto max-w-prose text-center">
-      <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">
-        Understand user flow and
-        <strong className="text-indigo-600"> increase </strong>
-        conversions
-      </h1>
+    <section className="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/1.jpg')] bg-cover bg-center bg-no-repeat lg:grid lg:h-[80vh] lg:place-content-center dark:bg-gray-900">
+      <div className="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+        <div className="mx-auto max-w-prose text-center">
+          <h1 className="text-4xl font-bold sm:text-5xl text-white">
+            {t('title')}
+          </h1>
 
-      <p className="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi. Natus, provident
-        accusamus impedit minima harum corporis iusto.
-      </p>
+          <p className="mt-4 text-base text-pretty  sm:text-lg/relaxed text-gray-200">
+            {t('description')}
+          </p>
 
-      <div className="mt-4 flex justify-center gap-4 sm:mt-6">
-        <a className="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700" href="#">
-          Get Started
-        </a>
+          <div className="mt-4 flex justify-center gap-4 sm:mt-6">
+            <a
+              className="inline-block rounded border border-primary bg-primary px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-primary/90"
+              href="#"
+            >
+              {t('getStarted')}
+            </a>
 
-        <a className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white" href="#">
-          Learn More
-        </a>
+            <a
+              className="inline-block rounded border border-gray-200 px-5 py-3 font-medium shadow-sm transition-colors bg-gray-800 hover:text-gray-900 border-gray-700 text-gray-200 dark:hover:bg-gray-900 dark:hover:text-white"
+              href="#"
+            >
+              {t('learnMore')}
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-  )
+    </section>
+  );
 }

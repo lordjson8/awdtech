@@ -38,6 +38,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang="en">
       <body
+        aria-label="Global"
+
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider locale={locale}>

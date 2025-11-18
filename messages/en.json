@@ -1,5 +1,48 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "AWD Tech - Innovative Web Solutions",
+    "description": "We build modern, responsive, and scalable web applications to help your business grow.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "Projects": {
+    "title": "Our Recent Work",
+    "project1": {
+      "title": "Project One",
+      "description": "Description for project one."
+    },
+    "project2": {
+      "title": "Project Two",
+      "description": "Description for project two."
+    },
+    "project3": {
+      "title": "Project Three",
+      "description": "Description for project three."
+    },
+    "viewProject": "View Project"
+  },
+  "Header": {
+    "services": "Services",
+    "features": "Features",
+    "marketplace": "Marketplace",
+    "company": "Company",
+    "product": "Product",
+    "logIn": "Log in"
+  },
+  "Products": {
+    "title": "Our Products",
+    "description": "We offer a wide range of products to help you with your business.",
+    "product1": {
+      "title": "Web Development",
+      "description": "We build modern, responsive, and scalable web applications to help your business grow. We use the latest technologies to ensure that your website is fast, secure, and easy to maintain."
+    },
+    "product2": {
+      "title": "Mobile Development",
+      "description": "We build native and hybrid mobile applications for iOS and Android. We use the latest technologies to ensure that your app is fast, secure, and easy to maintain."
+    },
+    "product3": {
+      "title": "Graphic Design",
+      "description": "We create beautiful and engaging designs for your business. We can help you with everything from logos and branding to marketing materials and social media graphics."
+    }
   }
 }
