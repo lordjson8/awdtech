@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/shared/Header";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/shared/Footer";
+import Fabs from "@/components/shared/Fabs";
 
 type Props = {
   children: React.ReactNode;
@@ -45,8 +47,9 @@ export default async function LocaleLayout({ children, params }: Props) {
             enableSystem
             disableTransitionOnChange
           ></ThemeProvider>
-          <Header />
+          {/* <Header /> */}
           {children}
+          <Footer />
           <ThemeProvider />
         </NextIntlClientProvider>
       </body>
