@@ -9,20 +9,37 @@ import { useTranslations } from "next-intl";
 import Features from "@/components/home/Features";
 import FeaturesTwo from "@/components/home/FeaturesTwo";
 import WhyUs from "@/components/home/WhyUs";
+import AnimatedSection from "@/components/shared/AnimatedSection";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
     <>
-       <Header />
-      <Hero />
-      <Features />
-      <FeaturesTwo />
+      <AnimatedSection>
+        <Header />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Hero />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Features />
+      </AnimatedSection>
+      <AnimatedSection>
+        <FeaturesTwo />
+      </AnimatedSection>
       {/* <Stats /> */}
-      <Products />
-      <WhyUs />
-      <Team />
-      <PartnersSection />
+      <AnimatedSection>
+        <Products />
+      </AnimatedSection>
+      <AnimatedSection>
+        <WhyUs />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Team />
+      </AnimatedSection>
+      <AnimatedSection>
+        <PartnersSection />
+      </AnimatedSection>
     </>
   );
 }
