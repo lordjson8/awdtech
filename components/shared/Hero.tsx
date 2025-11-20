@@ -4,7 +4,7 @@ import React from 'react';
 export default function Hero() {
   const t = useTranslations('HomePage');
   return (
-    <section className="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/1.jpg')] bg-cover bg-center bg-no-repeat lg:grid lg:h-[80vh] lg:place-content-center dark:bg-gray-900">
+    <section className="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/1.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] place-content-center dark:bg-gray-900">
       <div className="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-prose text-center">
           <h1 className="text-4xl font-bold sm:text-5xl text-white">

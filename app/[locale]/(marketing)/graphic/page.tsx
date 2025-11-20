@@ -8,10 +8,12 @@ import Tools from '@/components/design/enhanced/Tools';
 import PortfolioHighlight from '@/components/design/enhanced/PortfolioHighlight';
 
 import CallToAction from '@/components/design/enhanced/CallToAction';
+import Header from '@/components/shared/Header';
 
 export default function DesignPage() {
   return (
     <div className="bg-black">
+      <Header />
       <EnhancedHero />
       <ServicesCards />
       <DesignProcess />

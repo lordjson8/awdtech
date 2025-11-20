@@ -201,7 +201,7 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
       </div>
 
       {/* Stats section */}
-      {showStats && variant !== "minimal" && (
+      {/* {showStats && variant !== "minimal" && (
         <div className="flex justify-center items-center space-x-12 mt-12 text-center">
           <StatItem value={DEFAULT_STATS.partnersCount} label="Partners" />
           <StatItem
@@ -210,7 +210,7 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
           />
           <StatItem value={DEFAULT_STATS.supportAvailability} label="Support" />
         </div>
-      )}
+      )} */}
     </section>
   );
 };

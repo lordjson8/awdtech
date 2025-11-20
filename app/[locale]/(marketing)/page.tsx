@@ -7,15 +7,20 @@ import Header from "@/components/shared/Header";
 import Hero from "@/components/shared/Hero";
 import { useTranslations } from "next-intl";
 import Features from "@/components/home/Features";
+import FeaturesTwo from "@/components/home/FeaturesTwo";
+import WhyUs from "@/components/home/WhyUs";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
     <>
+       <Header />
       <Hero />
       <Features />
+      <FeaturesTwo />
       <Stats />
       <Products />
+      <WhyUs />
       <Team />
       <PartnersSection />
     </>
