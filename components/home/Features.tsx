@@ -1,30 +1,33 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function Features() {
+  const t = useTranslations("Features");
+
   const stats = [
-    { number: "+03", label: "Années d'expérience" },
-    { number: "95%", label: "Satisfaction client" },
-    { number: "+25", label: "Collaborateurs" },
-    { number: "+15", label: "Projets réalisés" }
+    { number: "+03", label: t("yearsExperience") },
+    { number: "95%", label: t("clientSatisfaction") },
+    { number: "+25", label: t("collaborators") },
+    { number: "+15", label: t("projectsCompleted") },
   ];
 
   const values = [
     {
       icon: "🚀",
-      title: "Innovation",
-      description: "Nous créons des solutions technologiques avant-gardistes"
+      title: t("innovation"),
+      description: t("innovationDescription"),
     },
     {
       icon: "🌍",
-      title: "Portée Internationale",
-      description: "Présents en Afrique, Europe et Amérique"
+      title: t("internationalReach"),
+      description: t("internationalReachDescription"),
     },
     {
       icon: "💡",
-      title: "Expertise",
-      description: "Accompagnement sur-mesure pour chaque entreprise"
-    }
+      title: t("expertise"),
+      description: t("expertiseDescription"),
+    },
   ];
 
   return (
@@ -35,7 +38,7 @@ export default function Features() {
             <div className="space-y-6">
               <div className="space-y-3">
                 <h1 className="text-4xl font-bold text-gray-900 capitalize lg:text-5xl dark:text-white">
-                  Qui sommes-<span className="text-orange-500">nous</span> ?
+                  {t("whoAreWe")}
                 </h1>
                 
                 <div className="flex items-center space-x-1">
@@ -47,19 +50,11 @@ export default function Features() {
 
               <div className="space-y-6">
                 <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-                  Chez <span className="text-orange-500 font-bold">AWD Tech</span>, 
-                  nous <span className="text-orange-500 font-semibold">révolutionnons le numérique</span> en créant 
-                  des produits technologiques <span className="text-orange-500 font-semibold">innovants</span> qui 
-                  <span className="text-orange-500 font-semibold"> transforment</span> la société, 
-                  <span className="text-orange-500 font-semibold"> stimulent</span> la croissance des entreprises et 
-                  <span className="text-orange-500 font-semibold"> accompagnent</span> les entrepreneurs.
+                  {t("whoAreWeDescription1")}
                 </p>
 
                 <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-                  Nous intervenons dans plusieurs pays{" "}
-                  <span className="text-orange-500 font-semibold">d'Afrique, d'Europe et d'Amérique</span> 
-                  et nous adonnons à accompagner les entreprises dans la planification et la gestion 
-                  des différentes couches de leurs organisations grâce aux outils digitaux.
+                  {t("whoAreWeDescription2")}
                 </p>
               </div>
             </div>
@@ -82,7 +77,7 @@ export default function Features() {
 
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                Nos Valeurs
+                {t("ourValues")}
               </h3>
               <div className="grid gap-4 md:grid-cols-3">
                 {values.map((value, index) => (
@@ -114,7 +109,7 @@ export default function Features() {
                   height={600}
                   className="w-full max-w-md h-auto object-cover rounded-2xl shadow-2xl"
                   src="/whoweare.jpg"
-                  alt="Équipe AWD Tech"
+                  alt={t("teamAwdTech")}
                   priority
                 />
                 <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl">
@@ -123,8 +118,8 @@ export default function Features() {
                       <span className="text-white font-bold text-lg">✓</span>
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 dark:text-white">Expertise</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Depuis 3 ans</div>
+                      <div className="font-bold text-gray-900 dark:text-white">{t("expertise")}</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300">{t("expertiseSince")}</div>
                     </div>
                   </div>
                 </div>
@@ -141,7 +136,7 @@ export default function Features() {
               height={400}
               className="w-full h-64 object-cover rounded-2xl shadow-lg"
               src="/whoweare.jpg"
-              alt="Équipe AWD Tech"
+              alt={t("teamAwdTech")}
             />
           </div>
         </div>
@@ -150,13 +145,13 @@ export default function Features() {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Prêt à révolutionner votre entreprise ?
+              {t("readyToRevolutionize")}
             </h3>
             <p className="mb-6 opacity-90 max-w-2xl mx-auto">
-              Rejoignez les nombreuses entreprises qui nous font confiance pour leur transformation digitale.
+              {t("joinUs")}
             </p>
             <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
-              Contactez-nous
+              {t("contactUs")}
             </button>
           </div>
         </div>

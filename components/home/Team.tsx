@@ -1,13 +1,16 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function Team() {
+  const t = useTranslations("Team");
+
   const teamMembers = [
     {
       id: 1,
-      name: "Alexandre Dubois",
-      role: "CEO & Fondateur",
+      name: t("alexandreDubois"),
+      role: t("alexandreDuboisRole"),
       image: "/team/ceo.jpg",
-      description: "Diplômé de Polytechnique de Yaoundé, expert en transformation digitale avec 10 ans d'expérience.",
+      description: t("alexandreDuboisDescription"),
       social: {
         linkedin: "#",
         twitter: "#",
@@ -16,10 +19,10 @@ export default function Team() {
     },
     {
       id: 2,
-      name: "Marie Kamga",
-      role: "Lead Developer",
+      name: t("marieKamga"),
+      role: t("marieKamgaRole"),
       image: "/team/lead-dev.jpg",
-      description: "Spécialiste en architecture logicielle et développement d'applications enterprise.",
+      description: t("marieKamgaDescription"),
       social: {
         linkedin: "#",
         twitter: "#",
@@ -28,10 +31,10 @@ export default function Team() {
     },
     {
       id: 3,
-      name: "David Nkodo",
-      role: "Design Director",
+      name: t("davidNkodo"),
+      role: t("davidNkodoRole"),
       image: "/team/designer.jpg",
-      description: "Passionné par l'UX/UI design et la création d'expériences utilisateur mémorables.",
+      description: t("davidNkodoDescription"),
       social: {
         linkedin: "#",
         twitter: "#",
@@ -40,10 +43,10 @@ export default function Team() {
     },
     {
       id: 4,
-      name: "Sarah Mballa",
-      role: "Product Manager",
+      name: t("sarahMballa"),
+      role: t("sarahMballaRole"),
       image: "/team/pm.jpg",
-      description: "Gestion de produits innovants et coordination des équipes techniques et créatives.",
+      description: t("sarahMballaDescription"),
       social: {
         linkedin: "#",
         twitter: "#",
@@ -58,34 +61,31 @@ export default function Team() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white capitalize lg:text-5xl mb-6">
-            Notre <span className="text-orange-500">Équipe</span>
+            {t("ourTeam")}
           </h1>
           
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-             Chez <strong>AWD Tech</strong>, nous révolutionnons le numérique en créant des produits technologiques 
-              innovants qui transforment la société, stimulent la croissance des entreprises et accompagnent les entrepreneurs.
-              Nous intervenons dans plusieurs pays d&apos;Afrique, d&apos;Europe et d&apos;Amérique pour accompagner les entreprises 
-              dans la planification et la gestion de leurs organisations grâce aux outils digitaux.
+              {t("teamDescription")}
             </p>
             
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">+03</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">Années d'expérience</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("yearsExperience")}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">95%</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">Satisfaction client</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("clientSatisfaction")}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">+25</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">Collaborateurs</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("collaborators")}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">+15</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">Projets réalisés</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("projectsCompleted")}</div>
               </div>
             </div>
           </div>
@@ -162,14 +162,13 @@ export default function Team() {
         {/* CTA Section */}
         <div className="text-center mt-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
           <h3 className="text-2xl font-bold mb-4">
-            Rejoignez Notre Équipe
+            {t("joinOurTeam")}
           </h3>
           <p className="mb-6 opacity-90 max-w-2xl mx-auto">
-            Vous souhaitez contribuer à la révolution digitale en Afrique ? 
-            Découvrez nos opportunités de carrière et rejoignez une équipe passionnée.
+            {t("joinOurTeamDescription")}
           </p>
           <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
-            Voir les offres
+            {t("seeOffers")}
           </button>
         </div>
       </div>

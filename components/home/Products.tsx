@@ -10,44 +10,44 @@ export default function Products() {
   const products = [
     {
       id: 1,
-      title: "AWDPAY",
-      subtitle: "Service de paiement",
-      description: "Un service particulier qui simplifie les paiements en ligne pour les entreprises et les particuliers",
+      title: t("awdpay"),
+      subtitle: t("awdpaySubtitle"),
+      description: t("awdpayDescription"),
       image: "/awdpay.jpg",
     },
     {
       id: 2,
-      title: "AWD Immobilier",
-      subtitle: "Service de logement et ventes de terrains",
-      description: "Un service de mise à dispositions à la vente et à l'achat de logements et de terrains",
+      title: t("awdImmobilier"),
+      subtitle: t("awdImmobilierSubtitle"),
+      description: t("awdImmobilierDescription"),
       image: "/awd-immobilier.jpg",
     },
     {
       id: 3,
-      title: "AWD Education",
-      subtitle: "Plateforme éducative",
-      description: "Un service pour les apprenants; fournit un guide pratique pour l'accompagnement des étudiants",
+      title: t("awdEducation"),
+      subtitle: t("awdEducationSubtitle"),
+      description: t("awdEducationDescription"),
       image: "/awd-education.jpg",
     },
     {
       id: 4,
-      title: "AWD E-commerce",
-      subtitle: "Plateforme de Ecommerce",
-      description: "Un service de commerce électronique pour la vente et l'achat",
+      title: t("awdEcommerce"),
+      subtitle: t("awdEcommerceSubtitle"),
+      description: t("awdEcommerceDescription"),
       image: "/awd-ecommerce.jpg",
     },
     {
       id: 5,
-      title: "AWD Transport",
-      subtitle: "Service Logistique",
-      description: "Un service de mise à disposition de moyens de transport de biens et de personnes",
+      title: t("awdTransport"),
+      subtitle: t("awdTransportSubtitle"),
+      description: t("awdTransportDescription"),
       image: "/awd-transport.jpg",
     },
     {
       id: 6,
-      title: "AWD Hôtellerie",
-      subtitle: "Service d'hébergement",
-      description: "Un service de mise en relation des personnes avec des hôtels",
+      title: t("awdHotellerie"),
+      subtitle: t("awdHotellerieSubtitle"),
+      description: t("awdHotellerieDescription"),
       image: "/awd-hotellerie.jpg",
     },
   ];
@@ -57,7 +57,7 @@ export default function Products() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 lg:mb-16 flex justify-center items-center flex-col">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white leading-[3.25rem] lg:mb-6 text-center">
-            Nos <span className="text-orange-500">Produits</span> en interne
+            {t("title")}
           </h2>
           <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-5 text-center">
             {t('description')}
@@ -109,7 +109,7 @@ export default function Products() {
                         {product.description}
                       </p>
                       <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200">
-                        En savoir plus
+                        {t("learnMore")}
                       </button>
                     </div>
                     <div className="relative h-64 md:h-80 rounded-xl overflow-hidden">

@@ -20,27 +20,6 @@ import { ThemeToggler } from "../theme-toggler";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-const services = [
-  {
-    name: "Web Development",
-    description: "Get a better understanding of your traffic",
-    href: "web",
-    icon: PieChart,
-  },
-  {
-    name: "Mobile Development",
-    description: "Speak directly to your customers",
-    href: "mobile",
-    icon: MousePointer,
-  },
-  {
-    name: "Graphic Design",
-    description: "Your customers data will be safe and secure",
-    href: "graphic",
-    icon: Fingerprint,
-  },
-];
-
 export default function Header({
   scrolledBg = "bg-dark shadow-lg",
   defaultBg = "bg-transparent",
@@ -48,6 +27,26 @@ export default function Header({
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("Header");
+  const services = [
+    {
+      name: t("webDevelopment"),
+      description: t("webDevelopmentDescription"),
+      href: "web",
+      icon: PieChart,
+    },
+    {
+      name: t("mobileDevelopment"),
+      description: t("mobileDevelopmentDescription"),
+      href: "mobile",
+      icon: MousePointer,
+    },
+    {
+      name: t("graphicDesign"),
+      description: t("graphicDesignDescription"),
+      href: "graphic",
+      icon: Fingerprint,
+    },
+  ];
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
   const [isVisible, setIsVisible] = useState<boolean>(true);
@@ -137,7 +136,7 @@ export default function Header({
                 ></path>
               </g>
               <defs>
-                <clipPath id="clip0_9616_17482">
+                <clipPath id="clip0_9616_17482)">
                   <rect width="127" height="30" fill="white"></rect>
                 </clipPath>
               </defs>
@@ -150,15 +149,14 @@ export default function Header({
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">{t("openMainMenu")}</span>
             <Menu aria-hidden="true" className="size-6" />
           </button>
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <a href="#" className="text-sm/6 font-semibold text-white">
-            {/* {t("company")} */}
-            Home
+            {t("home")}
           </a>
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-white">
@@ -198,26 +196,11 @@ export default function Header({
                   </div>
                 ))}
               </div>
-              {/* <div className="grid grid-cols-2 divide-x divide-white/10 bg-gray-700/50">
-                {callsToAction.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-700/50"
-                  >
-                    <item.icon
-                      aria-hidden="true"
-                      className="size-5 flex-none text-gray-500"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </div> */}
             </PopoverPanel>
           </Popover>
 
           <a href="#" className="text-sm/6 font-semibold text-white">
-            Projects
+            {t("projects")}
           </a>
         </PopoverGroup>
         <div className="hidden gap-3 lg:flex lg:flex-1 lg:justify-end">
@@ -244,7 +227,7 @@ export default function Header({
                 viewBox="0 0 127 30"
                 fill="none"
               >
-                <g clip-path="url(#clip0_9616_17482)">
+                <g clipPath="url(#clip0_9616_17482)">
                   <path
                     d="M79.2157 7.86586C80.177 7.38272 81.2608 7.14288 82.4705 7.14288C83.853 7.14288 85.1168 7.47309 86.2581 8.13002C87.3994 8.78696 88.2995 9.71153 88.9512 10.8968C89.6028 12.0821 89.9305 13.4446 89.9305 14.9844C89.9305 16.5242 89.6028 17.9006 88.9512 19.1137C88.2995 20.3268 87.3994 21.2722 86.2581 21.95C85.1168 22.6278 83.853 22.9649 82.4705 22.9649C81.2608 22.9649 80.1842 22.7286 79.2445 22.2558C78.3048 21.7831 77.5344 21.1957 76.9403 20.4901V30H73.6567V7.39314H76.9403V9.64549C77.4947 8.93989 78.2544 8.349 79.2157 7.86586ZM85.9124 12.2454C85.4624 11.4773 84.8647 10.8933 84.1267 10.4936C83.3886 10.0939 82.5965 9.89575 81.7504 9.89575C80.9043 9.89575 80.141 10.1008 79.403 10.5075C78.6649 10.9142 78.0672 11.5085 77.6172 12.2871C77.1671 13.0657 76.9403 13.9833 76.9403 15.04C76.9403 16.0967 77.1635 17.0178 77.6172 17.8068C78.0672 18.5958 78.6649 19.1936 79.403 19.6003C80.141 20.007 80.9259 20.2121 81.7504 20.2121C82.5749 20.2121 83.3886 20.0035 84.1267 19.5864C84.8647 19.1693 85.4624 18.561 85.9124 17.7651C86.3625 16.9691 86.5893 16.041 86.5893 14.9844C86.5893 13.9277 86.3625 13.0136 85.9124 12.2454Z"
                     fill="#333659"
@@ -271,7 +254,7 @@ export default function Header({
                   ></path>
                 </g>
                 <defs>
-                  <clipPath id="clip0_9616_17482">
+                  <clipPath id="clip0_9616_17482)">
                     <rect width="127" height="30" fill="white"></rect>
                   </clipPath>
                 </defs>
@@ -282,7 +265,7 @@ export default function Header({
               onClick={() => setMobileMenuOpen(false)}
               className="-m-2.5 rounded-md p-2.5 text-gray-400"
             >
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only">{t("closeMenu")}</span>
               <X aria-hidden="true" className="size-6" />
             </button>
           </div>
@@ -294,14 +277,14 @@ export default function Header({
                   replace
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
                 >
-                  Home
+                  {t("home")}
                 </Link>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton
                     defaultChecked
                     className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5"
                   >
-                    Services
+                    {t("services")}
                     <ChevronDown
                       aria-hidden="true"
                       className="size-5 flex-none group-data-open:rotate-180"
@@ -324,23 +307,9 @@ export default function Header({
                   href="/projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
                 >
-                  Projects
+                  {t("projects")}
                 </Link>
-                {/* <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                >
-                  {t("company")}
-                </a> */}
               </div>
-              {/* <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
-                >
-                  {t("logIn")}
-                </a>
-              </div> */}
             </div>
           </div>
         </DialogPanel>

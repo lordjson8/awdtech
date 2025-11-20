@@ -1,24 +1,19 @@
 import { ChartNoAxesCombined, Code, CodeXml, RefreshCcwDot } from "lucide-react";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function FeaturesTwo() {
+  const t = useTranslations("FeaturesTwo");
+
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="max-w-7xl px-6 py-10 mx-auto">
         <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
-          Notre{" "}
-          <span className="text-orange-500  underline decoration-black">
-            Mision
-          </span>
+          {t("ourMission")}
         </h1>
 
         <p className="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
-          Chez <span className="text-orange-500 font-bold"> AWDTSCH</span>,
-          Notre mission est de proposer des solutions digitales elles même
-          améliorées de façon continue et permettant une évolution continue des
-          business pour les opérateurs économiques, et de la qualité de vie des
-          populations africaines. La qualité n’est pas optionnelle chez{" "}
-          <span className="text-orange-500 font-bold">AWDTECH</span>
+          {t("missionDescription")}
         </p>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
@@ -29,12 +24,11 @@ export default function FeaturesTwo() {
             </span>
 
             <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-              OFFRIR DES SOLUTIONS DIGITALES
+              {t("offerDigitalSolutions")}
             </h1>
 
             <p className="text-gray-500 dark:text-gray-300">
-              Fournir des solutions numériques de pointe qui permettent une
-              évolution et une croissance continues de l’entreprise
+              {t("offerDigitalSolutionsDescription")}
             </p>
 
           </div>
@@ -46,12 +40,11 @@ export default function FeaturesTwo() {
             </span>
 
             <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-              AMELIORER LA QUALITE ET LE CYCLE DE VIE
+              {t("improveQuality")}
             </h1>
 
             <p className="text-gray-500 dark:text-gray-300">
-              Développer des produits technologiques innovants qui améliorent la
-              qualité de vie des individus et des communautés
+              {t("improveQualityDescription")}
             </p>
 
           
@@ -64,12 +57,11 @@ export default function FeaturesTwo() {
             </span>
 
             <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-              PERMETTRE L’EVOLUTION DU BUSINESS
+              {t("enableBusinessEvolution")}
             </h1>
 
             <p className="text-gray-500 dark:text-gray-300">
-              Donnez aux entreprises les moyens d’évoluer et de s’adapter au
-              paysage numérique grâce à nos services numériques complets
+              {t("enableBusinessEvolutionDescription")}
             </p>
 
          

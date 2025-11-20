@@ -1,22 +1,25 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function WhyUs() {
+  const t = useTranslations("WhyUs");
+
   const features = [
     {
       id: 1,
-      title: "La qualité de la relation client",
-      description: "Nous priorisons une communication transparente et un accompagnement personnalisé pour chaque client."
+      title: t("qualityOfCustomerRelationship"),
+      description: t("qualityOfCustomerRelationshipDescription"),
     },
     {
       id: 2,
-      title: "La flexibilité et adaptabilité aux services",
-      description: "Nos solutions s'adaptent à vos besoins spécifiques et évoluent avec votre entreprise."
+      title: t("flexibilityAndAdaptability"),
+      description: t("flexibilityAndAdaptabilityDescription"),
     },
     {
       id: 3,
-      title: "La méthodologie adaptée aux clients",
-      description: "Approche sur mesure qui s'aligne parfaitement avec vos objectifs et contraintes."
-    }
+      title: t("methodologyAdaptedToClients"),
+      description: t("methodologyAdaptedToClientsDescription"),
+    },
   ];
 
   return (
@@ -26,11 +29,10 @@ export default function WhyUs() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">
-                Pourquoi <span className="text-orange-500">nous</span> ?
+                {t("whyUs")}
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Découvrez les raisons qui font de nous le partenaire de choix pour 
-                votre transformation digitale.
+                {t("whyUsDescription")}
               </p>
             </div>
 
@@ -87,7 +89,7 @@ export default function WhyUs() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                    Contactez-nous
+                    {t("contactUs")}
                   </h4>
                   <a 
                     href="mailto:support.cm@awdpay.com"
@@ -108,10 +110,10 @@ export default function WhyUs() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold">
-                    Satisfaction Client
+                    {t("clientSatisfaction")}
                   </h3>
                   <p className="text-orange-100 text-lg px-8">
-                    Nos clients nous recommandent pour notre expertise et notre engagement à délivrer des résultats exceptionnels.
+                    {t("clientSatisfactionDescription")}
                   </p>
                 </div>
               </div>
@@ -120,14 +122,14 @@ export default function WhyUs() {
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-white dark:bg-gray-800 rounded-2xl shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <div className="text-2xl font-bold text-orange-500">+15</div>
-                <div className="text-xs text-gray-600 dark:text-gray-300">Projets</div>
+                <div className="text-xs text-gray-600 dark:text-gray-300">{t("projects")}</div>
               </div>
             </div>
             
             <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <div className="text-xl font-bold text-orange-500">95%</div>
-                <div className="text-xs text-gray-600 dark:text-gray-300">Clients</div>
+                <div className="text-xs text-gray-600 dark:text-gray-300">{t("clients")}</div>
               </div>
             </div>
           </div>

@@ -26,7 +26,7 @@ const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 50 },
       }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 1.2 }}
     >
       {children}
     </motion.div>

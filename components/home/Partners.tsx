@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState, useCallback, useMemo } from "react";
 import { motion, MotionProps } from "framer-motion";
 import Container from "../shared/Container";
+import { useTranslations } from "next-intl";
 
 // Type definitions
 interface Partner {
@@ -102,6 +103,7 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
   showStats = false,
   gradientOverlay = true,
 }) => {
+  const t = useTranslations("Partners");
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const [duplicatedPartners, setDuplicatedPartners] = useState<Partner[]>([]);
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -186,10 +188,10 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
       {variant !== "minimal" && (
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Nos <span className="text-orange-500">Clients & Partenaires</span>
+            {t("title")}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Découvrez les entreprises qui nous font confiance pour leur transformation digitale
+            {t("description")}
           </p>
         </div>
       )}
@@ -243,17 +245,17 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <StatItem 
               value={DEFAULT_STATS.partnersCount} 
-              label="Projets réalisés" 
+              label={t("projectsCompleted")} 
               icon="🚀"
             />
             <StatItem
               value={DEFAULT_STATS.satisfactionRate}
-              label="Satisfaction client"
+              label={t("clientSatisfaction")}
               icon="⭐"
             />
             <StatItem 
               value={DEFAULT_STATS.supportAvailability} 
-              label="Collaborateurs" 
+              label={t("collaborators")} 
               icon="👥"
             />
           </div>
@@ -367,6 +369,7 @@ export const CSSPartnerMarquee: React.FC<
   showStats = false,
   gradientOverlay = true,
 }) => {
+  const t = useTranslations("Partners");
   const animationClass =
     direction === "left" ? "animate-marquee-left" : "animate-marquee-right";
 
@@ -377,10 +380,10 @@ export const CSSPartnerMarquee: React.FC<
       {/* Header */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Nos <span className="text-orange-500">Clients & Partenaires</span>
+          {t("title")}
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Découvrez les entreprises qui nous font confiance pour leur transformation digitale
+          {t("description")}
         </p>
       </div>
 
@@ -409,17 +412,17 @@ export const CSSPartnerMarquee: React.FC<
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <StatItem 
               value={DEFAULT_STATS.partnersCount} 
-              label="Projets réalisés" 
+              label={t("projectsCompleted")} 
               icon="🚀"
             />
             <StatItem
               value={DEFAULT_STATS.satisfactionRate}
-              label="Satisfaction client"
+              label={t("clientSatisfaction")}
               icon="⭐"
             />
             <StatItem 
               value={DEFAULT_STATS.supportAvailability} 
-              label="Collaborateurs" 
+              label={t("collaborators")} 
               icon="👥"
             />
           </div>
