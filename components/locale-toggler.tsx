@@ -1,40 +1,58 @@
 'use client';
 import { Link } from '@/i18n/navigation';
-import React, { useState } from 'react';
-// import Link from 'next-intl/link';
+import React from 'react';
+import { Globe } from 'lucide-react';
+import { useLocale } from 'next-intl';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 const LanguageButton = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  
+  const currentLocale = useLocale();
+
+  const languages = [
+    { code: 'en', name: 'English', nativeName: 'English' },
+    { code: 'fr', name: 'French', nativeName: 'Français' },
+  ];
+
+  const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0];
 
   return (
-    <div className="block relative">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        type="button"
-        className="flex p-2 rounded-md items-center border bg-black text-white"
-        aria-haspopup="true"
-        aria-expanded={isOpen}
-      >
-        Change Language
-      </button>
-      {isOpen && (
-        <div
-          className="absolute bg-black text-white rounded-md border"
-          role="menu"
-          aria-orientation="vertical"
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button 
+          variant="outline" 
+          size="sm"
+          className="flex items-center gap-2 bg-black border-gray-600 text-white hover:text-white hover:bg-gray-900"
         >
-          <Link href="/" locale="fr">
-            Francais
-          </Link>
-          <br />
-          <Link href="/" locale="en">
-            English
-          </Link>
-          <br />
-        </div>
-      )}
-    </div>
+          <Globe className="w-4 h-4" />
+          <span>{currentLanguage.code.toUpperCase()}</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent 
+        align="end" 
+        className="w-48 bg-black border-gray-600 text-white"
+      >
+        {languages.map((language) => (
+          <DropdownMenuItem key={language.code} asChild>
+            <Link
+              href="/"
+              locale={language.code}
+              className={`flex items-center justify-between cursor-pointer ${
+                currentLocale === language.code ? 'text-blue-400 bg-gray-800' : ''
+              }`}
+            >
+              <span>{language.nativeName}</span>
+              <span className="text-xs text-gray-400">{language.name}</span>
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 

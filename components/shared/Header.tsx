@@ -12,6 +12,14 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Menu, PieChart, MousePointer, Fingerprint, X } from "lucide-react";
 import { ChevronDown, Phone, PlayCircle } from "lucide-react";
 import Image from "next/image";
@@ -154,29 +162,32 @@ export default function Header({
           </button>
         </div>
 
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12">
           <a href="#" className="text-sm/6 font-semibold text-white">
             {t("home")}
           </a>
-          <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-white">
-              {t("services")}
-              <ChevronDown
-                aria-hidden="true"
-                className="size-5 flex-none text-gray-500"
-              />
-            </PopoverButton>
 
-            <PopoverPanel
-              transition
-              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="flex items-center gap-x-1 text-sm/6 font-semibold text-white focus:outline-none">
+                {t("services")}
+                <ChevronDown
+                  aria-hidden="true"
+                  className="size-5 flex-none text-gray-500"
+                />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              align="center"
+              className="w-80 rounded-3xl bg-gray-800 border-white/10 "
             >
-              <div className="p-4">
-                {services.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
-                  >
+              {services.map((item) => (
+                <DropdownMenuItem
+                  key={item.name}
+                  className="flex items-center gap-x-6 rounded-3xl p-4 text-sm/6 hover:bg-white/5 focus:bg-white/5 cursor-pointer"
+                  asChild
+                >
+                  <Link href={item.href}>
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
                       <item.icon
                         aria-hidden="true"
@@ -184,25 +195,21 @@ export default function Header({
                       />
                     </div>
                     <div className="flex-auto">
-                      <Link
-                        href={item.href}
-                        className="block font-semibold text-white"
-                      >
+                      <span className="block font-semibold text-white">
                         {item.name}
-                        <span className="absolute inset-0" />
-                      </Link>
+                      </span>
                       <p className="mt-1 text-gray-400">{item.description}</p>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </PopoverPanel>
-          </Popover>
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           <a href="#" className="text-sm/6 font-semibold text-white">
             {t("projects")}
           </a>
-        </PopoverGroup>
+        </div>
         <div className="hidden gap-3 lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm/6 font-semibold text-white">
             <LanguageButton />
