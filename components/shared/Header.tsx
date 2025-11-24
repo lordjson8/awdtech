@@ -16,13 +16,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu, PieChart, MousePointer, Fingerprint, X } from "lucide-react";
 import { ChevronDown } from "lucide-react";
-import LanguageButton from "../locale-toggler";
 import { ThemeToggler } from "../theme-toggler";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import MobileLanguageSwitcher from "../mobile-language-selector";
 import MobileThemeSwitcher from "../mobile-theme-switcher";
 import { cn } from "@/lib/utils";
+import LanguageButton from "../locale-toggler";
 
 export default function Header({
   scrolledBg = "bg-white/95 dark:bg-black shadow-lg backdrop-blur-sm",

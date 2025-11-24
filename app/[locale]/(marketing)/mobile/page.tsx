@@ -14,7 +14,7 @@ export default function MobilePage() {
       <EnhancedHero />
       <Features />
       <Expertise />
-      <AppShowcase />
+      {/* <AppShowcase /> */}
       <CallToAction />
     </div>
   );
