@@ -5,7 +5,7 @@ import Container from '@/components/shared/Container';
 
 const EnhancedHero = () => {
   return (
-    <section className="relative min-h-screen mt-6 max-md:mt-32 flex items-center justify-center overflow-hidden   transition-colors duration-300">
+    <section className="relative  bg-cover bg-center bg-no-repeat min-h-screen pt-6 max-md:mt-32 flex items-center justify-center overflow-hidden   transition-colors duration-300">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-500/5 via-transparent to-transparent dark:from-orange-500/10" />
       

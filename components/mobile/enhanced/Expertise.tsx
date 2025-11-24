@@ -52,24 +52,21 @@ const techCategories = [
 
 const Expertise = () => {
   return (
-    <section className="relative  py-24 overflow-hidden">
+    <section className="relative bg-white dark:bg-gray-900 py-24 overflow-hidden transition-colors duration-300">
       {/* Background Elements */}
-      <div className="absolute inset-0  from-orange-500/5 via-transparent to-transparent" />
-      <div className="absolute top-10 left-10 w-4 h-4 bg-orange-500 rounded-full opacity-60 animate-float" />
-      <div className="absolute bottom-20 right-20 w-6 h-6 bg-orange-400 rounded-full opacity-40 animate-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute inset-0 bg-orange-500/5 dark:bg-transparent via-transparent to-transparent" />
       
       <div className='max-w-7xl mx-auto px-6'>
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto mb-20">
-        
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
             Notre Stack Technologique
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 mt-2">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-600 mt-2">
               Mobile
             </span>
           </h2>
           
-          <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
             Nous maîtrisons les technologies les plus avancées pour créer des applications mobiles 
             performantes, sécurisées et évolutives.
           </p>
@@ -80,15 +77,15 @@ const Expertise = () => {
           {techCategories.map((category, categoryIndex) => (
             <div 
               key={category.name}
-              className="group relative  backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-orange-500/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/10"
+              className="group relative bg-white dark:bg-gray-800 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-orange-500/30 transition-all duration-500 hover:scale-105 hover:shadow-xl dark:hover:shadow-2xl hover:shadow-orange-500/10 dark:hover:shadow-orange-500/10"
             >
               {/* Category Header */}
               <div className="mb-6">
                 <div className={`w-12 h-1 bg-gradient-to-r ${category.gradient} rounded-full mb-4 group-hover:w-16 transition-all duration-300`} />
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-orange-600 transition-all duration-300">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-orange-600 dark:group-hover:from-orange-400 dark:group-hover:to-orange-600 transition-all duration-300">
                   {category.name}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   {category.description}
                 </p>
               </div>
@@ -98,7 +95,7 @@ const Expertise = () => {
                 {category.stack.map((tech, techIndex) => (
                   <div 
                     key={tech.name}
-                    className="flex items-center justify-between p-4 bg-gray-700/30 rounded-2xl border border-gray-600/30 hover:border-gray-500/50 transition-all duration-300 group/tech hover:bg-gray-700/50"
+                    className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700/30 rounded-2xl border border-gray-200 dark:border-gray-600/30 hover:border-gray-300 dark:hover:border-gray-500/50 transition-all duration-300 group/tech hover:bg-gray-100 dark:hover:bg-gray-700/50"
                     style={{ animationDelay: `${techIndex * 100}ms` }}
                   >
                     <div className="flex items-center gap-3">
@@ -106,10 +103,10 @@ const Expertise = () => {
                         {tech.icon}
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-sm">
+                        <div className="text-gray-900 dark:text-white font-semibold text-sm">
                           {tech.name}
                         </div>
-                        <div className="text-gray-400 text-xs">
+                        <div className="text-gray-500 dark:text-gray-400 text-xs">
                           {tech.level}
                         </div>
                       </div>
@@ -123,7 +120,7 @@ const Expertise = () => {
                           className={`w-2 h-2 rounded-full transition-all duration-300 ${
                             dot <= (tech.level === 'Expert' ? 3 : tech.level === 'Avancé' ? 2 : 1)
                               ? 'bg-orange-500'
-                              : 'bg-gray-600'
+                              : 'bg-gray-300 dark:bg-gray-600'
                           }`}
                         />
                       ))}
@@ -133,15 +130,12 @@ const Expertise = () => {
               </div>
 
               {/* Projects Counter */}
-              <div className="mt-6 pt-4 border-t border-gray-700/50">
+              <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700/50">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-gray-400">Projets livrés</span>
-                  <span className="text-orange-400 font-semibold">{category.projects}</span>
+                  <span className="text-gray-500 dark:text-gray-400">Projets livrés</span>
+                  <span className="text-orange-500 dark:text-orange-400 font-semibold">{category.projects}</span>
                 </div>
               </div>
-
-              {/* Hover Gradient Overlay */}
-              {/* <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${category.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`} /> */}
             </div>
           ))}
         </div>
@@ -155,11 +149,11 @@ const Expertise = () => {
             { number: '15K+', label: 'Utilisateurs Actifs' },
           ].map((stat, index) => (
             <div key={stat.label} className="text-center group">
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-orange-500/30 transition-all duration-300 hover:scale-105">
+              <div className="bg-white dark:bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-white/10 hover:border-orange-500/30 transition-all duration-300 hover:scale-105">
                 <div className="text-3xl font-bold text-orange-500 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-400 text-sm font-medium">
+                <div className="text-gray-600 dark:text-gray-400 text-sm font-medium">
                   {stat.label}
                 </div>
               </div>
@@ -167,8 +161,6 @@ const Expertise = () => {
           ))}
         </div>
       </div>
-
-  
     </section>
   );
 };

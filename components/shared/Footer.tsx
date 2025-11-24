@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-white dark:bg-gray-900 text-gray-700 dark:text-white transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Company Info */}
@@ -53,7 +53,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-300 sm:max-w-xs sm:text-left">
+            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-600 dark:text-gray-300 sm:max-w-xs sm:text-left">
               Service numérique partout dans le monde. Moteur de votre transformation digitale.
             </p>
 
@@ -61,7 +61,7 @@ export default function Footer() {
             <div className="mt-6 text-center sm:text-left">
               <a
                 href="mailto:support.cm@awdpay.com"
-                className="text-orange-500 hover:text-orange-400 font-medium transition-colors"
+                className="text-orange-500 hover:text-orange-600 dark:hover:text-orange-400 font-medium transition-colors"
               >
                 support.cm@awdpay.com
               </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-300 transition hover:text-orange-500"
+                  className="text-gray-500 dark:text-gray-300 transition hover:text-orange-500"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
@@ -97,7 +97,7 @@ export default function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-300 transition hover:text-orange-500"
+                  className="text-gray-500 dark:text-gray-300 transition hover:text-orange-500"
                 >
                   <span className="sr-only">LinkedIn</span>
                   <svg
@@ -116,7 +116,7 @@ export default function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-300 transition hover:text-orange-500"
+                  className="text-gray-500 dark:text-gray-300 transition hover:text-orange-500"
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -136,11 +136,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
             {/* Services */}
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">
+              <p className="text-lg font-medium text-gray-900 dark:text-white">
                 Nos Services
               </p>
 
-              <ul className="mt-6 space-y-3 text-sm text-gray-300">
+              <ul className="mt-6 space-y-3 text-sm text-gray-600 dark:text-gray-300">
                 <li>
                   <a
                     className="transition hover:text-orange-500"
@@ -186,11 +186,11 @@ export default function Footer() {
 
             {/* Produits */}
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">
+              <p className="text-lg font-medium text-gray-900 dark:text-white">
                 Nos Produits
               </p>
 
-              <ul className="mt-6 space-y-3 text-sm text-gray-300">
+              <ul className="mt-6 space-y-3 text-sm text-gray-600 dark:text-gray-300">
                 <li>
                   <a
                     className="transition hover:text-orange-500"
@@ -236,11 +236,11 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">
+              <p className="text-lg font-medium text-gray-900 dark:text-white">
                 Contact
               </p>
 
-              <ul className="mt-6 space-y-4 text-sm text-gray-300">
+              <ul className="mt-6 space-y-4 text-sm text-gray-600 dark:text-gray-300">
                 <li>
                   <a
                     className="flex items-center justify-center gap-2 sm:justify-start transition hover:text-orange-500"
@@ -326,29 +326,29 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-12 border-t border-gray-700 pt-6">
+        <div className="mt-12 border-t border-gray-200 dark:border-gray-700 pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               <span className="block sm:inline">Tous droits réservés.</span>
 
               <a
-                className="inline-block text-orange-500 underline transition hover:text-orange-400 mx-2"
+                className="inline-block text-orange-500 underline transition hover:text-orange-600 dark:hover:text-orange-400 mx-2"
                 href="#"
               >
-                Conditions d'utilisation
+                Conditions d&apos;utilisation
               </a>
 
               <span>·</span>
 
               <a
-                className="inline-block text-orange-500 underline transition hover:text-orange-400 mx-2"
+                className="inline-block text-orange-500 underline transition hover:text-orange-600 dark:hover:text-orange-400 mx-2"
                 href="#"
               >
                 Politique de confidentialité
               </a>
             </p>
 
-            <p className="mt-4 text-sm text-gray-400 sm:order-first sm:mt-0">
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 sm:order-first sm:mt-0">
               © {currentYear} AWD Tech - Service numérique partout dans le monde
             </p>
           </div>

@@ -23,6 +23,7 @@ import MobileLanguageSwitcher from "../mobile-language-selector";
 import MobileThemeSwitcher from "../mobile-theme-switcher";
 import { cn } from "@/lib/utils";
 import LanguageButton from "../locale-toggler";
+import { usePathname } from "next/navigation";
 
 export default function Header({
   scrolledBg = "bg-white/95 dark:bg-black shadow-lg backdrop-blur-sm",
@@ -31,6 +32,7 @@ export default function Header({
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("Header");
+  const pathname  = usePathname();
   const services = [
     {
       name: t("webDevelopment"),
@@ -99,7 +101,7 @@ export default function Header({
         "z-50 fixed w-screen top-0 left-0 transition-all duration-300",
         "border-b",
         isScrolled 
-          ? "border-gray-200 dark:border-gray-800" 
+          ? "border-gray-200  dark:border-gray-800" 
           : "border-transparent",
         isVisible ? "translate-y-0" : "-translate-y-full",
         isScrolled ? scrolledBg : defaultBg
@@ -171,7 +173,7 @@ export default function Header({
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
             href="/"
-            className={`text-sm/6 ${!isScrolled && 'text-white'} font-semibold text-foreground hover:text-primary transition-colors duration-200`}
+            className={`text-sm/6 ${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'}   font-semibold  hover:text-primary transition-colors duration-200`}
           >
             {t("home")}
           </Link>
@@ -183,10 +185,10 @@ export default function Header({
                 "text-foreground hover:text-primary transition-colors duration-200",
                 "focus:outline-none focus:text-primary"
               )}>
-               <span className={`${!isScrolled && 'text-white'}`}> {t("services")}</span>
+               <span className={`${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'}`}> {t("services")}</span>
                 <ChevronDown
                   aria-hidden="true"
-                  className="size-5 flex-none text-gray-500 dark:text-gray-400"
+                  className="size-5 flex-none dark:text-gray-500"
                 />
               </button>
             </DropdownMenuTrigger>
@@ -221,7 +223,7 @@ export default function Header({
 
           <Link
             href="/projects"
-            className={`${!isScrolled && 'text-white'} text-sm/6 font-semibold text-foreground hover:text-primary transition-colors duration-200`}
+            className={`${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'} text-sm/6 font-semibold  hover:text-primary transition-colors duration-200`}
           >
             {t("projects")}
           </Link>
