@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             Développement
-            <span className="block text-orange-500 mt-2">D'Applications</span>
+            <span className="block text-orange-500 mt-2">D&apos;Applications</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 mt-2">
               Mobile
             </span>
