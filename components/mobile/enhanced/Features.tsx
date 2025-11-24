@@ -78,7 +78,7 @@ export default function Features() {
 
           <p className="mt-4 text-lg text-gray-600 xl:mt-6 dark:text-gray-300">
             Des applications mobiles performantes, sécurisées et intuitives qui transforment 
-            l'expérience utilisateur et boostent votre business digital.
+            l&apos;expérience utilisateur et boostent votre business digital.
           </p>
         </div>
 
