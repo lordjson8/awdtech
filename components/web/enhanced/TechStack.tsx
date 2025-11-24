@@ -57,6 +57,7 @@ const techCategories = [
 const TechStack = () => {
   return (
     <section className="bg-white dark:bg-gray-900 py-24 transition-colors duration-300">
+     
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto mb-16">
@@ -80,17 +81,17 @@ const TechStack = () => {
               className="group relative bg-white dark:bg-gray-800 rounded-3xl p-6 border border-gray-200 dark:border-gray-700 hover:border-transparent transition-all duration-500 hover:scale-105 hover:shadow-xl dark:hover:shadow-2xl overflow-hidden"
             >
               {/* Gradient Background on Hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
+               {/* <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} /> */}
               
               {/* Animated Border */}
-              <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${category.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}>
+              {/* <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${category.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}>
                 <div className="absolute inset-[2px] rounded-3xl bg-white dark:bg-gray-800" />
-              </div>
+              </div> */}
 
               <div className="relative z-10">
                 {/* Category Header */}
                 <div className="mb-6">
-                  <div className={`w-12 h-1 bg-gradient-to-r ${category.gradient} rounded-full mb-4 group-hover:w-16 transition-all duration-300`} />
+                  <div className={`w-12 h-1 bg-orange-500 rounded-full mb-4 group-hover:w-16 transition-all duration-300`} />
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-orange-600 transition-all duration-300">
                     {category.name}
                   </h3>
@@ -147,7 +148,7 @@ const TechStack = () => {
               </div>
 
               {/* Decorative Element */}
-              <div className={`absolute top-4 right-4 w-6 h-6 bg-gradient-to-r ${category.gradient} rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+              <div className={`absolute top-4 right-4 w-6 h-6 bg-orange-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
             </div>
           ))}
         </div>

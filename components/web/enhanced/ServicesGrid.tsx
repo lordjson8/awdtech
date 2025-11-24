@@ -49,16 +49,16 @@ const ServicesGrid = () => {
               className="group relative bg-white dark:bg-gray-800 rounded-3xl p-8 border border-gray-200 dark:border-gray-700 hover:border-transparent transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden"
             >
               {/* Gradient Background on Hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
+              {/* <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} /> */}
               
               {/* Animated Border */}
-              <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}>
+              {/* <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}>
                 <div className="absolute inset-[2px] rounded-3xl bg-white dark:bg-gray-800" />
-              </div>
+              </div> */}
 
               <div className="relative z-10">
                 {/* Icon */}
-                <div className={`inline-flex items-center justify-center p-4 bg-gradient-to-r ${service.gradient} rounded-2xl text-white shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`inline-flex items-center justify-center p-4 bg-orange-50 rounded-2xl text-white shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <div className="relative w-12 h-12">
                     <Image 
                       src={service.icon} 
@@ -111,7 +111,7 @@ const ServicesGrid = () => {
               </div>
 
               {/* Decorative Element */}
-              <div className={`absolute top-4 right-4 w-8 h-8 bg-gradient-to-r ${service.gradient} rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+              <div className={`absolute top-4 right-4 w-8 h-8 bg-orange-500 ${service.gradient} rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
             </div>
           ))}
         </div>

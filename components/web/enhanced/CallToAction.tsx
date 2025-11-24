@@ -24,7 +24,7 @@ const CallToAction = () => {
             </h2>
             
             <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Vous avez un projet en tête ? Nous serions ravis de l'écouter et de le transformer 
+              Vous avez un projet en tête ? Nous serions ravis de l&apos;écouter et de le transformer 
               en une solution digitale qui dépasse vos attentes.
             </p>
 
