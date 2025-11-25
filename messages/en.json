@@ -5,22 +5,6 @@
     "getStarted": "Get Started",
     "learnMore": "Learn More"
   },
-  "Projects": {
-    "title": "Our Recent Work",
-    "project1": {
-      "title": "Project One",
-      "description": "Description for project one."
-    },
-    "project2": {
-      "title": "Project Two",
-      "description": "Description for project two."
-    },
-    "project3": {
-      "title": "Project Three",
-      "description": "Description for project three."
-    },
-    "viewProject": "View Project"
-  },
   "Header": {
     "services": "Services",
     "features": "Features",
@@ -137,5 +121,27 @@
     "projectsCompleted": "Projects completed",
     "clientSatisfaction": "Client satisfaction",
     "collaborators": "Collaborators"
+  },
+  "Realisations": {
+    "title": "Our Projects",
+    "description": "Discover a selection of our best work.",
+    "viewProject": "View Project",
+    "technologiesUsed": "Technologies Used",
+    "awd-ecommerce": {
+      "title": "AWD E-commerce",
+      "description": "A modern e-commerce platform with a focus on user experience."
+    },
+    "awd-education": {
+      "title": "AWD Education",
+      "description": "An online learning platform for students and teachers."
+    },
+    "awd-hotellerie": {
+      "title": "AWD Hotel Management",
+      "description": "A system for managing hotel bookings and operations."
+    },
+    "awd-immobilier": {
+      "title": "AWD Real Estate",
+      "description": "A platform for browsing and managing real estate listings."
+    }
   }
 }
