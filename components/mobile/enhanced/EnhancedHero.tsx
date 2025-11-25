@@ -102,10 +102,10 @@ const EnhancedHero = () => {
               </div>
 
               {/* Floating App Icons */}
-              <div className="absolute max-lg:hidden -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl shadow-2xl flex items-center justify-center transform rotate-12">
+              <div className="absolute max-lg:hidden -top-4 -right-4 w-16 h-16 bg-white rounded-2xl shadow-2xl flex items-center justify-center transform rotate-12">
                 <span className="text-2xl">📱</span>
               </div>
-              <div className="absolute max-lg:hidden -bottom-4 -left-4 w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-2xl flex items-center justify-center transform -rotate-12">
+              <div className="absolute max-lg:hidden -bottom-4 -left-4 w-14 h-14 bg-white rounded-2xl shadow-2xl flex items-center justify-center transform -rotate-12">
                 <span className="text-xl">🎮</span>
               </div>
             </div>
