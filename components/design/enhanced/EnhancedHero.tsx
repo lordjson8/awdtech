@@ -58,14 +58,14 @@ const DesignEnhancedHero = ({
                 </span>
               </button>
               
-              <button className="group border-2 border-gray-300 dark:border-white/20 hover:border-blue-500 hover:bg-blue-500/5 dark:hover:bg-blue-500/10 text-gray-700 dark:text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
+              {/* <button className="group border-2 border-gray-300 dark:border-white/20 hover:border-blue-500 hover:bg-blue-500/5 dark:hover:bg-blue-500/10 text-gray-700 dark:text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
                 <span className="flex items-center gap-3">
                   Voir notre portfolio
                   <svg className="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
 
