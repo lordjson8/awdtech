@@ -32,14 +32,7 @@ const CallToAction = ({
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 mb-8">
-            <div className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></div>
-            <span className="text-orange-400 text-sm font-semibold uppercase tracking-wider">
-              Let's Create Together
-            </span>
-          </div>
-
+        
           {/* Main Title */}
           <h2 className={`
             text-4xl sm:text-5xl lg:text-6xl 
@@ -50,7 +43,7 @@ const CallToAction = ({
           `}>
             {title}
             <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              Let's Make It Real
+              Let&apos;s Make It Real
             </span>
           </h2>
 
@@ -119,7 +112,7 @@ const CallToAction = ({
               "
               asChild
             >
-              <Link href={secondaryAction.href}>
+              {/* <Link href={secondaryAction.href}>
                 <span className="flex items-center">
                   {secondaryAction.text}
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +120,7 @@ const CallToAction = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </span>
-              </Link>
+              </Link> */}
             </Button>
           </div>
 
@@ -170,10 +163,7 @@ const CallToAction = ({
         </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute bottom-10 left-10 w-4 h-4 bg-orange-500 rounded-full opacity-60 animate-bounce"></div>
-      <div className="absolute top-20 right-20 w-6 h-6 bg-purple-500 rounded-full opacity-40 animate-bounce" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-cyan-500 rounded-full opacity-50 animate-bounce" style={{ animationDelay: '2s' }}></div>
+  
     </section>
   );
 };

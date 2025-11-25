@@ -45,7 +45,7 @@ const ServicesCards = ({
       bg-white dark:bg-gray-900
       transition-colors duration-300
     `}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <h2 className={`
@@ -82,13 +82,7 @@ const ServicesCards = ({
                 overflow-hidden
               `}
             >
-              {/* Background Gradient Effect */}
-              <div className="
-                absolute inset-0 
-                bg-gradient-to-br from-orange-500/5 to-transparent 
-                opacity-0 group-hover:opacity-100
-                transition-opacity duration-500
-              "></div>
+         
 
               {/* Icon Container */}
               <div className="
@@ -113,7 +107,7 @@ const ServicesCards = ({
                   font-bold 
                   text-gray-900 dark:text-white
                   mb-4
-                  group-hover:text-orange-600 dark:group-hover:text-orange-400
+                  
                   transition-colors duration-300
                 ">
                   {service.title}
@@ -149,7 +143,7 @@ const ServicesCards = ({
                 </ul>
 
                 {/* Hover Arrow */}
-                <div className="
+                {/* <div className="
                   absolute -right-2 bottom-0
                   text-orange-500 
                   opacity-0 group-hover:opacity-100
@@ -159,24 +153,24 @@ const ServicesCards = ({
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </div>
+                </div> */}
               </div>
 
               {/* Border Glow Effect */}
-              <div className="
+              {/* <div className="
                 absolute inset-0 
                 rounded-2xl 
                 border-2 border-transparent 
                 group-hover:border-orange-500/20
                 transition-all duration-300
                 pointer-events-none
-              "></div>
+              "></div> */}
             </div>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16 lg:mt-20">
+        {/* <div className="text-center mt-16 lg:mt-20">
           <button className="
             px-8 py-4
             bg-orange-500 hover:bg-orange-600
@@ -200,7 +194,7 @@ const ServicesCards = ({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
