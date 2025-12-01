@@ -108,9 +108,9 @@ export default function Products() {
                       <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                         {product.description}
                       </p>
-                      <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200">
+                      <a href="mailto:support.cm@awdpay.com" className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200">
                         {t("learnMore")}
-                      </button>
+                      </a>
                     </div>
                     <div className="relative h-64 md:h-80 rounded-xl overflow-hidden">
                       <Image

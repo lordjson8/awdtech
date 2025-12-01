@@ -90,7 +90,7 @@ const ServicesGrid = () => {
                   </ul>
 
                   {/* CTA Button */}
-                  <button className="w-full mt-6 py-3 px-4 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 group/btn">
+                  <a href="mailto:support.cm@awdpay.com" className="w-full mt-6 py-3 px-4 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 group/btn">
                     <span className="flex items-center justify-center gap-2">
                       {t('learnMore')}
                       <svg 
@@ -102,7 +102,7 @@ const ServicesGrid = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                     </span>
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -121,9 +121,9 @@ const ServicesGrid = () => {
             <p className="text-orange-100 mb-6 max-w-2xl mx-auto">
               {t('bottomCta.description')}
             </p>
-            <button className="bg-white text-orange-600 hover:bg-gray-100 dark:bg-gray-900 dark:text-orange-400 dark:hover:bg-gray-800 font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105">
+            <a href="mailto:support.cm@awdpay.com" className="bg-white text-orange-600 hover:bg-gray-100 dark:bg-gray-900 dark:text-orange-400 dark:hover:bg-gray-800 font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105">
               {t('bottomCta.button')}
-            </button>
+            </a>
           </div>
         </div>
       </div>
