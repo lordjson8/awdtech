@@ -15,7 +15,7 @@ const ProjectGrid = () => {
     : projects.filter(project => project.slug.includes(activeFilter));
 
   return (
-    <section className="py-20 lg:py-32">
+    <section className="py-6 lg:py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center gap-4 mb-12 lg:mb-16">
           {categories.map((category) => (
