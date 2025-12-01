@@ -7,7 +7,7 @@ const PortfolioHighlight = ({
   theme = 'auto',
 }) => {
   const t = useTranslations('GraphicPage.Portfolio');
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState(t('categories.all'));
 
   const projects = [
     {

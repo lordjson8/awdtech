@@ -31,7 +31,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-24 bg-white dark:bg-gray-900 overflow-hidden">
+    <section className="py-8 bg-white dark:bg-gray-900 overflow-hidden">
       <div className="max-w-7xl px-6 py-10 mx-auto">
         <div className="lg:flex lg:items-center lg:gap-16">
           <div className="w-full space-y-12 lg:w-1/2">

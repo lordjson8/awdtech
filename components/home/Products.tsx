@@ -53,7 +53,7 @@ export default function Products() {
   ];
 
   return (
-    <section className="py-24 bg-white dark:bg-gray-900">
+    <section className="py-12 bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 lg:mb-16 flex justify-center items-center flex-col">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white leading-[3.25rem] lg:mb-6 text-center">

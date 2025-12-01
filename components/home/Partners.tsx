@@ -122,6 +122,7 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
   // Duplicate partners for seamless loop
   useEffect(() => {
     let rafId: number;
+    // eslint-disable-next-line prefer-const
     rafId = window.requestAnimationFrame(() => {
       setIsMounted(true);
       setDuplicatedPartners([...partners, ...partners]);
@@ -182,7 +183,7 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
 
   return (
     <section
-      className={`relative  py-20 overflow-hidden ${className}`}
+      className={`relative  py-8 overflow-hidden ${className}`}
     >
       {/* Header Section */}
       {variant !== "minimal" && (
