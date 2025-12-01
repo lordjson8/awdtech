@@ -9,7 +9,7 @@ const CallToAction = ({
 }) => {
   const t = useTranslations('GraphicPage.CallToAction');
 
-  const primaryAction = { text: t('primaryAction'), href: "/contact" };
+  const primaryAction = { text: t('primaryAction'), href: "mailto:support.cm@awdpay.com" };
   const secondaryAction = { text: t('secondaryAction'), href: "/portfolio" };
 
   const trustIndicators = [

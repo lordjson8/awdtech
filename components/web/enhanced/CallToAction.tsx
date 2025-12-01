@@ -34,7 +34,7 @@ const CallToAction = () => {
                 asChild
                 className="bg-white text-orange-600 hover:bg-gray-100 dark:bg-gray-900 dark:text-orange-400 dark:hover:bg-gray-800 font-semibold py-6 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group"
               >
-                <Link href="/contact" className="flex items-center gap-3">
+                <Link href="mailto:support.cm@awdpay.com" className="flex items-center gap-3">
                   <span>{t('button')}</span>
                   <svg 
                     className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 

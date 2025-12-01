@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Features() {
   const t = useTranslations("Features");
@@ -150,9 +151,9 @@ export default function Features() {
             <p className="mb-6 opacity-90 max-w-2xl mx-auto">
               {t("joinUs")}
             </p>
-            <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+            <Link href="mailto:support.cm@awdpay.com" className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
               {t("contactUs")}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
