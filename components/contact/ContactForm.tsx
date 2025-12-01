@@ -215,7 +215,7 @@ export default function ContactForm() {
   ];
 
   return (
-    <div className="min-h-[calc(100vh-200px)] flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-black transition-colors duration-300">
+    <div className="min-h-[calc(100vh-200px)] flex items-center justify-center dient-tbg-grao-b from-white to-gray-50 dark:from-gray-900 dark:to-black transition-colors duration-300">
       <div className="w-full max-w-7xl mx-auto py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
@@ -233,7 +233,7 @@ export default function ContactForm() {
                 <span className="block text-gray-900 dark:text-white">
                   AWDTECH
                 </span>
-                <span className="block bg-gradient-to-r from-orange-500 to-orange-800 bg-clip-text text-transparent">
+                <span className="block text-orange-500 ">
                   Service Numérique Partout dans le Monde
                 </span>
               </motion.h1>
@@ -443,7 +443,7 @@ export default function ContactForm() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full h-12 sm:h-14 bg-gradient-to-r from-orange-500 to-orange-800 hover:from-orange-600 hover:to-orange-900 text-white text-base sm:text-lg font-semibold rounded-lg sm:rounded-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-500/20 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                      className="w-full h-12 sm:h-14 bg-orange-500  hover:to-orange-600 text-white text-base sm:text-lg font-semibold rounded-lg sm:rounded-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-500/20 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                     >
                       {isSubmitting ? (
                         <span className="flex items-center justify-center">
