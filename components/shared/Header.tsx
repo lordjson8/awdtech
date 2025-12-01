@@ -227,6 +227,12 @@ export default function Header({
           >
             {t("projects")}
           </Link>
+          <Link
+            href="/contact"
+            className={`${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'} text-sm/6 font-semibold  hover:text-primary transition-colors duration-200`}
+          >
+            {t("contact")}
+          </Link>
         </div>
         <div className="hidden gap-3 lg:flex lg:flex-1 lg:justify-end">
           <LanguageButton />
@@ -334,6 +340,13 @@ export default function Header({
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-foreground hover:bg-accent transition-colors duration-200"
                 >
                   {t("projects")}
+                </Link>
+                <Link
+                  href="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-foreground hover:bg-accent transition-colors duration-200"
+                >
+                  {t("contact")}
                 </Link>
                 <MobileLanguageSwitcher />
                 <MobileThemeSwitcher />

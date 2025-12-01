@@ -21,7 +21,8 @@
     "graphicDesign": "Conception Graphique",
     "graphicDesignDescription": "Les données de vos clients seront en sécurité",
     "openMainMenu": "Ouvrir le menu principal",
-    "closeMenu": "Fermer le menu"
+    "closeMenu": "Fermer le menu",
+    "contact": "Contact"
   },
   "Products": {
     "title": "Nos Produits en interne",
@@ -560,5 +561,28 @@
       "description": "Contactez-nous pour discuter de vos idées et voir comment nous pouvons vous aider à les concrétiser.",
       "button": "Contactez-nous"
     }
+  },
+ 
+  "ContactPage": {
+    "title": "Construisons",
+    "titleAccent": "Quelque Chose d'Extraordinaire",
+    "badge": "Contactez-nous",
+    "description": "Prêt à donner vie à votre vision ? Partagez les détails de votre projet avec nous et créons ensemble quelque chose d'exceptionnel.",
+    "name": "Votre Nom",
+    "namePlaceholder": "Jean Dupont",
+    "email": "Adresse Email",
+    "emailPlaceholder": "jean@exemple.com",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Demande de Projet",
+    "message": "Votre Message",
+    "messagePlaceholder": "Parlez-nous de votre projet, délais et budget...",
+    "submit": "Envoyer le Message",
+    "submitting": "Envoi en cours...",
+    "successTitle": "Message Envoyé !",
+    "successMessage": "Merci pour votre message. Nous vous répondrons dans les 24 heures.",
+    "emailTitle": "Email",
+    "phoneTitle": "Téléphone",
+    "locationTitle": "Localisation"
   }
+
 }

@@ -21,7 +21,8 @@
     "graphicDesign": "Graphic Design",
     "graphicDesignDescription": "Your customers data will be safe and secure",
     "openMainMenu": "Open main menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "contact": "Contact"
   },
   "Products": {
     "title": "Our internal Products",
@@ -560,5 +561,28 @@
       "description": "Contact us to discuss your ideas and see how we can help you bring them to life.",
       "button": "Contact Us"
     }
+  },
+  
+  "ContactPage": {
+    "title": "Let's Build",
+    "titleAccent": "Something Amazing",
+    "badge": "Get In Touch",
+    "description": "Ready to bring your vision to life? Share your project details with us, and let's create something extraordinary together.",
+    "name": "Your Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "Project Inquiry",
+    "message": "Your Message",
+    "messagePlaceholder": "Tell us about your project, timeline, and budget...",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for reaching out. We'll get back to you within 24 hours.",
+    "emailTitle": "Email",
+    "phoneTitle": "Phone",
+    "locationTitle": "Location"
   }
+
 }
