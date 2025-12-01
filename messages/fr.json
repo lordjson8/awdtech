@@ -143,5 +143,135 @@
       "title": "AWD Immobilier",
       "description": "Une plateforme pour la consultation et la gestion d'annonces immobilières."
     }
+  },
+  "Footer": {
+    "brandName": "AWD Tech",
+    "tagline": "Service numérique partout dans le monde. Moteur de votre transformation digitale.",
+    "social": {
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    },
+    "services": {
+      "title": "Nos Services",
+      "web": "Développement Web",
+      "mobile": "Développement Mobile",
+      "design": "Graphic Design UI/UX",
+      "management": "Infogérance",
+      "ecommerce": "Solutions E-commerce"
+    },
+    "products": {
+      "title": "Nos Produits",
+      "awdpay": "AWDPAY",
+      "realEstate": "AWD Immobilier",
+      "education": "AWD Education",
+      "ecommerce": "AWD E-commerce",
+      "transport": "AWD Transport"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "legal": {
+      "allRightsReserved": "Tous droits réservés.",
+      "termsOfUse": "Conditions d'utilisation",
+      "privacyPolicy": "Politique de confidentialité"
+    },
+    "copyright": "© {currentYear} AWD Tech - Service numérique partout dans le monde"
+  },
+  "WebPage": {
+    "Hero": {
+      "title1": "Solutions Web",
+      "title2": "Innovantes",
+      "description": "Nous ne créons pas simplement des sites web, nous concevons des <span class=\"text-orange-600 dark:text-orange-400 font-semibold\">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.",
+      "feature1Title": "Ultra-Rapide",
+      "feature1Desc": "Performance optimisée",
+      "feature2Title": "Sur Mesure",
+      "feature2Desc": "Solutions adaptées",
+      "feature3Title": "Moderne",
+      "feature3Desc": "Technologies avancées",
+      "ctaButton": "Démarrer mon projet",
+      "imageAlt": "Développement Web Moderne"
+    },
+    "Services": {
+      "title": "Ce Que Nous <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-500\">Créons</span>",
+      "description": "Des solutions web sur mesure qui transforment vos idées en expériences digitales exceptionnelles",
+      "corporate": {
+        "title": "Sites Web Corporatifs",
+        "description": "Des sites web époustouflants et responsives qui racontent l'histoire de votre marque et captivent votre audience.",
+        "features": [
+          "Design Responsive",
+          "SEO Optimisé",
+          "Intégration CMS"
+        ]
+      },
+      "webapp": {
+        "title": "Applications Web",
+        "description": "Applications web sur mesure puissantes pour rationaliser vos processus métier et engager vos utilisateurs.",
+        "features": [
+          "Architecture Moderne",
+          "API RESTful",
+          "Base de données"
+        ]
+      },
+      "ecommerce": {
+        "title": "Plateformes E-commerce",
+        "description": "Solutions e-commerce évolutives et sécurisées pour vendre vos produits et développer votre activité en ligne.",
+        "features": [
+          "Paiement Sécurisé",
+          "Gestion Stock",
+          "Analytics"
+        ]
+      },
+      "learnMore": "En savoir plus",
+      "bottomCta": {
+        "title": "Prêt à donner vie à votre projet web ?",
+        "description": "Discutons de votre vision et créons ensemble une solution qui dépasse vos attentes.",
+        "button": "Démarrer mon projet"
+      }
+    },
+    "TechStack": {
+      "title": "Notre Stack <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-500\">Technologique</span>",
+      "description": "Nous utilisons les technologies les plus avancées pour créer des applications web performantes, évolutives et maintenables.",
+      "frontend": {
+        "name": "Frontend Development",
+        "description": "Interfaces modernes et réactives",
+        "projects": "25+ Projets"
+      },
+      "backend": {
+        "name": "Backend Development",
+        "description": "APIs robustes et performantes",
+        "projects": "30+ APIs"
+      },
+      "database": {
+        "name": "Bases de Données",
+        "description": "Solutions de stockage optimisées",
+        "projects": "40+ Bases de données"
+      },
+      "devops": {
+        "name": "DevOps & Cloud",
+        "description": "Infrastructure scalable et sécurisée",
+        "projects": "50+ Déploiements"
+      },
+      "levels": {
+        "expert": "Expert",
+        "advanced": "Avancé",
+        "intermediate": "Intermédiaire"
+      },
+      "projectsCompleted": "Projets réalisés",
+      "stats": {
+        "projects": "Projets Livrés",
+        "satisfaction": "Satisfaction Client",
+        "experience": "Années d'Expérience",
+        "users": "Utilisateurs Actifs"
+      }
+    },
+    "CTA": {
+      "title": "Créons Quelque Chose <span class=\"block text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-100\">d'Exceptionnel</span> Ensemble",
+      "description": "Vous avez un projet en tête ? Nous serions ravis de l'écouter et de le transformer en une solution digitale qui dépasse vos attentes.",
+      "button": "Planifier une Consultation Gratuite",
+      "feature1": "Consultation sans engagement",
+      "feature2": "Devis personnalisé sous 48h",
+      "feature3": "Expertise technique garantie"
+    }
   }
 }

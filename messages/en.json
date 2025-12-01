@@ -143,5 +143,135 @@
       "title": "AWD Real Estate",
       "description": "A platform for browsing and managing real estate listings."
     }
+  },
+  "Footer": {
+    "brandName": "AWD Tech",
+    "tagline": "Digital service worldwide. Engine of your digital transformation.",
+    "social": {
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    },
+    "services": {
+      "title": "Our Services",
+      "web": "Web Development",
+      "mobile": "Mobile Development",
+      "design": "Graphic Design UI/UX",
+      "management": "IT Management",
+      "ecommerce": "E-commerce Solutions"
+    },
+    "products": {
+      "title": "Our Products",
+      "awdpay": "AWDPAY",
+      "realEstate": "AWD Real Estate",
+      "education": "AWD Education",
+      "ecommerce": "AWD E-commerce",
+      "transport": "AWD Transport"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "legal": {
+      "allRightsReserved": "All rights reserved.",
+      "termsOfUse": "Terms of Use",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "copyright": "© {currentYear} AWD Tech - Digital service worldwide"
+  },
+  "WebPage": {
+    "Hero": {
+      "title1": "Web Solutions",
+      "title2": "Innovative",
+      "description": "We don't just create websites, we design <span class=\"text-orange-600 dark:text-orange-400 font-semibold\">digital experiences</span> that drive your growth and engage your users.",
+      "feature1Title": "Ultra-Fast",
+      "feature1Desc": "Optimized performance",
+      "feature2Title": "Custom-Made",
+      "feature2Desc": "Adapted solutions",
+      "feature3Title": "Modern",
+      "feature3Desc": "Advanced technologies",
+      "ctaButton": "Start my project",
+      "imageAlt": "Modern Web Development"
+    },
+    "Services": {
+      "title": "What We <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-500\">Create</span>",
+      "description": "Custom web solutions that transform your ideas into exceptional digital experiences",
+      "corporate": {
+        "title": "Corporate Websites",
+        "description": "Stunning and responsive websites that tell your brand's story and captivate your audience.",
+        "features": [
+          "Responsive Design",
+          "SEO Optimized",
+          "CMS Integration"
+        ]
+      },
+      "webapp": {
+        "title": "Web Applications",
+        "description": "Powerful custom web applications to streamline your business processes and engage your users.",
+        "features": [
+          "Modern Architecture",
+          "RESTful API",
+          "Database"
+        ]
+      },
+      "ecommerce": {
+        "title": "E-commerce Platforms",
+        "description": "Scalable and secure e-commerce solutions to sell your products and grow your business online.",
+        "features": [
+          "Secure Payment",
+          "Stock Management",
+          "Analytics"
+        ]
+      },
+      "learnMore": "Learn more",
+      "bottomCta": {
+        "title": "Ready to bring your web project to life?",
+        "description": "Let's discuss your vision and together create a solution that exceeds your expectations.",
+        "button": "Start my project"
+      }
+    },
+    "TechStack": {
+      "title": "Our <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-500\">Technological</span> Stack",
+      "description": "We use the most advanced technologies to create high-performance, scalable, and maintainable web applications.",
+      "frontend": {
+        "name": "Frontend Development",
+        "description": "Modern and responsive interfaces",
+        "projects": "25+ Projects"
+      },
+      "backend": {
+        "name": "Backend Development",
+        "description": "Robust and high-performance APIs",
+        "projects": "30+ APIs"
+      },
+      "database": {
+        "name": "Databases",
+        "description": "Optimized storage solutions",
+        "projects": "40+ Databases"
+      },
+      "devops": {
+        "name": "DevOps & Cloud",
+        "description": "Scalable and secure infrastructure",
+        "projects": "50+ Deployments"
+      },
+      "levels": {
+        "expert": "Expert",
+        "advanced": "Advanced",
+        "intermediate": "Intermediate"
+      },
+      "projectsCompleted": "Projects completed",
+      "stats": {
+        "projects": "Projects Delivered",
+        "satisfaction": "Customer Satisfaction",
+        "experience": "Years of Experience",
+        "users": "Active Users"
+      }
+    },
+    "CTA": {
+      "title": "Let's Create Something <span class=\"block text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-100\">Exceptional</span> Together",
+      "description": "Have a project in mind? We'd love to hear about it and turn it into a digital solution that exceeds your expectations.",
+      "button": "Schedule a Free Consultation",
+      "feature1": "No-commitment consultation",
+      "feature2": "Custom quote within 48h",
+      "feature3": "Guaranteed technical expertise"
+    }
   }
 }

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations("Footer");
 
   return (
     <footer className="bg-white dark:bg-gray-900 text-gray-700 dark:text-white transition-colors duration-300">
@@ -12,7 +14,7 @@ export default function Footer() {
           <div>
             <div className="flex justify-center sm:justify-start">
               <Link href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">AWD Tech</span>
+                <span className="sr-only">{t("brandName")}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="127"
@@ -54,7 +56,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-600 dark:text-gray-300 sm:max-w-xs sm:text-left">
-              Service numérique partout dans le monde. Moteur de votre transformation digitale.
+              {t("tagline")}
             </p>
 
             {/* Contact Email */}
@@ -76,7 +78,7 @@ export default function Footer() {
                   target="_blank"
                   className="text-gray-500 dark:text-gray-300 transition hover:text-orange-500"
                 >
-                  <span className="sr-only">Facebook</span>
+                  <span className="sr-only">{t("social.facebook")}</span>
                   <svg
                     className="size-6"
                     fill="currentColor"
@@ -99,7 +101,7 @@ export default function Footer() {
                   target="_blank"
                   className="text-gray-500 dark:text-gray-300 transition hover:text-orange-500"
                 >
-                  <span className="sr-only">LinkedIn</span>
+                  <span className="sr-only">{t("social.linkedin")}</span>
                   <svg
                     className="size-6"
                     fill="currentColor"
@@ -118,7 +120,7 @@ export default function Footer() {
                   target="_blank"
                   className="text-gray-500 dark:text-gray-300 transition hover:text-orange-500"
                 >
-                  <span className="sr-only">Twitter</span>
+                  <span className="sr-only">{t("social.twitter")}</span>
                   <svg
                     className="size-6"
                     fill="currentColor"
@@ -137,7 +139,7 @@ export default function Footer() {
             {/* Services */}
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900 dark:text-white">
-                Nos Services
+                {t("services.title")}
               </p>
 
               <ul className="mt-6 space-y-3 text-sm text-gray-600 dark:text-gray-300">
@@ -146,7 +148,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    Développement Web
+                    {t("services.web")}
                   </a>
                 </li>
                 <li>
@@ -154,7 +156,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    Développement Mobile
+                    {t("services.mobile")}
                   </a>
                 </li>
                 <li>
@@ -162,7 +164,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    Graphic Design UI/UX
+                    {t("services.design")}
                   </a>
                 </li>
                 <li>
@@ -170,7 +172,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    Infogérance
+                    {t("services.management")}
                   </a>
                 </li>
                 <li>
@@ -178,7 +180,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    Solutions E-commerce
+                    {t("services.ecommerce")}
                   </a>
                 </li>
               </ul>
@@ -187,7 +189,7 @@ export default function Footer() {
             {/* Produits */}
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900 dark:text-white">
-                Nos Produits
+                {t("products.title")}
               </p>
 
               <ul className="mt-6 space-y-3 text-sm text-gray-600 dark:text-gray-300">
@@ -196,7 +198,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    AWDPAY
+                    {t("products.awdpay")}
                   </a>
                 </li>
                 <li>
@@ -204,7 +206,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    AWD Immobilier
+                    {t("products.realEstate")}
                   </a>
                 </li>
                 <li>
@@ -212,7 +214,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    AWD Education
+                    {t("products.education")}
                   </a>
                 </li>
                 <li>
@@ -220,7 +222,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    AWD E-commerce
+                    {t("products.ecommerce")}
                   </a>
                 </li>
                 <li>
@@ -228,7 +230,7 @@ export default function Footer() {
                     className="transition hover:text-orange-500"
                     href="#"
                   >
-                    AWD Transport
+                    {t("products.transport")}
                   </a>
                 </li>
               </ul>
@@ -237,7 +239,7 @@ export default function Footer() {
             {/* Contact */}
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900 dark:text-white">
-                Contact
+                {t("contact.title")}
               </p>
 
               <ul className="mt-6 space-y-4 text-sm text-gray-600 dark:text-gray-300">
@@ -329,13 +331,13 @@ export default function Footer() {
         <div className="mt-12 border-t border-gray-200 dark:border-gray-700 pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              <span className="block sm:inline">Tous droits réservés.</span>
+              <span className="block sm:inline">{t("legal.allRightsReserved")}</span>
 
               <a
                 className="inline-block text-orange-500 underline transition hover:text-orange-600 dark:hover:text-orange-400 mx-2"
                 href="#"
               >
-                Conditions d&apos;utilisation
+                {t("legal.termsOfUse")}
               </a>
 
               <span>·</span>
@@ -344,12 +346,12 @@ export default function Footer() {
                 className="inline-block text-orange-500 underline transition hover:text-orange-600 dark:hover:text-orange-400 mx-2"
                 href="#"
               >
-                Politique de confidentialité
+                {t("legal.privacyPolicy")}
               </a>
             </p>
 
             <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 sm:order-first sm:mt-0">
-              © {currentYear} AWD Tech - Service numérique partout dans le monde
+              {t("copyright", { currentYear })}
             </p>
           </div>
         </div>

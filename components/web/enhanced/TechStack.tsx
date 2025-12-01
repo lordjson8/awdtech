@@ -1,60 +1,83 @@
+'use client';
 import React from 'react';
 import { FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiRedis, SiKubernetes, SiVercel, SiPython, SiDjango, SiFastapi, SiExpress } from 'react-icons/si';
 import { DiAws } from 'react-icons/di';
-
-const techCategories = [
-  {
-    name: 'Frontend Development',
-    description: 'Interfaces modernes et réactives',
-    stack: [
-      { name: 'React', icon: <FaReact />, level: 'Expert', color: 'text-cyan-400' },
-      { name: 'Next.js', icon: <SiNextdotjs />, level: 'Expert', color: 'text-white' },
-      { name: 'TypeScript', icon: <SiTypescript />, level: 'Expert', color: 'text-orange-500' },
-      { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 'Expert', color: 'text-cyan-300' },
-    ],
-    gradient: 'from-cyan-500 to-orange-500',
-    projects: '25+ Projects'
-  },
-  {
-    name: 'Backend Development',
-    description: 'APIs robustes et performantes',
-    stack: [
-      { name: 'Node.js', icon: <FaNodeJs />, level: 'Expert', color: 'text-green-500' },
-      { name: 'Express', icon: <SiExpress />, level: 'Expert', color: 'text-gray-300' },
-      { name: 'Python', icon: <SiPython />, level: 'Avancé', color: 'text-yellow-400' },
-      { name: 'Django', icon: <SiDjango />, level: 'Avancé', color: 'text-green-400' },
-      { name: 'FastAPI', icon: <SiFastapi />, level: 'Intermédiaire', color: 'text-teal-400' },
-    ],
-    gradient: 'from-green-500 to-emerald-500',
-    projects: '30+ APIs'
-  },
-  {
-    name: 'Bases de Données',
-    description: 'Solutions de stockage optimisées',
-    stack: [
-      { name: 'PostgreSQL', icon: <SiPostgresql />, level: 'Expert', color: 'text-orange-400' },
-      { name: 'MongoDB', icon: <SiMongodb />, level: 'Expert', color: 'text-green-500' },
-      { name: 'Redis', icon: <SiRedis />, level: 'Avancé', color: 'text-red-500' },
-    ],
-    gradient: 'from-purple-500 to-pink-500',
-    projects: '40+ Databases'
-  },
-  {
-    name: 'DevOps & Cloud',
-    description: 'Infrastructure scalable et sécurisée',
-    stack: [
-      { name: 'Docker', icon: <FaDocker />, level: 'Expert', color: 'text-orange-400' },
-      { name: 'Kubernetes', icon: <SiKubernetes />, level: 'Avancé', color: 'text-orange-500' },
-      { name: 'AWS', icon: <DiAws />, level: 'Avancé', color: 'text-orange-400' },
-      { name: 'Vercel', icon: <SiVercel />, level: 'Expert', color: 'text-white' },
-    ],
-    gradient: 'from-orange-500 to-red-500',
-    projects: '50+ Deployments'
-  },
-];
+import { useTranslations } from 'next-intl';
 
 const TechStack = () => {
+  const t = useTranslations('WebPage.TechStack');
+  const tLevels = useTranslations('WebPage.TechStack.levels');
+  const tStats = useTranslations('WebPage.TechStack.stats');
+
+  const techCategories = [
+    {
+      name: t('frontend.name'),
+      description: t('frontend.description'),
+      stack: [
+        { name: 'React', icon: <FaReact />, level: tLevels('expert'), color: 'text-cyan-400' },
+        { name: 'Next.js', icon: <SiNextdotjs />, level: tLevels('expert'), color: 'text-white' },
+        { name: 'TypeScript', icon: <SiTypescript />, level: tLevels('expert'), color: 'text-orange-500' },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: tLevels('expert'), color: 'text-cyan-300' },
+      ],
+      gradient: 'from-cyan-500 to-orange-500',
+      projects: t('frontend.projects')
+    },
+    {
+      name: t('backend.name'),
+      description: t('backend.description'),
+      stack: [
+        { name: 'Node.js', icon: <FaNodeJs />, level: tLevels('expert'), color: 'text-green-500' },
+        { name: 'Express', icon: <SiExpress />, level: tLevels('expert'), color: 'text-gray-300' },
+        { name: 'Python', icon: <SiPython />, level: tLevels('advanced'), color: 'text-yellow-400' },
+        { name: 'Django', icon: <SiDjango />, level: tLevels('advanced'), color: 'text-green-400' },
+        { name: 'FastAPI', icon: <SiFastapi />, level: tLevels('intermediate'), color: 'text-teal-400' },
+      ],
+      gradient: 'from-green-500 to-emerald-500',
+      projects: t('backend.projects')
+    },
+    {
+      name: t('database.name'),
+      description: t('database.description'),
+      stack: [
+        { name: 'PostgreSQL', icon: <SiPostgresql />, level: tLevels('expert'), color: 'text-orange-400' },
+        { name: 'MongoDB', icon: <SiMongodb />, level: tLevels('expert'), color: 'text-green-500' },
+        { name: 'Redis', icon: <SiRedis />, level: tLevels('advanced'), color: 'text-red-500' },
+      ],
+      gradient: 'from-purple-500 to-pink-500',
+      projects: t('database.projects')
+    },
+    {
+      name: t('devops.name'),
+      description: t('devops.description'),
+      stack: [
+        { name: 'Docker', icon: <FaDocker />, level: tLevels('expert'), color: 'text-orange-400' },
+        { name: 'Kubernetes', icon: <SiKubernetes />, level: tLevels('advanced'), color: 'text-orange-500' },
+        { name: 'AWS', icon: <DiAws />, level: tLevels('advanced'), color: 'text-orange-400' },
+        { name: 'Vercel', icon: <SiVercel />, level: tLevels('expert'), color: 'text-white' },
+      ],
+      gradient: 'from-orange-500 to-red-500',
+      projects: t('devops.projects')
+    },
+  ];
+
+  const statItems = [
+    { number: '100+', label: tStats('projects') },
+    { number: '99%', label: tStats('satisfaction') },
+    { number: '3+', label: tStats('experience') },
+    { number: '50K+', label: tStats('users') },
+  ];
+
+  const getLevelValue = (level: string) => {
+    switch (level) {
+      case tLevels('expert'): return 3;
+      case tLevels('advanced'): return 2;
+      case tLevels('intermediate'): return 1;
+      default: return 0;
+    }
+  };
+
+
   return (
     <section className="bg-white dark:bg-gray-900 py-24 transition-colors duration-300">
      
@@ -63,13 +86,12 @@ const TechStack = () => {
         <div className="text-center max-w-4xl mx-auto mb-16">
         
           
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Notre Stack <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-500">Technologique</span>
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+            dangerouslySetInnerHTML={{ __html: t.raw('title') }}
+          />
           
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            Nous utilisons les technologies les plus avancées pour créer des applications web performantes, 
-            évolutives et maintenables.
+            {t('description')}
           </p>
         </div>
 
@@ -80,14 +102,6 @@ const TechStack = () => {
               key={category.name}
               className="group relative bg-white dark:bg-gray-800 rounded-3xl p-6 border border-gray-200 dark:border-gray-700 hover:border-transparent transition-all duration-500 hover:scale-105 hover:shadow-xl dark:hover:shadow-2xl overflow-hidden"
             >
-              {/* Gradient Background on Hover */}
-               {/* <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} /> */}
-              
-              {/* Animated Border */}
-              {/* <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${category.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}>
-                <div className="absolute inset-[2px] rounded-3xl bg-white dark:bg-gray-800" />
-              </div> */}
-
               <div className="relative z-10">
                 {/* Category Header */}
                 <div className="mb-6">
@@ -127,7 +141,7 @@ const TechStack = () => {
                           <div
                             key={dot}
                             className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                              dot <= (tech.level === 'Expert' ? 3 : tech.level === 'Avancé' ? 2 : 1)
+                              dot <= getLevelValue(tech.level)
                                 ? 'bg-orange-500'
                                 : 'bg-gray-300 dark:bg-gray-600'
                             }`}
@@ -141,7 +155,7 @@ const TechStack = () => {
                 {/* Projects Counter */}
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-gray-500 dark:text-gray-400">Projets réalisés</span>
+                    <span className="text-gray-500 dark:text-gray-400">{t('projectsCompleted')}</span>
                     <span className="text-orange-500 dark:text-orange-400 font-semibold">{category.projects}</span>
                   </div>
                 </div>
@@ -155,12 +169,7 @@ const TechStack = () => {
 
         {/* Bottom Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
-          {[
-            { number: '100+', label: 'Projets Livrés' },
-            { number: '99%', label: 'Satisfaction Client' },
-            { number: '3+', label: 'Années d\'Expérience' },
-            { number: '50K+', label: 'Utilisateurs Actifs' },
-          ].map((stat, index) => (
+          {statItems.map((stat, index) => (
             <div key={stat.label} className="text-center group">
               <div className="bg-white dark:bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-white/10 hover:border-orange-500/30 transition-all duration-300 hover:scale-105">
                 <div className="text-2xl font-bold text-orange-500 mb-2">
