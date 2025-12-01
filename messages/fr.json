@@ -540,5 +540,25 @@
       "description": "Discutons de votre projet et créons ensemble une application qui impressionnera vos utilisateurs.",
       "button": "Obtenir un Devis Gratuit"
     }
+  },
+  "ProjectsPage": {
+    "Hero": {
+      "title1": "Nos Projets",
+      "title2": "Créatifs & Innovants",
+      "subtitle": "Découvrez une sélection de nos meilleures réalisations, alliant design et technologie de pointe."
+    },
+    "viewProject": "Voir le projet",
+    "Categories": {
+      "all": "Tous",
+      "e-commerce": "E-commerce",
+      "education": "Éducation",
+      "hotel-management": "Hôtellerie",
+      "real-estate": "Immobilier"
+    },
+    "CallToAction": {
+      "title": "Vous avez un projet en tête ?",
+      "description": "Contactez-nous pour discuter de vos idées et voir comment nous pouvons vous aider à les concrétiser.",
+      "button": "Contactez-nous"
+    }
   }
 }

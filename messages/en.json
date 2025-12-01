@@ -540,5 +540,25 @@
       "description": "Let's discuss your project and together create an application that will impress your users.",
       "button": "Get a Free Quote"
     }
+  },
+  "ProjectsPage": {
+    "Hero": {
+      "title1": "Our Projects",
+      "title2": "Creative & Innovative",
+      "subtitle": "Discover a selection of our best achievements, combining design and cutting-edge technology."
+    },
+    "viewProject": "View Project",
+    "Categories": {
+      "all": "All",
+      "e-commerce": "E-commerce",
+      "education": "Education",
+      "hotel-management": "Hotel Management",
+      "real-estate": "Real Estate"
+    },
+    "CallToAction": {
+      "title": "Have a project in mind?",
+      "description": "Contact us to discuss your ideas and see how we can help you bring them to life.",
+      "button": "Contact Us"
+    }
   }
 }

@@ -1,3 +1,6 @@
+import CallToAction from '@/components/projects/CallToAction';
+import Hero from '@/components/projects/Hero';
+import ProjectGrid from '@/components/projects/ProjectGrid';
 import Header from '@/components/shared/Header'
 import React from 'react'
 
@@ -5,10 +8,9 @@ export default function page() {
   return (
     <div>
       <Header />
-      <main className='mt-36 max-w-7xl mx-auto'>
-      Projects
-
-      </main>
+      <Hero />
+      <ProjectGrid />
+      <CallToAction />
     </div>
   )
 }

@@ -2,16 +2,15 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import Container from '@/components/shared/Container';
 import { useTranslations } from 'next-intl';
 
 const CallToAction = () => {
-  const t = useTranslations('MobilePage.CallToAction');
+  const t = useTranslations('ProjectsPage.CallToAction');
 
   return (
     <section className="bg-white dark:bg-gray-900 py-20 transition-colors duration-300">
-      <Container>
-        <div className="bg-gradient-to-r w-full from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-700 rounded-3xl p-12 text-center shadow-2xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-700 rounded-3xl p-12 text-center shadow-2xl">
           <h2 className="text-4xl font-bold text-white mb-4">
             {t('title')}
           </h2>
@@ -28,7 +27,7 @@ const CallToAction = () => {
             </Link>
           </Button>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
