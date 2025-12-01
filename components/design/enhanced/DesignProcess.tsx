@@ -1,16 +1,17 @@
+'use client';
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const DesignProcess = ({
   theme = "auto",
-  title = "Our Design Process",
-  subtitle = "A user-centered approach that delivers exceptional results",
 }) => {
+  const t = useTranslations('GraphicPage.DesignProcess');
+
   const steps = [
     {
       number: "01",
-      name: "Understand",
-      description:
-        "We start by understanding your business, your goals, and your users' needs through comprehensive discovery sessions.",
+      name: t('step1.name'),
+      description: t('step1.description'),
       icon: (
         <svg
           className="w-6 h-6"
@@ -30,9 +31,8 @@ const DesignProcess = ({
     },
     {
       number: "02",
-      name: "Explore",
-      description:
-        "We explore different ideas and concepts through sketching, wireframing, and mood boarding to find the perfect solution.",
+      name: t('step2.name'),
+      description: t('step2.description'),
       icon: (
         <svg
           className="w-6 h-6"
@@ -52,9 +52,8 @@ const DesignProcess = ({
     },
     {
       number: "03",
-      name: "Create",
-      description:
-        "We bring the best ideas to life through high-fidelity mockups and interactive prototypes that showcase the final experience.",
+      name: t('step3.name'),
+      description: t('step3.description'),
       icon: (
         <svg
           className="w-6 h-6"
@@ -74,9 +73,8 @@ const DesignProcess = ({
     },
     {
       number: "04",
-      name: "Refine",
-      description:
-        "We gather feedback, test our designs with real users, and iterate until we achieve perfection in every detail.",
+      name: t('step4.name'),
+      description: t('step4.description'),
       icon: (
         <svg
           className="w-6 h-6"
@@ -123,7 +121,7 @@ const DesignProcess = ({
             mb-6
           `}
           >
-            {title}
+            {t('title')}
           </h2>
           <p
             className={`
@@ -132,7 +130,7 @@ const DesignProcess = ({
             leading-relaxed
           `}
           >
-            {subtitle}
+            {t('subtitle')}
           </p>
         </div>
 
@@ -283,7 +281,7 @@ const DesignProcess = ({
               group
             "
             >
-              Start Your Project
+              {t('ctaButton')}
               <svg
                 className="
                 w-5 h-5 ml-2 
@@ -302,21 +300,6 @@ const DesignProcess = ({
                 />
               </svg>
             </button>
-
-            {/* <button className="
-              px-8 py-4
-              border-2 border-gray-300 dark:border-gray-600
-              hover:border-orange-500 dark:hover:border-orange-400
-              text-gray-700 dark:text-gray-300 
-              hover:text-orange-600 dark:hover:text-orange-400
-              rounded-xl
-              font-semibold
-              transition-all duration-300
-              transform hover:scale-105
-              focus:outline-none focus:ring-4 focus:ring-orange-500/20
-            ">
-              View Case Studies
-            </button> */}
           </div>
         </div>
       </div>

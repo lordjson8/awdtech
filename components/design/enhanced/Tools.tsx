@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import {
   SiFigma,
@@ -11,19 +12,18 @@ import {
 } from "react-icons/si";
 import { CgFramer } from "react-icons/cg";
 import { FaSketch, FaAccessibleIcon } from "react-icons/fa";
-// import {  DiAptana } from "react-icons/ri";
 import { DiAptana } from "react-icons/di";
+import { useTranslations } from "next-intl";
 
 const Tools = ({
   theme = "auto",
-  title = "Our Design Toolkit",
-  subtitle = "Powered by industry-leading tools to deliver exceptional results",
 }) => {
+  const t = useTranslations('GraphicPage.Tools');
+
   const toolCategories = [
     {
-      name: "UI/UX Design",
-      description:
-        "Creating intuitive interfaces and seamless user experiences",
+      name: t('uiux.name'),
+      description: t('uiux.description'),
       stack: [
         { name: "Figma", icon: <SiFigma color="black" />, proficiency: 95 },
         { name: "Sketch", icon: <FaSketch color="black" />, proficiency: 88 },
@@ -36,8 +36,8 @@ const Tools = ({
       gradient: "from-orange-500 to-red-500",
     },
     {
-      name: "Prototyping",
-      description: "Bringing ideas to life with interactive prototypes",
+      name: t('prototyping.name'),
+      description: t('prototyping.description'),
       stack: [
         {
           name: "InVision",
@@ -54,8 +54,8 @@ const Tools = ({
       gradient: "from-orange-500 to-red-500",
     },
     {
-      name: "Graphic Design",
-      description: "Crafting stunning visuals and brand identities",
+      name: t('graphic.name'),
+      description: t('graphic.description'),
       stack: [
         {
           name: "Illustrator",
@@ -72,8 +72,8 @@ const Tools = ({
       gradient: "from-orange-500 to-red-500",
     },
     {
-      name: "Collaboration",
-      description: "Streamlining teamwork and project management",
+      name: t('collaboration.name'),
+      description: t('collaboration.description'),
       stack: [
         { name: "Miro", icon: <SiMiro color="black" />, proficiency: 91 },
         { name: "Notion", icon: <SiNotion color="black" />, proficiency: 86 },
@@ -81,6 +81,13 @@ const Tools = ({
       ],
       gradient: "from-orange-500 to-red-500",
     },
+  ];
+
+  const stats = [
+    { number: "50+", label: t('stats.mastered') },
+    { number: "100%", label: t('stats.proficiency') },
+    { number: "24/7", label: t('stats.updates') },
+    { number: "5★", label: t('stats.rating') },
   ];
 
   return (
@@ -103,7 +110,7 @@ const Tools = ({
             mb-6
           `}
           >
-            {title}
+            {t('title')}
           </h2>
           <p
             className={`
@@ -112,7 +119,7 @@ const Tools = ({
             leading-relaxed
           `}
           >
-            {subtitle}
+            {t('subtitle')}
           </p>
         </div>
 
@@ -136,17 +143,6 @@ const Tools = ({
                 flex flex-col
               `}
               >
-                {/* Background Gradient */}
-                {/* <div
-                  className={`
-                  absolute top-0 left-0 w-full h-1
-                  bg-gradient-to-r ${category.gradient}
-                  opacity-0 group-hover:opacity-100
-                  transition-opacity duration-300
-                `}
-                ></div> */}
-
-                {/* Category Header */}
                 <div className="text-center mb-8">
                   <div
                     className={`
@@ -246,32 +242,7 @@ const Tools = ({
                     </div>
                   ))}
                 </div>
-
-                {/* Hover Effect Overlay */}
-                {/* <div
-                  className="
-                  absolute inset-0 
-                  bg-gradient-to-br from-orange-500/5 to-transparent 
-                  opacity-0 group-hover:opacity-100
-                  transition-opacity duration-500
-                  pointer-events-none
-                "
-                ></div> */}
               </div>
-
-              {/* Floating Elements */}
-              {/* <div
-                className="
-                absolute -top-2 -right-2
-                w-4 h-4
-                bg-gradient-to-br ${category.gradient}
-                rounded-full
-                opacity-0 group-hover:opacity-100
-                transition-all duration-500
-                group-hover:scale-150
-                blur-sm
-              "
-              ></div> */}
             </div>
           ))}
         </div>
@@ -279,12 +250,7 @@ const Tools = ({
         {/* Bottom Stats */}
         <div className="mt-16 lg:mt-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {[
-              { number: "50+", label: "Tools Mastered" },
-              { number: "100%", label: "Tool Proficiency" },
-              { number: "24/7", label: "Tool Updates" },
-              { number: "5★", label: "Expert Rating" },
-            ].map((stat, index) => (
+            {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div
                   className={`
@@ -309,45 +275,6 @@ const Tools = ({
             ))}
           </div>
         </div>
-
-        {/* Bottom CTA */}
-        {/* <div className="text-center mt-12">
-          <button
-            className="
-            px-8 py-4
-            border-2 border-gray-300 dark:border-gray-600
-            hover:border-orange-500 dark:hover:border-orange-400
-            text-gray-700 dark:text-gray-300 
-            hover:text-orange-600 dark:hover:text-orange-400
-            rounded-xl
-            font-semibold
-            transition-all duration-300
-            transform hover:scale-105
-            focus:outline-none focus:ring-4 focus:ring-orange-500/20
-            inline-flex items-center
-            group
-          "
-          >
-            View Full Tool Stack
-            <svg
-              className="
-              w-5 h-5 ml-2
-              transform group-hover:translate-x-1
-              transition-transform duration-300
-            "
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-        </div> */}
       </div>
     </section>
   );

@@ -1,11 +1,32 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const DesignEnhancedHero = ({ 
-  title = "Design Graphique Exceptionnel",
-  subtitle = "Nous ne créons pas simplement des visuels, nous concevons des identités visuelles qui racontent votre histoire et captivent votre audience.",
   theme = 'auto' // 'light', 'dark', or 'auto'
 }) => {
+  const t = useTranslations('GraphicPage.Hero');
+  
+  const features = [
+    { icon: '🎨', title: t('feature1Title'), desc: t('feature1Desc') },
+    { icon: '📐', title: t('feature2Title'), desc: t('feature2Desc') },
+    { icon: '⚡', title: t('feature3Title'), desc: t('feature3Desc') }
+  ];
+  
+  const stats = [
+    { number: '200+', label: t('stat1') },
+    { number: '99%', label: t('stat2') },
+    { number: '8+', label: t('stat3') }
+  ];
+
+  const services = [
+    { icon: '🖋️', service: t('service1') },
+    { icon: '🎭', service: t('service2') },
+    { icon: '📱', service: t('service3') },
+    { icon: '📊', service: t('service4') }
+  ];
+
   return (
     <section className="relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-black py-24 lg:py-32 overflow-hidden transition-colors duration-300">
       {/* Background Elements */}
@@ -17,25 +38,21 @@ const DesignEnhancedHero = ({
           <div className="text-center lg:text-left space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 dark:from-white dark:via-white dark:to-gray-300">
-                Design Graphique
+                {t('title1')}
               </span>
               <span className="block text-transparent bg-clip-text bg-orange-500 mt-2">
-                Exceptionnel
+                {t('title2')}
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
-              {subtitle}
+              {t('subtitle')}
             </p>
 
             {/* Features Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl">
-              {[
-                { icon: '🎨', title: 'Créatif', desc: 'Designs uniques et originaux' },
-                { icon: '📐', title: 'Professionnel', desc: 'Charte graphique sur mesure' },
-                { icon: '⚡', title: 'Impactant', desc: 'Visuels qui marquent les esprits' }
-              ].map((item, index) => (
+              {features.map((item, index) => (
                 <div key={index} className="flex items-center gap-3 text-left bg-white dark:bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-gray-200 dark:border-white/5 hover:border-blue-500/30 transition-all duration-300 shadow-sm dark:shadow-none">
                   <span className="text-2xl">{item.icon}</span>
                   <div>
@@ -51,21 +68,12 @@ const DesignEnhancedHero = ({
               <button className="group relative text-white bg-orange-500 font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
                 <span className="relative flex items-center gap-3">
-                  Démarrer mon projet
+                  {t('ctaButton')}
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </span>
               </button>
-              
-              {/* <button className="group border-2 border-gray-300 dark:border-white/20 hover:border-blue-500 hover:bg-blue-500/5 dark:hover:bg-blue-500/10 text-gray-700 dark:text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-                <span className="flex items-center gap-3">
-                  Voir notre portfolio
-                  <svg className="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </span>
-              </button> */}
             </div>
           </div>
 
@@ -107,11 +115,7 @@ const DesignEnhancedHero = ({
 
         {/* Stats Section - Design Specific */}
         <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {[
-            { number: '200+', label: 'Projets Créatifs' },
-            { number: '99%', label: 'Clients Satisfaits' },
-            { number: '8+', label: "Années d'Expérience" }
-          ].map((stat, index) => (
+          {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="
                 text-3xl md:text-4xl font-bold 
@@ -132,12 +136,7 @@ const DesignEnhancedHero = ({
 
         {/* Services Quick Overview */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-          {[
-            { icon: '🖋️', service: 'Logo' },
-            { icon: '🎭', service: 'Branding' },
-            { icon: '📱', service: 'UI/UX' },
-            { icon: '📊', service: 'Print' }
-          ].map((item, index) => (
+          {services.map((item, index) => (
             <div key={index} className="text-center group">
               <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">
                 {item.icon}

@@ -1,70 +1,70 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const PortfolioHighlight = ({ 
   theme = 'auto',
-  title = "Our Work",
-  subtitle = "Showcasing our finest projects that deliver exceptional results"
 }) => {
+  const t = useTranslations('GraphicPage.Portfolio');
   const [activeFilter, setActiveFilter] = useState('all');
 
   const projects = [
     {
-      title: 'E-commerce Platform',
-      category: 'UI/UX Design',
+      title: t('ecommerce.title'),
+      category: t('categories.uiux'),
       image: '/placeholder.svg',
-      description: 'A complete shopping experience with intuitive navigation and seamless checkout',
+      description: t('ecommerce.description'),
       tags: ['Figma', 'Prototype', 'Mobile First'],
       year: '2024',
       link: '#',
       featured: true
     },
     {
-      title: 'Brand Identity',
-      category: 'Branding',
+      title: t('branding.title'),
+      category: t('categories.branding'),
       image: '/placeholder.svg',
-      description: 'Complete brand system for a tech startup including logo and guidelines',
+      description: t('branding.description'),
       tags: ['Illustrator', 'Brand Guide', 'Print'],
       year: '2024',
       link: '#',
       featured: false
     },
     {
-      title: 'Mobile Banking App',
-      category: 'Product Design',
+      title: t('banking.title'),
+      category: t('categories.product'),
       image: '/placeholder.svg',
-      description: 'Modern banking experience with enhanced security and user-friendly interface',
+      description: t('banking.description'),
       tags: ['Framer', 'iOS', 'Android'],
       year: '2023',
       link: '#',
       featured: true
     },
     {
-      title: 'Corporate Website',
-      category: 'Web Design',
+      title: t('website.title'),
+      category: t('categories.web'),
       image: '/placeholder.svg',
-      description: 'Responsive corporate website with CMS integration and performance optimization',
+      description: t('website.description'),
       tags: ['Webflow', 'SEO', 'CMS'],
       year: '2023',
       link: '#',
       featured: false
     },
     {
-      title: 'SaaS Dashboard',
-      category: 'UI/UX Design',
+      title: t('dashboard.title'),
+      category: t('categories.uiux'),
       image: '/placeholder.svg',
-      description: 'Data-rich dashboard with customizable widgets and real-time analytics',
+      description: t('dashboard.description'),
       tags: ['React', 'Data Viz', 'Dashboard'],
       year: '2024',
       link: '#',
       featured: true
     },
     {
-      title: 'Packaging Design',
-      category: 'Branding',
+      title: t('packaging.title'),
+      category: t('categories.branding'),
       image: '/placeholder.svg',
-      description: 'Sustainable packaging solution with premium unboxing experience',
+      description: t('packaging.description'),
       tags: ['3D Render', 'Print', 'Eco-friendly'],
       year: '2023',
       link: '#',
@@ -72,11 +72,18 @@ const PortfolioHighlight = ({
     },
   ];
 
-  const categories = ['all', 'UI/UX Design', 'Branding', 'Product Design', 'Web Design'];
+  const categories = [t('categories.all'), t('categories.uiux'), t('categories.branding'), t('categories.product'), t('categories.web')];
 
-  const filteredProjects = activeFilter === 'all' 
+  const filteredProjects = activeFilter === t('categories.all') 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
+  
+  const stats = [
+      { number: '50+', label: t('stats.completed') },
+      { number: '98%', label: t('stats.satisfaction') },
+      { number: '25+', label: t('stats.industries') },
+      { number: '3x', label: t('stats.roi') }
+    ];
 
   return (
     <section className={`
@@ -100,14 +107,14 @@ const PortfolioHighlight = ({
             text-gray-900 dark:text-white
             mb-6
           `}>
-            {title}
+            {t('title')}
           </h2>
           <p className={`
             text-lg lg:text-xl
             text-gray-600 dark:text-gray-300
             leading-relaxed
           `}>
-            {subtitle}
+            {t('subtitle')}
           </p>
         </div>
 
@@ -130,7 +137,7 @@ const PortfolioHighlight = ({
                 }
               `}
             >
-              {category === 'all' ? 'All Projects' : category}
+              {category}
             </button>
           ))}
         </div>
@@ -142,7 +149,6 @@ const PortfolioHighlight = ({
               key={project.title}
               className="group relative"
             >
-              {/* Project Card */}
               <div className={`
                 relative
                 bg-white dark:bg-gray-800
@@ -165,26 +171,22 @@ const PortfolioHighlight = ({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   
-                  {/* Overlay Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  {/* Featured Badge */}
                   {project.featured && (
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-orange-500 text-white text-sm font-semibold rounded-full">
-                        Featured
+                        {t('featured')}
                       </span>
                     </div>
                   )}
                   
-                  {/* Year Badge */}
                   <div className="absolute top-4 right-4">
                     <span className="px-3 py-1 bg-white/90 dark:bg-gray-800/90 text-gray-700 dark:text-gray-300 text-sm font-semibold rounded-full">
                       {project.year}
                     </span>
                   </div>
 
-                  {/* Hover Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     <div className="flex justify-between items-end">
                       <div>
@@ -213,13 +215,11 @@ const PortfolioHighlight = ({
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="p-6 flex-1 flex flex-col">
                   <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
                     {project.description}
                   </p>
                   
-                  {/* Tags */}
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.tags.map((tag, tagIndex) => (
                       <span 
@@ -233,7 +233,6 @@ const PortfolioHighlight = ({
                 </div>
               </div>
 
-              {/* Glow Effect */}
               <div className="
                 absolute inset-0
                 bg-gradient-to-br from-orange-500/20 to-purple-500/20
@@ -247,7 +246,6 @@ const PortfolioHighlight = ({
           ))}
         </div>
 
-        {/* Load More Button */}
         <div className="text-center mt-12 lg:mt-16">
           <button className="
             px-8 py-4
@@ -263,7 +261,7 @@ const PortfolioHighlight = ({
             inline-flex items-center
             group
           ">
-            View All Projects
+            {t('viewAll')}
             <svg className="
               w-5 h-5 ml-2
               transform group-hover:translate-x-1
@@ -274,14 +272,8 @@ const PortfolioHighlight = ({
           </button>
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto mt-20">
-          {[
-            { number: '50+', label: 'Projects Completed' },
-            { number: '98%', label: 'Client Satisfaction' },
-            { number: '25+', label: 'Industries Served' },
-            { number: '3x', label: 'Average ROI' }
-          ].map((stat, index) => (
+          {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className={`
                 text-2xl md:text-3xl font-bold

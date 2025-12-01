@@ -1,7 +1,11 @@
+'use client';
 import Container from '@/components/shared/Container'
 import React from 'react'
+import { useTranslations } from 'next-intl';
 
 export default function Features() {
+  const t = useTranslations('MobilePage.Features');
+
   const mobileFeatures = [
     {
       icon: (
@@ -9,9 +13,9 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: "Applications Natives iOS & Android",
-      description: "Développement d'applications natives performantes optimisées spécifiquement pour chaque plateforme avec des expériences utilisateur fluides.",
-      linkText: "Voir nos réalisations"
+      title: t('native.title'),
+      description: t('native.description'),
+      linkText: t('native.link')
     },
     {
       icon: (
@@ -19,9 +23,9 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      title: "Applications Cross-Platform",
-      description: "Solutions multiplateformes avec React Native et Flutter pour un développement rapide et une maintenance simplifiée sur iOS et Android.",
-      linkText: "En savoir plus"
+      title: t('crossPlatform.title'),
+      description: t('crossPlatform.description'),
+      linkText: t('crossPlatform.link')
     },
     {
       icon: (
@@ -29,9 +33,9 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: "UI/UX Mobile Optimisée",
-      description: "Designs intuitifs spécialement conçus pour mobile avec une expérience utilisateur exceptionnelle et des interfaces adaptatives.",
-      linkText: "Voir nos designs"
+      title: t('uiux.title'),
+      description: t('uiux.description'),
+      linkText: t('uiux.link')
     },
     {
       icon: (
@@ -39,9 +43,9 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
         </svg>
       ),
-      title: "Sécurité Avancée",
-      description: "Protection des données sensibles, chiffrement de bout en bout et authentification biométrique pour une sécurité maximale.",
-      linkText: "Sécurité détaillée"
+      title: t('security.title'),
+      description: t('security.description'),
+      linkText: t('security.link')
     },
     {
       icon: (
@@ -49,9 +53,9 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
         </svg>
       ),
-      title: "Intégration APIs & Backend",
-      description: "Connexion transparente avec vos systèmes existants, APIs RESTful et synchronisation des données en temps réel.",
-      linkText: "Intégrations"
+      title: t('integration.title'),
+      description: t('integration.description'),
+      linkText: t('integration.link')
     },
     {
       icon: (
@@ -59,9 +63,9 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
         </svg>
       ),
-      title: "Publication App Stores",
-      description: "Accompagnement complet pour la soumission et l'approbation sur Apple App Store et Google Play Store selon les guidelines.",
-      linkText: "Process de publication"
+      title: t('publication.title'),
+      description: t('publication.description'),
+      linkText: t('publication.link')
     }
   ]
 
@@ -69,16 +73,12 @@ export default function Features() {
     <section className="bg-white dark:bg-gray-900">
       <div className="px-6 py-16 mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h1 className="text-3xl font-bold text-gray-800 capitalize lg:text-4xl dark:text-white">
-            Nos Solutions <br /> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">
-              Développement Mobile
-            </span>
-          </h1>
+          <h1 className="text-3xl font-bold text-gray-800 capitalize lg:text-4xl dark:text-white"
+            dangerouslySetInnerHTML={{ __html: t.raw('title') }}
+          />
 
           <p className="mt-4 text-lg text-gray-600 xl:mt-6 dark:text-gray-300">
-            Des applications mobiles performantes, sécurisées et intuitives qui transforment 
-            l&apos;expérience utilisateur et boostent votre business digital.
+            {t('description')}
           </p>
         </div>
 
@@ -111,13 +111,13 @@ export default function Features() {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Prêt à transformer votre idée en application mobile ?
+              {t('cta.title')}
             </h3>
             <p className="text-orange-100 mb-6 max-w-2xl mx-auto">
-              Discutons de votre projet et créons ensemble une application qui impressionnera vos utilisateurs.
+              {t('cta.description')}
             </p>
             <button className="bg-white text-orange-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105">
-              Démarrer mon projet
+              {t('cta.button')}
             </button>
           </div>
         </div>

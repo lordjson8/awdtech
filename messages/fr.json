@@ -273,5 +273,272 @@
       "feature2": "Devis personnalisé sous 48h",
       "feature3": "Expertise technique garantie"
     }
+  },
+  "GraphicPage": {
+    "Hero": {
+      "title1": "Design Graphique",
+      "title2": "Exceptionnel",
+      "subtitle": "Nous ne créons pas simplement des visuels, nous concevons des identités visuelles qui racontent votre histoire et captivent votre audience.",
+      "feature1Title": "Créatif",
+      "feature1Desc": "Designs uniques et originaux",
+      "feature2Title": "Professionnel",
+      "feature2Desc": "Charte graphique sur mesure",
+      "feature3Title": "Impactant",
+      "feature3Desc": "Visuels qui marquent les esprits",
+      "ctaButton": "Démarrer mon projet",
+      "stat1": "Projets Créatifs",
+      "stat2": "Clients Satisfaits",
+      "stat3": "Années d'Expérience",
+      "service1": "Logo",
+      "service2": "Branding",
+      "service3": "UI/UX",
+      "service4": "Print"
+    },
+    "ServicesCards": {
+      "title": "Ce que nous faisons",
+      "subtitle": "Services de conception complets pour donner vie à votre vision",
+      "uiux": {
+        "title": "Conception UI/UX",
+        "description": "Création d'interfaces intuitives et magnifiques pour les applications web et mobiles que les utilisateurs adorent.",
+        "features": [
+          "Recherche utilisateur",
+          "Wireframing",
+          "Conception visuelle",
+          "Systèmes de design"
+        ]
+      },
+      "branding": {
+        "title": "Image de marque et identité",
+        "description": "Construire des marques fortes et mémorables qui se connectent avec votre public et résistent à l'épreuve du temps.",
+        "features": [
+          "Création de logo",
+          "Lignes directrices de la marque",
+          "Identité visuelle",
+          "Stratégie de marque"
+        ]
+      },
+      "prototyping": {
+        "title": "Prototypage et test",
+        "description": "Création de prototypes interactifs et réalisation de tests utilisateurs pour valider les décisions de conception avant le développement.",
+        "features": [
+          "Prototypes interactifs",
+          "Tests utilisateurs",
+          "Tests A/B",
+          "Analyse de l'utilisabilité"
+        ]
+      }
+    },
+    "DesignProcess": {
+      "title": "Notre Processus de Conception",
+      "subtitle": "Une approche centrée sur l'utilisateur qui donne des résultats exceptionnels",
+      "step1": {
+        "name": "Comprendre",
+        "description": "Nous commençons par comprendre votre entreprise, vos objectifs et les besoins de vos utilisateurs grâce à des sessions de découverte complètes."
+      },
+      "step2": {
+        "name": "Explorer",
+        "description": "Nous explorons différentes idées et concepts à travers des croquis, des wireframes et des mood boards pour trouver la solution parfaite."
+      },
+      "step3": {
+        "name": "Créer",
+        "description": "Nous donnons vie aux meilleures idées grâce à des maquettes haute fidélité et des prototypes interactifs qui présentent l'expérience finale."
+      },
+      "step4": {
+        "name": "Affiner",
+        "description": "Nous recueillons les commentaires, testons nos conceptions avec de vrais utilisateurs et itérons jusqu'à ce que nous atteignions la perfection dans les moindres détails."
+      },
+      "ctaButton": "Démarrer votre projet"
+    },
+    "Tools": {
+      "title": "Notre boîte à outils de conception",
+      "subtitle": "Propulsé par des outils de pointe pour des résultats exceptionnels",
+      "uiux": {
+        "name": "Conception UI/UX",
+        "description": "Création d'interfaces intuitives et d'expériences utilisateur transparentes"
+      },
+      "prototyping": {
+        "name": "Prototypage",
+        "description": "Donner vie aux idées avec des prototypes interactifs"
+      },
+      "graphic": {
+        "name": "Conception graphique",
+        "description": "Création de visuels époustouflants et d'identités de marque"
+      },
+      "collaboration": {
+        "name": "Collaboration",
+        "description": "Rationalisation du travail d'équipe et de la gestion de projet"
+      },
+      "stats": {
+        "mastered": "Outils maîtrisés",
+        "proficiency": "Maîtrise des outils",
+        "updates": "Mises à jour des outils",
+        "rating": "Évaluation d'expert"
+      }
+    },
+    "Portfolio": {
+      "title": "Notre travail",
+      "subtitle": "Présentation de nos meilleurs projets qui donnent des résultats exceptionnels",
+      "allProjects": "Tous les projets",
+      "featured": "En vedette",
+      "ecommerce": {
+        "title": "Plateforme de commerce électronique",
+        "category": "Conception UI/UX",
+        "description": "Une expérience d'achat complète avec une navigation intuitive et un paiement transparent"
+      },
+      "branding": {
+        "title": "Identité de la marque",
+        "category": "Image de marque",
+        "description": "Système de marque complet pour une startup technologique, y compris le logo et les lignes directrices"
+      },
+      "banking": {
+        "title": "Application bancaire mobile",
+        "category": "Conception de produit",
+        "description": "Expérience bancaire moderne avec une sécurité renforcée et une interface conviviale"
+      },
+      "website": {
+        "title": "Site Web d'entreprise",
+        "category": "Conception de sites Web",
+        "description": "Site Web d'entreprise réactif avec intégration CMS et optimisation des performances"
+      },
+      "dashboard": {
+        "title": "Tableau de bord SaaS",
+        "category": "Conception UI/UX",
+        "description": "Tableau de bord riche en données avec des widgets personnalisables et des analyses en temps réel"
+      },
+      "packaging": {
+        "title": "Conception d'emballages",
+        "category": "Image de marque",
+        "description": "Solution d'emballage durable avec une expérience de déballage haut de gamme"
+      },
+      "viewAll": "Voir tous les projets",
+      "stats": {
+        "completed": "Projets terminés",
+        "satisfaction": "Satisfaction du client",
+        "industries": "Industries desservies",
+        "roi": "ROI moyen"
+      },
+      "categories": {
+        "all": "Tous les projets",
+        "uiux": "Conception UI/UX",
+        "branding": "Image de marque",
+        "product": "Conception de produit",
+        "web": "Conception de sites Web"
+      }
+    },
+    "CallToAction": {
+      "title": "Vous avez une idée ?",
+      "title2": "Réalisons-la",
+      "subtitle": "Transformons votre idée en un produit numérique beau et fonctionnel. Nous serions ravis de vous entendre et de donner vie à votre vision.",
+      "primaryAction": "Démarrer un projet",
+      "secondaryAction": "Voir notre travail",
+      "feature1": "Consultation gratuite",
+      "feature2": "Livraison en 2 semaines",
+      "feature3": "Garantie de remboursement"
+    }
+  },
+  "MobilePage": {
+    "Hero": {
+      "title1": "Votre vision,",
+      "title2": "Entre leurs mains",
+      "description": "Nous créons des <span class=\"text-orange-600 dark:text-orange-400 font-semibold\">expériences mobiles primées</span> qui allient technologie de pointe et design intuitif, pour des applications que les utilisateurs ne peuvent plus lâcher.",
+      "feature1Title": "Ultra Rapide",
+      "feature1Desc": "60fps fluide",
+      "feature2Title": "Pixel Parfait",
+      "feature2Desc": "Interface sans défaut",
+      "feature3Title": "Prêt pour le marché",
+      "feature3Desc": "Optimisé pour l'App Store",
+      "ctaButton": "Démarrer votre projet",
+      "imageAlt": "Présentation de l'application mobile"
+    },
+    "Features": {
+      "title": "Nos Solutions de <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600\">Développement Mobile</span>",
+      "description": "Des applications mobiles performantes, sécurisées et intuitives qui transforment l'expérience utilisateur et boostent votre business digital.",
+      "native": {
+        "title": "Applications Natives iOS & Android",
+        "description": "Développement d'applications natives performantes optimisées spécifiquement pour chaque plateforme avec des expériences utilisateur fluides.",
+        "link": "Voir nos réalisations"
+      },
+      "crossPlatform": {
+        "title": "Applications Cross-Platform",
+        "description": "Solutions multiplateformes avec React Native et Flutter pour un développement rapide et une maintenance simplifiée sur iOS et Android.",
+        "link": "En savoir plus"
+      },
+      "uiux": {
+        "title": "UI/UX Mobile Optimisée",
+        "description": "Designs intuitifs spécialement conçus pour mobile avec une expérience utilisateur exceptionnelle et des interfaces adaptatives.",
+        "link": "Voir nos designs"
+      },
+      "security": {
+        "title": "Sécurité Avancée",
+        "description": "Protection des données sensibles, chiffrement de bout en bout et authentification biométrique pour une sécurité maximale.",
+        "link": "Sécurité détaillée"
+      },
+      "integration": {
+        "title": "Intégration APIs & Backend",
+        "description": "Connexion transparente avec vos systèmes existants, APIs RESTful et synchronisation des données en temps réel.",
+        "link": "Intégrations"
+      },
+      "publication": {
+        "title": "Publication App Stores",
+        "description": "Accompagnement complet pour la soumission et l'approbation sur Apple App Store et Google Play Store selon les guidelines.",
+        "link": "Process de publication"
+      },
+      "cta": {
+        "title": "Prêt à transformer votre idée en application mobile ?",
+        "description": "Discutons de votre projet et créons ensemble une application qui impressionnera vos utilisateurs.",
+        "button": "Démarrer mon projet"
+      }
+    },
+    "Expertise": {
+      "title": "Notre Stack Technologique <span class=\"block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-600 mt-2\">Mobile</span>",
+      "description": "Nous maîtrisons les technologies les plus avancées pour créer des applications mobiles performantes, sécurisées et évolutives.",
+      "ios": {
+        "name": "Développement iOS Natif",
+        "description": "Applications natives optimisées pour l'écosystème Apple",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Avancé",
+        "projects": "15+ Apps"
+      },
+      "android": {
+        "name": "Développement Android Natif",
+        "description": "Solutions Android performantes et natives",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Avancé",
+        "projects": "12+ Apps"
+      },
+      "crossPlatform": {
+        "name": "Solutions Cross-Platform",
+        "description": "Développement multiplateforme efficace",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Avancé",
+        "projects": "20+ Apps"
+      },
+      "backendCloud": {
+        "name": "Services Backend & Cloud",
+        "description": "Infrastructure robuste et scalable",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Avancé",
+        "levelIntermediate": "Intermédiaire",
+        "projects": "30+ Projets"
+      },
+      "projectsDelivered": "Projets livrés",
+      "stats": {
+        "deliveredApps": "Applications Livrées",
+        "clientSatisfaction": "Satisfaction Client",
+        "yearsExperience": "Années d'Expérience",
+        "activeUsers": "Utilisateurs Actifs"
+      }
+    },
+    "AppShowcase": {
+      "title": "Un aperçu de notre travail",
+      "screenshot1Alt": "Capture d'écran de l'application 1",
+      "screenshot2Alt": "Capture d'écran de l'application 2",
+      "screenshot3Alt": "Capture d'écran de l'application 3"
+    },
+    "CallToAction": {
+      "title": "Prêt à Créer Votre Application ?",
+      "description": "Discutons de votre projet et créons ensemble une application qui impressionnera vos utilisateurs.",
+      "button": "Obtenir un Devis Gratuit"
+    }
   }
 }

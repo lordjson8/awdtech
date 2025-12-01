@@ -273,5 +273,272 @@
       "feature2": "Custom quote within 48h",
       "feature3": "Guaranteed technical expertise"
     }
+  },
+  "GraphicPage": {
+    "Hero": {
+      "title1": "Exceptional Graphic",
+      "title2": "Design",
+      "subtitle": "We don't just create visuals, we design visual identities that tell your story and captivate your audience.",
+      "feature1Title": "Creative",
+      "feature1Desc": "Unique and original designs",
+      "feature2Title": "Professional",
+      "feature2Desc": "Custom graphic charter",
+      "feature3Title": "Impactful",
+      "feature3Desc": "Visuals that make a mark",
+      "ctaButton": "Start my project",
+      "stat1": "Creative Projects",
+      "stat2": "Satisfied Clients",
+      "stat3": "Years of Experience",
+      "service1": "Logo",
+      "service2": "Branding",
+      "service3": "UI/UX",
+      "service4": "Print"
+    },
+    "ServicesCards": {
+      "title": "What We Do",
+      "subtitle": "Comprehensive design services to bring your vision to life",
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "Crafting intuitive and beautiful interfaces for web and mobile applications that users love to interact with.",
+        "features": [
+          "User Research",
+          "Wireframing",
+          "Visual Design",
+          "Design Systems"
+        ]
+      },
+      "branding": {
+        "title": "Branding & Identity",
+        "description": "Building strong, memorable brands that connect with your audience and stand the test of time.",
+        "features": [
+          "Logo Design",
+          "Brand Guidelines",
+          "Visual Identity",
+          "Brand Strategy"
+        ]
+      },
+      "prototyping": {
+        "title": "Prototyping & Testing",
+        "description": "Creating interactive prototypes and conducting user testing to validate design decisions before development.",
+        "features": [
+          "Interactive Prototypes",
+          "User Testing",
+          "A/B Testing",
+          "Usability Analysis"
+        ]
+      }
+    },
+    "DesignProcess": {
+      "title": "Our Design Process",
+      "subtitle": "A user-centered approach that delivers exceptional results",
+      "step1": {
+        "name": "Understand",
+        "description": "We start by understanding your business, your goals, and your users' needs through comprehensive discovery sessions."
+      },
+      "step2": {
+        "name": "Explore",
+        "description": "We explore different ideas and concepts through sketching, wireframing, and mood boarding to find the perfect solution."
+      },
+      "step3": {
+        "name": "Create",
+        "description": "We bring the best ideas to life through high-fidelity mockups and interactive prototypes that showcase the final experience."
+      },
+      "step4": {
+        "name": "Refine",
+        "description": "We gather feedback, test our designs with real users, and iterate until we achieve perfection in every detail."
+      },
+      "ctaButton": "Start Your Project"
+    },
+    "Tools": {
+      "title": "Our Design Toolkit",
+      "subtitle": "Powered by industry-leading tools to deliver exceptional results",
+      "uiux": {
+        "name": "UI/UX Design",
+        "description": "Creating intuitive interfaces and seamless user experiences"
+      },
+      "prototyping": {
+        "name": "Prototyping",
+        "description": "Bringing ideas to life with interactive prototypes"
+      },
+      "graphic": {
+        "name": "Graphic Design",
+        "description": "Crafting stunning visuals and brand identities"
+      },
+      "collaboration": {
+        "name": "Collaboration",
+        "description": "Streamlining teamwork and project management"
+      },
+      "stats": {
+        "mastered": "Tools Mastered",
+        "proficiency": "Tool Proficiency",
+        "updates": "Tool Updates",
+        "rating": "Expert Rating"
+      }
+    },
+    "Portfolio": {
+      "title": "Our Work",
+      "subtitle": "Showcasing our finest projects that deliver exceptional results",
+      "allProjects": "All Projects",
+      "featured": "Featured",
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "category": "UI/UX Design",
+        "description": "A complete shopping experience with intuitive navigation and seamless checkout"
+      },
+      "branding": {
+        "title": "Brand Identity",
+        "category": "Branding",
+        "description": "Complete brand system for a tech startup including logo and guidelines"
+      },
+      "banking": {
+        "title": "Mobile Banking App",
+        "category": "Product Design",
+        "description": "Modern banking experience with enhanced security and user-friendly interface"
+      },
+      "website": {
+        "title": "Corporate Website",
+        "category": "Web Design",
+        "description": "Responsive corporate website with CMS integration and performance optimization"
+      },
+      "dashboard": {
+        "title": "SaaS Dashboard",
+        "category": "UI/UX Design",
+        "description": "Data-rich dashboard with customizable widgets and real-time analytics"
+      },
+      "packaging": {
+        "title": "Packaging Design",
+        "category": "Branding",
+        "description": "Sustainable packaging solution with premium unboxing experience"
+      },
+      "viewAll": "View All Projects",
+      "stats": {
+        "completed": "Projects Completed",
+        "satisfaction": "Client Satisfaction",
+        "industries": "Industries Served",
+        "roi": "Average ROI"
+      },
+      "categories": {
+        "all": "All Projects",
+        "uiux": "UI/UX Design",
+        "branding": "Branding",
+        "product": "Product Design",
+        "web": "Web Design"
+      }
+    },
+    "CallToAction": {
+      "title": "Have an idea?",
+      "title2": "Let's Make It Real",
+      "subtitle": "Let's turn your idea into a beautiful and functional digital product. We'd love to hear from you and bring your vision to life.",
+      "primaryAction": "Start a Project",
+      "secondaryAction": "View Our Work",
+      "feature1": "Free Consultation",
+      "feature2": "2-Week Delivery",
+      "feature3": "Money-Back Guarantee"
+    }
+  },
+  "MobilePage": {
+    "Hero": {
+      "title1": "Your Vision,",
+      "title2": "In Their Hands",
+      "description": "We craft <span class=\"text-orange-600 dark:text-orange-400 font-semibold\">award-winning mobile experiences</span> that combine cutting-edge technology with intuitive design, delivering apps users can't put down.",
+      "feature1Title": "Lightning Fast",
+      "feature1Desc": "60fps smooth",
+      "feature2Title": "Pixel Perfect",
+      "feature2Desc": "Flawless UI",
+      "feature3Title": "Market Ready",
+      "feature3Desc": "App Store optimized",
+      "ctaButton": "Start Your Project",
+      "imageAlt": "Mobile App Showcase"
+    },
+    "Features": {
+      "title": "Our <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600\">Mobile Development</span> Solutions",
+      "description": "High-performance, secure, and intuitive mobile applications that transform the user experience and boost your digital business.",
+      "native": {
+        "title": "Native iOS & Android Apps",
+        "description": "Development of high-performance native applications optimized specifically for each platform with smooth user experiences.",
+        "link": "See our work"
+      },
+      "crossPlatform": {
+        "title": "Cross-Platform Apps",
+        "description": "Cross-platform solutions with React Native and Flutter for rapid development and simplified maintenance on iOS and Android.",
+        "link": "Learn more"
+      },
+      "uiux": {
+        "title": "Optimized Mobile UI/UX",
+        "description": "Intuitive designs specially designed for mobile with an exceptional user experience and adaptive interfaces.",
+        "link": "See our designs"
+      },
+      "security": {
+        "title": "Advanced Security",
+        "description": "Protection of sensitive data, end-to-end encryption, and biometric authentication for maximum security.",
+        "link": "Detailed security"
+      },
+      "integration": {
+        "title": "APIs & Backend Integration",
+        "description": "Seamless connection with your existing systems, RESTful APIs, and real-time data synchronization.",
+        "link": "Integrations"
+      },
+      "publication": {
+        "title": "App Store Publication",
+        "description": "Full support for submission and approval on the Apple App Store and Google Play Store according to guidelines.",
+        "link": "Publication process"
+      },
+      "cta": {
+        "title": "Ready to turn your idea into a mobile app?",
+        "description": "Let's discuss your project and together create an application that will impress your users.",
+        "button": "Start my project"
+      }
+    },
+    "Expertise": {
+      "title": "Our Mobile <span class=\"block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-600 mt-2\">Tech Stack</span>",
+      "description": "We master the most advanced technologies to create high-performance, secure, and scalable mobile applications.",
+      "ios": {
+        "name": "Native iOS Development",
+        "description": "Optimized native applications for the Apple ecosystem",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Advanced",
+        "projects": "15+ Apps"
+      },
+      "android": {
+        "name": "Native Android Development",
+        "description": "High-performance native Android solutions",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Advanced",
+        "projects": "12+ Apps"
+      },
+      "crossPlatform": {
+        "name": "Cross-Platform Solutions",
+        "description": "Efficient cross-platform development",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Advanced",
+        "projects": "20+ Apps"
+      },
+      "backendCloud": {
+        "name": "Backend & Cloud Services",
+        "description": "Robust and scalable infrastructure",
+        "levelExpert": "Expert",
+        "levelAdvanced": "Advanced",
+        "levelIntermediate": "Intermediate",
+        "projects": "30+ Projects"
+      },
+      "projectsDelivered": "Projects delivered",
+      "stats": {
+        "deliveredApps": "Applications Delivered",
+        "clientSatisfaction": "Client Satisfaction",
+        "yearsExperience": "Years of Experience",
+        "activeUsers": "Active Users"
+      }
+    },
+    "AppShowcase": {
+      "title": "A Glimpse of Our Work",
+      "screenshot1Alt": "App Screenshot 1",
+      "screenshot2Alt": "App Screenshot 2",
+      "screenshot3Alt": "App Screenshot 3"
+    },
+    "CallToAction": {
+      "title": "Ready to Create Your App?",
+      "description": "Let's discuss your project and together create an application that will impress your users.",
+      "button": "Get a Free Quote"
+    }
   }
 }
