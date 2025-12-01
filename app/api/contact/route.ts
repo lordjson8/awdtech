@@ -3,13 +3,14 @@ import nodemailer from "nodemailer";
 import { z } from "zod";
 
 const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters").max(100),
-  email: z.string().email("Please enter a valid email address"),
-  subject: z.string().min(3, "Subject must be at least 3 characters").max(200),
+  name: z.string().min(2, "Le nom doit comporter au moins 2 caractères").max(100),
+  email: z.string().email("Veuillez entrer une adresse email valide"),
+  subject: z.string().min(3, "Le sujet doit comporter au moins 3 caractères").max(200),
   message: z
     .string()
-    .min(10, "Message must be at least 10 characters")
+    .min(10, "Le message doit comporter au moins 10 caractères")
     .max(5000),
+  service: z.enum(["web", "mobile", "design", "infogerance", "ai", "ecommerce", "cloud", "autre"]).optional(),
 });
 
 const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
@@ -18,7 +19,7 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Contact Form Submission</title>
+  <title>Nouveau Contact - AWDTECH</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -37,7 +38,7 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .header {
-      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
       color: white;
       padding: 24px;
       border-radius: 12px 12px 0 0;
@@ -48,6 +49,12 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
       font-size: 24px;
       font-weight: bold;
     }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0066cc;
+      margin-bottom: 8px;
+    }
     .content {
       padding: 24px;
     }
@@ -56,7 +63,7 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
       padding: 16px;
       background-color: #f8fafc;
       border-radius: 8px;
-      border-left: 4px solid #f97316;
+      border-left: 4px solid #0066cc;
     }
     .field-label {
       font-size: 12px;
@@ -71,6 +78,16 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
       color: #1e293b;
       margin: 0;
     }
+    .service-badge {
+      display: inline-block;
+      background: #e6f0ff;
+      color: #0066cc;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
     .footer {
       margin-top: 32px;
       padding-top: 20px;
@@ -79,40 +96,53 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
       color: #64748b;
       font-size: 14px;
     }
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #f97316;
-      margin-bottom: 8px;
+    .contact-info {
+      background-color: #f1f5f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      color: #475569;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1>New Contact Form Submission</h1>
+      <h1>AWDTECH - Nouveau Contact</h1>
     </div>
     <div class="content">
       <div class="field">
-        <div class="field-label">From</div>
+        <div class="field-label">De</div>
         <p class="field-value">${data.name} &lt;${data.email}&gt;</p>
       </div>
       
       <div class="field">
-        <div class="field-label">Subject</div>
+        <div class="field-label">Sujet</div>
         <p class="field-value">${data.subject}</p>
       </div>
       
+      ${data.service ? `
+      <div class="field">
+        <div class="field-label">Service demandé</div>
+        <p class="field-value">
+          ${getServiceLabel(data.service)}
+          <span class="service-badge">${getServiceCategory(data.service)}</span>
+        </p>
+      </div>
+      ` : ''}
+      
       <div class="field">
         <div class="field-label">Message</div>
-        <p class="field-value" style="white-space: pre-line;">${
-          data.message
-        }</p>
+        <p class="field-value" style="white-space: pre-line;">${data.message}</p>
       </div>
       
       <div class="field">
-        <div class="field-label">Received At</div>
-        <p class="field-value">${new Date().toLocaleString("en-US", {
+        <div class="field-label">Reçu à</div>
+        <p class="field-value">${new Date().toLocaleString("fr-FR", {
           weekday: "long",
           year: "numeric",
           month: "long",
@@ -122,27 +152,33 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
           timeZoneName: "short",
         })}</p>
       </div>
+      
+      <div class="contact-info">
+        <p><strong>Contacts AWDTECH</strong></p>
+        <p>Cameroun: +237 656 849 690 / +237 653 624 318</p>
+        <p>Gabon: +241 66 50 39 99 / +241 76 38 80 06</p>
+        <p>Côte d'Ivoire: +225 27 24 3 73010 / +225 27 24 3 73317</p>
+        <p>Email: support.cm@awdpay.com</p>
+      </div>
     </div>
     
     <div class="footer">
-      <div class="logo">Design Studio</div>
-      <p>This message was sent from your website's contact form.</p>
-      <p>© ${new Date().getFullYear()} Design Studio. All rights reserved.</p>
+      <div class="logo">AWDTECH - Service Numérique Partout dans le Monde</div>
+      <p>Moteur de votre transformation digitale</p>
+      <p>© ${new Date().getFullYear()} AWDTECH. Tous droits réservés.</p>
     </div>
   </div>
 </body>
 </html>
 `;
 
-const createConfirmationEmailTemplate = (
-  data: z.infer<typeof contactSchema>
-) => `
+const createConfirmationEmailTemplate = (data: z.infer<typeof contactSchema>) => `
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You for Contacting Us</title>
+  <title>AWDTECH - Merci pour votre message</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -161,7 +197,7 @@ const createConfirmationEmailTemplate = (
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .header {
-      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
       color: white;
       padding: 32px 24px;
       border-radius: 12px 12px 0 0;
@@ -185,7 +221,7 @@ const createConfirmationEmailTemplate = (
       padding: 20px;
       border-radius: 8px;
       margin: 24px 0;
-      border-left: 4px solid #f97316;
+      border-left: 4px solid #0066cc;
     }
     .message-box p {
       margin: 0;
@@ -193,17 +229,39 @@ const createConfirmationEmailTemplate = (
       color: #475569;
     }
     .highlight {
-      background-color: #fff7ed;
-      padding: 16px;
+      background-color: #e6f0ff;
+      padding: 20px;
       border-radius: 8px;
       margin: 24px 0;
-      border: 1px solid #fed7aa;
+      border: 1px solid #b3d1ff;
     }
     .highlight h3 {
-      color: #ea580c;
+      color: #0066cc;
       margin-top: 0;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       font-size: 18px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .service-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+    }
+    .service-card h4 {
+      color: #0066cc;
+      margin: 0 0 8px 0;
+    }
+    .service-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #64748b;
     }
     .footer {
       margin-top: 32px;
@@ -226,7 +284,7 @@ const createConfirmationEmailTemplate = (
     }
     .btn {
       display: inline-block;
-      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
       color: white;
       padding: 12px 32px;
       text-decoration: none;
@@ -237,54 +295,83 @@ const createConfirmationEmailTemplate = (
     }
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1>Thank You, ${data.name}!</h1>
-      <p>We've received your message and will get back to you soon.</p>
+      <h1>Merci ${data.name} !</h1>
+      <p>Nous avons bien reçu votre message et vous répondrons très bientôt.</p>
     </div>
     
     <div class="content">
-      <p>Hello ${data.name},</p>
+      <p>Bonjour ${data.name},</p>
       
-      <p>Thank you for contacting Design Studio. We've received your inquiry and our team will review it shortly. We typically respond within 24 hours during business days.</p>
+      <p>Merci d'avoir contacté AWDTECH. Nous avons bien reçu votre demande et notre équipe l'examinera sous peu. Nous répondons généralement dans les 24 heures ouvrables.</p>
       
+      ${data.message ? `
       <div class="message-box">
-        <p>"${data.message.substring(0, 200)}${
-  data.message.length > 200 ? "..." : ""
-}"</p>
+        <p>"${data.message.substring(0, 200)}${data.message.length > 200 ? "..." : ""}"</p>
       </div>
+      ` : ''}
       
       <div class="highlight">
-        <h3>What Happens Next?</h3>
-        <p>1. Our team will review your inquiry</p>
-        <p>2. We'll assess your project requirements</p>
-        <p>3. You'll receive a detailed response with next steps</p>
-        <p>4. We'll schedule a free consultation if needed</p>
+        <h3>Prochaines étapes :</h3>
+        <p>1. Notre équipe examinera votre demande</p>
+        <p>2. Nous évaluerons vos besoins spécifiques</p>
+        <p>3. Vous recevrez une réponse détaillée avec les étapes suivantes</p>
+        <p>4. Nous organiserons une consultation gratuite si nécessaire</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <h4>🌐 Développement Web</h4>
+          <p>E-commerce, E-learning, Sites sur mesure</p>
+        </div>
+        <div class="service-card">
+          <h4>📱 Développement Mobile</h4>
+          <p>Android, iOS, Applications multiplateformes</p>
+        </div>
+        <div class="service-card">
+          <h4>🎨 Design UI/UX</h4>
+          <p>Identité de marque, Web Design, Graphisme</p>
+        </div>
+        <div class="service-card">
+          <h4>🤖 Intelligence Artificielle</h4>
+          <p>Solutions innovantes basées sur l'IA</p>
+        </div>
+        <div class="service-card">
+          <h4>🛒 E-commerce</h4>
+          <p>Plateformes de commerce électronique</p>
+        </div>
+        <div class="service-card">
+          <h4>☁️ Services Cloud</h4>
+          <p>Infrastructure cloud évolutive</p>
+        </div>
       </div>
       
       <div class="contact-info">
-        <h3>Need Immediate Assistance?</h3>
-        <p>Email: hello@designstudio.com</p>
-        <p>Phone: +1 (555) 123-4567</p>
-        <p>Hours: Mon-Fri, 9AM-6PM PST</p>
+        <h3>Contactez-nous directement :</h3>
+        <p><strong>📧 Email:</strong> support.cm@awdpay.com</p>
+        <p><strong>📞 Cameroun:</strong> +237 656 849 690 / +237 653 624 318</p>
+        <p><strong>📞 Gabon:</strong> +241 66 50 39 99 / +241 76 38 80 06</p>
+        <p><strong>📞 Côte d'Ivoire:</strong> +225 27 24 3 73010 / +225 27 24 3 73317</p>
+        <p><strong>⏰ Horaires:</strong> Lundi-Vendredi, 8h-18h</p>
       </div>
       
       <div style="text-align: center;">
-        <a href="https://designstudio.com/portfolio" class="btn">View Our Portfolio</a>
+        <a href="https://awdtech.com/produits" class="btn">Découvrir nos produits</a>
       </div>
     </div>
     
     <div class="footer">
-      <p><strong>Design Studio</strong></p>
-      <p>123 Design Street, San Francisco, CA 94107</p>
-      <p>© ${new Date().getFullYear()} Design Studio. All rights reserved.</p>
+      <p><strong>AWDTECH - Service Numérique Partout dans le Monde</strong></p>
+      <p>Moteur de votre transformation digitale</p>
+      <p>© ${new Date().getFullYear()} AWDTECH. Tous droits réservés.</p>
       <p style="font-size: 12px; color: #94a3b8; margin-top: 16px;">
-        This is an automated message. Please do not reply to this email.
+        Ceci est un message automatique. Merci de ne pas y répondre.
       </p>
     </div>
   </div>
@@ -292,11 +379,40 @@ const createConfirmationEmailTemplate = (
 </html>
 `;
 
+// Helper functions
+const getServiceLabel = (service: string) => {
+  const services: Record<string, string> = {
+    web: "Développement Web",
+    mobile: "Développement Mobile",
+    design: "Design UI/UX",
+    infogerance: "Infogérance",
+    ai: "Intelligence Artificielle",
+    ecommerce: "Solutions E-commerce",
+    cloud: "Services Cloud",
+    autre: "Autre demande"
+  };
+  return services[service] || "Non spécifié";
+};
+
+const getServiceCategory = (service: string) => {
+  const categories: Record<string, string> = {
+    web: "WEB",
+    mobile: "MOBILE",
+    design: "DESIGN",
+    infogerance: "IT",
+    ai: "IA",
+    ecommerce: "E-COMMERCE",
+    cloud: "CLOUD",
+    autre: "GÉNÉRAL"
+  };
+  return categories[service] || "GÉNÉRAL";
+};
+
 export async function POST(request: NextRequest) {
   try {
-    // Rate limiting check (simple version)
+    // Rate limiting check
     const ip = request.headers.get("x-forwarded-for") || "unknown";
-    console.log(`Contact form submission from IP: ${ip}`);
+    console.log(`Soumission formulaire AWDTECH depuis IP: ${ip}`);
 
     // Parse and validate request body
     const body = await request.json();
@@ -306,7 +422,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          message: "Validation failed",
+          message: "Validation échouée",
           errors: validationResult.error.issues.map((err) => ({
             field: err.path[0],
             message: err.message,
@@ -315,9 +431,10 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-    const { name, email, subject, message } = validationResult.data;
+    
+    const { name, email, subject, message, service } = validationResult.data;
 
-    // Check for spam (simple content filtering)
+    // Check for spam (French keywords as well)
     const spamKeywords = [
       "http://",
       "https://",
@@ -326,79 +443,93 @@ export async function POST(request: NextRequest) {
       "viagra",
       "casino",
       "bitcoin",
+      "bonus",
+      "gratuit",
+      "gagner",
+      "argent",
     ];
-    const messageLower = message.toLowerCase();
+    
+    const contentToCheck = `${subject} ${message} ${email}`.toLowerCase();
     const isPotentialSpam = spamKeywords.some(
-      (keyword) =>
-        messageLower.includes(keyword) || email.toLowerCase().includes(keyword)
+      (keyword) => contentToCheck.includes(keyword)
     );
 
     if (isPotentialSpam) {
-      console.log(`Potential spam detected from: ${email}`);
-      // Still return success to spammers (don't reveal we detected spam)
+      console.log(`Spam potentiel détecté de: ${email}`);
       return NextResponse.json({
         success: true,
-        message: "Message received successfully",
+        message: "Message reçu avec succès",
       });
     }
 
-    // Configure email transporter
+    // Configure email transporter for AWDTECH
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.gmail.com",
       port: parseInt(process.env.SMTP_PORT || "587"),
       secure: process.env.SMTP_SECURE === "true",
       auth: {
-        user: process.env.SMTP_USER,
+        user: process.env.SMTP_USER || "support.cm@awdpay.com",
         pass: process.env.SMTP_PASSWORD,
       },
     });
 
-    // Send email to admin
+    // Send email to AWDTECH admin
     const adminMailOptions = {
-      from:
-        process.env.SMTP_FROM || `"Website Contact" <${process.env.SMTP_USER}>`,
-      to: process.env.ADMIN_EMAIL || "admin@designstudio.com",
+      from: process.env.SMTP_FROM || `"AWDTECH Site Web" <${process.env.SMTP_USER || "noreply@awdtech.com"}>`,
+      to: process.env.ADMIN_EMAIL || "support.cm@awdpay.com",
       replyTo: email,
-      subject: `📧 New Contact: ${subject}`,
-      html: createEmailTemplate({ name, email, subject, message }),
+      subject: `📧 AWDTECH - Nouveau Contact: ${subject}`,
+      html: createEmailTemplate({ name, email, subject, message, service }),
       text: `
-New Contact Form Submission
-===========================
+NOUVEAU CONTACT AWDTECH
+=======================
 
-From: ${name} <${email}>
-Subject: ${subject}
+De: ${name} <${email}>
+Sujet: ${subject}
+${service ? `Service: ${getServiceLabel(service)}` : ''}
 
 Message:
 ${message}
 
-Received: ${new Date().toISOString()}
+Reçu: ${new Date().toISOString()}
+
+---
+AWDTECH - Service Numérique Partout dans le Monde
+Contacts:
+Cameroun: +237 656 849 690 / +237 653 624 318
+Gabon: +241 66 50 39 99 / +241 76 38 80 06
+Côte d'Ivoire: +225 27 24 3 73010 / +225 27 24 3 73317
+Email: support.cm@awdpay.com
       `.trim(),
     };
 
     // Send confirmation email to user
     const userMailOptions = {
-      from:
-        process.env.SMTP_FROM || `"Design Studio" <${process.env.SMTP_USER}>`,
+      from: process.env.SMTP_FROM || `"AWDTECH" <${process.env.SMTP_USER || "noreply@awdtech.com"}>`,
       to: email,
-      subject: "✅ Thank You for Contacting Design Studio",
-      html: createConfirmationEmailTemplate({ name, email, subject, message }),
+      subject: "✅ AWDTECH - Merci pour votre message",
+      html: createConfirmationEmailTemplate({ name, email, subject, message, service }),
       text: `
-Thank You for Contacting Design Studio
-======================================
+MERCI DE VOTRE INTÉRÊT POUR AWDTECH
+====================================
 
-Hello ${name},
+Bonjour ${name},
 
-Thank you for reaching out to Design Studio. We've received your message and will get back to you within 24 hours during business days.
+Merci d'avoir contacté AWDTECH. Nous avons bien reçu votre message et notre équipe l'examinera sous peu.
 
-Your Message:
-"${message.substring(0, 200)}${message.length > 200 ? "..." : ""}"
+Votre demande concerne: ${subject}
 
-If you need immediate assistance, please contact us at:
-Email: hello@designstudio.com
-Phone: +1 (555) 123-4567
+Nous vous répondrons dans les 24 heures ouvrables.
 
-Best regards,
-The Design Studio Team
+Pour toute question urgente, contactez-nous:
+📧 Email: support.cm@awdpay.com
+📞 Cameroun: +237 656 849 690 / +237 653 624 318
+📞 Gabon: +241 66 50 39 99 / +241 76 38 80 06
+📞 Côte d'Ivoire: +225 27 24 3 73010 / +225 27 24 3 73317
+
+Cordialement,
+L'équipe AWDTECH
+Service Numérique Partout dans le Monde
       `.trim(),
     };
 
@@ -408,52 +539,41 @@ The Design Studio Team
       transporter.sendMail(userMailOptions),
     ]);
 
-    // Log success (in production, you might want to log to a service)
-    console.log("Email sent successfully:", {
+    // Log success
+    console.log("Email AWDTECH envoyé avec succès:", {
       adminMessageId: adminResult.messageId,
       userMessageId: userResult.messageId,
-      toAdmin: adminResult.accepted,
-      toUser: userResult.accepted,
+      client: name,
+      email: email,
+      service: service || "Non spécifié",
       timestamp: new Date().toISOString(),
     });
 
-    // In development with Ethereal, log preview URLs
-    if (process.env.NODE_ENV === "development") {
-      console.log(
-        "Preview URL (Admin):",
-        nodemailer.getTestMessageUrl(adminResult)
-      );
-      console.log(
-        "Preview URL (User):",
-        nodemailer.getTestMessageUrl(userResult)
-      );
-    }
-
     return NextResponse.json({
       success: true,
-      message: "Message sent successfully",
+      message: "Message envoyé avec succès",
       data: {
         name,
         email,
         subject,
+        service: service ? getServiceLabel(service) : "Non spécifié",
         messageId: adminResult.messageId,
       },
     });
   } catch (error) {
-    console.error("Email sending error:", error);
+    console.error("Erreur d'envoi d'email AWDTECH:", error);
 
-    // Don't expose sensitive error details in production
     const errorMessage =
       process.env.NODE_ENV === "development"
         ? error instanceof Error
           ? error.message
-          : "Unknown error"
-        : "Failed to send message. Please try again later.";
+          : "Erreur inconnue"
+        : "Échec de l'envoi du message. Veuillez réessayer plus tard.";
 
     return NextResponse.json(
       {
         success: false,
-        message: "Failed to send message",
+        message: "Échec de l'envoi du message",
         error: errorMessage,
       },
       { status: 500 }
@@ -461,11 +581,18 @@ The Design Studio Team
   }
 }
 
-// Optional: Add GET method for testing
+// Health check endpoint
 export async function GET() {
   return NextResponse.json({
-    message: "Contact API is working",
+    message: "API Contact AWDTECH en ligne",
     status: "healthy",
+    company: "AWDTECH - Service Numérique Partout dans le Monde",
     timestamp: new Date().toISOString(),
+    contacts: {
+      cameroon: "+237 656 849 690 / +237 653 624 318",
+      gabon: "+241 66 50 39 99 / +241 76 38 80 06",
+      ivoryCoast: "+225 27 24 3 73010 / +225 27 24 3 73317",
+      email: "support.cm@awdpay.com"
+    }
   });
 }
