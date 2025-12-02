@@ -583,6 +583,9 @@
     "emailTitle": "Email",
     "phoneTitle": "Phone",
     "locationTitle": "Location"
+  },
+  "Clients": {
+    "title": "Our Partners and Clients",
+    "description": "We collaborate with market leaders to offer innovative digital solutions."
   }
-
 }

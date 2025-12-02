@@ -10,6 +10,7 @@ import Features from "@/components/home/Features";
 import FeaturesTwo from "@/components/home/FeaturesTwo";
 import WhyUs from "@/components/home/WhyUs";
 import AnimatedSection from "@/components/shared/AnimatedSection";
+import Clients from "@/components/shared/Clients";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
@@ -38,7 +39,8 @@ export default function HomePage() {
         <Team />
       </AnimatedSection>
       <AnimatedSection>
-        <PartnersSection />
+        {/* <PartnersSection /> */}
+        <Clients />
       </AnimatedSection>
     </>
   );
