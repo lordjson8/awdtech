@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Team() {
   const t = useTranslations("Team");
@@ -7,52 +9,82 @@ export default function Team() {
   const teamMembers = [
     {
       id: 1,
-      name: t("alexandreDubois"),
-      role: t("alexandreDuboisRole"),
-      image: "/team/ceo.jpg",
-      description: t("alexandreDuboisDescription"),
+      name: "GOGBEU OULAI Patrice",
+      role: "Fondateur et CEO",
+      image: "/team/ceo.jpeg",
+      description:
+        "Fondateur et CEO d'AWDTECH, leader visionnaire avec une expertise en transformation digitale et innovation technologique. Il dirige la stratégie globale de l'entreprise et supervise les opérations à travers l'Afrique, l'Europe et l'Amérique.",
       social: {
         linkedin: "#",
         twitter: "#",
-        github: "#"
-      }
+        whatsapp: "#",
+      },
     },
     {
       id: 2,
-      name: t("marieKamga"),
-      role: t("marieKamgaRole"),
-      image: "/team/lead-dev.jpg",
-      description: t("marieKamgaDescription"),
+      name: "TOUA BITCHIE ANGE M",
+      role: "CEO Adjoint",
+      image: "/team/ceo-adjoint.jpeg",
+      description:
+        "CEO Adjoint d'AWDTECH, responsable des opérations quotidiennes et de la coordination des équipes techniques. Expert en gestion de projets digitaux et en développement stratégique d'entreprise.",
       social: {
         linkedin: "#",
         twitter: "#",
-        github: "#"
-      }
+        whatsapp: "#",
+      },
     },
     {
       id: 3,
-      name: t("davidNkodo"),
-      role: t("davidNkodoRole"),
-      image: "/team/designer.jpg",
-      description: t("davidNkodoDescription"),
+      name: "Ingénieur Développement Web",
+      role: "Lead Développeur Web",
+      image: "/team/dev-web.jpg",
+      description:
+        "Expert en création de sites web visuellement attrayants et adaptés à différents écrans. Spécialisé dans les plateformes e-commerce, e-learning et les sites web sur mesure.",
       social: {
         linkedin: "#",
-        twitter: "#",
-        github: "#"
-      }
+        github: "#",
+        behance: "#",
+      },
     },
     {
       id: 4,
-      name: t("sarahMballa"),
-      role: t("sarahMballaRole"),
-      image: "/team/pm.jpg",
-      description: t("sarahMballaDescription"),
+      name: "Ingénieur Mobile",
+      role: "Développeur Mobile Android/iOS",
+      image: "/team/dev-mobile.jpg",
+      description:
+        "Expert en développement d'applications mobiles modernes avec interfaces utilisateur attrayantes. Spécialisé dans les applications de e-commerce, e-learning, paiement et web apps.",
       social: {
         linkedin: "#",
-        twitter: "#",
-        github: "#"
-      }
-    }
+        github: "#",
+        whatsapp: "#",
+      },
+    },
+    {
+      id: 5,
+      name: "Designer UI/UX",
+      role: "Graphic & UI/UX Designer",
+      image: "/team/designer.jpg",
+      description:
+        "Expert en communication visuelle et expérience utilisateur. Spécialisé en direction artistique, stratégie de marque, conception d'identité de marque et web design.",
+      social: {
+        linkedin: "#",
+        behance: "#",
+        dribbble: "#",
+      },
+    },
+    {
+      id: 6,
+      name: "Expert Infogérance",
+      role: "Responsable Infogérance",
+      image: "/team/infogerance.jpg",
+      description:
+        "Expert en gestion de systèmes d'information d'entreprise. Spécialisé en gestion réseaux informatique, sécurité, services cloud computing et solutions d'infrastructure.",
+      social: {
+        linkedin: "#",
+        github: "#",
+        website: "#",
+      },
+    },
   ];
 
   return (
@@ -63,29 +95,37 @@ export default function Team() {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white capitalize lg:text-5xl mb-6">
             {t("ourTeam")}
           </h1>
-          
+
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               {t("teamDescription")}
             </p>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">+03</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("yearsExperience")}</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">
+                  {t("yearsExperience")}
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">95%</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("clientSatisfaction")}</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">
+                  {t("clientSatisfaction")}
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">+25</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("collaborators")}</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">
+                  {t("collaborators")}
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-500">+15</div>
-                <div className="text-gray-500 dark:text-gray-400 mt-2">{t("projectsCompleted")}</div>
+                <div className="text-gray-500 dark:text-gray-400 mt-2">
+                  {t("projectsCompleted")}
+                </div>
               </div>
             </div>
           </div>
@@ -94,14 +134,16 @@ export default function Team() {
         {/* Team Grid */}
         <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 xl:grid-cols-4">
           {teamMembers.map((member) => (
-            <div 
-              key={member.id} 
+            <div
+              key={member.id}
               className="group bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
             >
               {/* Image */}
               <div className="relative mb-6 overflow-hidden rounded-xl">
-                <img
-                  className="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-110"
+                <Image
+                  height={400}
+                  width={200}
+                  className="w-full aspect-3/4 object-cover transition-transform duration-500 group-hover:scale-110"
                   src={member.image}
                   alt={member.name}
                 />
@@ -113,11 +155,11 @@ export default function Team() {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {member.name}
                 </h3>
-                
+
                 <p className="text-orange-500 font-semibold mb-3">
                   {member.role}
                 </p>
-                
+
                 <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
                   {member.description}
                 </p>
@@ -129,28 +171,40 @@ export default function Team() {
                     className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
                     aria-label="LinkedIn"
                   >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <svg
+                      className="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                   </a>
-                  
+
                   <a
                     href={member.social.twitter}
                     className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                     aria-label="Twitter"
                   >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    <svg
+                      className="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                     </svg>
                   </a>
-                  
+
                   <a
                     href={member.social.github}
                     className="text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors duration-300"
                     aria-label="GitHub"
                   >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    <svg
+                      className="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                   </a>
                 </div>
@@ -161,15 +215,13 @@ export default function Team() {
 
         {/* CTA Section */}
         <div className="text-center mt-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
-          <h3 className="text-2xl font-bold mb-4">
-            {t("joinOurTeam")}
-          </h3>
+          <h3 className="text-2xl font-bold mb-4">{t("joinOurTeam")}</h3>
           <p className="mb-6 opacity-90 max-w-2xl mx-auto">
             {t("joinOurTeamDescription")}
           </p>
-          <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+          <Link href={'/contact'} className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
             {t("seeOffers")}
-          </button>
+          </Link>
         </div>
       </div>
     </section>

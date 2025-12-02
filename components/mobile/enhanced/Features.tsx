@@ -2,6 +2,7 @@
 import Container from '@/components/shared/Container'
 import React from 'react'
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function Features() {
   const t = useTranslations('MobilePage.Features');
@@ -116,9 +117,9 @@ export default function Features() {
             <p className="text-orange-100 mb-6 max-w-2xl mx-auto">
               {t('cta.description')}
             </p>
-            <button className="bg-white text-orange-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105">
+            <Link href={'/contact'} className="bg-white text-orange-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105">
               {t('cta.button')}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
