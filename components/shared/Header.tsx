@@ -160,8 +160,9 @@ export default function Header({
             type="button"
             onClick={() => setMobileMenuOpen(true)}
             className={cn(
+              
               "-m-2.5 inline-flex items-center justify-center rounded-md p-2.5",
-              "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100",
+              (!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100' : isScrolled ? 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100' : 'text-white',
               "transition-colors duration-200"
             )}
           >
