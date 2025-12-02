@@ -24,6 +24,16 @@ import MobileThemeSwitcher from "../mobile-theme-switcher";
 import { cn } from "@/lib/utils";
 import LanguageButton from "../locale-toggler";
 import { usePathname } from "next/navigation";
+ import { 
+  Globe, 
+  Smartphone, 
+  Palette,
+  Cloud,
+  Server,
+  Cpu,
+  ShoppingCart,
+  BarChart,
+} from 'lucide-react';
 
 export default function Header({
   scrolledBg = "bg-white/95 dark:bg-black shadow-lg backdrop-blur-sm",
@@ -33,26 +43,58 @@ export default function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("Header");
   const pathname  = usePathname();
-  const services = [
-    {
-      name: t("webDevelopment"),
-      description: t("webDevelopmentDescription"),
-      href: "web",
-      icon: PieChart,
-    },
-    {
-      name: t("mobileDevelopment"),
-      description: t("mobileDevelopmentDescription"),
-      href: "mobile",
-      icon: MousePointer,
-    },
-    {
-      name: t("graphicDesign"),
-      description: t("graphicDesignDescription"),
-      href: "graphic",
-      icon: Fingerprint,
-    },
-  ];
+
+
+const services = [
+  {
+    name: t("webDevelopment"),
+    description: t("webDevelopmentDescription"),
+    href: "web",
+    icon: Globe, // or Code, Layout
+  },
+  {
+    name: t("mobileDevelopment"),
+    description: t("mobileDevelopmentDescription"),
+    href: "mobile",
+    icon: Smartphone, // or Gamepad2 for mobile gaming apps
+  },
+  {
+    name: t("graphicDesign"),
+    description: t("graphicDesignDescription"),
+    href: "graphic",
+    icon: Palette, // or PenTool, Image
+  },
+  // {
+  //   name: t("infogerance"), // From your PDF
+  //   description: t("infogeranceDescription"),
+  //   href: "infogerance",
+  //   icon: Server, // or Shield for security, Database for data management
+  // },
+  // {
+  //   name: t("aiSolutions"), // From your PDF
+  //   description: t("aiSolutionsDescription"),
+  //   href: "ai",
+  //   icon: Cpu, // or Zap for AI/ML
+  // },
+  // {
+  //   name: t("ecommerce"),
+  //   description: t("ecommerceDescription"),
+  //   href: "ecommerce",
+  //   icon: ShoppingCart,
+  // },
+  // {
+  //   name: t("cloudServices"),
+  //   description: t("cloudServicesDescription"),
+  //   href: "cloud",
+  //   icon: Cloud,
+  // },
+  // {
+  //   name: t("dataAnalytics"), // From your PDF page 10
+  //   description: t("dataAnalyticsDescription"),
+  //   href: "analytics",
+  //   icon: BarChart, // or Database
+  // },
+];
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
   const [isVisible, setIsVisible] = useState<boolean>(true);
