@@ -48,7 +48,7 @@ const clientLogos = [
   },
 ];
 
-const LogoPlaceholder = ({ src, name, color, category }) => {
+const LogoPlaceholder = ({ src, name, color, category } : {src : string,name:string, color :string, category : string}) => {
   if (src) {
     return (
       <img
@@ -69,7 +69,7 @@ const LogoPlaceholder = ({ src, name, color, category }) => {
 };
 
 const LogoCarousel = () => {
-  const [hoveredLogo, setHoveredLogo] = useState(null);
+  const [hoveredLogo, setHoveredLogo] = useState<number | null>(null);
   const duplicatedLogos = [...clientLogos, ...clientLogos];
   
   return (
