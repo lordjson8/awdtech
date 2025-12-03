@@ -27,25 +27,29 @@
   "Products": {
     "title": "Nos Produits en interne",
     "description": "Nous proposons une large gamme de produits pour vous aider dans votre entreprise.",
-    "awdpay": "AWDPAY",
-    "awdpaySubtitle": "Service de paiement",
-    "awdpayDescription": "Un service particulier qui simplifie les paiements en ligne pour les entreprises et les particuliers",
-    "awdImmobilier": "AWD Immobilier",
-    "awdImmobilierSubtitle": "Service de logement et ventes de terrains",
-    "awdImmobilierDescription": "Un service de mise à dispositions à la vente et à l'achat de logements et de terrains",
-    "awdEducation": "AWD Education",
-    "awdEducationSubtitle": "Plateforme éducative",
-    "awdEducationDescription": "Un service pour les apprenants; fournit un guide pratique pour l'accompagnement des étudiants",
-    "awdEcommerce": "AWD E-commerce",
-    "awdEcommerceSubtitle": "Plateforme de Ecommerce",
-    "awdEcommerceDescription": "Un service de commerce électronique pour la vente et l'achat",
-    "awdTransport": "AWD Transport",
-    "awdTransportSubtitle": "Service Logistique",
-    "awdTransportDescription": "Un service de mise à disposition de moyens de transport de biens et de personnes",
-    "awdHotellerie": "AWD Hôtellerie",
-    "awdHotellerieSubtitle": "Service d'hébergement",
-    "awdHotellerieDescription": "Un service de mise en relation des personnes avec des hôtels",
-    "learnMore": "En savoir plus"
+    "learnMore": "En savoir plus",
+    "items": {
+      "awd-pay": {
+        "title": "AWDPAY",
+        "subtitle": "Service de Paiement",
+        "description": "Service de paiement qui simplifie les paiements en ligne pour les entreprises et les particuliers."
+      },
+      "awd-pay-apis": {
+        "title": "AWDPAY APIs",
+        "subtitle": "Intégration API",
+        "description": "APIs de paiement avec fonctions de dépôt, retrait et transfert."
+      },
+      "pdf-tools": {
+        "title": "AWDPDF Tools",
+        "subtitle": "Outils PDF",
+        "description": "Outils PDF simples, fiables et 100% gratuits."
+      },
+      "codewigs": {
+        "title": "Codewigs",
+        "subtitle": "Bibliothèque de Composants",
+        "description": "Concevez et créez des projets exceptionnels avec des composants prêts à l'emploi."
+      }
+    }
   },
   "Features": {
     "yearsExperience": "Années d'expérience",

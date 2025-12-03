@@ -27,25 +27,29 @@
   "Products": {
     "title": "Our internal Products",
     "description": "We offer a wide range of products to help you with your business.",
-    "awdpay": "AWDPAY",
-    "awdpaySubtitle": "Payment service",
-    "awdpayDescription": "A particular service that simplifies online payments for businesses and individuals",
-    "awdImmobilier": "AWD Real Estate",
-    "awdImmobilierSubtitle": "Housing and land sales service",
-    "awdImmobilierDescription": "A service for making housing and land available for sale and purchase",
-    "awdEducation": "AWD Education",
-    "awdEducationSubtitle": "Educational platform",
-    "awdEducationDescription": "A service for learners; provides a practical guide for student support",
-    "awdEcommerce": "AWD E-commerce",
-    "awdEcommerceSubtitle": "E-commerce platform",
-    "awdEcommerceDescription": "An e-commerce service for selling and buying",
-    "awdTransport": "AWD Transport",
-    "awdTransportSubtitle": "Logistics service",
-    "awdTransportDescription": "A service for providing means of transport for goods and people",
-    "awdHotellerie": "AWD Hospitality",
-    "awdHotellerieSubtitle": "Accommodation service",
-    "awdHotellerieDescription": "A service for connecting people with hotels",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "items": {
+      "awd-pay": {
+        "title": "AWDPAY",
+        "subtitle": "Payment Service",
+        "description": "Payment service that simplifies online payments for businesses and individuals."
+      },
+      "awd-pay-apis": {
+        "title": "AWDPAY APIs",
+        "subtitle": "API Integration",
+        "description": "Payment APIs with deposit, withdrawal, and transfer functions."
+      },
+      "pdf-tools": {
+        "title": "AWDPDF Tools",
+        "subtitle": "PDF Tools",
+        "description": "Simple, reliable, and 100% free PDF tools."
+      },
+      "codewigs": {
+        "title": "Codewigs",
+        "subtitle": "Component Library",
+        "description": "Design and create exceptional projects with ready-to-use components."
+      }
+    }
   },
   "Features": {
     "yearsExperience": "Years of experience",

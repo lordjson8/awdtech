@@ -27,25 +27,29 @@
   "Products": {
     "title": "Nuestros Productos Internos",
     "description": "Ofrecemos una amplia gama de productos para ayudarte con tu negocio.",
-    "awdpay": "AWDPAY",
-    "awdpaySubtitle": "Servicio de pago",
-    "awdpayDescription": "Un servicio particular que simplifica los pagos en línea para empresas e individuos",
-    "awdImmobilier": "Bienes Raíces AWD",
-    "awdImmobilierSubtitle": "Servicio de venta de viviendas y terrenos",
-    "awdImmobilierDescription": "Un servicio para poner a disposición viviendas y terrenos para su venta y compra",
-    "awdEducation": "Educación AWD",
-    "awdEducationSubtitle": "Plataforma educativa",
-    "awdEducationDescription": "Un servicio para aprendices; proporciona una guía práctica para el apoyo estudiantil",
-    "awdEcommerce": "E-commerce AWD",
-    "awdEcommerceSubtitle": "Plataforma de comercio electrónico",
-    "awdEcommerceDescription": "Un servicio de comercio electrónico para vender y comprar",
-    "awdTransport": "Transporte AWD",
-    "awdTransportSubtitle": "Servicio logístico",
-    "awdTransportDescription": "Un servicio para proporcionar medios de transporte para mercancías y personas",
-    "awdHotellerie": "Hotelería AWD",
-    "awdHotellerieSubtitle": "Servicio de alojamiento",
-    "awdHotellerieDescription": "Un servicio para conectar a las personas con hoteles",
-    "learnMore": "Aprender más"
+    "learnMore": "Aprender más",
+    "items": {
+      "awd-pay": {
+        "title": "AWDPAY",
+        "subtitle": "Servicio de Pago",
+        "description": "Servicio de pago que simplifica los pagos en línea para empresas e individuos."
+      },
+      "awd-pay-apis": {
+        "title": "AWDPAY APIs",
+        "subtitle": "Integración de API",
+        "description": "APIs de pago con funciones de depósito, retiro y transferencia."
+      },
+      "pdf-tools": {
+        "title": "AWDPDF Tools",
+        "subtitle": "Herramientas PDF",
+        "description": "Herramientas PDF simples, fiables y 100% gratuitas."
+      },
+      "codewigs": {
+        "title": "Codewigs",
+        "subtitle": "Biblioteca de Componentes",
+        "description": "Diseña y crea proyectos excepcionales con componentes listos para usar."
+      }
+    }
   },
   "Features": {
     "yearsExperience": "Años de experiencia",
