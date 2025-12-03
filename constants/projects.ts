@@ -42,3 +42,10 @@ export const projects: Project[] = [
     technologies: ['Vue.js', 'Firebase', 'Google Maps API'],
   },
 ];
+
+
+export const languages = [
+    { code: 'en', name: 'English', nativeName: 'English' },
+    { code: 'fr', name: 'French', nativeName: 'Français' },
+    { code: 'es', name: 'Spanish', nativeName: 'Español' },
+  ];

@@ -4,6 +4,7 @@ import React from 'react';
 import { Globe, Check } from 'lucide-react';
 import { useLocale } from 'next-intl';
 import { cn } from '@/lib/utils';
+import { languages } from '@/constants/projects';
 
 interface MobileLanguageSwitcherProps {
   onLanguageChange?: () => void;
@@ -13,10 +14,7 @@ interface MobileLanguageSwitcherProps {
 const MobileLanguageSwitcher = ({ onLanguageChange, className }: MobileLanguageSwitcherProps) => {
   const currentLocale = useLocale();
 
-  const languages = [
-    { code: 'en', name: 'English', nativeName: 'English' },
-    { code: 'fr', name: 'French', nativeName: 'Français' },
-  ];
+
 
   const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0];
 

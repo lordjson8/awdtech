@@ -11,14 +11,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { languages } from '@/constants/projects';
 
 const LanguageButton = () => {
   const currentLocale = useLocale();
 
-  const languages = [
-    { code: 'en', name: 'English', nativeName: 'English' },
-    { code: 'fr', name: 'French', nativeName: 'Français' },
-  ];
 
   const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0];
 
