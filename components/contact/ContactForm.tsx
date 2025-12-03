@@ -493,8 +493,8 @@ export default function ContactForm() {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-8 h-8 sm:w-12 sm:h-12 bg-orange-500 rounded-lg sm:rounded-xl rotate-12 opacity-20"></div>
-            <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-10 h-10 sm:w-16 sm:h-16 bg-orange-800 rounded-full opacity-20"></div>
+            {/* <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-8 h-8 sm:w-12 sm:h-12 bg-orange-500 rounded-lg sm:rounded-xl rotate-12 opacity-20"></div> */}
+            {/* <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-10 h-10 sm:w-16 sm:h-16 bg-orange-800 rounded-full opacity-20"></div> */}
           </motion.div>
         </div>
       </div>

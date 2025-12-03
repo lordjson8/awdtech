@@ -35,8 +35,8 @@ export default function Team() {
     },
     {
       id: 3,
-      name: "Ingénieur Développement Web",
-      role: "Lead Développeur Web",
+      name: "DROH TIEFFING",
+      role: "DIRECTEUR GENERAL ADJOINT",
       image: "/team/dev-web.jpg",
       description:
         "Expert en création de sites web visuellement attrayants et adaptés à différents écrans. Spécialisé dans les plateformes e-commerce, e-learning et les sites web sur mesure.",
@@ -48,8 +48,8 @@ export default function Team() {
     },
     {
       id: 4,
-      name: "Ingénieur Mobile",
-      role: "Développeur Mobile Android/iOS",
+      name: "BRUCE GUI",
+      role: "ANALYSTE CONTROLEUR & FINANCES",
       image: "/team/dev-mobile.jpg",
       description:
         "Expert en développement d'applications mobiles modernes avec interfaces utilisateur attrayantes. Spécialisé dans les applications de e-commerce, e-learning, paiement et web apps.",
@@ -61,8 +61,8 @@ export default function Team() {
     },
     {
       id: 5,
-      name: "Designer UI/UX",
-      role: "Graphic & UI/UX Designer",
+      name: "KOFFI AKISSI ELEONORE",
+      role: "RESPONSABLE COMMUNICATION",
       image: "/team/designer.jpg",
       description:
         "Expert en communication visuelle et expérience utilisateur. Spécialisé en direction artistique, stratégie de marque, conception d'identité de marque et web design.",
@@ -72,19 +72,7 @@ export default function Team() {
         dribbble: "#",
       },
     },
-    {
-      id: 6,
-      name: "Expert Infogérance",
-      role: "Responsable Infogérance",
-      image: "/team/infogerance.jpg",
-      description:
-        "Expert en gestion de systèmes d'information d'entreprise. Spécialisé en gestion réseaux informatique, sécurité, services cloud computing et solutions d'infrastructure.",
-      social: {
-        linkedin: "#",
-        github: "#",
-        website: "#",
-      },
-    },
+  
   ];
 
   return (
