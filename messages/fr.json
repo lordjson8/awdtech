@@ -94,27 +94,42 @@
     "clients": "Clients"
   },
   "Team": {
-    "ourTeam": "Notre Équipe",
-    "teamDescription": "Chez AWD Tech, nous révolutionnons le numérique en créant des produits technologiques innovants qui transforment la société, stimulent la croissance des entreprises et accompagnent les entrepreneurs. Nous intervenons dans plusieurs pays d'Afrique, d'Europe et d'Amérique pour accompagner les entreprises dans la planification et la gestion de leurs organisations grâce aux outils digitaux.",
+    "ourTeam": "Notre Équipe Dirigeante",
+    "teamDescription": "Découvrez les visionnaires et les leaders qui animent notre mission. Notre équipe est composée de professionnels passionnés, expérimentés et dévoués qui travaillent sans relâche pour atteindre l'excellence et l'innovation.",
     "yearsExperience": "Années d'expérience",
     "clientSatisfaction": "Satisfaction client",
     "collaborators": "Collaborateurs",
     "projectsCompleted": "Projets réalisés",
-    "alexandreDubois": "Alexandre Dubois",
-    "alexandreDuboisRole": "CEO & Fondateur",
-    "alexandreDuboisDescription": "Diplômé de Polytechnique de Yaoundé, expert en transformation digitale avec 10 ans d'expérience.",
-    "marieKamga": "Marie Kamga",
-    "marieKamgaRole": "Lead Developer",
-    "marieKamgaDescription": "Spécialiste en architecture logicielle et développement d'applications enterprise.",
-    "davidNkodo": "David Nkodo",
-    "davidNkodoRole": "Design Director",
-    "davidNkodoDescription": "Passionné par l'UX/UI design et la création d'expériences utilisateur mémorables.",
-    "sarahMballa": "Sarah Mballa",
-    "sarahMballaRole": "Product Manager",
-    "sarahMballaDescription": "Gestion de produits innovants et coordination des équipes techniques et créatives.",
-    "joinOurTeam": "Rejoignez Notre Équipe",
-    "joinOurTeamDescription": "Vous souhaitez contribuer à la révolution digitale en Afrique ? Découvrez nos opportunités de carrière et rejoignez une équipe passionnée.",
-    "seeOffers": "Voir les offres"
+    "joinOurTeam": "Rejoignez notre équipe",
+    "joinOurTeamDescription": "Êtes-vous passionné par la technologie et l'innovation ? Nous sommes toujours à la recherche de nouveaux talents pour rejoindre notre équipe dynamique. Découvrez nos opportunités de carrière et contribuez à des projets passionnants.",
+    "seeOffers": "Voir les offres",
+    "members": {
+      "ceo": {
+        "name": "GOGBEU OULAI Patrice",
+        "role": "Fondateur et PDG",
+        "description": "Fondateur et PDG d'AWDTECH, leader visionnaire expert en transformation numérique et innovation technologique. Il dirige la stratégie globale de l'entreprise et supervise les opérations en Afrique, en Europe et en Amérique."
+      },
+      "deputyCeo": {
+        "name": "TOUA BITCHIE ANGE M",
+        "role": "PDG Adjointe",
+        "description": "PDG adjointe d'AWDTECH, responsable des opérations quotidiennes et de la coordination des équipes techniques. Experte en gestion de projets numériques et en développement commercial stratégique."
+      },
+      "deputyGeneralDirector": {
+        "name": "DROH TIEFFING",
+        "role": "DIRECTEUR GÉNÉRAL ADJOINT",
+        "description": "Directeur Général Adjoint d'AWDTECH, chargé de superviser les opérations commerciales et le développement stratégique. Spécialisé dans l'expansion des marchés et l'optimisation des processus métiers."
+      },
+      "financeAnalyst": {
+        "name": "BRUCE GUI",
+        "role": "ANALYSTE CONTRÔLE & FINANCE",
+        "description": "Analyste Contrôle & Finance chez AWDTECH, expert en gestion financière, analyse des coûts et contrôle de gestion. Spécialisé dans l'optimisation des ressources financières et la planification budgétaire stratégique."
+      },
+      "communicationManager": {
+        "name": "KOFFI AKISSI ELEONORE",
+        "role": "RESPONSABLE DE LA COMMUNICATION",
+        "description": "Responsable de la Communication chez AWDTECH, experte en stratégie de communication, relations publiques et gestion de l'image de marque. Spécialisée dans le développement de campagnes de marketing digital et la communication institutionnelle."
+      }
+    }
   },
   "Partners": {
     "title": "Nos Clients & Partenaires",

@@ -6,14 +6,11 @@ import Link from "next/link";
 export default function Team() {
   const t = useTranslations("Team");
 
-  const teamMembers = [
+const teamMembers = [
     {
       id: 1,
-      name: "GOGBEU OULAI Patrice",
-      role: "Fondateur et CEO",
+      key: "ceo",
       image: "/team/ceo.jpeg",
-      description:
-        "Fondateur et CEO d'AWDTECH, leader visionnaire avec une expertise en transformation digitale et innovation technologique. Il dirige la stratégie globale de l'entreprise et supervise les opérations à travers l'Afrique, l'Europe et l'Amérique.",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -22,11 +19,8 @@ export default function Team() {
     },
     {
       id: 2,
-      name: "TOUA BITCHIE ANGE M",
-      role: "CEO Adjoint",
+      key: "deputyCeo",
       image: "/team/ceo-adjoint.jpeg",
-      description:
-        "CEO Adjoint d'AWDTECH, responsable des opérations quotidiennes et de la coordination des équipes techniques. Expert en gestion de projets digitaux et en développement stratégique d'entreprise.",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -35,11 +29,8 @@ export default function Team() {
     },
     {
       id: 3,
-      name: "DROH TIEFFING",
-      role: "DIRECTEUR GENERAL ADJOINT",
-      image: "/team/dev-web.jpg",
-      description:
-        "Expert en création de sites web visuellement attrayants et adaptés à différents écrans. Spécialisé dans les plateformes e-commerce, e-learning et les sites web sur mesure.",
+      key: "deputyGeneralDirector",
+      image: "/team/droh.jpeg",
       social: {
         linkedin: "#",
         github: "#",
@@ -48,11 +39,8 @@ export default function Team() {
     },
     {
       id: 4,
-      name: "BRUCE GUI",
-      role: "ANALYSTE CONTROLEUR & FINANCES",
-      image: "/team/dev-mobile.jpg",
-      description:
-        "Expert en développement d'applications mobiles modernes avec interfaces utilisateur attrayantes. Spécialisé dans les applications de e-commerce, e-learning, paiement et web apps.",
+      key: "financeAnalyst",
+      image: "/team/bruce.jpeg",
       social: {
         linkedin: "#",
         github: "#",
@@ -61,18 +49,14 @@ export default function Team() {
     },
     {
       id: 5,
-      name: "KOFFI AKISSI ELEONORE",
-      role: "RESPONSABLE COMMUNICATION",
-      image: "/team/designer.jpg",
-      description:
-        "Expert en communication visuelle et expérience utilisateur. Spécialisé en direction artistique, stratégie de marque, conception d'identité de marque et web design.",
+      key: "communicationManager",
+      image: "/team/koffi.jpeg",
       social: {
         linkedin: "#",
         behance: "#",
         dribbble: "#",
       },
     },
-  
   ];
 
   return (
@@ -133,7 +117,7 @@ export default function Team() {
                   width={200}
                   className="w-full aspect-3/4 object-cover transition-transform duration-500 group-hover:scale-110"
                   src={member.image}
-                  alt={member.name}
+                  alt={t(`members.${member.key}.name`)}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
@@ -141,15 +125,15 @@ export default function Team() {
               {/* Content */}
               <div className="text-center">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  {member.name}
+                  {t(`members.${member.key}.name`)}
                 </h3>
 
                 <p className="text-orange-500 font-semibold mb-3">
-                  {member.role}
+                  {t(`members.${member.key}.role`)}
                 </p>
 
                 <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                  {member.description}
+                  {t(`members.${member.key}.description`)}
                 </p>
 
                 {/* Social Links */}
