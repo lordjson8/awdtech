@@ -3,43 +3,47 @@ import { Project } from '@/types';
 export const projects: Project[] = [
   {
     id: '1',
-    slug: 'awd-ecommerce',
-    title: 'AWD E-commerce',
-    description: 'A modern e-commerce platform with a focus on user experience.',
+    slug: 'awd-pay',
+    title: 'AWDPAY',
+    description: 'Payment service that simplifies online payments for businesses and individuals.',
     longDescription:
-      'The AWD E-commerce platform is a comprehensive solution for businesses looking to sell their products online. It includes features like product management, order processing, and customer accounts. The platform is built with a modern tech stack to ensure performance and scalability.',
-    image: '/awd-ecommerce.jpg',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
+      'AWDPAY is a comprehensive payment service that enables businesses and individuals to process online payments efficiently. It provides a user-friendly interface for managing transactions, tracking payments, and handling financial operations with enhanced security features.',
+    image: '/projects/awdpay.png',
+    technologies: ['Payment Processing', 'Security', 'TypeScript', 'React', 'Node.js'],
+    link : 'https://awdpay.com'
   },
   {
     id: '2',
-    slug: 'awd-education',
-    title: 'AWD Education',
-    description: 'An online learning platform for students and teachers.',
+    slug: 'awd-pay-apis',
+    title: 'AWDPAY APIs',
+    description: 'Payment APIs with deposit, withdrawal, and transfer functions.',
     longDescription:
-      'AWD Education is a platform designed to facilitate online learning. It provides tools for teachers to create courses, manage students, and conduct assessments. Students can access course materials, submit assignments, and interact with their peers and instructors.',
-    image: '/awd-education.jpg',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+      'AWDPAY APIs offer three major functions: payment, withdrawal, and transfer, providing a faster, more secure, and flexible experience. With integrated functions, you can also trigger deposits, withdrawals, transfers, and purchases without leaving your merchant site.',
+    image: '/projects/awdpay-api.png',
+    technologies: ['API Integration', 'REST APIs', 'Payment Processing', 'Security', 'TypeScript'],
+    link: 'https://docs.awdpay.com/'
   },
   {
     id: '3',
-    slug: 'awd-hotellerie',
-    title: 'AWD Hotel Management',
-    description: 'A system for managing hotel bookings and operations.',
+    slug: 'pdf-tools',
+    title: 'AWDPDF Tools',
+    description: 'Simple, reliable, and 100% free PDF tools.',
     longDescription:
-      'The AWD Hotel Management system helps hotels streamline their operations. It includes modules for booking management, room allocation, guest services, and billing. The system is designed to be user-friendly for hotel staff and provide a seamless experience for guests.',
-    image: '/awd-hotellerie.jpg',
-    technologies: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL'],
+      'All your essential PDF functionalities gathered in one place, easy to use and accessible with one click. A comprehensive suite of tools for all your PDF manipulation needs including merging, splitting, converting, and editing PDF documents.',
+    image: '/projects/awdpdf.png',
+    technologies: ['PDF Processing', 'JavaScript', 'React', 'Cloud Storage', 'File Handling'],
+    link: 'https://awdpdf.com/'
   },
   {
     id: '4',
-    slug: 'awd-immobilier',
-    title: 'AWD Real Estate',
-    description: 'A platform for browsing and managing real estate listings.',
+    slug: 'codewigs',
+    title: 'Codewigs',
+    description: 'Design and create exceptional projects with ready-to-use components.',
     longDescription:
-      'AWD Real Estate is a platform that connects buyers, sellers, and agents. It allows users to search for properties, view listings with detailed information, and contact agents. The platform also provides tools for agents to manage their listings and interact with clients.',
-    image: '/awd-immobilier.jpg',
-    technologies: ['Vue.js', 'Firebase', 'Google Maps API'],
+      'Purchase high-quality scripts, themes, and plugins that are ready to use! Codewigs helps developers and designers create outstanding projects with pre-built components, templates, and libraries to accelerate development workflows.',
+    image: '/projects/codewhigs.png',
+    technologies: ['Component Library', 'JavaScript', 'CSS', 'React', 'Vue.js', 'Templates'],
+    link: 'https://www.codewigs.com/'
   },
 ];
 

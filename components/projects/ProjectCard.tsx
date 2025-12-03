@@ -41,7 +41,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
         <div className="mt-6">
-          <Link href={`/projects/${project.slug}`} passHref>
+          <Link href={project.link} target='_blank' passHref>
             <Button variant="outline" className="w-full group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
               {t('viewProject')}
             </Button>

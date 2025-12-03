@@ -6,4 +6,5 @@ export type Project = {
   longDescription: string;
   image: string;
   technologies: string[];
+  link: string;
 };
