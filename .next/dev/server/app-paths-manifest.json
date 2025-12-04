@@ -1,7 +1,4 @@
 {
-  "/[locale]/(marketing)/contact/page": "app/[locale]/(marketing)/contact/page.js",
   "/[locale]/(marketing)/page": "app/[locale]/(marketing)/page.js",
-  "/[locale]/(marketing)/projects/page": "app/[locale]/(marketing)/projects/page.js",
-  "/[locale]/(marketing)/web/page": "app/[locale]/(marketing)/web/page.js",
   "/_not-found/page": "app/_not-found/page.js"
 }
