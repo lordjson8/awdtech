@@ -1,4 +1,4 @@
-[00:00:10.530] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:16.285] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -17,10 +17,10 @@ It can also happen if the client has a browser extension installed which messes 
           <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
             <LoadingBoundary name="/" loading={null}>
               <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-                <HTTPAccessFallbackErrorBoundary pathname="/fr" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <HTTPAccessFallbackErrorBoundary pathname="/fr/mobile" notFound={<SegmentViewNode>} forbidden={undefined} ...>
                   <RedirectBoundary>
                     <RedirectErrorBoundary router={{...}}>
-                      <InnerLayoutRouter url="/fr" tree={[...]} params={{locale:"fr"}} cacheNode={{lazyData:null, ...}} ...>
+                      <InnerLayoutRouter url="/fr/mobile" tree={[...]} params={{locale:"fr"}} ...>
                         <SegmentViewNode type="layout" pagePath="[locale]/l...">
                           <SegmentTrieNode>
                           <link>
@@ -33,9 +33,11 @@ It can also happen if the client has a browser extension installed which messes 
 -                             className="dark"
 -                             style={{color-scheme:"dark"}}
                             >
+                              <body
+                                aria-label="Global"
+                                className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG_..."
+-                               cz-shortcut-listen="true"
+                              >
                       ...
           ...
 
-[00:00:10.530] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:10.530] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:10.530] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
