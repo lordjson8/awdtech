@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "serve": "node server.js"
+    "start": "NODE_ENV=production node server.ts",
+    "lint": "eslint"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
