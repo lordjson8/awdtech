@@ -1,0 +1,11 @@
+{
+  "/[locale]/(marketing)/contact/page": "/[locale]/contact",
+  "/[locale]/(marketing)/graphic/page": "/[locale]/graphic",
+  "/[locale]/(marketing)/mobile/page": "/[locale]/mobile",
+  "/[locale]/(marketing)/page": "/[locale]",
+  "/[locale]/(marketing)/projects/page": "/[locale]/projects",
+  "/[locale]/(marketing)/web/page": "/[locale]/web",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/contact/route": "/api/contact"
+}
