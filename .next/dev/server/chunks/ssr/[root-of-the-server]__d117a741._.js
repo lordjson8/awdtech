@@ -84,7 +84,7 @@ function Team() {
         {
             id: 2,
             key: "deputyCeo",
-            image: "/team/placeholder.jpeg",
+            image: "/team/ceo-adjoint.jpeg",
             social: {
                 linkedin: "#",
                 twitter: "#",
@@ -94,7 +94,7 @@ function Team() {
         {
             id: 3,
             key: "deputyGeneralDirector",
-            image: "/team/droh.jpeg",
+            image: "/team/placeholder.svg",
             social: {
                 linkedin: "#",
                 github: "#",
