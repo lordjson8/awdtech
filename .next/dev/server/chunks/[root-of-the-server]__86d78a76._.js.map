@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///home/fils/Documents/projects/awdtech/i18n/routing.ts"],"sourcesContent":["import {defineRouting} from 'next-intl/routing';\n \nexport const routing = defineRouting({\n  // A list of all locales that are supported\n  locales: ['en', 'fr','es'],\n \n  // Used when no locale matches\n  defaultLocale: 'fr'\n});"],"names":[],"mappings":";;;;AAAA;;AAEO,MAAM,UAAU,IAAA,mPAAa,EAAC;IACnC,2CAA2C;IAC3C,SAAS;QAAC;QAAM;QAAK;KAAK;IAE1B,8BAA8B;IAC9B,eAAe;AACjB"}},
-    {"offset": {"line": 66, "column": 0}, "map": {"version":3,"sources":["file:///home/fils/Documents/projects/awdtech/proxy.ts"],"sourcesContent":["import createMiddleware from 'next-intl/middleware';\nimport {routing} from './i18n/routing';\n \nexport default createMiddleware(routing);\n \nexport const config = {\n  // Match all pathnames except for\n  // - … if they start with `/api`, `/trpc`, `/_next` or `/_vercel`\n  // - … the ones containing a dot (e.g. `favicon.ico`)\n  matcher: '/((?!api|trpc|_next|_vercel|.*\\\\..*).*)'\n};"],"names":[],"mappings":";;;;;;AAAA;AACA;;;uCAEe,IAAA,iMAAgB,EAAC,0HAAO;AAEhC,MAAM,SAAS;IACpB,iCAAiC;IACjC,iEAAiE;IACjE,qDAAqD;IACrD,SAAS;AACX"}}]
-}
