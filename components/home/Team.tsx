@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Team() {
   const t = useTranslations("Team");
 
-const teamMembers = [
+  const teamMembers = [
     {
       id: 1,
       key: "ceo",
@@ -20,7 +20,7 @@ const teamMembers = [
     {
       id: 2,
       key: "deputyCeo",
-      image: "/team/ceo-adjoint.jpeg",
+      image: "/team/placeholder.jpeg",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -55,6 +55,16 @@ const teamMembers = [
         linkedin: "#",
         behance: "#",
         dribbble: "#",
+      },
+    },
+    {
+      id: 6,
+      key: "directeurGeneral",
+      image: "/team/droh.jpeg",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        whatsapp: "#",
       },
     },
   ];
@@ -191,7 +201,10 @@ const teamMembers = [
           <p className="mb-6 opacity-90 max-w-2xl mx-auto">
             {t("joinOurTeamDescription")}
           </p>
-          <Link href={'/contact'} className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+          <Link
+            href={"/contact"}
+            className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+          >
             {t("seeOffers")}
           </Link>
         </div>

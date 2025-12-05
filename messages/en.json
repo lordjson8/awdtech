@@ -132,6 +132,11 @@
         "name": "KOFFI AKISSI ELEONORE",
         "role": "COMMUNICATION MANAGER",
         "description": "Communication Manager at AWDTECH, expert in communication strategy, public relations, and brand image management. Specialized in developing digital marketing campaigns and corporate communication."
+      },
+      "directeurGeneral": {
+        "name": "DROH TIEFFING",
+        "role": "Directeur Général et le financier",
+        "description": "Directeur Général et le financier at AWDTECH, responsible for the overall management and financial strategy of the company. Expert in financial planning and corporate governance."
       }
     }
   },
