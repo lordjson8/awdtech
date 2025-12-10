@@ -1,26 +1,26 @@
 {
   "app": {
-    "[project]/app/[locale]/(marketing)/contact/page": [
+    "[project]/awdtech/app/[locale]/(marketing)/contact/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ],
-    "[project]/app/[locale]/(marketing)/graphic/page": [
+    "[project]/awdtech/app/[locale]/(marketing)/graphic/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ],
-    "[project]/app/[locale]/(marketing)/mobile/page": [
+    "[project]/awdtech/app/[locale]/(marketing)/mobile/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ],
-    "[project]/app/[locale]/(marketing)/page": [
+    "[project]/awdtech/app/[locale]/(marketing)/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ],
-    "[project]/app/[locale]/(marketing)/projects/page": [
+    "[project]/awdtech/app/[locale]/(marketing)/projects/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ],
-    "[project]/app/[locale]/(marketing)/web/page": [
+    "[project]/awdtech/app/[locale]/(marketing)/web/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ]
