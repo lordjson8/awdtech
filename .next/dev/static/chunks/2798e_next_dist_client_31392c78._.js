@@ -131,7 +131,7 @@ Object.defineProperty(exports, "appBootstrap", {
 });
 const _assetprefix = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/asset-prefix.js [app-client] (ecmascript)");
 const _setattributesfromprops = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/set-attributes-from-props.js [app-client] (ecmascript)");
-const version = "16.0.3";
+const version = "16.0.8";
 window.next = {
     version,
     appDir: true
@@ -236,7 +236,7 @@ _export(exports, {
         return onRecoverableError;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _bailouttocsr = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/lazy-dynamic/bailout-to-csr.js [app-client] (ecmascript)");
 const _iserror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/lib/is-error.js [app-client] (ecmascript)"));
 const _reportglobalerror = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/react-client-callbacks/report-global-error.js [app-client] (ecmascript)");
@@ -468,7 +468,7 @@ _export(exports, {
         return parseConsoleArgs;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _iserror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/lib/is-error.js [app-client] (ecmascript)"));
 function formatObject(arg, depth) {
     switch(typeof arg){
@@ -968,7 +968,7 @@ _export(exports, {
         return ErrorBoundaryHandler;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _navigationuntracked = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/components/navigation-untracked.js [app-client] (ecmascript)");
@@ -1248,7 +1248,7 @@ _export(exports, {
         return onUncaughtError;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _isnextroutererror = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/components/is-next-router-error.js [app-client] (ecmascript)");
 const _bailouttocsr = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/lazy-dynamic/bailout-to-csr.js [app-client] (ecmascript)");
 const _reportglobalerror = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/react-client-callbacks/report-global-error.js [app-client] (ecmascript)");
@@ -1405,7 +1405,7 @@ _export(exports, {
         return useActionQueue;
     }
 });
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _isthenable = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/is-thenable.js [app-client] (ecmascript)");
 // The app router state lives outside of React, so we can import the dispatch
@@ -2401,19 +2401,18 @@ if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
 function doMpaNavigation(url) {
     return (0, _routeparams.urlToUrlWithoutFlightMarker)(new URL(url, location.origin)).toString();
 }
-let abortController = new AbortController();
+let isPageUnloading = false;
 if (typeof window !== 'undefined') {
-    // Abort any in-flight requests when the page is unloaded, e.g. due to
-    // reloading the page or performing hard navigations. This allows us to ignore
-    // what would otherwise be a thrown TypeError when the browser cancels the
-    // requests.
+    // Track when the page is unloading, e.g. due to reloading the page or
+    // performing hard navigations. This allows us to suppress error logging when
+    // the browser cancels in-flight requests during page unload.
     window.addEventListener('pagehide', ()=>{
-        abortController.abort();
+        isPageUnloading = true;
     });
-    // Use a fresh AbortController instance on pageshow, e.g. when navigating back
-    // and the JavaScript execution context is restored by the browser.
+    // Reset the flag on pageshow, e.g. when navigating back and the JavaScript
+    // execution context is restored by the browser.
     window.addEventListener('pageshow', ()=>{
-        abortController = new AbortController();
+        isPageUnloading = false;
     });
 }
 async function fetchServerResponse(url, options) {
@@ -2454,7 +2453,7 @@ async function fetchServerResponse(url, options) {
         // TODO: Remove this check once the old PPR flag is removed
         const isLegacyPPR = ("TURBOPACK compile-time value", false) && !("TURBOPACK compile-time value", false);
         const shouldImmediatelyDecode = !isLegacyPPR;
-        const res = await createFetch(url, headers, fetchPriority, shouldImmediatelyDecode, abortController.signal);
+        const res = await createFetch(url, headers, fetchPriority, shouldImmediatelyDecode);
         const responseUrl = (0, _routeparams.urlToUrlWithoutFlightMarker)(new URL(res.url));
         const canonicalUrl = res.redirected ? responseUrl : originalUrl;
         const contentType = res.headers.get('content-type') || '';
@@ -2512,7 +2511,7 @@ async function fetchServerResponse(url, options) {
             debugInfo: flightResponsePromise._debugInfo ?? null
         };
     } catch (err) {
-        if (!abortController.signal.aborted) {
+        if (!isPageUnloading) {
             console.error(`Failed to fetch RSC payload for ${originalUrl}. Falling back to browser navigation.`, err);
         }
         // If fetch fails handle it like a mpa navigation
@@ -9157,7 +9156,7 @@ _export(exports, {
         return _serverinsertedhtmlsharedruntime.useServerInsertedHTML;
     }
 });
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
 const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js [app-client] (ecmascript)");
@@ -9296,7 +9295,7 @@ _export(exports, {
         return RedirectErrorBoundary;
     }
 });
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _navigation = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/components/navigation.js [app-client] (ecmascript)");
@@ -9630,7 +9629,7 @@ Object.defineProperty(exports, "default", {
         return RootErrorBoundary;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _gracefuldegradeboundary = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/components/errors/graceful-degrade-boundary.js [app-client] (ecmascript)"));
@@ -9804,7 +9803,7 @@ Object.defineProperty(exports, "HTTPAccessFallbackBoundary", {
         return HTTPAccessFallbackBoundary;
     }
 });
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _navigationuntracked = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/components/navigation-untracked.js [app-client] (ecmascript)");
@@ -9942,7 +9941,7 @@ _export(exports, {
         return bailOnRootNotFound;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _errorboundary = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/components/http-access-fallback/error-boundary.js [app-client] (ecmascript)");
@@ -10566,7 +10565,7 @@ _export(exports, {
         return waitForWebpackRuntimeHotUpdate;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 const _react = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/strip-ansi/index.js [app-client] (ecmascript)"));
@@ -11023,8 +11022,8 @@ _export(exports, {
         return AppRouter;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
@@ -12816,7 +12815,7 @@ Object.defineProperty(exports, "hydrate", {
         return hydrate;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
 __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/app-globals.js [app-client] (ecmascript)");
 const _client = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/compiled/react-dom/client.js [app-client] (ecmascript)"));

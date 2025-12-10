@@ -737,8 +737,8 @@ _export(exports, {
         return defaultHead;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)"));
 const _sideeffect = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/side-effect.js [app-ssr] (ecmascript)"));
@@ -2715,8 +2715,8 @@ Object.defineProperty(exports, "Image", {
         return Image;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)"));
 const _reactdom = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-dom.js [app-ssr] (ecmascript)"));
@@ -3074,7 +3074,7 @@ _export(exports, {
         return getImageProps;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
 const _getimgprops = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/get-img-props.js [app-ssr] (ecmascript)");
 const _imagecomponent = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/client/image-component.js [app-ssr] (ecmascript)");
 const _imageloader = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/shared/lib/image-loader.js [app-ssr] (ecmascript)"));
@@ -5062,7 +5062,7 @@ _export(exports, {
         return _serverinsertedhtmlsharedruntime.useServerInsertedHTML;
     }
 });
-const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/awdtech/node_modules/next/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)"));
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/app-router-context.js [app-ssr] (ecmascript)");
 const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/hooks-client-context.js [app-ssr] (ecmascript)");

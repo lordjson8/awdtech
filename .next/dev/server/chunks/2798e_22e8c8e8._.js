@@ -18971,14 +18971,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$n
 function syncCookie(request, response, locale, routing, domain) {
     if (!routing.localeCookie) return;
     const { name, ...rest } = routing.localeCookie;
-    const acceptLanguageLocale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$middleware$2f$resolveLocale$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["getAcceptLanguageLocale"])(request.headers, domain?.locales || routing.locales, routing.defaultLocale);
     const hasLocaleCookie = request.cookies.has(name);
     const hasOutdatedCookie = hasLocaleCookie && request.cookies.get(name)?.value !== locale;
-    if (hasLocaleCookie ? hasOutdatedCookie : acceptLanguageLocale !== locale) {
+    if (hasOutdatedCookie) {
         response.cookies.set(name, locale, {
             path: request.nextUrl.basePath || undefined,
             ...rest
         });
+    } else if (!hasLocaleCookie) {
+        const acceptLanguageLocale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$middleware$2f$resolveLocale$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["getAcceptLanguageLocale"])(request.headers, domain?.locales || routing.locales, routing.defaultLocale);
+        if (acceptLanguageLocale !== locale) {
+            response.cookies.set(name, locale, {
+                path: request.nextUrl.basePath || undefined,
+                ...rest
+            });
+        }
     }
 }
 ;
