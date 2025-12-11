@@ -275,3 +275,9 @@ It can also happen if the client has a browser extension installed which messes 
 [04:50:12.492] Server  LOG      ✓ Compiled in 214ms
 [05:12:32.460] Server  LOG      ✓ Compiled in 39ms
 [05:20:18.884] Server  LOG      ✓ Compiled in 39ms
+[05:50:14.525] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:50:14.575] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:50:14.586] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[05:50:14.600] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
