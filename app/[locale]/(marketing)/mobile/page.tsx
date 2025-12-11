@@ -5,8 +5,8 @@ import Expertise from "@/components/mobile/enhanced/Expertise";
 import CallToAction from "@/components/mobile/enhanced/CallToAction";
 import Header from "@/components/shared/Header";
 import AnimatedSection from "@/components/shared/AnimatedSection";
-import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 
 type Props = {
   params: { locale: string };
@@ -64,9 +64,63 @@ export async function generateMetadata({
   };
 }
 
-export default function MobilePage() {
+export default async function MobilePage() {
+  const locale = getLocale();
+  const t = await getTranslations("ProjectsPage");
+
+  const webPageLdJson = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: t("Hero.title1") + " " + t("Hero.title2"),
+    description: t("Hero.description").replace(/<[^>]*>/g, ""),
+    url: `https://awdtech.org/${locale}/mobile`,
+  };
+
+  const serviceLdJson = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Mobile Development",
+    provider: {
+      "@type": "Organization",
+      name: "AWDTech",
+    },
+    name: "Mobile Development",
+    description: t("Features.native.description"),
+  };
+
+  const breadcrumbLdJson = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `https://awdtech.org/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Mobile Development",
+        item: `https://awdtech.org/${locale}/mobile`,
+      },
+    ],
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLdJson) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLdJson) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLdJson) }}
+      />
       <AnimatedSection>
         <Header />
       </AnimatedSection>

@@ -3,7 +3,7 @@ import Hero from "@/components/projects/Hero";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import Header from "@/components/shared/Header";
-import { getTranslations } from "next-intl/server";
+import {getTranslations, getLocale} from 'next-intl/server';
 import { Metadata } from "next";
 
 type Props = {
@@ -63,9 +63,48 @@ export async function generateMetadata({
   };
 }
 
-export default function page() {
+export  default async function ProjectsPage() {
+  
+  const locale = getLocale();
+  const t = await getTranslations("ProjectsPage");
+
+  const collectionPageLdJson = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: t("Hero.title1") + " - " + t("Hero.title2"),
+    description: t("Hero.subtitle"),
+    url: `https://awdtech.org/${locale}/projects`,
+  };
+
+  const breadcrumbLdJson = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `https://awdtech.org/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Projects",
+        item: `https://awdtech.org/${locale}/projects`,
+      },
+    ],
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageLdJson) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLdJson) }}
+      />
       <AnimatedSection>
         <Header />
       </AnimatedSection>

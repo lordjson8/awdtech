@@ -5,7 +5,7 @@ import Stats from "@/components/home/Stats";
 import Team from "@/components/home/Team";
 import Header from "@/components/shared/Header";
 import Hero from "@/components/shared/Hero";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Features from "@/components/home/Features";
 import FeaturesTwo from "@/components/home/FeaturesTwo";
 import WhyUs from "@/components/home/WhyUs";
@@ -72,8 +72,34 @@ export async function generateMetadata({
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
+  const locale = useLocale();
+
+  const organizationLdJson = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AWDTech",
+    url: `https://awdtech.org/${locale}`,
+    logo: "https://awdtech.org/logo.svg",
+    sameAs: [],
+  };
+
+  const websiteLdJson = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "AWDTech",
+    url: `https://awdtech.org/${locale}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLdJson) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLdJson) }}
+      />
       <AnimatedSection>
         <Header />
       </AnimatedSection>

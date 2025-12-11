@@ -10,7 +10,7 @@ R.c("server/chunks/ssr/2798e_next_dist_client_components_builtin_global-error_3f
 R.c("server/chunks/ssr/2798e_next_dist_client_components_17c40c7b._.js")
 R.c("server/chunks/ssr/2798e_next_dist_client_components_builtin_forbidden_a79d7eff.js")
 R.c("server/chunks/ssr/2798e_next_dist_client_components_builtin_unauthorized_65d532ae.js")
-R.c("server/chunks/ssr/awdtech_17ba5884._.js")
+R.c("server/chunks/ssr/awdtech_1808a9a3._.js")
 R.c("server/chunks/ssr/2798e_9a7b836e._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__bd028d37._.js")
 R.c("server/chunks/ssr/awdtech_app_[locale]_not-found_tsx_313ea629._.js")

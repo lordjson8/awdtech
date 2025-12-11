@@ -1,11 +1,14 @@
-import EnhancedHero from '@/components/web/enhanced/EnhancedHero';
-import ServicesGrid from '@/components/web/enhanced/ServicesGrid';
-import TechStack from '@/components/web/enhanced/TechStack';
-import ProcessTimeline from '@/components/web/enhanced/ProcessTimeline';
-import CallToAction from '@/components/web/enhanced/CallToAction';
-import Header from '@/components/shared/Header';
-import AnimatedSection from '@/components/shared/AnimatedSection';
-import { getTranslations } from "next-intl/server";
+import EnhancedHero from "@/components/web/enhanced/EnhancedHero";
+import ServicesGrid from "@/components/web/enhanced/ServicesGrid";
+import TechStack from "@/components/web/enhanced/TechStack";
+import ProcessTimeline from "@/components/web/enhanced/ProcessTimeline";
+import CallToAction from "@/components/web/enhanced/CallToAction";
+import Header from "@/components/shared/Header";
+import AnimatedSection from "@/components/shared/AnimatedSection";
+import {
+  getLocale,
+  getTranslations
+} from "next-intl/server";
 import { Metadata } from "next";
 
 type Props = {
@@ -65,24 +68,78 @@ export async function generateMetadata({
   };
 }
 
-export default function WebPage() {
+export default async function WebPage() {
+  const locale = getLocale();
+  const t = await getTranslations("ProjectsPage");
+
+  const webPageLdJson = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: t("Hero.title1") + " " + t("Hero.title2"),
+    description: t("Hero.description").replace(/<[^>]*>/g, ""),
+    url: `https://awdtech.org/${locale}/web`,
+  };
+
+  const serviceLdJson = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Web Development",
+    provider: {
+      "@type": "Organization",
+      name: "AWDTech",
+    },
+    name: "Web Development",
+    description: t("Services.corporate.description"),
+  };
+
+  const breadcrumbLdJson = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `https://awdtech.org/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Web Development",
+        item: `https://awdtech.org/${locale}/web`,
+      },
+    ],
+  };
+
   return (
     <div>
-      <AnimatedSection >
-       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLdJson) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLdJson) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLdJson) }}
+      />
+      <AnimatedSection>
+        <Header />
       </AnimatedSection>
-      <AnimatedSection >
-      <EnhancedHero />
+      <AnimatedSection>
+        <EnhancedHero />
       </AnimatedSection>
-      <AnimatedSection >
-      <ServicesGrid />
+      <AnimatedSection>
+        <ServicesGrid />
       </AnimatedSection>
-      <AnimatedSection >
-      <TechStack />
+      <AnimatedSection>
+        <TechStack />
       </AnimatedSection>
       {/* <ProcessTimeline /> */}
-      <AnimatedSection >
-      <CallToAction />
+      <AnimatedSection>
+        <CallToAction />
       </AnimatedSection>
     </div>
   );
