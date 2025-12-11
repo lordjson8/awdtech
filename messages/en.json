@@ -118,10 +118,10 @@
         "role": "Deputy CEO",
         "description": "Deputy CEO of AWDTECH, responsible for daily operations and coordination of technical teams. Expert in digital project management and strategic business development."
       },
-      "deputyGeneralDirector": {
+      "financialDirector": {
         "name": "GUEU KALE SIMON",
-        "role": "DEPUTY GENERAL DIRECTOR",
-        "description": "Deputy General Director of AWDTECH, responsible for overseeing business operations and strategic development. Specialized in market expansion and business process optimization."
+        "role": "Financial Director",
+        "description": "Financial Director at AWDTECH, leading the company's financial strategy, including planning, management, and reporting. Expert in financial analysis, investment, and corporate finance to ensure sustainable growth."
       },
       "financeAnalyst": {
         "name": "BRUCE GUI",

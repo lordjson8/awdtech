@@ -29,22 +29,12 @@ export default function Team() {
     },
     {
       id: 3,
-      key: "deputyGeneralDirector",
-      image: "/team/placeholder.svg",
+      key: "financialDirector",
+      image: "/team/finance.pngt",
       social: {
         linkedin: "#",
         github: "#",
         behance: "#",
-      },
-    },
-    {
-      id: 4,
-      key: "financeAnalyst",
-      image: "/team/bruce.jpeg",
-      social: {
-        linkedin: "#",
-        github: "#",
-        whatsapp: "#",
       },
     },
     {
@@ -55,16 +45,6 @@ export default function Team() {
         linkedin: "#",
         behance: "#",
         dribbble: "#",
-      },
-    },
-    {
-      id: 6,
-      key: "directeurGeneral",
-      image: "/team/droh.jpeg",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        whatsapp: "#",
       },
     },
   ];

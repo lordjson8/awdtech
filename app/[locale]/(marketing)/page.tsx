@@ -11,6 +11,11 @@ import FeaturesTwo from "@/components/home/FeaturesTwo";
 import WhyUs from "@/components/home/WhyUs";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import Clients from "@/components/shared/Clients";
+import { Metadata } from "next";
+
+export const metadata : Metadata ={
+  title: "Home - AWDTECH"
+}
 
 export default function HomePage() {
   const t = useTranslations("HomePage");

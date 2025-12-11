@@ -118,10 +118,10 @@
         "role": "PDG Adjointe",
         "description": "PDG adjointe d'AWDTECH, responsable des opérations quotidiennes et de la coordination des équipes techniques. Experte en gestion de projets numériques et en développement commercial stratégique."
       },
-      "deputyGeneralDirector": {
+      "financialDirector": {
         "name": "GUEU KALE SIMON",
-        "role": "DIRECTEUR GÉNÉRAL ADJOINT",
-        "description": "Directeur Général Adjoint d'AWDTECH, chargé de superviser les opérations commerciales et le développement stratégique. Spécialisé dans l'expansion des marchés et l'optimisation des processus métiers."
+        "role": "Directeur Financier",
+        "description": "Directeur Financier d'AWDTECH, pilotant la stratégie financière de l'entreprise, y compris la planification, la gestion et le reporting. Expert en analyse financière, investissement et finance d'entreprise pour assurer une croissance durable."
       },
       "financeAnalyst": {
         "name": "BRUCE GUI",

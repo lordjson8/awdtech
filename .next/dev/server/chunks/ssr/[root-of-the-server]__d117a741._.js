@@ -93,22 +93,12 @@ function Team() {
         },
         {
             id: 3,
-            key: "deputyGeneralDirector",
-            image: "/team/placeholder.svg",
+            key: "financialDirector",
+            image: "/team/finance.pngt",
             social: {
                 linkedin: "#",
                 github: "#",
                 behance: "#"
-            }
-        },
-        {
-            id: 4,
-            key: "financeAnalyst",
-            image: "/team/bruce.jpeg",
-            social: {
-                linkedin: "#",
-                github: "#",
-                whatsapp: "#"
             }
         },
         {
@@ -119,16 +109,6 @@ function Team() {
                 linkedin: "#",
                 behance: "#",
                 dribbble: "#"
-            }
-        },
-        {
-            id: 6,
-            key: "directeurGeneral",
-            image: "/team/droh.jpeg",
-            social: {
-                linkedin: "#",
-                twitter: "#",
-                whatsapp: "#"
             }
         }
     ];
@@ -145,7 +125,7 @@ function Team() {
                             children: t("ourTeam")
                         }, void 0, false, {
                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                            lineNumber: 77,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -156,7 +136,7 @@ function Team() {
                                     children: t("teamDescription")
                                 }, void 0, false, {
                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -170,7 +150,7 @@ function Team() {
                                                     children: "+03"
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 69,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -178,13 +158,13 @@ function Team() {
                                                     children: t("yearsExperience")
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 90,
+                                                    lineNumber: 70,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -195,7 +175,7 @@ function Team() {
                                                     children: "95%"
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 95,
+                                                    lineNumber: 75,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -203,13 +183,13 @@ function Team() {
                                                     children: t("clientSatisfaction")
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 96,
+                                                    lineNumber: 76,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 94,
+                                            lineNumber: 74,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -220,7 +200,7 @@ function Team() {
                                                     children: "+25"
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 81,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -228,13 +208,13 @@ function Team() {
                                                     children: t("collaborators")
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 82,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 80,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -245,7 +225,7 @@ function Team() {
                                                     children: "+15"
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 87,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -253,31 +233,31 @@ function Team() {
                                                     children: t("projectsCompleted")
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 108,
+                                                    lineNumber: 88,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 86,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                            lineNumber: 81,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                    lineNumber: 76,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -296,20 +276,20 @@ function Team() {
                                             alt: t(`members.${member.key}.name`)
                                         }, void 0, false, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 125,
+                                            lineNumber: 105,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                         }, void 0, false, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 132,
+                                            lineNumber: 112,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 104,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -320,7 +300,7 @@ function Team() {
                                             children: t(`members.${member.key}.name`)
                                         }, void 0, false, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 117,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -328,7 +308,7 @@ function Team() {
                                             children: t(`members.${member.key}.role`)
                                         }, void 0, false, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 121,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -336,7 +316,7 @@ function Team() {
                                             children: t(`members.${member.key}.description`)
                                         }, void 0, false, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 125,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -354,17 +334,17 @@ function Team() {
                                                             d: "M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                            lineNumber: 161,
+                                                            lineNumber: 141,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                        lineNumber: 156,
+                                                        lineNumber: 136,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 151,
+                                                    lineNumber: 131,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -379,17 +359,17 @@ function Team() {
                                                             d: "M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                            lineNumber: 175,
+                                                            lineNumber: 155,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                        lineNumber: 170,
+                                                        lineNumber: 150,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 165,
+                                                    lineNumber: 145,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -404,40 +384,40 @@ function Team() {
                                                             d: "M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                            lineNumber: 189,
+                                                            lineNumber: 169,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                        lineNumber: 184,
+                                                        lineNumber: 164,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                                    lineNumber: 179,
+                                                    lineNumber: 159,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                                            lineNumber: 150,
+                                            lineNumber: 130,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                                    lineNumber: 136,
+                                    lineNumber: 116,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, member.id, true, {
                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                            lineNumber: 119,
+                            lineNumber: 99,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                    lineNumber: 117,
+                    lineNumber: 97,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -448,7 +428,7 @@ function Team() {
                             children: t("joinOurTeam")
                         }, void 0, false, {
                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                            lineNumber: 200,
+                            lineNumber: 180,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -456,7 +436,7 @@ function Team() {
                             children: t("joinOurTeamDescription")
                         }, void 0, false, {
                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                            lineNumber: 201,
+                            lineNumber: 181,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -465,24 +445,24 @@ function Team() {
                             children: t("seeOffers")
                         }, void 0, false, {
                             fileName: "[project]/awdtech/components/home/Team.tsx",
-                            lineNumber: 204,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/awdtech/components/home/Team.tsx",
-                    lineNumber: 199,
+                    lineNumber: 179,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/awdtech/components/home/Team.tsx",
-            lineNumber: 74,
+            lineNumber: 54,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/awdtech/components/home/Team.tsx",
-        lineNumber: 73,
+        lineNumber: 53,
         columnNumber: 5
     }, this);
 }
@@ -1656,7 +1636,9 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$
 
 __turbopack_context__.s([
     "default",
-    ()=>HomePage
+    ()=>HomePage,
+    "metadata",
+    ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/awdtech/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$home$2f$Products$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/awdtech/components/home/Products.tsx [app-rsc] (ecmascript)");
@@ -1680,6 +1662,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$sha
 ;
 ;
 ;
+const metadata = {
+    title: "Home - AWDTECH"
+};
 function HomePage() {
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$server$2f$useTranslations$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__useTranslations$3e$__["useTranslations"])("HomePage");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1687,89 +1672,89 @@ function HomePage() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 20,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 19,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$Hero$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 23,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 22,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$home$2f$Features$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 26,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 25,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$home$2f$FeaturesTwo$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 29,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 28,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$home$2f$Products$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 33,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 32,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$home$2f$WhyUs$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 36,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 35,
+                lineNumber: 40,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$home$2f$Team$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 39,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 38,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$AnimatedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$components$2f$shared$2f$Clients$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                    lineNumber: 43,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/awdtech/app/[locale]/(marketing)/page.tsx",
-                lineNumber: 41,
+                lineNumber: 46,
                 columnNumber: 7
             }, this)
         ]

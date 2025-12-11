@@ -118,10 +118,10 @@
         "role": "CEO Adjunto",
         "description": "CEO Adjunto de AWDTECH, responsable de las operaciones diarias y la coordinación de los equipos técnicos. Experto en gestión de proyectos digitales y desarrollo empresarial estratégico."
       },
-      "deputyGeneralDirector": {
+      "financialDirector": {
         "name": "GUEU KALE SIMON",
-        "role": "DIRECTOR GENERAL ADJUNTO",
-        "description": "Director General Adjunto de AWDTECH, responsable de supervisar las operaciones comerciales y el desarrollo estratégico. Especializado en expansión de mercados y optimización de procesos empresariales."
+        "role": "Director Financiero",
+        "description": "Director Financiero de AWDTECH, liderando la estrategia financiera de la empresa, incluyendo la planificación, gestión y reporte. Experto en análisis financiero, inversión y finanzas corporativas para asegurar un crecimiento sostenible."
       },
       "financeAnalyst": {
         "name": "BRUCE GUI",

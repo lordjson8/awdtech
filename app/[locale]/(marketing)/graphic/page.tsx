@@ -1,4 +1,3 @@
-import React from "react";
 import EnhancedHero from "@/components/design/enhanced/EnhancedHero";
 import ServicesCards from "@/components/design/enhanced/ServicesCards";
 import DesignProcess from "@/components/design/enhanced/DesignProcess";

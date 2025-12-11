@@ -3,7 +3,7 @@ import Hero from "@/components/projects/Hero";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import Header from "@/components/shared/Header";
-import React from "react";
+// import React from "react";
 
 export default function page() {
   return (

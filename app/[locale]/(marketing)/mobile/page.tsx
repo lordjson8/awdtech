@@ -1,7 +1,7 @@
 import EnhancedHero from "@/components/mobile/enhanced/EnhancedHero";
 import Features from "@/components/mobile/enhanced/Features";
 import Expertise from "@/components/mobile/enhanced/Expertise";
-import AppShowcase from "@/components/mobile/enhanced/AppShowcase";
+// import AppShowcase from "@/components/mobile/enhanced/AppShowcase";
 import CallToAction from "@/components/mobile/enhanced/CallToAction";
 import Header from "@/components/shared/Header";
 import AnimatedSection from "@/components/shared/AnimatedSection";
