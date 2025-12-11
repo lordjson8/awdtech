@@ -8,6 +8,60 @@ import PortfolioHighlight from "@/components/design/enhanced/PortfolioHighlight"
 import CallToAction from "@/components/design/enhanced/CallToAction";
 import Header from "@/components/shared/Header";
 import AnimatedSection from "@/components/shared/AnimatedSection";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata({
+  params: { locale },
+}: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "GraphicPage.Hero" });
+
+  return {
+    title: `${t("title1")} ${t("title2")}`,
+    description: t("subtitle"),
+    keywords: [
+      "AWDTech",
+      "graphic design",
+      "UI/UX design",
+      "branding",
+      "visual identity",
+      "logo design",
+      "prototyping",
+    ],
+    openGraph: {
+      title: `${t("title1")} ${t("title2")}`,
+      description: t("subtitle"),
+      type: "website",
+      url: `https://awdtech.com/${locale}/graphic`,
+      images: [
+        {
+          url: "https://awdtech.com/9.jpg",
+          width: 1200,
+          height: 630,
+          alt: `${t("title1")} ${t("title2")}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("title1")} ${t("title2")}`,
+      description: t("subtitle"),
+      images: ["https://awdtech.com/9.jpg"],
+    },
+    alternates: {
+      canonical: `https://awdtech.com/${locale}/graphic`,
+      languages: {
+        "en-US": "https://awdtech.com/en/graphic",
+        "fr-FR": "https://awdtech.com/fr/graphic",
+        "es-ES": "https://awdtech.com/es/graphic",
+      },
+    },
+  };
+}
 
 export default function DesignPage() {
   return (
