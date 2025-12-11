@@ -94,7 +94,7 @@ function Team() {
         {
             id: 3,
             key: "financialDirector",
-            image: "/team/finance.pngt",
+            image: "/team/finance.png",
             social: {
                 linkedin: "#",
                 github: "#",
