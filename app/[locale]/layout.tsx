@@ -83,7 +83,7 @@ export async function generateMetadata({
       { media: "(prefers-color-scheme: dark)", color: "black" },
     ],
     verification: {
-      google: "google-site-verification=D5b6AcDgjatXHmfB9F43z9Sq8jifcLt7fQpGM5B3BxA",
+      google: "D5b6AcDgjatXHmfB9F43z9Sq8jifcLt7fQpGM5B3BxA",
     },
   };
 }
