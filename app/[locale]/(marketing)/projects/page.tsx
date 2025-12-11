@@ -32,10 +32,10 @@ export async function generateMetadata({
       title: `${t("title1")} - ${t("title2")}`,
       description: t("subtitle"),
       type: "website",
-      url: `https://awdtech.com/${locale}/projects`,
+      url: `https://awdtech.org/${locale}/projects`,
       images: [
         {
-          url: "https://awdtech.com/projects/awd-immobilier.jpg",
+          url: "https://awdtech.org/projects/awd-immobilier.jpg",
           width: 1200,
           height: 630,
           alt: `${t("title1")} - ${t("title2")}`,
@@ -46,14 +46,14 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${t("title1")} - ${t("title2")}`,
       description: t("subtitle"),
-      images: ["https://awdtech.com/projects/awd-immobilier.jpg"],
+      images: ["https://awdtech.org/projects/awd-immobilier.jpg"],
     },
     alternates: {
-      canonical: `https://awdtech.com/${locale}/projects`,
+      canonical: `https://awdtech.org/${locale}/projects`,
       languages: {
-        "en-US": "https://awdtech.com/en/projects",
-        "fr-FR": "https://awdtech.com/fr/projects",
-        "es-ES": "https://awdtech.com/es/projects",
+        "en-US": "https://awdtech.org/en/projects",
+        "fr-FR": "https://awdtech.org/fr/projects",
+        "es-ES": "https://awdtech.org/es/projects",
       },
     },
   };

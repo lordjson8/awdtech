@@ -39,10 +39,10 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       type: "website",
-      url: `https://awdtech.com/${locale}`,
+      url: `https://awdtech.org/${locale}`,
       images: [
         {
-          url: "https://awdtech.com/hero.png",
+          url: "https://awdtech.org/hero.png",
           width: 1200,
           height: 630,
           alt: t("title"),
@@ -53,14 +53,14 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["https://awdtech.com/hero.png"],
+      images: ["https://awdtech.org/hero.png"],
     },
     alternates: {
-      canonical: `https://awdtech.com/${locale}`,
+      canonical: `https://awdtech.org/${locale}`,
       languages: {
-        "en-US": "https://awdtech.com/en",
-        "fr-FR": "https://awdtech.com/fr",
-        "es-ES": "https://awdtech.com/es",
+        "en-US": "https://awdtech.org/en",
+        "fr-FR": "https://awdtech.org/fr",
+        "es-ES": "https://awdtech.org/es",
       },
     },
   };
