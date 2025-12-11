@@ -34,10 +34,10 @@ export async function generateMetadata({
       title: `${t("title1")} ${t("title2")}`,
       description: t("description").replace(/<[^>]*>/g, ""),
       type: "website",
-      url: `https://awdtech.com/${locale}/web`,
+      url: `https://awdtech.org/${locale}/web`,
       images: [
         {
-          url: "https://awdtech.com/web.jpg",
+          url: "https://awdtech.org/web.jpg",
           width: 1200,
           height: 630,
           alt: `${t("title1")} ${t("title2")}`,
@@ -48,14 +48,14 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${t("title1")} ${t("title2")}`,
       description: t("description").replace(/<[^>]*>/g, ""),
-      images: ["https://awdtech.com/web.jpg"],
+      images: ["https://awdtech.org/web.jpg"],
     },
     alternates: {
-      canonical: `https://awdtech.com/${locale}/web`,
+      canonical: `https://awdtech.org/${locale}/web`,
       languages: {
-        "en-US": "https://awdtech.com/en/web",
-        "fr-FR": "https://awdtech.com/fr/web",
-        "es-ES": "https://awdtech.com/es/web",
+        "en-US": "https://awdtech.org/en/web",
+        "fr-FR": "https://awdtech.org/fr/web",
+        "es-ES": "https://awdtech.org/es/web",
       },
     },
   };
