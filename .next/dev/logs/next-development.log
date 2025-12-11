@@ -261,3 +261,15 @@ It can also happen if the client has a browser extension installed which messes 
           ...
 
 [04:12:16.012] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:37:33.240] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:37:33.240] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:37:33.240] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:37:33.240] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:39:27.505] Server  LOG      ✓ Compiled in 454ms
+[04:44:04.184] Server  LOG      ✓ Compiled in 123ms
+[04:44:13.625] Server  LOG      ✓ Compiled in 173ms
+[04:44:18.138] Server  LOG      ✓ Compiled in 171ms
+[04:44:20.420] Server  LOG      ✓ Compiled in 211ms
+[04:46:36.243] Server  LOG      ✓ Compiled in 176ms
+[04:48:55.354] Server  LOG      ✓ Compiled in 155ms
+[04:50:12.492] Server  LOG      ✓ Compiled in 214ms
