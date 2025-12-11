@@ -20,6 +20,10 @@ export async function generateMetadata({
   return {
     title: `${t("title1")} ${t("title2")}`,
     description: t("description").replace(/<[^>]*>/g, ""),
+    robots: {
+      index: true,
+      follow: true,
+    },
     keywords: [
       "AWDTech",
       "web development",

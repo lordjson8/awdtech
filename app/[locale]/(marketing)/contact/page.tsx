@@ -16,6 +16,10 @@ export async function generateMetadata({
   return {
     title: `${t("title")} ${t("titleAccent")}`,
     description: t("description"),
+    robots: {
+      index: true,
+      follow: true,
+    },
     keywords: [
       "AWDTech",
       "contact",
