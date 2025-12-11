@@ -11,6 +11,7 @@ import Footer from "@/components/shared/Footer";
 import Fabs from "@/components/shared/Fabs";
 import { getTranslations } from "next-intl/server";
 import { promises } from "dns";
+import { Analytics } from "@vercel/analytics/next"
 
 type Props = {
   children: React.ReactNode;
@@ -113,6 +114,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           </ThemeProvider>
         </NextIntlClientProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
