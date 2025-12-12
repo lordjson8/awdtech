@@ -7,7 +7,7 @@ export default function Features() {
   const t = useTranslations("Features");
 
   const stats = [
-    { number: "+03", label: t("yearsExperience") },
+    { number: "+05", label: t("yearsExperience") },
     { number: "95%", label: t("clientSatisfaction") },
     { number: "+25", label: t("collaborators") },
     { number: "+15", label: t("projectsCompleted") },

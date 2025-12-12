@@ -606,7 +606,7 @@ function Features() {
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$server$2f$useTranslations$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__useTranslations$3e$__["useTranslations"])("Features");
     const stats = [
         {
-            number: "+03",
+            number: "+05",
             label: t("yearsExperience")
         },
         {

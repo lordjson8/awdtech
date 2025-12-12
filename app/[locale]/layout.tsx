@@ -5,12 +5,9 @@ import "./globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Header from "@/components/shared/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/shared/Footer";
-import Fabs from "@/components/shared/Fabs";
 import { getTranslations } from "next-intl/server";
-import { promises } from "dns";
 import { Analytics } from "@vercel/analytics/next"
 
 type Props = {
@@ -38,6 +35,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "HomePage" });
 
   return {
+    applicationName: "AWDTech",
     title: {
       default: "AWDTech - Innovative Digital Solutions",
       template: "%s | AWDTech",
@@ -78,6 +76,12 @@ export async function generateMetadata({
       icon: "/logo.svg",
       shortcut: "/logo.svg",
       apple: "/logo.svg",
+      other: [
+        {
+          rel: 'apple-touch-icon-precomposed',
+          url: '/logo.svg',
+        },
+      ],
     },
     manifest: "/manifest.webmanifest",
     themeColor: [
