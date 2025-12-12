@@ -2,15 +2,15 @@
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import Image from "next/image";
-import { projects } from '../../constants/projects'; // Import projects from constants
+import { projects } from "../../constants/projects"; // Import projects from constants
 
 export default function Products() {
-  const t = useTranslations('Products');
-  const [open, setOpen] = useState('1');
+  const t = useTranslations("Products");
+  const [open, setOpen] = useState("1");
 
-  const toggleProject = (id : string) => {
-  setOpen(open === id ? '0' : id);
- };
+  const toggleProject = (id: string) => {
+    setOpen(open === id ? "0" : id);
+  };
 
   return (
     <section className="py-12 bg-white dark:bg-gray-900">
@@ -20,12 +20,15 @@ export default function Products() {
             {t("title")}
           </h2>
           <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-5 text-center">
-            {t('description')}
+            {t("description")}
           </p>
         </div>
         <div className="flex flex-col gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="border-b border-gray-200 dark:border-gray-700">
+            <div
+              key={project.id}
+              className="border-b border-gray-200 dark:border-gray-700"
+            >
               <button
                 onClick={() => toggleProject(project.id)}
                 className="w-full flex justify-between items-center py-6 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg px-4 transition-colors duration-200"
@@ -68,7 +71,11 @@ export default function Products() {
                       <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                         {t(`items.${project.slug}.description`)}
                       </p>
-                      <a href={project.link} target="_blank" className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200"
+                      >
                         {t("learnMore")}
                       </a>
                     </div>

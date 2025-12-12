@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import {
   SiFigma,
@@ -15,15 +15,13 @@ import { FaSketch, FaAccessibleIcon } from "react-icons/fa";
 import { DiAptana } from "react-icons/di";
 import { useTranslations } from "next-intl";
 
-const Tools = ({
-  theme = "auto",
-}) => {
-  const t = useTranslations('GraphicPage.Tools');
+const Tools = ({ theme = "auto" }) => {
+  const t = useTranslations("GraphicPage.Tools");
 
   const toolCategories = [
     {
-      name: t('uiux.name'),
-      description: t('uiux.description'),
+      name: t("uiux.name"),
+      description: t("uiux.description"),
       stack: [
         { name: "Figma", icon: <SiFigma color="black" />, proficiency: 95 },
         { name: "Sketch", icon: <FaSketch color="black" />, proficiency: 88 },
@@ -36,8 +34,8 @@ const Tools = ({
       gradient: "from-orange-500 to-red-500",
     },
     {
-      name: t('prototyping.name'),
-      description: t('prototyping.description'),
+      name: t("prototyping.name"),
+      description: t("prototyping.description"),
       stack: [
         {
           name: "InVision",
@@ -54,8 +52,8 @@ const Tools = ({
       gradient: "from-orange-500 to-red-500",
     },
     {
-      name: t('graphic.name'),
-      description: t('graphic.description'),
+      name: t("graphic.name"),
+      description: t("graphic.description"),
       stack: [
         {
           name: "Illustrator",
@@ -72,8 +70,8 @@ const Tools = ({
       gradient: "from-orange-500 to-red-500",
     },
     {
-      name: t('collaboration.name'),
-      description: t('collaboration.description'),
+      name: t("collaboration.name"),
+      description: t("collaboration.description"),
       stack: [
         { name: "Miro", icon: <SiMiro color="black" />, proficiency: 91 },
         { name: "Notion", icon: <SiNotion color="black" />, proficiency: 86 },
@@ -84,10 +82,10 @@ const Tools = ({
   ];
 
   const stats = [
-    { number: "50+", label: t('stats.mastered') },
-    { number: "100%", label: t('stats.proficiency') },
-    { number: "24/7", label: t('stats.updates') },
-    { number: "5★", label: t('stats.rating') },
+    { number: "50+", label: t("stats.mastered") },
+    { number: "100%", label: t("stats.proficiency") },
+    { number: "24/7", label: t("stats.updates") },
+    { number: "5★", label: t("stats.rating") },
   ];
 
   return (
@@ -110,7 +108,7 @@ const Tools = ({
             mb-6
           `}
           >
-            {t('title')}
+            {t("title")}
           </h2>
           <p
             className={`
@@ -119,7 +117,7 @@ const Tools = ({
             leading-relaxed
           `}
           >
-            {t('subtitle')}
+            {t("subtitle")}
           </p>
         </div>
 

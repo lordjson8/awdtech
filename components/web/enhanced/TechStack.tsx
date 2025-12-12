@@ -1,111 +1,207 @@
-'use client';
-import React from 'react';
-import { FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiRedis, SiKubernetes, SiVercel, SiPython, SiDjango, SiFastapi, SiExpress } from 'react-icons/si';
-import { DiAws } from 'react-icons/di';
-import { useTranslations } from 'next-intl';
+"use client";
+import React from "react";
+import { FaReact, FaNodeJs, FaDocker } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiPostgresql,
+  SiMongodb,
+  SiRedis,
+  SiKubernetes,
+  SiVercel,
+  SiPython,
+  SiDjango,
+  SiFastapi,
+  SiExpress,
+} from "react-icons/si";
+import { DiAws } from "react-icons/di";
+import { useTranslations } from "next-intl";
 
 const TechStack = () => {
-  const t = useTranslations('WebPage.TechStack');
-  const tLevels = useTranslations('WebPage.TechStack.levels');
-  const tStats = useTranslations('WebPage.TechStack.stats');
+  const t = useTranslations("WebPage.TechStack");
+  const tLevels = useTranslations("WebPage.TechStack.levels");
+  const tStats = useTranslations("WebPage.TechStack.stats");
 
   const techCategories = [
     {
-      name: t('frontend.name'),
-      description: t('frontend.description'),
+      name: t("frontend.name"),
+      description: t("frontend.description"),
       stack: [
-        { name: 'React', icon: <FaReact />, level: tLevels('expert'), color: 'text-cyan-400' },
-        { name: 'Next.js', icon: <SiNextdotjs />, level: tLevels('expert'), color: 'text-white' },
-        { name: 'TypeScript', icon: <SiTypescript />, level: tLevels('expert'), color: 'text-orange-500' },
-        { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: tLevels('expert'), color: 'text-cyan-300' },
+        {
+          name: "React",
+          icon: <FaReact />,
+          level: tLevels("expert"),
+          color: "text-cyan-400",
+        },
+        {
+          name: "Next.js",
+          icon: <SiNextdotjs />,
+          level: tLevels("expert"),
+          color: "text-white",
+        },
+        {
+          name: "TypeScript",
+          icon: <SiTypescript />,
+          level: tLevels("expert"),
+          color: "text-orange-500",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: <SiTailwindcss />,
+          level: tLevels("expert"),
+          color: "text-cyan-300",
+        },
       ],
-      gradient: 'from-cyan-500 to-orange-500',
-      projects: t('frontend.projects')
+      gradient: "from-cyan-500 to-orange-500",
+      projects: t("frontend.projects"),
     },
     {
-      name: t('backend.name'),
-      description: t('backend.description'),
+      name: t("backend.name"),
+      description: t("backend.description"),
       stack: [
-        { name: 'Node.js', icon: <FaNodeJs />, level: tLevels('expert'), color: 'text-green-500' },
-        { name: 'Express', icon: <SiExpress />, level: tLevels('expert'), color: 'text-gray-300' },
-        { name: 'Python', icon: <SiPython />, level: tLevels('advanced'), color: 'text-yellow-400' },
-        { name: 'Django', icon: <SiDjango />, level: tLevels('advanced'), color: 'text-green-400' },
-        { name: 'FastAPI', icon: <SiFastapi />, level: tLevels('intermediate'), color: 'text-teal-400' },
+        {
+          name: "Node.js",
+          icon: <FaNodeJs />,
+          level: tLevels("expert"),
+          color: "text-green-500",
+        },
+        {
+          name: "Express",
+          icon: <SiExpress />,
+          level: tLevels("expert"),
+          color: "text-gray-300",
+        },
+        {
+          name: "Python",
+          icon: <SiPython />,
+          level: tLevels("advanced"),
+          color: "text-yellow-400",
+        },
+        {
+          name: "Django",
+          icon: <SiDjango />,
+          level: tLevels("advanced"),
+          color: "text-green-400",
+        },
+        {
+          name: "FastAPI",
+          icon: <SiFastapi />,
+          level: tLevels("intermediate"),
+          color: "text-teal-400",
+        },
       ],
-      gradient: 'from-green-500 to-emerald-500',
-      projects: t('backend.projects')
+      gradient: "from-green-500 to-emerald-500",
+      projects: t("backend.projects"),
     },
     {
-      name: t('database.name'),
-      description: t('database.description'),
+      name: t("database.name"),
+      description: t("database.description"),
       stack: [
-        { name: 'PostgreSQL', icon: <SiPostgresql />, level: tLevels('expert'), color: 'text-orange-400' },
-        { name: 'MongoDB', icon: <SiMongodb />, level: tLevels('expert'), color: 'text-green-500' },
-        { name: 'Redis', icon: <SiRedis />, level: tLevels('advanced'), color: 'text-red-500' },
+        {
+          name: "PostgreSQL",
+          icon: <SiPostgresql />,
+          level: tLevels("expert"),
+          color: "text-orange-400",
+        },
+        {
+          name: "MongoDB",
+          icon: <SiMongodb />,
+          level: tLevels("expert"),
+          color: "text-green-500",
+        },
+        {
+          name: "Redis",
+          icon: <SiRedis />,
+          level: tLevels("advanced"),
+          color: "text-red-500",
+        },
       ],
-      gradient: 'from-purple-500 to-pink-500',
-      projects: t('database.projects')
+      gradient: "from-purple-500 to-pink-500",
+      projects: t("database.projects"),
     },
     {
-      name: t('devops.name'),
-      description: t('devops.description'),
+      name: t("devops.name"),
+      description: t("devops.description"),
       stack: [
-        { name: 'Docker', icon: <FaDocker />, level: tLevels('expert'), color: 'text-orange-400' },
-        { name: 'Kubernetes', icon: <SiKubernetes />, level: tLevels('advanced'), color: 'text-orange-500' },
-        { name: 'AWS', icon: <DiAws />, level: tLevels('advanced'), color: 'text-orange-400' },
-        { name: 'Vercel', icon: <SiVercel />, level: tLevels('expert'), color: 'text-white' },
+        {
+          name: "Docker",
+          icon: <FaDocker />,
+          level: tLevels("expert"),
+          color: "text-orange-400",
+        },
+        {
+          name: "Kubernetes",
+          icon: <SiKubernetes />,
+          level: tLevels("advanced"),
+          color: "text-orange-500",
+        },
+        {
+          name: "AWS",
+          icon: <DiAws />,
+          level: tLevels("advanced"),
+          color: "text-orange-400",
+        },
+        {
+          name: "Vercel",
+          icon: <SiVercel />,
+          level: tLevels("expert"),
+          color: "text-white",
+        },
       ],
-      gradient: 'from-orange-500 to-red-500',
-      projects: t('devops.projects')
+      gradient: "from-orange-500 to-red-500",
+      projects: t("devops.projects"),
     },
   ];
 
   const statItems = [
-    { number: '100+', label: tStats('projects') },
-    { number: '99%', label: tStats('satisfaction') },
-    { number: '3+', label: tStats('experience') },
-    { number: '50K+', label: tStats('users') },
+    { number: "100+", label: tStats("projects") },
+    { number: "99%", label: tStats("satisfaction") },
+    { number: "3+", label: tStats("experience") },
+    { number: "50K+", label: tStats("users") },
   ];
 
   const getLevelValue = (level: string) => {
     switch (level) {
-      case tLevels('expert'): return 3;
-      case tLevels('advanced'): return 2;
-      case tLevels('intermediate'): return 1;
-      default: return 0;
+      case tLevels("expert"):
+        return 3;
+      case tLevels("advanced"):
+        return 2;
+      case tLevels("intermediate"):
+        return 1;
+      default:
+        return 0;
     }
   };
 
-
   return (
     <section className="bg-white dark:bg-gray-900 py-24 transition-colors duration-300">
-     
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-        
-          
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
-            dangerouslySetInnerHTML={{ __html: t.raw('title') }}
+          <h2
+            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+            dangerouslySetInnerHTML={{ __html: t.raw("title") }}
           />
-          
+
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            {t('description')}
+            {t("description")}
           </p>
         </div>
 
         {/* Technology Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {techCategories.map((category, categoryIndex) => (
-            <div 
+            <div
               key={category.name}
               className="group relative bg-white dark:bg-gray-800 rounded-3xl p-6 border border-gray-200 dark:border-gray-700 hover:border-transparent transition-all duration-500 hover:scale-105 hover:shadow-xl dark:hover:shadow-2xl overflow-hidden"
             >
               <div className="relative z-10">
                 {/* Category Header */}
                 <div className="mb-6">
-                  <div className={`w-12 h-1 bg-orange-500 rounded-full mb-4 group-hover:w-16 transition-all duration-300`} />
+                  <div
+                    className={`w-12 h-1 bg-orange-500 rounded-full mb-4 group-hover:w-16 transition-all duration-300`}
+                  />
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-orange-600 transition-all duration-300">
                     {category.name}
                   </h3>
@@ -117,12 +213,14 @@ const TechStack = () => {
                 {/* Technology Stack */}
                 <div className="space-y-3">
                   {category.stack.map((tech, techIndex) => (
-                    <div 
+                    <div
                       key={tech.name}
                       className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl border border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-300 group/tech hover:bg-gray-100 dark:hover:bg-gray-700"
                     >
                       <div className="flex items-center gap-3">
-                        <div className={`text-2xl transform group-hover/tech:scale-110 transition-transform duration-300 ${tech.color}`}>
+                        <div
+                          className={`text-2xl transform group-hover/tech:scale-110 transition-transform duration-300 ${tech.color}`}
+                        >
                           {tech.icon}
                         </div>
                         <div>
@@ -134,7 +232,7 @@ const TechStack = () => {
                           </div>
                         </div>
                       </div>
-                      
+
                       {/* Skill Level Indicator */}
                       <div className="flex gap-1">
                         {[1, 2, 3].map((dot) => (
@@ -142,8 +240,8 @@ const TechStack = () => {
                             key={dot}
                             className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
                               dot <= getLevelValue(tech.level)
-                                ? 'bg-orange-500'
-                                : 'bg-gray-300 dark:bg-gray-600'
+                                ? "bg-orange-500"
+                                : "bg-gray-300 dark:bg-gray-600"
                             }`}
                           />
                         ))}
@@ -155,14 +253,20 @@ const TechStack = () => {
                 {/* Projects Counter */}
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-gray-500 dark:text-gray-400">{t('projectsCompleted')}</span>
-                    <span className="text-orange-500 dark:text-orange-400 font-semibold">{category.projects}</span>
+                    <span className="text-gray-500 dark:text-gray-400">
+                      {t("projectsCompleted")}
+                    </span>
+                    <span className="text-orange-500 dark:text-orange-400 font-semibold">
+                      {category.projects}
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Decorative Element */}
-              <div className={`absolute top-4 right-4 w-6 h-6 bg-orange-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+              <div
+                className={`absolute top-4 right-4 w-6 h-6 bg-orange-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
+              />
             </div>
           ))}
         </div>

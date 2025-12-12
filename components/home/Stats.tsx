@@ -5,23 +5,23 @@ const stats = [
     value: "+03",
     icon: "📅", // ou "🎯" pour expérience ciblée
   },
-  { 
-    id: 2, 
-    name: "De satisfaction client", 
-    value: "95%", 
-    icon: "⭐" // ou "😊" pour satisfaction client
+  {
+    id: 2,
+    name: "De satisfaction client",
+    value: "95%",
+    icon: "⭐", // ou "😊" pour satisfaction client
   },
-  { 
-    id: 3, 
-    name: "Collaborateurs", 
-    value: "+25", 
-    icon: "👨‍💼" // ou "💼" pour professionnels
+  {
+    id: 3,
+    name: "Collaborateurs",
+    value: "+25",
+    icon: "👨‍💼", // ou "💼" pour professionnels
   },
-  { 
-    id: 4, 
-    name: "Projets réalisés", 
-    value: "+15", 
-    icon: "🚀" // ou "📊" pour projets
+  {
+    id: 4,
+    name: "Projets réalisés",
+    value: "+15",
+    icon: "🚀", // ou "📊" pour projets
   },
 ];
 

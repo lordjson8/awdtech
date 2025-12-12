@@ -5,19 +5,14 @@ import ProcessTimeline from "@/components/web/enhanced/ProcessTimeline";
 import CallToAction from "@/components/web/enhanced/CallToAction";
 import Header from "@/components/shared/Header";
 import AnimatedSection from "@/components/shared/AnimatedSection";
-import {
-  getLocale,
-  getTranslations
-} from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 
 type Props = {
   params: { locale: string };
 };
 
-export async function generateMetadata({
-  params
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   const t = await getTranslations({ locale, namespace: "WebPage.Hero" });

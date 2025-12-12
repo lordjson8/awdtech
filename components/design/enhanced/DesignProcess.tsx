@@ -1,17 +1,15 @@
-'use client';
+"use client";
 import React from "react";
 import { useTranslations } from "next-intl";
 
-const DesignProcess = ({
-  theme = "auto",
-}) => {
-  const t = useTranslations('GraphicPage.DesignProcess');
+const DesignProcess = ({ theme = "auto" }) => {
+  const t = useTranslations("GraphicPage.DesignProcess");
 
   const steps = [
     {
       number: "01",
-      name: t('step1.name'),
-      description: t('step1.description'),
+      name: t("step1.name"),
+      description: t("step1.description"),
       icon: (
         <svg
           className="w-6 h-6"
@@ -31,8 +29,8 @@ const DesignProcess = ({
     },
     {
       number: "02",
-      name: t('step2.name'),
-      description: t('step2.description'),
+      name: t("step2.name"),
+      description: t("step2.description"),
       icon: (
         <svg
           className="w-6 h-6"
@@ -52,8 +50,8 @@ const DesignProcess = ({
     },
     {
       number: "03",
-      name: t('step3.name'),
-      description: t('step3.description'),
+      name: t("step3.name"),
+      description: t("step3.description"),
       icon: (
         <svg
           className="w-6 h-6"
@@ -73,8 +71,8 @@ const DesignProcess = ({
     },
     {
       number: "04",
-      name: t('step4.name'),
-      description: t('step4.description'),
+      name: t("step4.name"),
+      description: t("step4.description"),
       icon: (
         <svg
           className="w-6 h-6"
@@ -90,8 +88,7 @@ const DesignProcess = ({
           />
         </svg>
       ),
-           color: 'from-orange-500 to-red-500'
-
+      color: "from-orange-500 to-red-500",
     },
   ];
 
@@ -121,7 +118,7 @@ const DesignProcess = ({
             mb-6
           `}
           >
-            {t('title')}
+            {t("title")}
           </h2>
           <p
             className={`
@@ -130,7 +127,7 @@ const DesignProcess = ({
             leading-relaxed
           `}
           >
-            {t('subtitle')}
+            {t("subtitle")}
           </p>
         </div>
 
@@ -224,8 +221,8 @@ const DesignProcess = ({
                             dotIndex === index
                               ? "bg-orange-500 scale-125"
                               : dotIndex < index
-                              ? "bg-orange-500"
-                              : "bg-gray-300 dark:bg-gray-600"
+                                ? "bg-orange-500"
+                                : "bg-gray-300 dark:bg-gray-600"
                           }
                         `}
                       />
@@ -281,7 +278,7 @@ const DesignProcess = ({
               group
             "
             >
-              {t('ctaButton')}
+              {t("ctaButton")}
               <svg
                 className="
                 w-5 h-5 ml-2 

@@ -1,17 +1,19 @@
-(globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
-    script: typeof document === "object" ? document.currentScript : undefined,
-    chunks: [
-  "static/chunks/awdtech_0f47874e._.js",
-  "static/chunks/2798e_next_afbef292._.js",
-  "static/chunks/2798e_react-icons_fa_index_mjs_956f870c._.js",
-  "static/chunks/2798e_react-icons_si_index_mjs_603a18f7._.js",
-  "static/chunks/2798e_react-icons_di_index_mjs_1374517b._.js",
-  "static/chunks/2798e_react-icons_lib_fe54f0bc._.js",
-  "static/chunks/2798e_tailwind-merge_dist_bundle-mjs_mjs_37b9199d._.js",
-  "static/chunks/2798e_@headlessui_react_dist_9b859a13._.js",
-  "static/chunks/2798e_motion-dom_dist_es_5a3b8929._.js",
-  "static/chunks/2798e_framer-motion_dist_es_8115c38e._.js",
-  "static/chunks/2798e_4aa3dfa5._.js"
-],
-    source: "dynamic"
+(
+  globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])
+).push({
+  script: typeof document === "object" ? document.currentScript : undefined,
+  chunks: [
+    "static/chunks/awdtech_0f47874e._.js",
+    "static/chunks/2798e_next_afbef292._.js",
+    "static/chunks/2798e_react-icons_fa_index_mjs_956f870c._.js",
+    "static/chunks/2798e_react-icons_si_index_mjs_603a18f7._.js",
+    "static/chunks/2798e_react-icons_di_index_mjs_1374517b._.js",
+    "static/chunks/2798e_react-icons_lib_fe54f0bc._.js",
+    "static/chunks/2798e_tailwind-merge_dist_bundle-mjs_mjs_37b9199d._.js",
+    "static/chunks/2798e_@headlessui_react_dist_9b859a13._.js",
+    "static/chunks/2798e_motion-dom_dist_es_5a3b8929._.js",
+    "static/chunks/2798e_framer-motion_dist_es_8115c38e._.js",
+    "static/chunks/2798e_4aa3dfa5._.js",
+  ],
+  source: "dynamic",
 });

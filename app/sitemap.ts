@@ -15,7 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "daily",
       priority: 1.0,
-      images: [`${baseUrl}/hero.png`
+      images: [
+        `${baseUrl}/hero.png`,
         // {
         //   url: `${baseUrl}/hero.png`,
         //   alt: "AWDTech Home Page",
@@ -31,7 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      images: [`${baseUrl}/web.jpg`
+      images: [
+        `${baseUrl}/web.jpg`,
         // {
         //   url: `${baseUrl}/web.jpg`,
         //   alt: "AWDTech Web Development Page",
@@ -47,7 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.8,
-      images: [`${baseUrl}/projects/awd-immobilier.jpg`
+      images: [
+        `${baseUrl}/projects/awd-immobilier.jpg`,
         // {
         //   url: `${baseUrl}/projects/awd-immobilier.jpg`,
         //   alt: "AWDTech Projects Page",
@@ -63,7 +66,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      images: [`${baseUrl}/mobile.jpg`
+      images: [
+        `${baseUrl}/mobile.jpg`,
         // {
         //   url: `${baseUrl}/mobile.jpg`,
         //   alt: "AWDTech Mobile Development Page",
@@ -79,7 +83,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      images: [`${baseUrl}/9.jpg`
+      images: [
+        `${baseUrl}/9.jpg`,
         // {
         //   url: `${baseUrl}/9.jpg`,
         //   alt: "AWDTech Graphic Design Page",
@@ -95,7 +100,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      images: [`${baseUrl}/hero.png`
+      images: [
+        `${baseUrl}/hero.png`,
         // {
         //   url: `${baseUrl}/hero.png`,
         //   alt: "AWDTech Contact Page",

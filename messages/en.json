@@ -223,29 +223,17 @@
       "corporate": {
         "title": "Corporate Websites",
         "description": "Stunning and responsive websites that tell your brand's story and captivate your audience.",
-        "features": [
-          "Responsive Design",
-          "SEO Optimized",
-          "CMS Integration"
-        ]
+        "features": ["Responsive Design", "SEO Optimized", "CMS Integration"]
       },
       "webapp": {
         "title": "Web Applications",
         "description": "Powerful custom web applications to streamline your business processes and engage your users.",
-        "features": [
-          "Modern Architecture",
-          "RESTful API",
-          "Database"
-        ]
+        "features": ["Modern Architecture", "RESTful API", "Database"]
       },
       "ecommerce": {
         "title": "E-commerce Platforms",
         "description": "Scalable and secure e-commerce solutions to sell your products and grow your business online.",
-        "features": [
-          "Secure Payment",
-          "Stock Management",
-          "Analytics"
-        ]
+        "features": ["Secure Payment", "Stock Management", "Analytics"]
       },
       "learnMore": "Learn more",
       "bottomCta": {
@@ -586,7 +574,7 @@
       "button": "Contact Us"
     }
   },
-  
+
   "ContactPage": {
     "title": "Let's Build",
     "titleAccent": "Something Amazing",

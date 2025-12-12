@@ -1,3 +1,326 @@
-module.exports=[19308,(a,b,c)=>{"use strict";b.exports=a.r(3856).vendored["react-ssr"].ReactDOM},73117,a=>{"use strict";var b=a.i(99669),c=a.i(16842),d=a.i(61289),e=a.i(8874),f=a.i(89293);function g(){let a=(0,c.useTranslations)("Products"),[g,h]=(0,d.useState)("1");return(0,b.jsx)("section",{className:"py-12 bg-white dark:bg-gray-900",children:(0,b.jsxs)("div",{className:"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",children:[(0,b.jsxs)("div",{className:"mb-10 lg:mb-16 flex justify-center items-center flex-col",children:[(0,b.jsx)("h2",{className:"text-4xl font-bold text-gray-900 dark:text-white leading-[3.25rem] lg:mb-6 text-center",children:a("title")}),(0,b.jsx)("p",{className:"text-lg font-normal text-gray-500 dark:text-gray-400 mb-5 text-center",children:a("description")})]}),(0,b.jsx)("div",{className:"flex flex-col gap-8",children:f.projects.map(c=>(0,b.jsxs)("div",{className:"border-b border-gray-200 dark:border-gray-700",children:[(0,b.jsxs)("button",{onClick:()=>{var a;h(g===(a=c.id)?"0":a)},className:"w-full flex justify-between items-center py-6 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg px-4 transition-colors duration-200",children:[(0,b.jsxs)("div",{className:"text-left",children:[(0,b.jsx)("h3",{className:"text-2xl font-bold text-gray-900 dark:text-white",children:a(`items.${c.slug}.title`)}),(0,b.jsx)("p",{className:"text-lg text-orange-500 font-medium mt-1",children:a(`items.${c.slug}.subtitle`)})]}),(0,b.jsx)("svg",{className:`w-6 h-6 transition-transform duration-300 text-gray-600 dark:text-gray-400 ${g===c.id?"transform rotate-180":""}`,fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",children:(0,b.jsx)("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"2",d:"M19 9l-7 7-7-7"})})]}),(0,b.jsx)("div",{className:`grid overflow-hidden transition-all duration-300 ease-in-out ${g===c.id?"grid-rows-[1fr] opacity-100":"grid-rows-[0fr] opacity-0"}`,children:(0,b.jsx)("div",{className:"overflow-hidden",children:(0,b.jsxs)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-8 pb-6 px-4",children:[(0,b.jsxs)("div",{className:"space-y-4",children:[(0,b.jsx)("p",{className:"text-gray-600 dark:text-gray-300 text-lg leading-relaxed",children:a(`items.${c.slug}.description`)}),(0,b.jsx)("a",{href:c.link,target:"_blank",className:"bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200",children:a("learnMore")})]}),(0,b.jsx)("div",{className:"relative h-64 md:h-80 rounded-xl overflow-hidden",children:(0,b.jsx)(e.default,{src:c.image,alt:a(`items.${c.slug}.title`),fill:!0,className:"object-cover"})})]})})})]},c.id))})]})})}a.s(["default",()=>g])},47686,a=>{"use strict";var b=a.i(99669),c=a.i(61289),d=a.i(90520),e=a.i(16842);let f=[{src:"/partners/wave.png",name:"Wave",category:"Fintech",description:"Solution de paiement mobile leader en Afrique",color:"from-blue-500 to-cyan-500"},{src:"/partners/mtn.png",name:"MTN",category:"Telecom",description:"Premier opérateur mobile en Afrique",color:"from-yellow-500 to-orange-500"},{src:"/partners/orange.png",name:"Orange",category:"Telecom",description:"Services financiers mobiles innovants",color:"from-orange-500 to-red-500"},{src:"/partners/moov.png",name:"Moov",category:"Telecom",description:"Plateforme de paiement digital",color:"from-green-500 to-emerald-500"},{src:"/partners/airtel.png",name:"Airtel",category:"Telecom",description:"Réseau de télécommunications mondial",color:"from-red-500 to-pink-500"}],g=({src:a,name:c,color:d,category:e})=>a?(0,b.jsx)("img",{src:a,alt:c,className:"w-24 h-24 object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 dark:opacity-70"}):(0,b.jsxs)("div",{className:`w-24 h-24 rounded-2xl bg-gradient-to-br ${d} flex items-center justify-center text-white font-bold text-xl shadow-lg relative`,children:[c.charAt(0),(0,b.jsx)("div",{className:"absolute -top-2 -right-2 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm",children:"Fintech"===e?"💳":"Telecom"===e?"📱":"🏢"})]}),h=()=>{let[a,e]=(0,c.useState)(null),h=[...f,...f];return(0,b.jsxs)("div",{className:"relative w-full overflow-hidden",children:[(0,b.jsx)("div",{className:"absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-white to-transparent dark:from-gray-900 dark:to-transparent z-10"}),(0,b.jsx)("div",{className:"absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-white to-transparent dark:from-gray-900 dark:to-transparent z-10"}),(0,b.jsx)(d.motion.div,{className:"flex gap-16 py-8",animate:{x:["0%","-50%"]},transition:{ease:"linear",duration:40,repeat:1/0},children:h.map((c,f)=>(0,b.jsxs)(d.motion.div,{className:"flex-shrink-0 group cursor-pointer relative",onHoverStart:()=>e(f),onHoverEnd:()=>e(null),whileHover:{scale:1.05,zIndex:20},transition:{type:"spring",stiffness:400,damping:20},children:[(0,b.jsxs)("div",{className:"relative mb-4",children:[(0,b.jsx)(g,{...c}),(0,b.jsx)("div",{className:`absolute inset-0 bg-gradient-to-br ${c.color} rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300`})]}),(0,b.jsxs)("div",{className:"text-center",children:[(0,b.jsx)("p",{className:"font-bold text-gray-900 dark:text-white group-hover:text-orange-500 transition-colors duration-300 text-lg",children:c.name}),(0,b.jsx)("p",{className:"text-sm text-gray-600 dark:text-gray-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300",children:c.category})]}),a===f&&(0,b.jsxs)(d.motion.div,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},transition:{duration:.2},className:"absolute -bottom-24 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-800 text-white p-3 rounded-lg text-sm whitespace-nowrap shadow-xl z-30",children:[(0,b.jsx)("div",{className:"font-bold",children:c.name}),(0,b.jsx)("div",{className:"text-gray-300 dark:text-gray-400 text-xs mt-1 max-w-xs",children:c.description}),(0,b.jsx)("div",{className:"absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 dark:bg-gray-800 rotate-45"})]})]},`${c.name}-${f}`))})]})};a.s(["default",0,()=>{let a=(0,e.useTranslations)("Clients");return(0,b.jsxs)("section",{className:"max-w-7xl mx-auto py-20 lg:py-32 relative overflow-hidden",children:[(0,b.jsx)("div",{className:"absolute inset-0  transition-colors duration-300"}),(0,b.jsx)("div",{className:"container mx-auto px-4 sm:px-6 lg:px-8 relative z-10",children:(0,b.jsxs)(d.motion.div,{className:"mb-12",initial:{opacity:0,scale:.95},whileInView:{opacity:1,scale:1},viewport:{once:!0},transition:{duration:.5},children:[(0,b.jsx)("h3",{className:"text-3xl font-bold text-center text-gray-900 dark:text-white mb-8",children:a("title")}),(0,b.jsx)("p",{className:"text-lg text-gray-600 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto",children:a("description")}),(0,b.jsx)(h,{})]})})]})}])}];
+module.exports = [
+  19308,
+  (a, b, c) => {
+    "use strict";
+    b.exports = a.r(3856).vendored["react-ssr"].ReactDOM;
+  },
+  73117,
+  (a) => {
+    "use strict";
+    var b = a.i(99669),
+      c = a.i(16842),
+      d = a.i(61289),
+      e = a.i(8874),
+      f = a.i(89293);
+    function g() {
+      let a = (0, c.useTranslations)("Products"),
+        [g, h] = (0, d.useState)("1");
+      return (0, b.jsx)("section", {
+        className: "py-12 bg-white dark:bg-gray-900",
+        children: (0, b.jsxs)("div", {
+          className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",
+          children: [
+            (0, b.jsxs)("div", {
+              className:
+                "mb-10 lg:mb-16 flex justify-center items-center flex-col",
+              children: [
+                (0, b.jsx)("h2", {
+                  className:
+                    "text-4xl font-bold text-gray-900 dark:text-white leading-[3.25rem] lg:mb-6 text-center",
+                  children: a("title"),
+                }),
+                (0, b.jsx)("p", {
+                  className:
+                    "text-lg font-normal text-gray-500 dark:text-gray-400 mb-5 text-center",
+                  children: a("description"),
+                }),
+              ],
+            }),
+            (0, b.jsx)("div", {
+              className: "flex flex-col gap-8",
+              children: f.projects.map((c) =>
+                (0, b.jsxs)(
+                  "div",
+                  {
+                    className: "border-b border-gray-200 dark:border-gray-700",
+                    children: [
+                      (0, b.jsxs)("button", {
+                        onClick: () => {
+                          var a;
+                          h(g === (a = c.id) ? "0" : a);
+                        },
+                        className:
+                          "w-full flex justify-between items-center py-6 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg px-4 transition-colors duration-200",
+                        children: [
+                          (0, b.jsxs)("div", {
+                            className: "text-left",
+                            children: [
+                              (0, b.jsx)("h3", {
+                                className:
+                                  "text-2xl font-bold text-gray-900 dark:text-white",
+                                children: a(`items.${c.slug}.title`),
+                              }),
+                              (0, b.jsx)("p", {
+                                className:
+                                  "text-lg text-orange-500 font-medium mt-1",
+                                children: a(`items.${c.slug}.subtitle`),
+                              }),
+                            ],
+                          }),
+                          (0, b.jsx)("svg", {
+                            className: `w-6 h-6 transition-transform duration-300 text-gray-600 dark:text-gray-400 ${g === c.id ? "transform rotate-180" : ""}`,
+                            fill: "none",
+                            stroke: "currentColor",
+                            viewBox: "0 0 24 24",
+                            xmlns: "http://www.w3.org/2000/svg",
+                            children: (0, b.jsx)("path", {
+                              strokeLinecap: "round",
+                              strokeLinejoin: "round",
+                              strokeWidth: "2",
+                              d: "M19 9l-7 7-7-7",
+                            }),
+                          }),
+                        ],
+                      }),
+                      (0, b.jsx)("div", {
+                        className: `grid overflow-hidden transition-all duration-300 ease-in-out ${g === c.id ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`,
+                        children: (0, b.jsx)("div", {
+                          className: "overflow-hidden",
+                          children: (0, b.jsxs)("div", {
+                            className:
+                              "grid grid-cols-1 md:grid-cols-2 gap-8 pb-6 px-4",
+                            children: [
+                              (0, b.jsxs)("div", {
+                                className: "space-y-4",
+                                children: [
+                                  (0, b.jsx)("p", {
+                                    className:
+                                      "text-gray-600 dark:text-gray-300 text-lg leading-relaxed",
+                                    children: a(`items.${c.slug}.description`),
+                                  }),
+                                  (0, b.jsx)("a", {
+                                    href: c.link,
+                                    target: "_blank",
+                                    className:
+                                      "bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200",
+                                    children: a("learnMore"),
+                                  }),
+                                ],
+                              }),
+                              (0, b.jsx)("div", {
+                                className:
+                                  "relative h-64 md:h-80 rounded-xl overflow-hidden",
+                                children: (0, b.jsx)(e.default, {
+                                  src: c.image,
+                                  alt: a(`items.${c.slug}.title`),
+                                  fill: !0,
+                                  className: "object-cover",
+                                }),
+                              }),
+                            ],
+                          }),
+                        }),
+                      }),
+                    ],
+                  },
+                  c.id,
+                ),
+              ),
+            }),
+          ],
+        }),
+      });
+    }
+    a.s(["default", () => g]);
+  },
+  47686,
+  (a) => {
+    "use strict";
+    var b = a.i(99669),
+      c = a.i(61289),
+      d = a.i(90520),
+      e = a.i(16842);
+    let f = [
+        {
+          src: "/partners/wave.png",
+          name: "Wave",
+          category: "Fintech",
+          description: "Solution de paiement mobile leader en Afrique",
+          color: "from-blue-500 to-cyan-500",
+        },
+        {
+          src: "/partners/mtn.png",
+          name: "MTN",
+          category: "Telecom",
+          description: "Premier opérateur mobile en Afrique",
+          color: "from-yellow-500 to-orange-500",
+        },
+        {
+          src: "/partners/orange.png",
+          name: "Orange",
+          category: "Telecom",
+          description: "Services financiers mobiles innovants",
+          color: "from-orange-500 to-red-500",
+        },
+        {
+          src: "/partners/moov.png",
+          name: "Moov",
+          category: "Telecom",
+          description: "Plateforme de paiement digital",
+          color: "from-green-500 to-emerald-500",
+        },
+        {
+          src: "/partners/airtel.png",
+          name: "Airtel",
+          category: "Telecom",
+          description: "Réseau de télécommunications mondial",
+          color: "from-red-500 to-pink-500",
+        },
+      ],
+      g = ({ src: a, name: c, color: d, category: e }) =>
+        a
+          ? (0, b.jsx)("img", {
+              src: a,
+              alt: c,
+              className:
+                "w-24 h-24 object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 dark:opacity-70",
+            })
+          : (0, b.jsxs)("div", {
+              className: `w-24 h-24 rounded-2xl bg-gradient-to-br ${d} flex items-center justify-center text-white font-bold text-xl shadow-lg relative`,
+              children: [
+                c.charAt(0),
+                (0, b.jsx)("div", {
+                  className:
+                    "absolute -top-2 -right-2 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm",
+                  children:
+                    "Fintech" === e ? "💳" : "Telecom" === e ? "📱" : "🏢",
+                }),
+              ],
+            }),
+      h = () => {
+        let [a, e] = (0, c.useState)(null),
+          h = [...f, ...f];
+        return (0, b.jsxs)("div", {
+          className: "relative w-full overflow-hidden",
+          children: [
+            (0, b.jsx)("div", {
+              className:
+                "absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-white to-transparent dark:from-gray-900 dark:to-transparent z-10",
+            }),
+            (0, b.jsx)("div", {
+              className:
+                "absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-white to-transparent dark:from-gray-900 dark:to-transparent z-10",
+            }),
+            (0, b.jsx)(d.motion.div, {
+              className: "flex gap-16 py-8",
+              animate: { x: ["0%", "-50%"] },
+              transition: { ease: "linear", duration: 40, repeat: 1 / 0 },
+              children: h.map((c, f) =>
+                (0, b.jsxs)(
+                  d.motion.div,
+                  {
+                    className: "flex-shrink-0 group cursor-pointer relative",
+                    onHoverStart: () => e(f),
+                    onHoverEnd: () => e(null),
+                    whileHover: { scale: 1.05, zIndex: 20 },
+                    transition: { type: "spring", stiffness: 400, damping: 20 },
+                    children: [
+                      (0, b.jsxs)("div", {
+                        className: "relative mb-4",
+                        children: [
+                          (0, b.jsx)(g, { ...c }),
+                          (0, b.jsx)("div", {
+                            className: `absolute inset-0 bg-gradient-to-br ${c.color} rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300`,
+                          }),
+                        ],
+                      }),
+                      (0, b.jsxs)("div", {
+                        className: "text-center",
+                        children: [
+                          (0, b.jsx)("p", {
+                            className:
+                              "font-bold text-gray-900 dark:text-white group-hover:text-orange-500 transition-colors duration-300 text-lg",
+                            children: c.name,
+                          }),
+                          (0, b.jsx)("p", {
+                            className:
+                              "text-sm text-gray-600 dark:text-gray-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+                            children: c.category,
+                          }),
+                        ],
+                      }),
+                      a === f &&
+                        (0, b.jsxs)(d.motion.div, {
+                          initial: { opacity: 0, y: 10 },
+                          animate: { opacity: 1, y: 0 },
+                          transition: { duration: 0.2 },
+                          className:
+                            "absolute -bottom-24 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-800 text-white p-3 rounded-lg text-sm whitespace-nowrap shadow-xl z-30",
+                          children: [
+                            (0, b.jsx)("div", {
+                              className: "font-bold",
+                              children: c.name,
+                            }),
+                            (0, b.jsx)("div", {
+                              className:
+                                "text-gray-300 dark:text-gray-400 text-xs mt-1 max-w-xs",
+                              children: c.description,
+                            }),
+                            (0, b.jsx)("div", {
+                              className:
+                                "absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 dark:bg-gray-800 rotate-45",
+                            }),
+                          ],
+                        }),
+                    ],
+                  },
+                  `${c.name}-${f}`,
+                ),
+              ),
+            }),
+          ],
+        });
+      };
+    a.s([
+      "default",
+      0,
+      () => {
+        let a = (0, e.useTranslations)("Clients");
+        return (0, b.jsxs)("section", {
+          className:
+            "max-w-7xl mx-auto py-20 lg:py-32 relative overflow-hidden",
+          children: [
+            (0, b.jsx)("div", {
+              className: "absolute inset-0  transition-colors duration-300",
+            }),
+            (0, b.jsx)("div", {
+              className: "container mx-auto px-4 sm:px-6 lg:px-8 relative z-10",
+              children: (0, b.jsxs)(d.motion.div, {
+                className: "mb-12",
+                initial: { opacity: 0, scale: 0.95 },
+                whileInView: { opacity: 1, scale: 1 },
+                viewport: { once: !0 },
+                transition: { duration: 0.5 },
+                children: [
+                  (0, b.jsx)("h3", {
+                    className:
+                      "text-3xl font-bold text-center text-gray-900 dark:text-white mb-8",
+                    children: a("title"),
+                  }),
+                  (0, b.jsx)("p", {
+                    className:
+                      "text-lg text-gray-600 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto",
+                    children: a("description"),
+                  }),
+                  (0, b.jsx)(h, {}),
+                ],
+              }),
+            }),
+          ],
+        });
+      },
+    ]);
+  },
+];
 
 //# sourceMappingURL=awdtech_18396603._.js.map

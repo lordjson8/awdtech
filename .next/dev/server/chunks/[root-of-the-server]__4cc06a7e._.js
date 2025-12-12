@@ -1,168 +1,228 @@
 module.exports = [
-"[externals]/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-route-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+  "[externals]/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-route-turbo.runtime.dev.js, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x(
+      "next/dist/compiled/next-server/app-route-turbo.runtime.dev.js",
+      () =>
+        require("next/dist/compiled/next-server/app-route-turbo.runtime.dev.js"),
+    );
 
-const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-route-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-route-turbo.runtime.dev.js"));
+    module.exports = mod;
+  },
+  "[externals]/next/dist/compiled/@opentelemetry/api [external] (next/dist/compiled/@opentelemetry/api, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x(
+      "next/dist/compiled/@opentelemetry/api",
+      () => require("next/dist/compiled/@opentelemetry/api"),
+    );
 
-module.exports = mod;
-}),
-"[externals]/next/dist/compiled/@opentelemetry/api [external] (next/dist/compiled/@opentelemetry/api, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-page-turbo.runtime.dev.js, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x(
+      "next/dist/compiled/next-server/app-page-turbo.runtime.dev.js",
+      () =>
+        require("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js"),
+    );
 
-const mod = __turbopack_context__.x("next/dist/compiled/@opentelemetry/api", () => require("next/dist/compiled/@opentelemetry/api"));
+    module.exports = mod;
+  },
+  "[externals]/next/dist/server/app-render/work-unit-async-storage.external.js [external] (next/dist/server/app-render/work-unit-async-storage.external.js, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x(
+      "next/dist/server/app-render/work-unit-async-storage.external.js",
+      () =>
+        require("next/dist/server/app-render/work-unit-async-storage.external.js"),
+    );
 
-module.exports = mod;
-}),
-"[externals]/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-page-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/next/dist/server/app-render/work-async-storage.external.js [external] (next/dist/server/app-render/work-async-storage.external.js, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x(
+      "next/dist/server/app-render/work-async-storage.external.js",
+      () =>
+        require("next/dist/server/app-render/work-async-storage.external.js"),
+    );
 
-const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js"));
+    module.exports = mod;
+  },
+  "[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x(
+      "next/dist/shared/lib/no-fallback-error.external.js",
+      () => require("next/dist/shared/lib/no-fallback-error.external.js"),
+    );
 
-module.exports = mod;
-}),
-"[externals]/next/dist/server/app-render/work-unit-async-storage.external.js [external] (next/dist/server/app-render/work-unit-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/next/dist/server/app-render/after-task-async-storage.external.js [external] (next/dist/server/app-render/after-task-async-storage.external.js, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x(
+      "next/dist/server/app-render/after-task-async-storage.external.js",
+      () =>
+        require("next/dist/server/app-render/after-task-async-storage.external.js"),
+    );
 
-const mod = __turbopack_context__.x("next/dist/server/app-render/work-unit-async-storage.external.js", () => require("next/dist/server/app-render/work-unit-async-storage.external.js"));
+    module.exports = mod;
+  },
+  "[externals]/events [external] (events, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("events", () => require("events"));
 
-module.exports = mod;
-}),
-"[externals]/next/dist/server/app-render/work-async-storage.external.js [external] (next/dist/server/app-render/work-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/url [external] (url, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("url", () => require("url"));
 
-const mod = __turbopack_context__.x("next/dist/server/app-render/work-async-storage.external.js", () => require("next/dist/server/app-render/work-async-storage.external.js"));
+    module.exports = mod;
+  },
+  "[externals]/util [external] (util, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("util", () => require("util"));
 
-module.exports = mod;
-}),
-"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/fs [external] (fs, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("fs", () => require("fs"));
 
-const mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+    module.exports = mod;
+  },
+  "[externals]/http [external] (http, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("http", () => require("http"));
 
-module.exports = mod;
-}),
-"[externals]/next/dist/server/app-render/after-task-async-storage.external.js [external] (next/dist/server/app-render/after-task-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/https [external] (https, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("https", () => require("https"));
 
-const mod = __turbopack_context__.x("next/dist/server/app-render/after-task-async-storage.external.js", () => require("next/dist/server/app-render/after-task-async-storage.external.js"));
+    module.exports = mod;
+  },
+  "[externals]/zlib [external] (zlib, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("zlib", () => require("zlib"));
 
-module.exports = mod;
-}),
-"[externals]/events [external] (events, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/stream [external] (stream, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("stream", () => require("stream"));
 
-const mod = __turbopack_context__.x("events", () => require("events"));
+    module.exports = mod;
+  },
+  "[externals]/net [external] (net, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("net", () => require("net"));
 
-module.exports = mod;
-}),
-"[externals]/url [external] (url, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/dns [external] (dns, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("dns", () => require("dns"));
 
-const mod = __turbopack_context__.x("url", () => require("url"));
+    module.exports = mod;
+  },
+  "[externals]/os [external] (os, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("os", () => require("os"));
 
-module.exports = mod;
-}),
-"[externals]/util [external] (util, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/path [external] (path, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("path", () => require("path"));
 
-const mod = __turbopack_context__.x("util", () => require("util"));
+    module.exports = mod;
+  },
+  "[externals]/crypto [external] (crypto, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("crypto", () => require("crypto"));
 
-module.exports = mod;
-}),
-"[externals]/fs [external] (fs, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[externals]/tls [external] (tls, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("tls", () => require("tls"));
 
-const mod = __turbopack_context__.x("fs", () => require("fs"));
+    module.exports = mod;
+  },
+  "[externals]/child_process [external] (child_process, cjs)",
+  (__turbopack_context__, module, exports) => {
+    const mod = __turbopack_context__.x("child_process", () =>
+      require("child_process"),
+    );
 
-module.exports = mod;
-}),
-"[externals]/http [external] (http, cjs)", ((__turbopack_context__, module, exports) => {
+    module.exports = mod;
+  },
+  "[project]/awdtech/app/api/contact/route.ts [app-route] (ecmascript)",
+  (__turbopack_context__) => {
+    "use strict";
 
-const mod = __turbopack_context__.x("http", () => require("http"));
-
-module.exports = mod;
-}),
-"[externals]/https [external] (https, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("https", () => require("https"));
-
-module.exports = mod;
-}),
-"[externals]/zlib [external] (zlib, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("zlib", () => require("zlib"));
-
-module.exports = mod;
-}),
-"[externals]/stream [external] (stream, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("stream", () => require("stream"));
-
-module.exports = mod;
-}),
-"[externals]/net [external] (net, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("net", () => require("net"));
-
-module.exports = mod;
-}),
-"[externals]/dns [external] (dns, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("dns", () => require("dns"));
-
-module.exports = mod;
-}),
-"[externals]/os [external] (os, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("os", () => require("os"));
-
-module.exports = mod;
-}),
-"[externals]/path [external] (path, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("path", () => require("path"));
-
-module.exports = mod;
-}),
-"[externals]/crypto [external] (crypto, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("crypto", () => require("crypto"));
-
-module.exports = mod;
-}),
-"[externals]/tls [external] (tls, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("tls", () => require("tls"));
-
-module.exports = mod;
-}),
-"[externals]/child_process [external] (child_process, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("child_process", () => require("child_process"));
-
-module.exports = mod;
-}),
-"[project]/awdtech/app/api/contact/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "GET",
-    ()=>GET,
-    "POST",
-    ()=>POST
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/awdtech/node_modules/next/server.js [app-route] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/awdtech/node_modules/nodemailer/lib/nodemailer.js [app-route] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__ = __turbopack_context__.i("[project]/awdtech/node_modules/zod/v4/classic/external.js [app-route] (ecmascript) <export * as z>");
-;
-;
-;
-const contactSchema = __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].object({
-    name: __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(2, "Le nom doit comporter au moins 2 caractères").max(100),
-    email: __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().email("Veuillez entrer une adresse email valide"),
-    subject: __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(3, "Le sujet doit comporter au moins 3 caractères").max(200),
-    message: __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(10, "Le message doit comporter au moins 10 caractères").max(5000),
-    service: __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].enum([
-        "web",
-        "mobile",
-        "design",
-        "infogerance",
-        "ai",
-        "ecommerce",
-        "cloud",
-        "autre"
-    ]).optional()
-});
-const createEmailTemplate = (data)=>`
+    __turbopack_context__.s(["GET", () => GET, "POST", () => POST]);
+    var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ =
+      __turbopack_context__.i(
+        "[project]/awdtech/node_modules/next/server.js [app-route] (ecmascript)",
+      );
+    var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ =
+      __turbopack_context__.i(
+        "[project]/awdtech/node_modules/nodemailer/lib/nodemailer.js [app-route] (ecmascript)",
+      );
+    var __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__ =
+      __turbopack_context__.i(
+        "[project]/awdtech/node_modules/zod/v4/classic/external.js [app-route] (ecmascript) <export * as z>",
+      );
+    const contactSchema =
+      __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__[
+        "z"
+      ].object({
+        name: __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__[
+          "z"
+        ]
+          .string()
+          .min(2, "Le nom doit comporter au moins 2 caractères")
+          .max(100),
+        email:
+          __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__[
+            "z"
+          ]
+            .string()
+            .email("Veuillez entrer une adresse email valide"),
+        subject:
+          __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__[
+            "z"
+          ]
+            .string()
+            .min(3, "Le sujet doit comporter au moins 3 caractères")
+            .max(200),
+        message:
+          __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__[
+            "z"
+          ]
+            .string()
+            .min(10, "Le message doit comporter au moins 10 caractères")
+            .max(5000),
+        service:
+          __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__[
+            "z"
+          ]
+            .enum([
+              "web",
+              "mobile",
+              "design",
+              "infogerance",
+              "ai",
+              "ecommerce",
+              "cloud",
+              "autre",
+            ])
+            .optional(),
+      });
+    const createEmailTemplate = (data) => `
 <!DOCTYPE html>
 <html>
 <head>
@@ -682,20 +742,22 @@ const createEmailTemplate = (data)=>`
             <div class="detail-content">
               <div class="detail-label">Reçu à</div>
               <p class="detail-value">${new Date().toLocaleString("fr-FR", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        timeZoneName: "short"
-    })}</p>
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                timeZoneName: "short",
+              })}</p>
             </div>
           </div>
         </div>
         
         <!-- Service Information -->
-        ${data.service ? `
+        ${
+          data.service
+            ? `
         <div class="service-section">
           <div class="detail-label">Service demandé</div>
           <div class="service-badge">
@@ -703,7 +765,9 @@ const createEmailTemplate = (data)=>`
             <span class="service-category">${getServiceCategory(data.service)}</span>
           </div>
         </div>
-        ` : ''}
+        `
+            : ""
+        }
       </div>
       
       <!-- Message Section -->
@@ -801,7 +865,7 @@ const createEmailTemplate = (data)=>`
 </body>
 </html>
 `;
-const createConfirmationEmailTemplate = (data)=>`
+    const createConfirmationEmailTemplate = (data) => `
 <!DOCTYPE html>
 <html>
 <head>
@@ -1225,13 +1289,17 @@ const createConfirmationEmailTemplate = (data)=>`
       </div>
       
       <!-- Message Summary -->
-      ${data.message ? `
+      ${
+        data.message
+          ? `
       <div class="section-title">Votre message</div>
       <div class="message-summary">
         <div class="message-label">Résumé</div>
         <p class="message-preview">"${data.message.substring(0, 200)}${data.message.length > 200 ? "..." : ""}"</p>
       </div>
-      ` : ''}
+      `
+          : ""
+      }
       
       <!-- Process Steps -->
       <div class="section-title">Notre processus de traitement</div>
@@ -1381,9 +1449,9 @@ const createConfirmationEmailTemplate = (data)=>`
 </body>
 </html>
 `;
-// Helper functions
-const getServiceLabel = (service)=>{
-    const services = {
+    // Helper functions
+    const getServiceLabel = (service) => {
+      const services = {
         web: "Développement Web",
         mobile: "Développement Mobile",
         design: "Design UI/UX",
@@ -1391,12 +1459,12 @@ const getServiceLabel = (service)=>{
         ai: "Intelligence Artificielle",
         ecommerce: "Solutions E-commerce",
         cloud: "Services Cloud",
-        autre: "Autre demande"
+        autre: "Autre demande",
+      };
+      return services[service] || "Non spécifié";
     };
-    return services[service] || "Non spécifié";
-};
-const getServiceCategory = (service)=>{
-    const categories = {
+    const getServiceCategory = (service) => {
+      const categories = {
         web: "WEB",
         mobile: "MOBILE",
         design: "DESIGN",
@@ -1404,12 +1472,12 @@ const getServiceCategory = (service)=>{
         ai: "IA",
         ecommerce: "E-COMMERCE",
         cloud: "CLOUD",
-        autre: "GÉNÉRAL"
+        autre: "GÉNÉRAL",
+      };
+      return categories[service] || "GÉNÉRAL";
     };
-    return categories[service] || "GÉNÉRAL";
-};
-async function POST(request) {
-    try {
+    async function POST(request) {
+      try {
         // Rate limiting check
         const ip = request.headers.get("x-forwarded-for") || "unknown";
         console.log(`Soumission formulaire AWDTECH depuis IP: ${ip}`);
@@ -1417,71 +1485,86 @@ async function POST(request) {
         const body = await request.json();
         const validationResult = contactSchema.safeParse(body);
         if (!validationResult.success) {
-            return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                success: false,
-                message: "Validation échouée",
-                errors: validationResult.error.issues.map((err)=>({
-                        field: err.path[0],
-                        message: err.message
-                    }))
-            }, {
-                status: 400
-            });
+          return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__[
+            "NextResponse"
+          ].json(
+            {
+              success: false,
+              message: "Validation échouée",
+              errors: validationResult.error.issues.map((err) => ({
+                field: err.path[0],
+                message: err.message,
+              })),
+            },
+            {
+              status: 400,
+            },
+          );
         }
-        const { name, email, subject, message, service } = validationResult.data;
+        const { name, email, subject, message, service } =
+          validationResult.data;
         // Check for spam (French keywords as well)
         const spamKeywords = [
-            "http://",
-            "https://",
-            "www.",
-            ".ru",
-            "viagra",
-            "casino",
-            "bitcoin",
-            "bonus",
-            "gratuit",
-            "gagner",
-            "argent"
+          "http://",
+          "https://",
+          "www.",
+          ".ru",
+          "viagra",
+          "casino",
+          "bitcoin",
+          "bonus",
+          "gratuit",
+          "gagner",
+          "argent",
         ];
         const contentToCheck = `${subject} ${message} ${email}`.toLowerCase();
-        const isPotentialSpam = spamKeywords.some((keyword)=>contentToCheck.includes(keyword));
+        const isPotentialSpam = spamKeywords.some((keyword) =>
+          contentToCheck.includes(keyword),
+        );
         if (isPotentialSpam) {
-            console.log(`Spam potentiel détecté de: ${email}`);
-            return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                success: true,
-                message: "Message reçu avec succès"
-            });
+          console.log(`Spam potentiel détecté de: ${email}`);
+          return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__[
+            "NextResponse"
+          ].json({
+            success: true,
+            message: "Message reçu avec succès",
+          });
         }
         // Configure email transporter for AWDTECH
-        const transporter = __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].createTransport({
+        const transporter =
+          __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__[
+            "default"
+          ].createTransport({
             host: process.env.SMTP_HOST || "smtp.gmail.com",
             port: parseInt(process.env.SMTP_PORT || "587"),
             secure: process.env.SMTP_SECURE === "true",
             auth: {
-                user: process.env.SMTP_USER || "support.cm@awdpay.com",
-                pass: process.env.SMTP_PASSWORD
-            }
-        });
+              user: process.env.SMTP_USER || "support.cm@awdpay.com",
+              pass: process.env.SMTP_PASSWORD,
+            },
+          });
         // Send email to AWDTECH admin
         const adminMailOptions = {
-            from: process.env.SMTP_FROM || `"AWDTECH Site Web" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
-            to: process.env.ADMIN_EMAIL || "support.cm@awdpay.com",
-            replyTo: email,
-            subject: `📧 AWDTECH - Nouveau Contact: ${subject}`,
-            html: createEmailTemplate({
-                name,
-                email,
-                subject,
-                message,
-                service
-            }),
-            text: `
+          from:
+            process.env.SMTP_FROM ||
+            `"AWDTECH Site Web" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
+          to: process.env.ADMIN_EMAIL || "support.cm@awdpay.com",
+          replyTo: email,
+          subject: `📧 AWDTECH - Nouveau Contact: ${subject}`,
+          html: createEmailTemplate({
+            name,
+            email,
+            subject,
+            message,
+            service,
+          }),
+          text: `
 NOUVEAU CONTACT AWDTECH
 =======================
 
 De: ${name} <${email}>
 Sujet: ${subject}
-${service ? `Service: ${getServiceLabel(service)}` : ''}
+${service ? `Service: ${getServiceLabel(service)}` : ""}
 
 Message:
 ${message}
@@ -1495,21 +1578,23 @@ Cameroun: +237 656 849 690 / +237 653 624 318
 Gabon: +241 66 50 39 99 / +241 76 38 80 06
 Côte d'Ivoire: +225 27 24 3 73010 / +225 27 24 3 73317
 Email: support.cm@awdpay.com
-      `.trim()
+      `.trim(),
         };
         // Send confirmation email to user
         const userMailOptions = {
-            from: process.env.SMTP_FROM || `"AWDTECH" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
-            to: email,
-            subject: "✅ AWDTECH - Merci pour votre message",
-            html: createConfirmationEmailTemplate({
-                name,
-                email,
-                subject,
-                message,
-                service
-            }),
-            text: `
+          from:
+            process.env.SMTP_FROM ||
+            `"AWDTECH" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
+          to: email,
+          subject: "✅ AWDTECH - Merci pour votre message",
+          html: createConfirmationEmailTemplate({
+            name,
+            email,
+            subject,
+            message,
+            service,
+          }),
+          text: `
 MERCI DE VOTRE INTÉRÊT POUR AWDTECH
 ====================================
 
@@ -1530,60 +1615,73 @@ Pour toute question urgente, contactez-nous:
 Cordialement,
 L'équipe AWDTECH
 Service Numérique Partout dans le Monde
-      `.trim()
+      `.trim(),
         };
         // Send both emails
         const [adminResult, userResult] = await Promise.all([
-            transporter.sendMail(adminMailOptions),
-            transporter.sendMail(userMailOptions)
+          transporter.sendMail(adminMailOptions),
+          transporter.sendMail(userMailOptions),
         ]);
         // Log success
         console.log("Email AWDTECH envoyé avec succès:", {
-            adminMessageId: adminResult.messageId,
-            userMessageId: userResult.messageId,
-            client: name,
-            email: email,
-            service: service || "Non spécifié",
-            timestamp: new Date().toISOString()
+          adminMessageId: adminResult.messageId,
+          userMessageId: userResult.messageId,
+          client: name,
+          email: email,
+          service: service || "Non spécifié",
+          timestamp: new Date().toISOString(),
         });
-        return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            success: true,
-            message: "Message envoyé avec succès",
-            data: {
-                name,
-                email,
-                subject,
-                service: service ? getServiceLabel(service) : "Non spécifié",
-                messageId: adminResult.messageId
-            }
+        return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__[
+          "NextResponse"
+        ].json({
+          success: true,
+          message: "Message envoyé avec succès",
+          data: {
+            name,
+            email,
+            subject,
+            service: service ? getServiceLabel(service) : "Non spécifié",
+            messageId: adminResult.messageId,
+          },
         });
-    } catch (error) {
+      } catch (error) {
         console.error("Erreur d'envoi d'email AWDTECH:", error);
-        const errorMessage = ("TURBOPACK compile-time truthy", 1) ? error instanceof Error ? error.message : "Erreur inconnue" : "TURBOPACK unreachable";
-        return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+        const errorMessage = ("TURBOPACK compile-time truthy", 1)
+          ? error instanceof Error
+            ? error.message
+            : "Erreur inconnue"
+          : "TURBOPACK unreachable";
+        return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__[
+          "NextResponse"
+        ].json(
+          {
             success: false,
             message: "Échec de l'envoi du message",
-            error: errorMessage
-        }, {
-            status: 500
-        });
+            error: errorMessage,
+          },
+          {
+            status: 500,
+          },
+        );
+      }
     }
-}
-async function GET() {
-    return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+    async function GET() {
+      return __TURBOPACK__imported__module__$5b$project$5d2f$awdtech$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__[
+        "NextResponse"
+      ].json({
         message: "API Contact AWDTECH en ligne",
         status: "healthy",
         company: "AWDTECH - Service Numérique Partout dans le Monde",
         timestamp: new Date().toISOString(),
         contacts: {
-            cameroon: "+237 656 849 690 / +237 653 624 318",
-            gabon: "+241 66 50 39 99 / +241 76 38 80 06",
-            ivoryCoast: "+225 27 24 3 73010 / +225 27 24 3 73317",
-            email: "support.cm@awdpay.com"
-        }
-    });
-}
-}),
+          cameroon: "+237 656 849 690 / +237 653 624 318",
+          gabon: "+241 66 50 39 99 / +241 76 38 80 06",
+          ivoryCoast: "+225 27 24 3 73010 / +225 27 24 3 73317",
+          email: "support.cm@awdpay.com",
+        },
+      });
+    }
+  },
 ];
 
 //# sourceMappingURL=%5Broot-of-the-server%5D__4cc06a7e._.js.map

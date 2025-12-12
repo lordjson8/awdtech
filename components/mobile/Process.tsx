@@ -1,18 +1,20 @@
-
-import React from 'react';
+import React from "react";
 
 const steps = [
   {
-    name: '1. Discovery & Design',
-    description: 'We work with you to understand your vision and design a beautiful, intuitive user interface.',
+    name: "1. Discovery & Design",
+    description:
+      "We work with you to understand your vision and design a beautiful, intuitive user interface.",
   },
   {
-    name: '2. Development',
-    description: 'Our expert developers bring the design to life with clean, efficient code.',
+    name: "2. Development",
+    description:
+      "Our expert developers bring the design to life with clean, efficient code.",
   },
   {
-    name: '3. Testing & Deployment',
-    description: 'We rigorously test your app to ensure it is bug-free and ready for launch.',
+    name: "3. Testing & Deployment",
+    description:
+      "We rigorously test your app to ensure it is bug-free and ready for launch.",
   },
 ];
 

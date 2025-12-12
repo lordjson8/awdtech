@@ -3,16 +3,14 @@ import Hero from "@/components/projects/Hero";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import Header from "@/components/shared/Header";
-import {getTranslations, getLocale} from 'next-intl/server';
+import { getTranslations, getLocale } from "next-intl/server";
 import { Metadata } from "next";
 
 type Props = {
   params: { locale: string };
 };
 
-export async function generateMetadata({
-  params
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   const t = await getTranslations({ locale, namespace: "ProjectsPage.Hero" });
@@ -68,8 +66,7 @@ export async function generateMetadata({
   };
 }
 
-export  default async function ProjectsPage() {
-  
+export default async function ProjectsPage() {
   const locale = getLocale();
   const t = await getTranslations("ProjectsPage");
 
@@ -104,7 +101,9 @@ export  default async function ProjectsPage() {
     <div>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageLdJson) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(collectionPageLdJson),
+        }}
       />
       <script
         type="application/ld+json"

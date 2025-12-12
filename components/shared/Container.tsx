@@ -1,11 +1,9 @@
 import React from "react";
 
-export default function Container({children} : {children : React.ReactNode}) {
+export default function Container({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-    >
-        {children}
+    <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      {children}
     </div>
   );
 }

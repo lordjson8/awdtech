@@ -24,16 +24,16 @@ import MobileThemeSwitcher from "../mobile-theme-switcher";
 import { cn } from "@/lib/utils";
 import LanguageButton from "../locale-toggler";
 import { usePathname } from "next/navigation";
- import { 
-  Globe, 
-  Smartphone, 
+import {
+  Globe,
+  Smartphone,
   Palette,
   Cloud,
   Server,
   Cpu,
   ShoppingCart,
   BarChart,
-} from 'lucide-react';
+} from "lucide-react";
 
 export default function Header({
   scrolledBg = "bg-white/95 dark:bg-black shadow-lg backdrop-blur-sm",
@@ -42,59 +42,58 @@ export default function Header({
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("Header");
-  const pathname  = usePathname();
+  const pathname = usePathname();
 
-
-const services = [
-  {
-    name: t("webDevelopment"),
-    description: t("webDevelopmentDescription"),
-    href: "web",
-    icon: Globe, // or Code, Layout
-  },
-  {
-    name: t("mobileDevelopment"),
-    description: t("mobileDevelopmentDescription"),
-    href: "mobile",
-    icon: Smartphone, // or Gamepad2 for mobile gaming apps
-  },
-  {
-    name: t("graphicDesign"),
-    description: t("graphicDesignDescription"),
-    href: "graphic",
-    icon: Palette, // or PenTool, Image
-  },
-  // {
-  //   name: t("infogerance"), // From your PDF
-  //   description: t("infogeranceDescription"),
-  //   href: "infogerance",
-  //   icon: Server, // or Shield for security, Database for data management
-  // },
-  // {
-  //   name: t("aiSolutions"), // From your PDF
-  //   description: t("aiSolutionsDescription"),
-  //   href: "ai",
-  //   icon: Cpu, // or Zap for AI/ML
-  // },
-  // {
-  //   name: t("ecommerce"),
-  //   description: t("ecommerceDescription"),
-  //   href: "ecommerce",
-  //   icon: ShoppingCart,
-  // },
-  // {
-  //   name: t("cloudServices"),
-  //   description: t("cloudServicesDescription"),
-  //   href: "cloud",
-  //   icon: Cloud,
-  // },
-  // {
-  //   name: t("dataAnalytics"), // From your PDF page 10
-  //   description: t("dataAnalyticsDescription"),
-  //   href: "analytics",
-  //   icon: BarChart, // or Database
-  // },
-];
+  const services = [
+    {
+      name: t("webDevelopment"),
+      description: t("webDevelopmentDescription"),
+      href: "web",
+      icon: Globe, // or Code, Layout
+    },
+    {
+      name: t("mobileDevelopment"),
+      description: t("mobileDevelopmentDescription"),
+      href: "mobile",
+      icon: Smartphone, // or Gamepad2 for mobile gaming apps
+    },
+    {
+      name: t("graphicDesign"),
+      description: t("graphicDesignDescription"),
+      href: "graphic",
+      icon: Palette, // or PenTool, Image
+    },
+    // {
+    //   name: t("infogerance"), // From your PDF
+    //   description: t("infogeranceDescription"),
+    //   href: "infogerance",
+    //   icon: Server, // or Shield for security, Database for data management
+    // },
+    // {
+    //   name: t("aiSolutions"), // From your PDF
+    //   description: t("aiSolutionsDescription"),
+    //   href: "ai",
+    //   icon: Cpu, // or Zap for AI/ML
+    // },
+    // {
+    //   name: t("ecommerce"),
+    //   description: t("ecommerceDescription"),
+    //   href: "ecommerce",
+    //   icon: ShoppingCart,
+    // },
+    // {
+    //   name: t("cloudServices"),
+    //   description: t("cloudServicesDescription"),
+    //   href: "cloud",
+    //   icon: Cloud,
+    // },
+    // {
+    //   name: t("dataAnalytics"), // From your PDF page 10
+    //   description: t("dataAnalyticsDescription"),
+    //   href: "analytics",
+    //   icon: BarChart, // or Database
+    // },
+  ];
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
   const [isVisible, setIsVisible] = useState<boolean>(true);
@@ -142,11 +141,11 @@ const services = [
       className={cn(
         "z-50 fixed w-screen top-0 left-0 transition-all duration-300",
         "border-b",
-        isScrolled 
-          ? "border-gray-200  dark:border-gray-800" 
+        isScrolled
+          ? "border-gray-200  dark:border-gray-800"
           : "border-transparent",
         isVisible ? "translate-y-0" : "-translate-y-full",
-        isScrolled ? scrolledBg : defaultBg
+        isScrolled ? scrolledBg : defaultBg,
       )}
     >
       <nav
@@ -202,10 +201,13 @@ const services = [
             type="button"
             onClick={() => setMobileMenuOpen(true)}
             className={cn(
-              
               "-m-2.5 inline-flex items-center justify-center rounded-md p-2.5",
-              (!isScrolled && !['/fr', '/en', '/es'].includes(pathname))? 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100' : isScrolled ? 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100' : 'text-white',
-              "transition-colors duration-200"
+              !isScrolled && !["/fr", "/en", "/es"].includes(pathname)
+                ? "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+                : isScrolled
+                  ? "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+                  : "text-white",
+              "transition-colors duration-200",
             )}
           >
             <span className="sr-only">{t("openMainMenu")}</span>
@@ -216,19 +218,26 @@ const services = [
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
             href="/"
-            className={`text-sm/6 ${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'}   font-semibold  hover:text-primary transition-colors duration-200`}
+            className={`text-sm/6 ${!isScrolled && pathname !== "/fr" && pathname !== "/en" ? "text-black dark:text-white" : isScrolled ? "dark:text-white text-black" : "text-white"}   font-semibold  hover:text-primary transition-colors duration-200`}
           >
             {t("home")}
           </Link>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className={cn(
-                "flex items-center gap-x-1 text-sm/6 font-semibold",
-                "text-foreground hover:text-primary transition-colors duration-200",
-                "focus:outline-none focus:text-primary"
-              )}>
-               <span className={`${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'}`}> {t("services")}</span>
+              <button
+                className={cn(
+                  "flex items-center gap-x-1 text-sm/6 font-semibold",
+                  "text-foreground hover:text-primary transition-colors duration-200",
+                  "focus:outline-none focus:text-primary",
+                )}
+              >
+                <span
+                  className={`${!isScrolled && pathname !== "/fr" && pathname !== "/en" ? "text-black dark:text-white" : isScrolled ? "dark:text-white text-black" : "text-white"}`}
+                >
+                  {" "}
+                  {t("services")}
+                </span>
                 <ChevronDown
                   aria-hidden="true"
                   className="size-5 flex-none dark:text-gray-500"
@@ -256,7 +265,9 @@ const services = [
                       <span className="block font-semibold text-foreground">
                         {item.name}
                       </span>
-                      <p className="mt-1 text-muted-foreground">{item.description}</p>
+                      <p className="mt-1 text-muted-foreground">
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 </DropdownMenuItem>
@@ -266,13 +277,13 @@ const services = [
 
           <Link
             href="/projects"
-            className={`${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'} text-sm/6 font-semibold  hover:text-primary transition-colors duration-200`}
+            className={`${!isScrolled && pathname !== "/fr" && pathname !== "/en" ? "text-black dark:text-white" : isScrolled ? "dark:text-white text-black" : "text-white"} text-sm/6 font-semibold  hover:text-primary transition-colors duration-200`}
           >
             {t("projects")}
           </Link>
           <Link
             href="/contact"
-            className={`${(!isScrolled && (pathname !=='/fr' && pathname !=='/en'))? 'text-black dark:text-white' : isScrolled ? 'dark:text-white text-black' : 'text-white'} text-sm/6 font-semibold  hover:text-primary transition-colors duration-200`}
+            className={`${!isScrolled && pathname !== "/fr" && pathname !== "/en" ? "text-black dark:text-white" : isScrolled ? "dark:text-white text-black" : "text-white"} text-sm/6 font-semibold  hover:text-primary transition-colors duration-200`}
           >
             {t("contact")}
           </Link>
@@ -329,7 +340,7 @@ const services = [
                 <defs>
                   <clipPath id="clip0_9616_17482)">
                     <rect width="127" height="30" fill="white"></rect>
-                </clipPath>
+                  </clipPath>
                 </defs>
               </svg>
             </Link>
@@ -339,7 +350,7 @@ const services = [
               className={cn(
                 "-m-2.5 rounded-md p-2.5",
                 "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100",
-                "transition-colors duration-200"
+                "transition-colors duration-200",
               )}
             >
               <span className="sr-only">{t("closeMenu")}</span>

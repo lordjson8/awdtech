@@ -9,5 +9,5 @@ __turbopack_load_page_chunks__("/_error", [
   "static/chunks/2798e_dc694252._.js",
   "static/chunks/[root-of-the-server]__4f2fa0f6._.js",
   "static/chunks/awdtech_pages__error_2da965e7._.js",
-  "static/chunks/turbopack-awdtech_pages__error_a62d8a75._.js"
-])
+  "static/chunks/turbopack-awdtech_pages__error_a62d8a75._.js",
+]);

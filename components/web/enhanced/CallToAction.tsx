@@ -1,11 +1,11 @@
-'use client';
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+"use client";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const CallToAction = () => {
-  const t = useTranslations('WebPage.CTA');
+  const t = useTranslations("WebPage.CTA");
 
   return (
     <section className="bg-white dark:bg-gray-900 py-24 transition-colors duration-300">
@@ -13,36 +13,42 @@ const CallToAction = () => {
         <div className="relative bg-orange-500 rounded-3xl p-12 lg:p-16 text-center overflow-hidden">
           {/* Background Elements */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent" />
-          
-        
-          <div className="relative z-10 max-w-4xl mx-auto">
-         
 
+          <div className="relative z-10 max-w-4xl mx-auto">
             {/* Main Content */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
-              dangerouslySetInnerHTML={{ __html: t.raw('title') }}
+            <h2
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              dangerouslySetInnerHTML={{ __html: t.raw("title") }}
             />
-            
+
             <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-              {t('description')}
+              {t("description")}
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 asChild
                 className="bg-white text-orange-600 hover:bg-gray-100 dark:bg-gray-900 dark:text-orange-400 dark:hover:bg-gray-800 font-semibold py-6 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group"
               >
-                <Link href="mailto:support.cm@awdpay.com" className="flex items-center gap-3">
-                  <span>{t('button')}</span>
-                  <svg 
-                    className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-                    fill="none" 
-                    stroke="currentColor" 
+                <Link
+                  href="mailto:support.cm@awdpay.com"
+                  className="flex items-center gap-3"
+                >
+                  <span>{t("button")}</span>
+                  <svg
+                    className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
                   </svg>
                 </Link>
               </Button>
@@ -53,15 +59,15 @@ const CallToAction = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white/80 text-sm">
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                  <span>{t('feature1')}</span>
+                  <span>{t("feature1")}</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
-                  <span>{t('feature2')}</span>
+                  <span>{t("feature2")}</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse" />
-                  <span>{t('feature3')}</span>
+                  <span>{t("feature3")}</span>
                 </div>
               </div>
             </div>

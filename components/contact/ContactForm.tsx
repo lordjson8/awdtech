@@ -129,7 +129,7 @@ export default function ContactForm() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -242,9 +242,10 @@ export default function ContactForm() {
                 variants={itemVariants}
                 className="text-lg text-gray-500 dark:text-gray-300 leading-relaxed"
               >
-                Nous dynamisons votre entreprise avec notre expertise en technologie. 
-                Nous intervenons dans plusieurs pays d&apos;Afrique, d&apos;Europe et d&apos;Amérique 
-                pour accompagner votre transformation digitale.
+                Nous dynamisons votre entreprise avec notre expertise en
+                technologie. Nous intervenons dans plusieurs pays
+                d&apos;Afrique, d&apos;Europe et d&apos;Amérique pour
+                accompagner votre transformation digitale.
               </motion.p>
             </div>
 
@@ -346,7 +347,8 @@ export default function ContactForm() {
                       Message envoyé avec succès !
                     </h3>
                     <p className="text-sm sm:text-base text-gray-500 dark:text-gray-300">
-                      Merci d&apos;avoir contacté AWDTECH. Nous vous répondrons dans les 24 heures ouvrables.
+                      Merci d&apos;avoir contacté AWDTECH. Nous vous répondrons
+                      dans les 24 heures ouvrables.
                     </p>
                     <Button
                       className="mt-6 px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-colors"

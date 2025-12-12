@@ -1,18 +1,20 @@
-
-import React from 'react';
+import React from "react";
 
 const steps = [
   {
-    name: '1. Planning & Strategy',
-    description: 'We define your project goals, target audience, and create a roadmap for success.',
+    name: "1. Planning & Strategy",
+    description:
+      "We define your project goals, target audience, and create a roadmap for success.",
   },
   {
-    name: '2. Design & Development',
-    description: 'We design a user-centric interface and build a robust, scalable application.',
+    name: "2. Design & Development",
+    description:
+      "We design a user-centric interface and build a robust, scalable application.",
   },
   {
-    name: '3. Testing & Launch',
-    description: 'We thoroughly test your application and deploy it to our high-performance servers.',
+    name: "3. Testing & Launch",
+    description:
+      "We thoroughly test your application and deploy it to our high-performance servers.",
   },
 ];
 

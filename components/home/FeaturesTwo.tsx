@@ -1,4 +1,9 @@
-import { ChartNoAxesCombined, Code, CodeXml, RefreshCcwDot } from "lucide-react";
+import {
+  ChartNoAxesCombined,
+  Code,
+  CodeXml,
+  RefreshCcwDot,
+} from "lucide-react";
 import React from "react";
 import { useTranslations } from "next-intl";
 
@@ -18,9 +23,9 @@ export default function FeaturesTwo() {
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
           <div className="p-8 space-y-3 border-2 border-orange-400 dark:border-orange-300 rounded-xl">
-             <span
-              className="inline-flex p-2 text-orange-500 capitalize transition-colors duration-300 transform bg-orange-100 rounded-full rtl:-scale-x-100 dark:bg-orange-500 dark:text-white hover:underline hover:text-orange-600 dark:hover:text-orange-500"
-            >  <CodeXml />
+            <span className="inline-flex p-2 text-orange-500 capitalize transition-colors duration-300 transform bg-orange-100 rounded-full rtl:-scale-x-100 dark:bg-orange-500 dark:text-white hover:underline hover:text-orange-600 dark:hover:text-orange-500">
+              {" "}
+              <CodeXml />
             </span>
 
             <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
@@ -30,13 +35,12 @@ export default function FeaturesTwo() {
             <p className="text-gray-500 dark:text-gray-300">
               {t("offerDigitalSolutionsDescription")}
             </p>
-
           </div>
 
           <div className="p-8 space-y-3 border-2 border-orange-400 dark:border-orange-300 rounded-xl">
-              <span
-              className="inline-flex p-2 text-orange-500 capitalize transition-colors duration-300 transform bg-orange-100 rounded-full rtl:-scale-x-100 dark:bg-orange-500 dark:text-white hover:underline hover:text-orange-600 dark:hover:text-orange-500"
-            >  <RefreshCcwDot />
+            <span className="inline-flex p-2 text-orange-500 capitalize transition-colors duration-300 transform bg-orange-100 rounded-full rtl:-scale-x-100 dark:bg-orange-500 dark:text-white hover:underline hover:text-orange-600 dark:hover:text-orange-500">
+              {" "}
+              <RefreshCcwDot />
             </span>
 
             <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
@@ -46,14 +50,12 @@ export default function FeaturesTwo() {
             <p className="text-gray-500 dark:text-gray-300">
               {t("improveQualityDescription")}
             </p>
-
-          
           </div>
 
           <div className="p-8 space-y-3 border-2 border-orange-400 dark:border-orange-300 rounded-xl">
-            <span
-              className="inline-flex p-2 text-orange-500 capitalize transition-colors duration-300 transform bg-orange-100 rounded-full rtl:-scale-x-100 dark:bg-orange-500 dark:text-white hover:underline hover:text-orange-600 dark:hover:text-orange-500"
-            >  <ChartNoAxesCombined />
+            <span className="inline-flex p-2 text-orange-500 capitalize transition-colors duration-300 transform bg-orange-100 rounded-full rtl:-scale-x-100 dark:bg-orange-500 dark:text-white hover:underline hover:text-orange-600 dark:hover:text-orange-500">
+              {" "}
+              <ChartNoAxesCombined />
             </span>
 
             <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
@@ -63,8 +65,6 @@ export default function FeaturesTwo() {
             <p className="text-gray-500 dark:text-gray-300">
               {t("enableBusinessEvolutionDescription")}
             </p>
-
-         
           </div>
         </div>
       </div>

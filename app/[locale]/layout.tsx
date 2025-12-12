@@ -1,4 +1,4 @@
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -8,7 +8,7 @@ import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/shared/Footer";
 import { getTranslations } from "next-intl/server";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 type Props = {
   children: React.ReactNode;
@@ -30,9 +30,9 @@ const geistMono = Geist_Mono({
 });
 
 export async function generateMetadata({
-  params
+  params,
 }: MetaDataProps): Promise<Metadata> {
-  const {locale} = await params;
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage" });
 
   return {
@@ -79,8 +79,8 @@ export async function generateMetadata({
       apple: "/logo.svg",
       other: [
         {
-          rel: 'apple-touch-icon-precomposed',
-          url: '/logo.svg',
+          rel: "apple-touch-icon-precomposed",
+          url: "/logo.svg",
         },
       ],
     },

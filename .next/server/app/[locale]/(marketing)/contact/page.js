@@ -1,19 +1,31 @@
-var R=require("../../../../chunks/ssr/[turbopack]_runtime.js")("server/app/[locale]/(marketing)/contact/page.js")
-R.c("server/chunks/ssr/[root-of-the-server]__ff317275._.js")
-R.c("server/chunks/ssr/2798e_next_dist_927e51f9._.js")
-R.c("server/chunks/ssr/awdtech_f2118782._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__dcf120bd._.js")
-R.c("server/chunks/ssr/2798e_next_dist_afede98b._.js")
-R.c("server/chunks/ssr/2798e_next_dist_2d64b90c._.js")
-R.c("server/chunks/ssr/2798e_next_dist_client_components_builtin_global-error_3fe382b0.js")
-R.c("server/chunks/ssr/2798e_next_dist_client_components_17c40c7b._.js")
-R.c("server/chunks/ssr/2798e_next_dist_client_components_builtin_forbidden_a79d7eff.js")
-R.c("server/chunks/ssr/2798e_next_dist_client_components_builtin_unauthorized_65d532ae.js")
-R.c("server/chunks/ssr/awdtech_1808a9a3._.js")
-R.c("server/chunks/ssr/2798e_546f4ad0._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__9363cbe3._.js")
-R.c("server/chunks/ssr/awdtech_app_[locale]_not-found_tsx_313ea629._.js")
-R.c("server/chunks/ssr/awdtech_app_[locale]_(marketing)_layout_tsx_f0fb2c35._.js")
-R.c("server/chunks/ssr/cfa8a__next-internal_server_app_[locale]_(marketing)_contact_page_actions_a3e8dc63.js")
-R.m(34146)
-module.exports=R.m(34146).exports
+var R = require("../../../../chunks/ssr/[turbopack]_runtime.js")(
+  "server/app/[locale]/(marketing)/contact/page.js",
+);
+R.c("server/chunks/ssr/[root-of-the-server]__ff317275._.js");
+R.c("server/chunks/ssr/2798e_next_dist_927e51f9._.js");
+R.c("server/chunks/ssr/awdtech_f2118782._.js");
+R.c("server/chunks/ssr/[root-of-the-server]__dcf120bd._.js");
+R.c("server/chunks/ssr/2798e_next_dist_afede98b._.js");
+R.c("server/chunks/ssr/2798e_next_dist_2d64b90c._.js");
+R.c(
+  "server/chunks/ssr/2798e_next_dist_client_components_builtin_global-error_3fe382b0.js",
+);
+R.c("server/chunks/ssr/2798e_next_dist_client_components_17c40c7b._.js");
+R.c(
+  "server/chunks/ssr/2798e_next_dist_client_components_builtin_forbidden_a79d7eff.js",
+);
+R.c(
+  "server/chunks/ssr/2798e_next_dist_client_components_builtin_unauthorized_65d532ae.js",
+);
+R.c("server/chunks/ssr/awdtech_1808a9a3._.js");
+R.c("server/chunks/ssr/2798e_546f4ad0._.js");
+R.c("server/chunks/ssr/[root-of-the-server]__9363cbe3._.js");
+R.c("server/chunks/ssr/awdtech_app_[locale]_not-found_tsx_313ea629._.js");
+R.c(
+  "server/chunks/ssr/awdtech_app_[locale]_(marketing)_layout_tsx_f0fb2c35._.js",
+);
+R.c(
+  "server/chunks/ssr/cfa8a__next-internal_server_app_[locale]_(marketing)_contact_page_actions_a3e8dc63.js",
+);
+R.m(34146);
+module.exports = R.m(34146).exports;

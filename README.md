@@ -8,11 +8,11 @@ This project is a [Next.js](https://nextjs.org) application that serves as the c
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React](https://reactjs.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [Nodemailer](https://nodemailer.com/)
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Nodemailer](https://nodemailer.com/)
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 You need to have Node.js and npm installed on your machine.
 
-* npm
+- npm
   ```sh
   npm install npm@latest -g
   ```
@@ -76,4 +76,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
 # awdtech

@@ -223,29 +223,17 @@
       "corporate": {
         "title": "Sitios Web Corporativos",
         "description": "Sitios web impresionantes y responsivos que cuentan la historia de tu marca y cautivan a tu audiencia.",
-        "features": [
-          "Diseño Responsivo",
-          "SEO Optimizado",
-          "Integración CMS"
-        ]
+        "features": ["Diseño Responsivo", "SEO Optimizado", "Integración CMS"]
       },
       "webapp": {
         "title": "Aplicaciones Web",
         "description": "Aplicaciones web personalizadas potentes para optimizar tus procesos empresariales y comprometer a tus usuarios.",
-        "features": [
-          "Arquitectura Moderna",
-          "API RESTful",
-          "Base de Datos"
-        ]
+        "features": ["Arquitectura Moderna", "API RESTful", "Base de Datos"]
       },
       "ecommerce": {
         "title": "Plataformas E-commerce",
         "description": "Soluciones de comercio electrónico escalables y seguras para vender tus productos y hacer crecer tu negocio en línea.",
-        "features": [
-          "Pago Seguro",
-          "Gestión de Inventario",
-          "Análisis"
-        ]
+        "features": ["Pago Seguro", "Gestión de Inventario", "Análisis"]
       },
       "learnMore": "Aprender más",
       "bottomCta": {

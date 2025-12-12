@@ -85,7 +85,7 @@ export const AWD_PARTNERS: Partner[] = [
 // Animation variants for different directions
 const getMarqueeAnimation = (
   direction: "left" | "right",
-  contentWidth: number
+  contentWidth: number,
 ): MotionProps["animate"] => {
   const baseAnimation =
     direction === "left" ? { x: [0, -contentWidth] } : { x: [0, contentWidth] };
@@ -140,7 +140,7 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
       ([entry]: IntersectionObserverEntry[]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const currentScroller = scrollerRef.current;
@@ -182,9 +182,7 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
   }
 
   return (
-    <section
-      className={`relative  py-8 overflow-hidden ${className}`}
-    >
+    <section className={`relative  py-8 overflow-hidden ${className}`}>
       {/* Header Section */}
       {variant !== "minimal" && (
         <div className="text-center mb-16">
@@ -244,9 +242,9 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
       {showStats && variant !== "minimal" && (
         <div className="mt-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <StatItem 
-              value={DEFAULT_STATS.partnersCount} 
-              label={t("projectsCompleted")} 
+            <StatItem
+              value={DEFAULT_STATS.partnersCount}
+              label={t("projectsCompleted")}
               icon="🚀"
             />
             <StatItem
@@ -254,9 +252,9 @@ const PartnerMarquee: React.FC<PartnerMarqueeProps> = ({
               label={t("clientSatisfaction")}
               icon="⭐"
             />
-            <StatItem 
-              value={DEFAULT_STATS.supportAvailability} 
-              label={t("collaborators")} 
+            <StatItem
+              value={DEFAULT_STATS.supportAvailability}
+              label={t("collaborators")}
               icon="👥"
             />
           </div>
@@ -353,7 +351,9 @@ const StatItem: React.FC<{ value: string; label: string; icon: string }> = ({
       <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:scale-105">
         <div className="text-3xl mb-3">{icon}</div>
         <div className="text-3xl font-bold text-orange-500 mb-2">{value}</div>
-        <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">{label}</div>
+        <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+          {label}
+        </div>
       </div>
     </div>
   );
@@ -375,9 +375,7 @@ export const CSSPartnerMarquee: React.FC<
     direction === "left" ? "animate-marquee-left" : "animate-marquee-right";
 
   return (
-    <div
-      className={`relative  py-20 overflow-hidden ${className}`}
-    >
+    <div className={`relative  py-20 overflow-hidden ${className}`}>
       {/* Header */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -411,9 +409,9 @@ export const CSSPartnerMarquee: React.FC<
       {showStats && (
         <div className="mt-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <StatItem 
-              value={DEFAULT_STATS.partnersCount} 
-              label={t("projectsCompleted")} 
+            <StatItem
+              value={DEFAULT_STATS.partnersCount}
+              label={t("projectsCompleted")}
               icon="🚀"
             />
             <StatItem
@@ -421,9 +419,9 @@ export const CSSPartnerMarquee: React.FC<
               label={t("clientSatisfaction")}
               icon="⭐"
             />
-            <StatItem 
-              value={DEFAULT_STATS.supportAvailability} 
-              label={t("collaborators")} 
+            <StatItem
+              value={DEFAULT_STATS.supportAvailability}
+              label={t("collaborators")}
               icon="👥"
             />
           </div>
@@ -469,7 +467,7 @@ export const CSSPartnerMarquee: React.FC<
 export const useMarquee = (partners: Partner[]) => {
   const duplicatedPartners = useMemo(
     () => [...partners, ...partners],
-    [partners]
+    [partners],
   );
 
   return { duplicatedPartners };

@@ -1,17 +1,23 @@
-'use client';
-import { Project } from '@/types';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+"use client";
+import { Project } from "@/types";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 type ProjectCardProps = {
   project: Project;
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const t = useTranslations('ProjectsPage');
+  const t = useTranslations("ProjectsPage");
 
   return (
     <Card className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
@@ -35,15 +41,21 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </CardDescription>
         <div className="mt-4 flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
-            <span key={tech} className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-full">
+            <span
+              key={tech}
+              className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-full"
+            >
               {tech}
             </span>
           ))}
         </div>
         <div className="mt-6">
-          <Link href={project.link} target='_blank' passHref>
-            <Button variant="outline" className="w-full group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
-              {t('viewProject')}
+          <Link href={project.link} target="_blank" passHref>
+            <Button
+              variant="outline"
+              className="w-full group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300"
+            >
+              {t("viewProject")}
             </Button>
           </Link>
         </div>

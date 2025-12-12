@@ -41,7 +41,7 @@ export default function Features() {
                 <h1 className="text-4xl font-bold text-gray-900 capitalize lg:text-5xl dark:text-white">
                   {t("whoAreWe")}
                 </h1>
-                
+
                 <div className="flex items-center space-x-1">
                   <span className="inline-block w-16 h-2 bg-orange-500 rounded-full"></span>
                   <span className="inline-block w-4 h-2 bg-orange-500 rounded-full"></span>
@@ -62,7 +62,7 @@ export default function Features() {
 
             <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
               {stats.map((stat, index) => (
-                <div 
+                <div
                   key={index}
                   className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:shadow-lg transition-all duration-300"
                 >
@@ -82,7 +82,7 @@ export default function Features() {
               </h3>
               <div className="grid gap-4 md:grid-cols-3">
                 {values.map((value, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="flex items-start space-x-3 p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg"
                   >
@@ -119,8 +119,12 @@ export default function Features() {
                       <span className="text-white font-bold text-lg">✓</span>
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 dark:text-white">{t("expertise")}</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">{t("expertiseSince")}</div>
+                      <div className="font-bold text-gray-900 dark:text-white">
+                        {t("expertise")}
+                      </div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300">
+                        {t("expertiseSince")}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -148,10 +152,11 @@ export default function Features() {
             <h3 className="text-2xl font-bold mb-4">
               {t("readyToRevolutionize")}
             </h3>
-            <p className="mb-6 opacity-90 max-w-2xl mx-auto">
-              {t("joinUs")}
-            </p>
-            <Link href="mailto:support.cm@awdpay.com" className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+            <p className="mb-6 opacity-90 max-w-2xl mx-auto">{t("joinUs")}</p>
+            <Link
+              href="mailto:support.cm@awdpay.com"
+              className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+            >
               {t("contactUs")}
             </Link>
           </div>

@@ -1,17 +1,17 @@
-'use client';
-import { projects } from '@/constants/projects';
-import React, { useState } from 'react';
-import { ProjectCard } from './ProjectCard';
-import { useTranslations } from 'next-intl';
+"use client";
+import { projects } from "@/constants/projects";
+import React, { useState } from "react";
+import { ProjectCard } from "./ProjectCard";
+import { useTranslations } from "next-intl";
 
 const ProjectGrid = () => {
-  const t = useTranslations('ProjectsPage.Categories');
-  const [activeFilter, setActiveFilter] = useState('all');
+  const t = useTranslations("ProjectsPage.Categories");
+  const [activeFilter, setActiveFilter] = useState("all");
 
-
-  const filteredProjects = activeFilter === 'all'
-    ? projects
-    : projects.filter(project => project.slug.includes(activeFilter));
+  const filteredProjects =
+    activeFilter === "all"
+      ? projects
+      : projects.filter((project) => project.slug.includes(activeFilter));
 
   return (
     <section className="py-6 lg:py-6">

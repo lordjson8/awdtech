@@ -1,12 +1,12 @@
-import Header from '@/components/shared/Header'
-import Hero from '@/components/shared/Hero'
-import React from 'react'
+import Header from "@/components/shared/Header";
+import Hero from "@/components/shared/Hero";
+import React from "react";
 
-export default function Layout({children} : {children: React.ReactNode}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-       {/* <Hero />  */}
-       {children}
+      {/* <Hero />  */}
+      {children}
     </>
-  )
+  );
 }

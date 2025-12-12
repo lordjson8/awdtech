@@ -3,14 +3,31 @@ import nodemailer from "nodemailer";
 import { z } from "zod";
 
 const contactSchema = z.object({
-  name: z.string().min(2, "Le nom doit comporter au moins 2 caractères").max(100),
+  name: z
+    .string()
+    .min(2, "Le nom doit comporter au moins 2 caractères")
+    .max(100),
   email: z.string().email("Veuillez entrer une adresse email valide"),
-  subject: z.string().min(3, "Le sujet doit comporter au moins 3 caractères").max(200),
+  subject: z
+    .string()
+    .min(3, "Le sujet doit comporter au moins 3 caractères")
+    .max(200),
   message: z
     .string()
     .min(10, "Le message doit comporter au moins 10 caractères")
     .max(5000),
-  service: z.enum(["web", "mobile", "design", "infogerance", "ai", "ecommerce", "cloud", "autre"]).optional(),
+  service: z
+    .enum([
+      "web",
+      "mobile",
+      "design",
+      "infogerance",
+      "ai",
+      "ecommerce",
+      "cloud",
+      "autre",
+    ])
+    .optional(),
 });
 
 const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
@@ -546,7 +563,9 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
         </div>
         
         <!-- Service Information -->
-        ${data.service ? `
+        ${
+          data.service
+            ? `
         <div class="service-section">
           <div class="detail-label">Service demandé</div>
           <div class="service-badge">
@@ -554,7 +573,9 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
             <span class="service-category">${getServiceCategory(data.service)}</span>
           </div>
         </div>
-        ` : ''}
+        `
+            : ""
+        }
       </div>
       
       <!-- Message Section -->
@@ -652,7 +673,9 @@ const createEmailTemplate = (data: z.infer<typeof contactSchema>) => `
 </body>
 </html>
 `;
-const createConfirmationEmailTemplate = (data: z.infer<typeof contactSchema>) => `
+const createConfirmationEmailTemplate = (
+  data: z.infer<typeof contactSchema>,
+) => `
 <!DOCTYPE html>
 <html>
 <head>
@@ -1076,13 +1099,17 @@ const createConfirmationEmailTemplate = (data: z.infer<typeof contactSchema>) =>
       </div>
       
       <!-- Message Summary -->
-      ${data.message ? `
+      ${
+        data.message
+          ? `
       <div class="section-title">Votre message</div>
       <div class="message-summary">
         <div class="message-label">Résumé</div>
         <p class="message-preview">"${data.message.substring(0, 200)}${data.message.length > 200 ? "..." : ""}"</p>
       </div>
-      ` : ''}
+      `
+          : ""
+      }
       
       <!-- Process Steps -->
       <div class="section-title">Notre processus de traitement</div>
@@ -1243,7 +1270,7 @@ const getServiceLabel = (service: string) => {
     ai: "Intelligence Artificielle",
     ecommerce: "Solutions E-commerce",
     cloud: "Services Cloud",
-    autre: "Autre demande"
+    autre: "Autre demande",
   };
   return services[service] || "Non spécifié";
 };
@@ -1257,7 +1284,7 @@ const getServiceCategory = (service: string) => {
     ai: "IA",
     ecommerce: "E-COMMERCE",
     cloud: "CLOUD",
-    autre: "GÉNÉRAL"
+    autre: "GÉNÉRAL",
   };
   return categories[service] || "GÉNÉRAL";
 };
@@ -1282,10 +1309,10 @@ export async function POST(request: NextRequest) {
             message: err.message,
           })),
         },
-        { status: 400 }
+        { status: 400 },
       );
     }
-    
+
     const { name, email, subject, message, service } = validationResult.data;
 
     // Check for spam (French keywords as well)
@@ -1302,10 +1329,10 @@ export async function POST(request: NextRequest) {
       "gagner",
       "argent",
     ];
-    
+
     const contentToCheck = `${subject} ${message} ${email}`.toLowerCase();
-    const isPotentialSpam = spamKeywords.some(
-      (keyword) => contentToCheck.includes(keyword)
+    const isPotentialSpam = spamKeywords.some((keyword) =>
+      contentToCheck.includes(keyword),
     );
 
     if (isPotentialSpam) {
@@ -1329,7 +1356,9 @@ export async function POST(request: NextRequest) {
 
     // Send email to AWDTECH admin
     const adminMailOptions = {
-      from: process.env.SMTP_FROM || `"AWDTECH Site Web" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
+      from:
+        process.env.SMTP_FROM ||
+        `"AWDTECH Site Web" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
       to: process.env.ADMIN_EMAIL || "support.cm@awdpay.com",
       replyTo: email,
       subject: `📧 AWDTECH - Nouveau Contact: ${subject}`,
@@ -1340,7 +1369,7 @@ NOUVEAU CONTACT AWDTECH
 
 De: ${name} <${email}>
 Sujet: ${subject}
-${service ? `Service: ${getServiceLabel(service)}` : ''}
+${service ? `Service: ${getServiceLabel(service)}` : ""}
 
 Message:
 ${message}
@@ -1359,10 +1388,18 @@ Email: support.cm@awdpay.com
 
     // Send confirmation email to user
     const userMailOptions = {
-      from: process.env.SMTP_FROM || `"AWDTECH" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
+      from:
+        process.env.SMTP_FROM ||
+        `"AWDTECH" <${process.env.SMTP_USER || "noreply@awdtech.org"}>`,
       to: email,
       subject: "✅ AWDTECH - Merci pour votre message",
-      html: createConfirmationEmailTemplate({ name, email, subject, message, service }),
+      html: createConfirmationEmailTemplate({
+        name,
+        email,
+        subject,
+        message,
+        service,
+      }),
       text: `
 MERCI DE VOTRE INTÉRÊT POUR AWDTECH
 ====================================
@@ -1430,7 +1467,7 @@ Service Numérique Partout dans le Monde
         message: "Échec de l'envoi du message",
         error: errorMessage,
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
@@ -1446,7 +1483,7 @@ export async function GET() {
       cameroon: "+237 656 849 690 / +237 653 624 318",
       gabon: "+241 66 50 39 99 / +241 76 38 80 06",
       ivoryCoast: "+225 27 24 3 73010 / +225 27 24 3 73317",
-      email: "support.cm@awdpay.com"
-    }
+      email: "support.cm@awdpay.com",
+    },
   });
 }

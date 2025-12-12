@@ -1,3 +1,378 @@
-module.exports=[93695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},89493,a=>{a.n(a.i(58719))},40579,a=>{a.n(a.i(84185))},61044,a=>{a.n(a.i(5352))},28190,a=>{a.n(a.i(49062))},48158,a=>{a.n(a.i(6399))},43592,a=>{a.n(a.i(48759))},5012,a=>{a.n(a.i(22415))},94222,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/shared/Header.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/shared/Header.tsx <module evaluation>","default");a.s(["default",0,b])},64088,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/shared/Header.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/shared/Header.tsx","default");a.s(["default",0,b])},48579,a=>{"use strict";a.i(94222);var b=a.i(64088);a.n(b)},42287,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/shared/AnimatedSection.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/shared/AnimatedSection.tsx <module evaluation>","default");a.s(["default",0,b])},70007,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/shared/AnimatedSection.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/shared/AnimatedSection.tsx","default");a.s(["default",0,b])},22480,a=>{"use strict";a.i(42287);var b=a.i(70007);a.n(b)},32721,a=>{"use strict";var b=a.i(25069);a.s(["getLocale",()=>b.default])},23613,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx <module evaluation>","default");a.s(["default",0,b])},65843,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx","default");a.s(["default",0,b])},48883,a=>{"use strict";a.i(23613);var b=a.i(65843);a.n(b)},50745,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Features.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/Features.tsx <module evaluation>","default");a.s(["default",0,b])},20610,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Features.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/Features.tsx","default");a.s(["default",0,b])},6438,a=>{"use strict";a.i(50745);var b=a.i(20610);a.n(b)},45439,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Expertise.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/Expertise.tsx <module evaluation>","default");a.s(["default",0,b])},96574,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Expertise.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/Expertise.tsx","default");a.s(["default",0,b])},68640,a=>{"use strict";a.i(45439);var b=a.i(96574);a.n(b)},10014,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/CallToAction.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/CallToAction.tsx <module evaluation>","default");a.s(["default",0,b])},6751,a=>{"use strict";let b=(0,a.i(95567).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/CallToAction.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/awdtech/components/mobile/enhanced/CallToAction.tsx","default");a.s(["default",0,b])},52381,a=>{"use strict";a.i(10014);var b=a.i(6751);a.n(b)},80113,a=>{"use strict";var b=a.i(46580),c=a.i(48883),d=a.i(6438),e=a.i(68640),f=a.i(52381),g=a.i(48579),h=a.i(22480),i=a.i(32721),j=a.i(53408);async function k({params:a}){let{locale:b}=await a,c=await (0,j.getTranslations)({locale:b,namespace:"MobilePage.Hero"});return{title:`${c("title1")} ${c("title2")}`,description:c("description").replace(/<[^>]*>/g,""),robots:{index:!0,follow:!0},keywords:["AWDTech","AWD Tech","AWD","tech","mobile development","ios development","android development","cross-platform apps","native apps","mobile experiences"],openGraph:{title:`${c("title1")} ${c("title2")}`,description:c("description").replace(/<[^>]*>/g,""),type:"website",url:`https://awdtech.org/${b}/mobile`,images:[{url:"https://awdtech.org/mobile.jpg",width:1200,height:630,alt:`${c("title1")} ${c("title2")}`}]},twitter:{card:"summary_large_image",title:`${c("title1")} ${c("title2")}`,description:c("description").replace(/<[^>]*>/g,""),images:["https://awdtech.org/mobile.jpg"]},alternates:{canonical:`https://awdtech.org/${b}/mobile`,languages:{"en-US":"https://awdtech.org/en/mobile","fr-FR":"https://awdtech.org/fr/mobile","es-ES":"https://awdtech.org/es/mobile"}}}}async function l(){let a=(0,i.getLocale)(),k=await (0,j.getTranslations)("ProjectsPage"),l={"@context":"https://schema.org","@type":"WebPage",name:k("Hero.title1")+" "+k("Hero.title2"),description:k("Hero.description").replace(/<[^>]*>/g,""),url:`https://awdtech.org/${a}/mobile`},m={"@context":"https://schema.org","@type":"Service",serviceType:"Mobile Development",provider:{"@type":"Organization",name:"AWDTech"},name:"Mobile Development",description:k("Features.native.description")},n={"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:`https://awdtech.org/${a}`},{"@type":"ListItem",position:2,name:"Mobile Development",item:`https://awdtech.org/${a}/mobile`}]};return(0,b.jsxs)("div",{children:[(0,b.jsx)("script",{type:"application/ld+json",dangerouslySetInnerHTML:{__html:JSON.stringify(l)}}),(0,b.jsx)("script",{type:"application/ld+json",dangerouslySetInnerHTML:{__html:JSON.stringify(m)}}),(0,b.jsx)("script",{type:"application/ld+json",dangerouslySetInnerHTML:{__html:JSON.stringify(n)}}),(0,b.jsx)(h.default,{children:(0,b.jsx)(g.default,{})}),(0,b.jsx)(h.default,{children:(0,b.jsx)(c.default,{})}),(0,b.jsx)(h.default,{children:(0,b.jsx)(d.default,{})}),(0,b.jsx)(h.default,{children:(0,b.jsx)(e.default,{})}),(0,b.jsx)(h.default,{children:(0,b.jsx)(f.default,{})})]})}a.s(["default",()=>l,"generateMetadata",()=>k])}];
+module.exports = [
+  93695,
+  (a, b, c) => {
+    b.exports = a.x("next/dist/shared/lib/no-fallback-error.external.js", () =>
+      require("next/dist/shared/lib/no-fallback-error.external.js"),
+    );
+  },
+  89493,
+  (a) => {
+    a.n(a.i(58719));
+  },
+  40579,
+  (a) => {
+    a.n(a.i(84185));
+  },
+  61044,
+  (a) => {
+    a.n(a.i(5352));
+  },
+  28190,
+  (a) => {
+    a.n(a.i(49062));
+  },
+  48158,
+  (a) => {
+    a.n(a.i(6399));
+  },
+  43592,
+  (a) => {
+    a.n(a.i(48759));
+  },
+  5012,
+  (a) => {
+    a.n(a.i(22415));
+  },
+  94222,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/shared/Header.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/shared/Header.tsx <module evaluation>",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  64088,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/shared/Header.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/shared/Header.tsx",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  48579,
+  (a) => {
+    "use strict";
+    a.i(94222);
+    var b = a.i(64088);
+    a.n(b);
+  },
+  42287,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/shared/AnimatedSection.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/shared/AnimatedSection.tsx <module evaluation>",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  70007,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/shared/AnimatedSection.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/shared/AnimatedSection.tsx",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  22480,
+  (a) => {
+    "use strict";
+    a.i(42287);
+    var b = a.i(70007);
+    a.n(b);
+  },
+  32721,
+  (a) => {
+    "use strict";
+    var b = a.i(25069);
+    a.s(["getLocale", () => b.default]);
+  },
+  23613,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx <module evaluation>",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  65843,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/EnhancedHero.tsx",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  48883,
+  (a) => {
+    "use strict";
+    a.i(23613);
+    var b = a.i(65843);
+    a.n(b);
+  },
+  50745,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Features.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/Features.tsx <module evaluation>",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  20610,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Features.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/Features.tsx",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  6438,
+  (a) => {
+    "use strict";
+    a.i(50745);
+    var b = a.i(20610);
+    a.n(b);
+  },
+  45439,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Expertise.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/Expertise.tsx <module evaluation>",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  96574,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/Expertise.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/Expertise.tsx",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  68640,
+  (a) => {
+    "use strict";
+    a.i(45439);
+    var b = a.i(96574);
+    a.n(b);
+  },
+  10014,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/CallToAction.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/CallToAction.tsx <module evaluation>",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  6751,
+  (a) => {
+    "use strict";
+    let b = (0, a.i(95567).registerClientReference)(
+      function () {
+        throw Error(
+          "Attempted to call the default export of [project]/awdtech/components/mobile/enhanced/CallToAction.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+        );
+      },
+      "[project]/awdtech/components/mobile/enhanced/CallToAction.tsx",
+      "default",
+    );
+    a.s(["default", 0, b]);
+  },
+  52381,
+  (a) => {
+    "use strict";
+    a.i(10014);
+    var b = a.i(6751);
+    a.n(b);
+  },
+  80113,
+  (a) => {
+    "use strict";
+    var b = a.i(46580),
+      c = a.i(48883),
+      d = a.i(6438),
+      e = a.i(68640),
+      f = a.i(52381),
+      g = a.i(48579),
+      h = a.i(22480),
+      i = a.i(32721),
+      j = a.i(53408);
+    async function k({ params: a }) {
+      let { locale: b } = await a,
+        c = await (0, j.getTranslations)({
+          locale: b,
+          namespace: "MobilePage.Hero",
+        });
+      return {
+        title: `${c("title1")} ${c("title2")}`,
+        description: c("description").replace(/<[^>]*>/g, ""),
+        robots: { index: !0, follow: !0 },
+        keywords: [
+          "AWDTech",
+          "AWD Tech",
+          "AWD",
+          "tech",
+          "mobile development",
+          "ios development",
+          "android development",
+          "cross-platform apps",
+          "native apps",
+          "mobile experiences",
+        ],
+        openGraph: {
+          title: `${c("title1")} ${c("title2")}`,
+          description: c("description").replace(/<[^>]*>/g, ""),
+          type: "website",
+          url: `https://awdtech.org/${b}/mobile`,
+          images: [
+            {
+              url: "https://awdtech.org/mobile.jpg",
+              width: 1200,
+              height: 630,
+              alt: `${c("title1")} ${c("title2")}`,
+            },
+          ],
+        },
+        twitter: {
+          card: "summary_large_image",
+          title: `${c("title1")} ${c("title2")}`,
+          description: c("description").replace(/<[^>]*>/g, ""),
+          images: ["https://awdtech.org/mobile.jpg"],
+        },
+        alternates: {
+          canonical: `https://awdtech.org/${b}/mobile`,
+          languages: {
+            "en-US": "https://awdtech.org/en/mobile",
+            "fr-FR": "https://awdtech.org/fr/mobile",
+            "es-ES": "https://awdtech.org/es/mobile",
+          },
+        },
+      };
+    }
+    async function l() {
+      let a = (0, i.getLocale)(),
+        k = await (0, j.getTranslations)("ProjectsPage"),
+        l = {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: k("Hero.title1") + " " + k("Hero.title2"),
+          description: k("Hero.description").replace(/<[^>]*>/g, ""),
+          url: `https://awdtech.org/${a}/mobile`,
+        },
+        m = {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          serviceType: "Mobile Development",
+          provider: { "@type": "Organization", name: "AWDTech" },
+          name: "Mobile Development",
+          description: k("Features.native.description"),
+        },
+        n = {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: `https://awdtech.org/${a}`,
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Mobile Development",
+              item: `https://awdtech.org/${a}/mobile`,
+            },
+          ],
+        };
+      return (0, b.jsxs)("div", {
+        children: [
+          (0, b.jsx)("script", {
+            type: "application/ld+json",
+            dangerouslySetInnerHTML: { __html: JSON.stringify(l) },
+          }),
+          (0, b.jsx)("script", {
+            type: "application/ld+json",
+            dangerouslySetInnerHTML: { __html: JSON.stringify(m) },
+          }),
+          (0, b.jsx)("script", {
+            type: "application/ld+json",
+            dangerouslySetInnerHTML: { __html: JSON.stringify(n) },
+          }),
+          (0, b.jsx)(h.default, { children: (0, b.jsx)(g.default, {}) }),
+          (0, b.jsx)(h.default, { children: (0, b.jsx)(c.default, {}) }),
+          (0, b.jsx)(h.default, { children: (0, b.jsx)(d.default, {}) }),
+          (0, b.jsx)(h.default, { children: (0, b.jsx)(e.default, {}) }),
+          (0, b.jsx)(h.default, { children: (0, b.jsx)(f.default, {}) }),
+        ],
+      });
+    }
+    a.s(["default", () => l, "generateMetadata", () => k]);
+  },
+];
 
 //# sourceMappingURL=%5Broot-of-the-server%5D__9ee3dfb9._.js.map
