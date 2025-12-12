@@ -1,19 +1,13 @@
-var R = require("../../chunks/ssr/[turbopack]_runtime.js")(
-  "server/app/_not-found/page.js",
-);
-R.c("server/chunks/ssr/[root-of-the-server]__22317652._.js");
-R.c("server/chunks/ssr/2798e_next_dist_927e51f9._.js");
-R.c("server/chunks/ssr/2798e_next_dist_52f270d2._.js");
-R.c("server/chunks/ssr/[root-of-the-server]__82bd11e4._.js");
-R.c("server/chunks/ssr/2798e_next_dist_afede98b._.js");
-R.c("server/chunks/ssr/2798e_next_dist_2d64b90c._.js");
-R.c("server/chunks/ssr/2798e_next_35fe3466._.js");
-R.c("server/chunks/ssr/2798e_next_dist_client_components_17c40c7b._.js");
-R.c(
-  "server/chunks/ssr/2798e_next_dist_client_components_builtin_forbidden_a79d7eff.js",
-);
-R.c(
-  "server/chunks/ssr/awdtech__next-internal_server_app__not-found_page_actions_2a1f1569.js",
-);
-R.m(38474);
-module.exports = R.m(38474).exports;
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_not-found/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__22317652._.js")
+R.c("server/chunks/ssr/2798e_next_dist_927e51f9._.js")
+R.c("server/chunks/ssr/2798e_next_dist_52f270d2._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__82bd11e4._.js")
+R.c("server/chunks/ssr/2798e_next_dist_afede98b._.js")
+R.c("server/chunks/ssr/2798e_next_dist_2d64b90c._.js")
+R.c("server/chunks/ssr/2798e_next_35fe3466._.js")
+R.c("server/chunks/ssr/2798e_next_dist_client_components_17c40c7b._.js")
+R.c("server/chunks/ssr/2798e_next_dist_client_components_builtin_forbidden_a79d7eff.js")
+R.c("server/chunks/ssr/awdtech__next-internal_server_app__not-found_page_actions_2a1f1569.js")
+R.m(38474)
+module.exports=R.m(38474).exports
