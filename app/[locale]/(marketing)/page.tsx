@@ -32,6 +32,9 @@ export async function generateMetadata({
     },
     keywords: [
       "AWDTech",
+      "AWD Tech",
+      "AWD",
+      "tech",
       "web development",
       "mobile development",
       "UI/UX design",

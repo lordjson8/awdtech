@@ -511,3 +511,82 @@ Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 [00:33:39.655] Server  LOG      ✓ Compiled in 142ms
 [00:33:50.014] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
 [00:33:56.201] Server  LOG     Email AWDTECH envoyé avec succès: {}
+[01:03:46.936] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:03:46.938] Server  LOG      ✓ Compiled in 48ms
+[01:03:46.946] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:03:46.952] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:03:46.955] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:03:46.961] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:03:49.880] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:03:49.882] Server  LOG      ✓ Compiled in 35ms
+[01:03:49.890] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:03:49.894] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:03:49.897] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:03:49.902] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:05:02.910] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:05:02.929] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:05:02.932] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:05:02.935] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:05:02.942] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:05:06.555] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:05:06.570] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:05:06.575] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:05:06.581] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:05:06.590] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:05:23.398] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:05:23.411] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:05:23.418] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:05:23.424] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:05:23.435] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:05:27.655] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:05:27.674] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:05:27.677] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:05:27.681] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:05:27.687] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:05:33.703] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:05:33.721] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:05:33.731] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:05:33.734] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:05:33.740] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:05:37.946] Browser ERROR   ./awdtech/app/[locale]/(marketing)/contact/page.tsx:28:7
+Parsing ecmascript source code failed
+  26 |       "AWD",
+  27 |       ""
+> 28 |       "contact",
+     |       ^^^^^^^^^
+  29 |       "get in touch",
+  30 |       "project inquiry",
+  31 |       "web development",
+
+Expected ',', got 'string literal (contact, "contact")'
+[01:05:39.946] Browser ERROR   ./awdtech/app/[locale]/(marketing)/contact/page.tsx:28:7
+Parsing ecmascript source code failed
+  26 |       "AWD",
+  27 |       "te"
+> 28 |       "contact",
+     |       ^^^^^^^^^
+  29 |       "get in touch",
+  30 |       "project inquiry",
+  31 |       "web development",
+
+Expected ',', got 'string literal (contact, "contact")'
+[01:05:41.793] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:05:41.802] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:05:41.806] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:05:41.810] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:05:41.815] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:06:11.031] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:06:11.033] Server  LOG      ✓ Compiled in 34ms
+[01:06:11.054] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[01:06:11.060] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[01:06:11.067] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[01:06:11.074] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport

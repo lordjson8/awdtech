@@ -29,6 +29,9 @@ export async function generateMetadata({
     },
     keywords: [
       "AWDTech",
+      "AWD Tech",
+      "AWD",
+      "tech",
       "graphic design",
       "UI/UX design",
       "branding",

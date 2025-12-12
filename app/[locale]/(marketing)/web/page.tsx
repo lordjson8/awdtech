@@ -29,6 +29,9 @@ export async function generateMetadata({
     },
     keywords: [
       "AWDTech",
+      "AWD Tech",
+      "AWD",
+      "tech",
       "web development",
       "web solutions",
       "innovative web solutions",
