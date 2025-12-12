@@ -1,0 +1,13 @@
+__turbopack_load_page_chunks__("/_error", [
+  "static/chunks/2798e_next_dist_compiled_ad3c4257._.js",
+  "static/chunks/2798e_next_dist_shared_lib_41219ad6._.js",
+  "static/chunks/2798e_next_dist_client_89ada4c5._.js",
+  "static/chunks/2798e_next_dist_1d6da09f._.js",
+  "static/chunks/2798e_next_error_72979dcf.js",
+  "static/chunks/[next]_entry_page-loader_ts_3326e16d._.js",
+  "static/chunks/2798e_react-dom_5fb41f01._.js",
+  "static/chunks/2798e_dc694252._.js",
+  "static/chunks/[root-of-the-server]__4f2fa0f6._.js",
+  "static/chunks/awdtech_pages__error_2da965e7._.js",
+  "static/chunks/turbopack-awdtech_pages__error_a62d8a75._.js"
+])

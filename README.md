@@ -1,24 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AWDTech Website
+
+This is the official website for AWDTech, a software development company specializing in building high-quality web and mobile applications.
+
+## About The Project
+
+This project is a [Next.js](https://nextjs.org) application that serves as the corporate website for AWDTech. It showcases the company's services, projects, and provides a contact form for inquiries.
+
+### Built With
+
+* [Next.js](https://nextjs.org/)
+* [React](https://reactjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Nodemailer](https://nodemailer.com/)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+You need to have Node.js and npm installed on your machine.
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Environment Variables
+
+Create a `.env` file in the root of the project and add the following environment variables. You can use the `.env.example` file as a template.
+
+```
+SMTP_HOST="smtp.example.com"
+SMTP_PORT="587"
+SMTP_SECURE="false"
+SMTP_USER="user@example.com"
+SMTP_PASSWORD="your-password"
+SMTP_FROM="noreply@example.com"
+ADMIN_EMAIL="admin@example.com"
+```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+## Usage
+
+To run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 

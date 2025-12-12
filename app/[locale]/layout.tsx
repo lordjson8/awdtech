@@ -30,8 +30,9 @@ const geistMono = Geist_Mono({
 });
 
 export async function generateMetadata({
-  params: { locale },
+  params
 }: MetaDataProps): Promise<Metadata> {
+  const {locale} = await params;
   const t = await getTranslations({ locale, namespace: "HomePage" });
 
   return {

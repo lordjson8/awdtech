@@ -3449,6 +3449,10 @@
     animation-play-state: paused;
   }
 
+  .running {
+    animation-play-state: running;
+  }
+
   @media (hover: hover) {
     .group-hover\:w-16:is(:where(.group):hover *) {
       width: calc(var(--spacing) * 16);

@@ -1,18 +1,16 @@
-[00:00:01.018] Server  LOG      ✓ Ready in 832ms
-[00:00:06.661] Server  LOG      ○ Compiling /[locale] ...
-[00:00:08.513] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:00:08.611] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+[00:00:00.988] Server  LOG      ✓ Ready in 798ms
+[00:00:07.092] Server  LOG      ○ Compiling /[locale] ...
+[00:00:08.334] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:09.166] Server  ERROR   Invalid DOM property `font-family`. Did you mean `fontFamily`?
-[00:00:09.166] Server  ERROR   Invalid DOM property `font-size`. Did you mean `fontSize`?
-[00:00:09.167] Server  ERROR   Invalid DOM property `font-weight`. Did you mean `fontWeight`?
-[00:00:09.398] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:00:09.427] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+[00:00:08.334] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:10.379] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
-[00:00:10.379] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
-[00:00:10.379] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
-[00:00:10.379] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:08.973] Server  ERROR   Invalid DOM property `font-family`. Did you mean `fontFamily`?
+[00:00:08.973] Server  ERROR   Invalid DOM property `font-size`. Did you mean `fontSize`?
+[00:00:08.973] Server  ERROR   Invalid DOM property `font-weight`. Did you mean `fontWeight`?
+[00:00:09.780] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:00:09.781] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:00:09.781] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:00:09.781] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -44,69 +42,18 @@ It can also happen if the client has a browser extension installed which messes 
                           <LocaleLayout>
                             <html
                               lang="fr"
--                             className={"\"dark\""}
 -                             data-foxclocks-statusbar-vertical-position="bottom"
 -                             data-foxclocks-statusbar-priority="normal"
-                            >
-                              <body
-                                aria-label="Global"
-                                className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG_..."
--                               cz-shortcut-listen="true"
-                              >
-                      ...
-          ...
-
-[00:00:10.379] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:10.379] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:10.380] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:10.380] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:10.380] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:10.380] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:10.380] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
-[00:00:10.380] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765541178553}
-[00:00:11.288] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
-[00:00:11.288] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
-[00:00:11.288] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
-[00:00:11.288] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <RenderFromTemplateContext>
-      <ScrollAndFocusHandler segmentPath={[...]}>
-        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-            <LoadingBoundary name="/" loading={null}>
-              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-                <HTTPAccessFallbackErrorBoundary pathname="/fr" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                  <RedirectBoundary>
-                    <RedirectErrorBoundary router={{...}}>
-                      <InnerLayoutRouter url="/fr" tree={[...]} params={{locale:"fr"}} cacheNode={{lazyData:null, ...}} ...>
-                        <SegmentViewNode type="layout" pagePath="/awdtech/a...">
-                          <SegmentTrieNode>
-                          <link>
-                          <script>
-                          <script>
-                          <script>
-                          <LocaleLayout>
-                            <html
-                              lang="fr"
 -                             className={"\"dark\""}
--                             data-foxclocks-statusbar-vertical-position="bottom"
--                             data-foxclocks-statusbar-priority="normal"
                             >
                       ...
           ...
 
-[00:00:11.288] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:11.288] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:11.288] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
-[00:00:11.288] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765541178835}
+[00:00:09.781] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.781] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.781] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
+[00:00:09.781] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765548184126}
+[00:00:17.329] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:17.329] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:17.329] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:17.329] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
