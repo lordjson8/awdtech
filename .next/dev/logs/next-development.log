@@ -1,15 +1,15 @@
-[00:00:01.013] Server  LOG      ✓ Ready in 809ms
-[00:00:05.358] Server  LOG      ○ Compiling /[locale] ...
-[00:00:06.899] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:00:06.991] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+[00:00:00.973] Server  LOG      ✓ Ready in 785ms
+[00:00:06.722] Server  LOG      ○ Compiling /[locale] ...
+[00:00:08.023] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:00:08.106] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:07.540] Server  ERROR   Invalid DOM property `font-family`. Did you mean `fontFamily`?
-[00:00:07.541] Server  ERROR   Invalid DOM property `font-size`. Did you mean `fontSize`?
-[00:00:07.541] Server  ERROR   Invalid DOM property `font-weight`. Did you mean `fontWeight`?
-[00:00:08.165] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
-[00:00:08.165] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
-[00:00:08.165] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
-[00:00:08.165] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:08.639] Server  ERROR   Invalid DOM property `font-family`. Did you mean `fontFamily`?
+[00:00:08.639] Server  ERROR   Invalid DOM property `font-size`. Did you mean `fontSize`?
+[00:00:08.640] Server  ERROR   Invalid DOM property `font-weight`. Did you mean `fontWeight`?
+[00:00:09.345] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:00:09.346] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:00:09.346] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:00:09.346] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -32,6 +32,241 @@ It can also happen if the client has a browser extension installed which messes 
                   <RedirectBoundary>
                     <RedirectErrorBoundary router={{...}}>
                       <InnerLayoutRouter url="/fr" tree={[...]} params={{locale:"fr"}} cacheNode={{lazyData:null, ...}} ...>
+                        <SegmentViewNode type="layout" pagePath="/awdtech/a...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="fr"
+-                             className={"\"dark\""}
+                            >
+                      ...
+          ...
+
+[00:00:09.453] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.453] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.453] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
+[00:00:09.453] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765535384970}
+[00:00:13.361] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:13.361] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:13.361] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:13.361] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:26.127] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:00:26.136] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:00:26.140] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:00:26.146] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:00:26.149] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:26.476] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/fr","id":"v3-1765535384969-5519713760197","route":"/[locale]","type":"TTFB","value":5141},{"href":"http://localhost:3000/fr","id":"v3-1765535384969-2863542550584","route":"/[locale]","type":"FCP","value":7028},{"attribution":{"eventTarget":"div.space-y-3>h1.text-4xl.font-bold.text-gray-900.capitalize.lg:text-5xl.dark:text-white"},"href":"http://localhost:3000/fr","id":"v3-1765535384969-5719825140613","route":"/[locale]","type":"LCP","value":7028},{"attribution":{"eventTarget":"a.text-white.text-sm/6.font-semibold.hover:text-primary.transition-colors.duration-200","eventType":"pointerdown"},"href":"http://localhost:3000/fr","id":"v3-1765535384969-3249785563426","route":"/[locale]","type":"FID","value":4.29}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"4g"}
+[00:00:26.476] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr/contact color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/contact","o":"http://localhost:3000/fr/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765535401980}
+[00:00:41.666] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:00:42.243] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: 40A21440407F0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:85:
+
+[00:00:42.368] Browser ERROR   Form submission error: {}
+[00:00:50.946] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"#message","eventType":"keypress"},"href":"http://localhost:3000/fr/contact","id":"v3-1765535384969-3105826473736","route":"/[locale]/contact","type":"INP","value":96},{"attribution":{"eventTarget":""},"href":"http://localhost:3000/fr/contact","id":"v3-1765535386227-5837697838684","route":"/[locale]/contact","type":"CLS","value":0}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"4g"}
+[00:02:17.808] Server  LOG        Reload env: .env
+[00:02:17.928] Server  LOG      ✓ Compiled in 53ms
+[00:02:17.931] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./awdtech/node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:02:18.196] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:18.214] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:02:18.219] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:02:18.226] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:02:18.236] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:18.310] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:18.377] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:02:18.382] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:02:18.386] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:02:18.390] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:18.673] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:18.687] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:02:18.693] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:02:18.702] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:02:18.706] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:19.949] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:02:19.949] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:02:19.949] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:02:19.949] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/fr/contact" notFound={<SegmentViewNode>} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/fr/contact" tree={[...]} params={{locale:"fr"}} ...>
+                        <SegmentViewNode type="layout" pagePath="/awdtech/a...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="fr"
+-                             className={"\"dark\""}
+                            >
+                      ...
+          ...
+
+[00:02:19.949] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:19.949] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:19.949] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr/contact","route":"/[locale]/contact"}
+[00:02:19.949] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr/contact color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/contact","o":"http://localhost:3000/fr/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765535515355}
+[00:02:20.650] Server  LOG        Reload env: .env
+[00:02:20.858] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:20.874] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:02:20.877] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:02:20.881] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:02:20.887] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:03:03.270] Server  LOG        Reload env: .env
+[00:03:03.577] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:03:03.596] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:03:03.603] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:03:03.611] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:03:03.624] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:03:05.262] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/fr/contact","id":"v3-1765535515350-1045504967592","route":"/[locale]/contact","type":"TTFB","value":683}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"4g"}
+[00:03:15.162] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:03:32.946] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"#message","eventType":"keypress"},"href":"http://localhost:3000/fr/contact","id":"v3-1765535515350-3438393290974","route":"/[locale]/contact","type":"INP","value":72}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"4g"}
+[00:03:46.758] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: 40A21440407F0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:85:
+
+[00:03:46.946] Browser ERROR   Form submission error: {}
+[00:04:03.454] Server  LOG        Reload env: .env
+[00:04:03.753] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:04:03.767] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:04:03.772] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:04:03.777] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:04:03.786] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:05.705] Server  LOG        Reload env: .env
+[00:04:05.945] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:04:05.962] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:04:05.967] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:04:05.978] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:04:05.985] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:08.560] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:04:09.661] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-88881824a08sm8565126d6.13 - gsmtp
+[00:04:09.767] Browser ERROR   Form submission error: {}
+[00:04:30.167] Server  LOG        Reload env: .env
+[00:04:30.426] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:04:30.441] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:04:30.445] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:04:30.454] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:04:30.463] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:34.133] Server  LOG        Reload env: .env
+[00:04:34.365] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:04:34.376] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:04:34.383] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:04:34.388] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:04:34.394] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:06:29.497] Server  LOG        Reload env: .env
+[00:06:29.745] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:06:29.755] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:06:29.763] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:06:29.767] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:06:29.771] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:07:19.806] Server  LOG        Reload env: .env
+[00:07:20.050] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:07:20.069] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:07:20.077] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:07:20.088] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:07:20.098] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:07:24.711] Server  LOG        Reload env: .env
+[00:07:24.981] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:07:24.994] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:07:25.001] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:07:25.007] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:07:25.016] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:07:59.703] Server  LOG        Reload env: .env
+[00:07:59.904] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:07:59.923] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:07:59.932] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:07:59.941] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:07:59.952] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:54.912] Server  LOG        Reload env: .env
+[00:08:55.150] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:08:55.163] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:08:55.167] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:08:55.173] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:08:55.178] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:28.303] Server  LOG        Reload env: .env
+[00:09:28.511] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:09:28.521] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:09:28.524] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:09:28.531] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:09:28.538] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:33.767] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:09:34.537] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: connect ENETUNREACH 2a00:7ee0:9:3:62:1:0:1bc:465
+[00:09:34.658] Browser ERROR   Form submission error: {}
+[00:09:43.087] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:09:43.099] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: connect ENETUNREACH 2a00:7ee0:9:3:62:1:0:1bc:465
+[00:09:43.211] Browser ERROR   Form submission error: {}
+[00:09:44.455] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:09:44.470] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: connect ENETUNREACH 2a00:7ee0:9:3:62:1:0:1bc:465
+[00:09:44.586] Browser ERROR   Form submission error: {}
+[00:09:46.997] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:09:47.069] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:09:47.073] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:09:47.080] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:09:47.085] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:48.247] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:09:48.247] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:09:48.247] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:09:48.247] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/fr/contact" notFound={<SegmentViewNode>} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/fr/contact" tree={[...]} params={{locale:"fr"}} ...>
                         <SegmentViewNode type="layout" pagePath="/awdtech/a...">
                           <SegmentTrieNode>
                           <link>
@@ -51,17 +286,63 @@ It can also happen if the client has a browser extension installed which messes 
                       ...
           ...
 
-[00:00:08.165] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.165] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.165] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
-[00:00:08.165] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765534662070}
-[00:00:21.639] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:00:21.661] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+[00:09:48.430] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:48.430] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:48.430] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr/contact","route":"/[locale]/contact"}
+[00:09:48.430] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr/contact color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/contact","o":"http://localhost:3000/fr/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765535963947}
+[00:09:57.472] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:09:57.483] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: connect ENETUNREACH 2a00:7ee0:9:3:62:1:0:1bc:465
+[00:09:57.598] Browser ERROR   Form submission error: {}
+[00:10:18.946] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/fr/contact","id":"v3-1765535963943-5852559380131","route":"/[locale]/contact","type":"FCP","value":544},{"href":"http://localhost:3000/fr/contact","id":"v3-1765535963944-4020695417726","route":"/[locale]/contact","type":"TTFB","value":346},{"attribution":{"eventTarget":"div.space-y-8.pt-12>div.space-y-6>p.text-lg.text-gray-500.dark:text-gray-300.leading-relaxed"},"href":"http://localhost:3000/fr/contact","id":"v3-1765535963943-7289872567887","route":"/[locale]/contact","type":"LCP","value":1780},{"attribution":{"eventTarget":"#name","eventType":"pointerdown"},"href":"http://localhost:3000/fr/contact","id":"v3-1765535963943-1569507646181","route":"/[locale]/contact","type":"FID","value":8.1},{"attribution":{"eventTarget":"#message","eventType":"keypress"},"href":"http://localhost:3000/fr/contact","id":"v3-1765535963944-9376576131205","route":"/[locale]/contact","type":"INP","value":88},{"attribution":{},"href":"http://localhost:3000/fr/contact","id":"v3-1765535963951-9046159667501","route":"/[locale]/contact","type":"CLS","value":0}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"4g"}
+[00:24:17.294] Server  LOG        Reload env: .env
+[00:24:17.532] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:24:17.547] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:24:17.558] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:24:17.562] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:24:17.569] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:22.325] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
-[00:00:22.325] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
-[00:00:22.325] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
-[00:00:22.325] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:24:59.963] Server  LOG        Reload env: .env
+[00:25:00.257] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:25:00.281] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:25:00.309] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:25:00.316] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:25:00.326] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:25:05.495] Server  LOG        Reload env: .env
+[00:25:05.719] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:25:05.732] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:25:05.736] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:25:05.740] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:25:05.749] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:25:12.252] Server  LOG        Reload env: .env
+[00:25:12.508] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:25:12.521] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:25:12.528] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:25:12.533] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:25:12.542] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:25:14.476] Server  LOG        Reload env: .env
+[00:25:14.722] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:25:14.741] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:25:14.750] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:25:14.758] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:25:14.767] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:25:19.745] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:25:20.530] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: 40A21440407F0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:85:
+
+[00:25:20.639] Browser ERROR   Form submission error: {}
+[00:25:30.088] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:25:30.152] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:25:30.157] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:25:30.161] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:25:30.169] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:25:31.365] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:25:31.365] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:25:31.365] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:25:31.365] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -80,59 +361,10 @@ It can also happen if the client has a browser extension installed which messes 
           <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
             <LoadingBoundary name="/" loading={null}>
               <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-                <HTTPAccessFallbackErrorBoundary pathname="/fr" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <HTTPAccessFallbackErrorBoundary pathname="/fr/contact" notFound={<SegmentViewNode>} ...>
                   <RedirectBoundary>
                     <RedirectErrorBoundary router={{...}}>
-                      <InnerLayoutRouter url="/fr" tree={[...]} params={{locale:"fr"}} cacheNode={{lazyData:null, ...}} ...>
-                        <SegmentViewNode type="layout" pagePath="/awdtech/a...">
-                          <SegmentTrieNode>
-                          <link>
-                          <script>
-                          <script>
-                          <script>
-                          <LocaleLayout>
-                            <html
-                              lang="fr"
--                             className={"\"dark\""}
--                             data-foxclocks-statusbar-vertical-position="bottom"
--                             data-foxclocks-statusbar-priority="normal"
-                            >
-                      ...
-          ...
-
-[00:00:22.325] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:22.325] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:22.325] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
-[00:00:22.325] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765534676230}
-[00:00:59.288] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:00:59.307] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:01:00.021] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
-[00:01:00.021] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
-[00:01:00.021] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
-[00:01:00.021] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <RenderFromTemplateContext>
-      <ScrollAndFocusHandler segmentPath={[...]}>
-        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-            <LoadingBoundary name="/" loading={null}>
-              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-                <HTTPAccessFallbackErrorBoundary pathname="/fr" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                  <RedirectBoundary>
-                    <RedirectErrorBoundary router={{...}}>
-                      <InnerLayoutRouter url="/fr" tree={[...]} params={{locale:"fr"}} cacheNode={{lazyData:null, ...}} ...>
+                      <InnerLayoutRouter url="/fr/contact" tree={[...]} params={{locale:"fr"}} ...>
                         <SegmentViewNode type="layout" pagePath="/awdtech/a...">
                           <SegmentTrieNode>
                           <link>
@@ -152,13 +384,130 @@ It can also happen if the client has a browser extension installed which messes 
                       ...
           ...
 
-[00:01:00.021] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:00.021] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:00.021] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
-[00:01:00.021] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765534713926}
-[00:01:01.647] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:01.647] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:01.647] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:08.632] Server  WARN    Error: Route "/[locale]" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:01:08.645] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+[00:25:31.533] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:31.533] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:31.533] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr/contact","route":"/[locale]/contact"}
+[00:25:31.533] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr/contact color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/contact","o":"http://localhost:3000/fr/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765536907048}
+[00:25:44.129] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:25:44.696] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: 40A21440407F0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:85:
+
+[00:25:44.810] Browser ERROR   Form submission error: {}
+[00:26:14.923] Server  LOG        Reload env: .env
+[00:26:15.231] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:26:15.245] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:26:15.251] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:26:15.257] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:26:15.266] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:26:18.831] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:26:19.594] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: 40A21440407F0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:85:
+
+[00:26:19.709] Browser ERROR   Form submission error: {}
+[00:26:33.605] Server  LOG        Reload env: .env
+[00:26:33.810] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:26:33.828] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:26:33.838] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:26:33.846] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:26:33.858] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:26:41.627] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:26:41.709] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:26:41.713] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:26:41.717] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:26:41.723] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:26:42.771] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:26:42.771] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:26:42.771] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:26:42.771] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/fr/contact" notFound={<SegmentViewNode>} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/fr/contact" tree={[...]} params={{locale:"fr"}} ...>
+                        <SegmentViewNode type="layout" pagePath="/awdtech/a...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="fr"
+-                             className={"\"dark\""}
+                            >
+                              <body
+                                aria-label="Global"
+                                className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG_..."
+-                               cz-shortcut-listen="true"
+                              >
+                      ...
+          ...
+
+[00:26:42.935] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:42.935] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:42.935] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr/contact","route":"/[locale]/contact"}
+[00:26:42.935] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr/contact color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/contact","o":"http://localhost:3000/fr/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765536978452}
+[00:26:53.121] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:26:53.899] Server  ERROR   Erreur d'envoi d'email AWDTECH: Error: 40A21440407F0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:85:
+
+[00:26:54.013] Browser ERROR   Form submission error: {}
+[00:27:10.946] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/fr/contact","id":"v3-1765536978439-2832076319564","route":"/[locale]/contact","type":"FCP","value":524},{"href":"http://localhost:3000/fr/contact","id":"v3-1765536978439-8515302768843","route":"/[locale]/contact","type":"TTFB","value":322},{"attribution":{"eventTarget":"div.space-y-8.pt-12>div.space-y-6>p.text-lg.text-gray-500.dark:text-gray-300.leading-relaxed"},"href":"http://localhost:3000/fr/contact","id":"v3-1765536978439-6978586468462","route":"/[locale]/contact","type":"LCP","value":1608},{"attribution":{"eventTarget":"#name","eventType":"pointerdown"},"href":"http://localhost:3000/fr/contact","id":"v3-1765536978439-5341869227081","route":"/[locale]/contact","type":"FID","value":4.5},{"attribution":{"eventTarget":"#message","eventType":"keypress"},"href":"http://localhost:3000/fr/contact","id":"v3-1765536978439-1011300273364","route":"/[locale]/contact","type":"INP","value":72},{"attribution":{"eventTarget":"span.flex.items-center.justify-center"},"href":"http://localhost:3000/fr/contact","id":"v3-1765536978440-8392366561308","route":"/[locale]/contact","type":"CLS","value":0}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
+[00:28:28.452] Server  LOG        Reload env: .env
+[00:28:28.679] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:28:28.690] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:28:28.694] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:28:28.698] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:28:28.704] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:28:31.030] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:28:36.219] Server  LOG     Email AWDTECH envoyé avec succès: {}
+[00:28:41.946] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"div.grid.grid-cols-1.lg:grid-cols-2.gap-12.lg:gap-20.items-center>div.relative"},"href":"http://localhost:3000/fr/contact","id":"v3-1765536978440-8392366561308","route":"/[locale]/contact","type":"CLS","value":0.0213}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
+[00:28:55.154] Server  LOG      ✓ Compiled in 149ms
+[00:29:45.939] Server  LOG        Reload env: .env
+[00:29:46.185] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:29:46.195] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:29:46.198] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:29:46.202] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:29:46.208] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:29:48.081] Server  LOG        Reload env: .env
+[00:29:48.302] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:29:48.312] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:29:48.316] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:29:48.320] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:29:48.328] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:29:52.724] Server  LOG        Reload env: .env
+[00:29:52.914] Server  WARN    Error: Route "/[locale]/contact" used `params.locale`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:29:52.927] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `fr`.
+[00:29:52.931] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `fr`.
+[00:29:52.937] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `fr`.
+[00:29:52.946] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:30:04.320] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:30:07.946] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"#message","eventType":"keypress"},"href":"http://localhost:3000/fr/contact","id":"v3-1765536978439-1011300273364","route":"/[locale]/contact","type":"INP","value":80}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
+[00:30:09.207] Server  LOG     Email AWDTECH envoyé avec succès: {}
+[00:30:54.295] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:31:01.513] Server  LOG     Email AWDTECH envoyé avec succès: {}
+[00:31:07.946] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"","eventType":"keypress"},"href":"http://localhost:3000/fr/contact","id":"v3-1765536978439-1011300273364","route":"/[locale]/contact","type":"INP","value":88}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
+[00:33:39.655] Server  LOG      ✓ Compiled in 142ms
+[00:33:50.014] Server  LOG     Soumission formulaire AWDTECH depuis IP: ::1
+[00:33:56.201] Server  LOG     Email AWDTECH envoyé avec succès: {}
