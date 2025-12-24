@@ -1,33 +1,17 @@
-var R = require("../../../chunks/ssr/[turbopack]_runtime.js")(
-  "server/app/[locale]/(marketing)/page.js",
-);
-R.c("server/chunks/ssr/[root-of-the-server]__d117a741._.js");
-R.c("server/chunks/ssr/2798e_8455d09c._.js");
-R.c("server/chunks/ssr/2798e_next_dist_52c966d2._.js");
-R.c("server/chunks/ssr/[root-of-the-server]__7f148858._.js");
-R.c(
-  "server/chunks/ssr/2798e_next_dist_client_components_builtin_global-error_3fe382b0.js",
-);
-R.c("server/chunks/ssr/2798e_next_dist_client_components_17c40c7b._.js");
-R.c(
-  "server/chunks/ssr/2798e_next_dist_client_components_builtin_forbidden_a79d7eff.js",
-);
-R.c(
-  "server/chunks/ssr/2798e_next_dist_client_components_builtin_unauthorized_65d532ae.js",
-);
-R.c("server/chunks/ssr/awdtech_messages_08ae2394._.js");
-R.c("server/chunks/ssr/2798e_79762dcc._.js");
-R.c("server/chunks/ssr/[root-of-the-server]__e8b88788._.js");
-R.c("server/chunks/ssr/awdtech_app_[locale]_not-found_tsx_313ea629._.js");
-R.c(
-  "server/chunks/ssr/awdtech_app_[locale]_(marketing)_layout_tsx_f0fb2c35._.js",
-);
-R.c(
-  "server/chunks/ssr/awdtech__next-internal_server_app_[locale]_(marketing)_page_actions_3bc50dc9.js",
-);
-R.m(
-  '[project]/awdtech/node_modules/next/dist/esm/build/templates/app-page.js?page=/[locale]/(marketing)/page { GLOBAL_ERROR_MODULE => "[project]/awdtech/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/awdtech/app/[locale]/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/awdtech/app/[locale]/not-found.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/awdtech/app/[locale]/(marketing)/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/awdtech/app/[locale]/(marketing)/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript)',
-);
-module.exports = R.m(
-  '[project]/awdtech/node_modules/next/dist/esm/build/templates/app-page.js?page=/[locale]/(marketing)/page { GLOBAL_ERROR_MODULE => "[project]/awdtech/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/awdtech/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/awdtech/app/[locale]/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/awdtech/app/[locale]/not-found.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/awdtech/app/[locale]/(marketing)/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/awdtech/app/[locale]/(marketing)/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript)',
-).exports;
+var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/[locale]/(marketing)/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__e33cc736._.js")
+R.c("server/chunks/ssr/node_modules_a361ebd2._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_3b4d20e1._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__7f148858._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_ece394eb.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_9774470f._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_45780354.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_15817684.js")
+R.c("server/chunks/ssr/messages_69abd624._.js")
+R.c("server/chunks/ssr/node_modules_b53e3f9a._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__33531549._.js")
+R.c("server/chunks/ssr/app_[locale]_not-found_tsx_25b3ed19._.js")
+R.c("server/chunks/ssr/app_[locale]_(marketing)_layout_tsx_c870db66._.js")
+R.c("server/chunks/ssr/_next-internal_server_app_[locale]_(marketing)_page_actions_775f4b93.js")
+R.m("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/[locale]/(marketing)/page { GLOBAL_ERROR_MODULE => \"[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_0 => \"[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_1 => \"[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_2 => \"[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_3 => \"[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_4 => \"[project]/app/[locale]/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_5 => \"[project]/app/[locale]/not-found.tsx [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_6 => \"[project]/app/[locale]/(marketing)/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_7 => \"[project]/app/[locale]/(marketing)/page.tsx [app-rsc] (ecmascript, Next.js Server Component)\" } [app-rsc] (ecmascript)")
+module.exports=R.m("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/[locale]/(marketing)/page { GLOBAL_ERROR_MODULE => \"[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_0 => \"[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_1 => \"[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_2 => \"[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_3 => \"[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_4 => \"[project]/app/[locale]/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_5 => \"[project]/app/[locale]/not-found.tsx [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_6 => \"[project]/app/[locale]/(marketing)/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)\", MODULE_7 => \"[project]/app/[locale]/(marketing)/page.tsx [app-rsc] (ecmascript, Next.js Server Component)\" } [app-rsc] (ecmascript)").exports
