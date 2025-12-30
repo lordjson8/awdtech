@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/fils/Documents/projects",
+    "outputFileTracingRoot": "/home/fils/Documents/projects/awdtech",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -292,12 +292,12 @@
       "resolveAlias": {
         "next-intl/config": "./i18n/request.ts"
       },
-      "root": "/home/fils/Documents/projects"
+      "root": "/home/fils/Documents/projects/awdtech"
     },
     "distDirRoot": ".next"
   },
   "appDir": "/home/fils/Documents/projects/awdtech",
-  "relativeAppDir": "awdtech",
+  "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
     ".next/server/pages-manifest.json",

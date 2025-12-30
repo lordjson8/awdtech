@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
+export const dynamic = 'force-dynamic'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = routing.locales;
   const baseUrl = "https://awdtech.org";
@@ -13,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     sitemapEntries.push({
       url: `${baseUrl}/${locale}`,
       lastModified,
-      changeFrequency: "daily",
+      changeFrequency: "daily", 
       priority: 1.0,
       images: [
         `${baseUrl}/hero.png`,
