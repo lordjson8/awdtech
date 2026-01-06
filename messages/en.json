@@ -453,7 +453,8 @@
     "Hero": {
       "title1": "Your Vision,",
       "title2": "In Their Hands",
-      "description": "We craft <span class=\"text-orange-600 dark:text-orange-400 font-semibold\">award-winning mobile experiences</span> that combine cutting-edge technology with intuitive design, delivering apps users can't put down.",
+      "highlight": "award-winning mobile experiences",
+      "description": "We craft {highlight} that combine cutting-edge technology with intuitive design, delivering apps users can't put down.",
       "feature1Title": "Lightning Fast",
       "feature1Desc": "60fps smooth",
       "feature2Title": "Pixel Perfect",

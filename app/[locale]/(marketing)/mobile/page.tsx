@@ -19,7 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${t("title1")} ${t("title2")}`,
-    description: t("description").replace(/<[^>]*>/g, ""),
+    description: t("description", {
+      highlight: t("highlight"),
+    }),
     robots: {
       index: true,
       follow: true,
@@ -38,7 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     openGraph: {
       title: `${t("title1")} ${t("title2")}`,
-      description: t("description").replace(/<[^>]*>/g, ""),
+      description: t("description", {
+        highlight: t("highlight"),
+      }),
       type: "website",
       url: `https://awdtech.org/${locale}/mobile`,
       images: [
@@ -53,7 +57,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: `${t("title1")} ${t("title2")}`,
-      description: t("description").replace(/<[^>]*>/g, ""),
+      description: t("description", {
+        highlight: t("highlight"),
+      }).replace(/<[^>]*>/g, ""),
       images: ["https://awdtech.org/mobile.jpg"],
     },
     alternates: {
@@ -75,7 +81,7 @@ export default async function MobilePage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: t("Hero.title1") + " " + t("Hero.title2"),
-    description: t("Hero.description").replace(/<[^>]*>/g, ""),
+    description: t("Hero.subtitle").replace(/<[^>]*>/g, ""),
     url: `https://awdtech.org/${locale}/mobile`,
   };
 

@@ -453,7 +453,8 @@
     "Hero": {
       "title1": "Votre vision,",
       "title2": "Entre leurs mains",
-      "description": "Nous créons des <span class=\"text-orange-600 dark:text-orange-400 font-semibold\">expériences mobiles primées</span> qui allient technologie de pointe et design intuitif, pour des applications que les utilisateurs ne peuvent plus lâcher.",
+      "highlight": "expériences mobiles primées",
+      "description": "Nous créons des {highlight} qui allient technologie de pointe et design intuitif, pour des applications que les utilisateurs ne peuvent plus lâcher.",
       "feature1Title": "Ultra Rapide",
       "feature1Desc": "60fps fluide",
       "feature2Title": "Pixel Parfait",

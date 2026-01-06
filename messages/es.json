@@ -453,7 +453,8 @@
     "Hero": {
       "title1": "Tu Visión,",
       "title2": "En Sus Manos",
-      "description": "Creamos <span class=\"text-orange-600 dark:text-orange-400 font-semibold\">experiencias móviles galardonadas</span> que combinan tecnología de vanguardia con diseño intuitivo, entregando aplicaciones que los usuarios no pueden dejar de usar.",
+      "highlight": "experiencias móviles galardonadas",
+      "description": "Creamos {highlight} que combinan tecnología de vanguardia con diseño intuitivo, entregando aplicaciones que los usuarios no pueden dejar de usar.",
       "feature1Title": "Ultra Rápido",
       "feature1Desc": "60fps suaves",
       "feature2Title": "Perfecto en Píxeles",

@@ -1,0 +1,8 @@
+{
+  "/[locale]/(marketing)/contact/page": "app/[locale]/(marketing)/contact/page.js",
+  "/[locale]/(marketing)/graphic/page": "app/[locale]/(marketing)/graphic/page.js",
+  "/[locale]/(marketing)/mobile/page": "app/[locale]/(marketing)/mobile/page.js",
+  "/[locale]/(marketing)/page": "app/[locale]/(marketing)/page.js",
+  "/[locale]/(marketing)/projects/page": "app/[locale]/(marketing)/projects/page.js",
+  "/[locale]/(marketing)/web/page": "app/[locale]/(marketing)/web/page.js"
+}

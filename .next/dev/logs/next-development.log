@@ -1,0 +1,1680 @@
+[00:00:01.386] Server  LOG      ✓ Ready in 818ms
+[00:00:04.570] Server  LOG      ○ Compiling /[locale]/mobile ...
+[00:00:07.818] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/mobile. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:07.911] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Features.native.description` in messages for locale `en`.
+[00:00:08.249] Server  ERROR   Invalid DOM property `font-family`. Did you mean `fontFamily`?
+[00:00:08.250] Server  ERROR   Invalid DOM property `font-size`. Did you mean `fontSize`?
+[00:00:08.250] Server  ERROR   Invalid DOM property `font-weight`. Did you mean `fontWeight`?
+[00:00:08.888] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:00:08.889] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:00:08.889] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:00:08.889] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en/mobile" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en/mobile" tree={[...]} params={{locale:"en"}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             className="dark"
+-                             style={{color-scheme:"dark"}}
+                            >
+                              ...
+                                <nav aria-label="Global" className="mx-auto fl...">
+                                  <div>
+                                  <div>
+                                  ...
+                                    <Primitive.button type="button" id="radix-_R_4..." aria-haspopup="menu" ...>
+                                      <Primitive.button.Slot type="button" id="radix-_R_4..." aria-haspopup="menu" ...>
+                                        <Primitive.button.SlotClone type="button" id="radix-_R_4..." aria-haspopup="menu" ...>
+                                          <button
+                                            className="flex items-center gap-x-1 text-sm/6 font-semibold text-foregrou..."
+                                            type="button"
++                                           id="radix-_R_4r9bn5rkndj9etb_"
+-                                           id="radix-_R_2di9bn5rkndj9etb_"
+                                            aria-haspopup="menu"
+                                            aria-expanded={false}
+                                            aria-controls={undefined}
+                                            data-state="closed"
+                                            data-disabled={undefined}
+                                            disabled={false}
+                                            data-slot="dropdown-menu-trigger"
+                                            onPointerDown={function handleEvent}
+                                            onKeyDown={function handleEvent}
+                                            ref={function}
+                                          >
+                                  <div className="hidden gap...">
+                                    ...
+                                      <Primitive.button.Slot type="button" id="radix-_R_3..." aria-haspopup="menu" ...>
+                                        <Primitive.button.SlotClone type="button" id="radix-_R_3..." aria-haspopup="menu" ...>
+                                          <Button variant="outline" size="sm" className="flex items..." type="button" ...>
+                                            <button
+                                              data-slot="dropdown-menu-trigger"
+                                              className={"justify-center whitespace-nowrap text-sm font-medium disabl..."}
+                                              type="button"
++                                             id="radix-_R_339bn5rkndj9etb_"
+-                                             id="radix-_R_1hi9bn5rkndj9etb_"
+                                              aria-haspopup="menu"
+                                              aria-expanded={false}
+                                              aria-controls={undefined}
+                                              data-state="closed"
+                                              data-disabled={undefined}
+                                              disabled={false}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+                                            >
+                                    ...
+                                      <Primitive.button.Slot type="button" id="radix-_R_5..." aria-haspopup="menu" ...>
+                                        <Primitive.button.SlotClone type="button" id="radix-_R_5..." aria-haspopup="menu" ...>
+                                          <Button variant="outline" size="icon" type="button" id="radix-_R_5..." ...>
+                                            <button
+                                              data-slot="dropdown-menu-trigger"
+                                              className={"inline-flex items-center justify-center gap-2 whitespace-no..."}
+                                              type="button"
++                                             id="radix-_R_539bn5rkndj9etb_"
+-                                             id="radix-_R_2hi9bn5rkndj9etb_"
+                                              aria-haspopup="menu"
+                                              aria-expanded={false}
+                                              aria-controls={undefined}
+                                              data-state="closed"
+                                              data-disabled={undefined}
+                                              disabled={false}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+                                            >
+                      ...
+          ...
+
+[00:00:08.960] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:08.960] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/en/mobile","route":"/[locale]/mobile"}
+[00:00:08.960] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/en/mobile color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/mobile","o":"http://localhost:3000/en/mobile","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767691828300}
+[00:00:08.960] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:20.943] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:03:21.310] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/en/mobile","id":"v3-1767691828300-4299442484573","route":"/[locale]/mobile","type":"FCP","value":6976},{"href":"http://localhost:3000/en/mobile","id":"v3-1767691828301-3528660739584","route":"/[locale]/mobile","type":"TTFB","value":6790},{"attribution":{"eventTarget":"div.flex.lg:flex-1>a.-m-1.5.p-1.5>svg.text-foreground>g>text"},"href":"http://localhost:3000/en/mobile","id":"v3-1767691828300-6889481905181","route":"/[locale]/mobile","type":"LCP","value":8656},{"attribution":{"eventTarget":"html.dark>body","eventType":"keydown"},"href":"http://localhost:3000/en/mobile","id":"v3-1767691828300-7215794611653","route":"/[locale]/mobile","type":"FID","value":0.8}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
+[00:03:21.310] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/en color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/en","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767692020555}
+[00:03:21.310] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:21.310] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:21.310] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:42.449] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"html.dark>body>script>nextjs-portal","eventType":"click"},"href":"http://localhost:3000/en","id":"v3-1767691828300-7480121770180","route":"/[locale]","type":"INP","value":104},{"attribution":{"eventTarget":""},"href":"http://localhost:3000/en","id":"v3-1767691828301-3082732904974","route":"/[locale]","type":"CLS","value":0}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"4g"}
+[00:05:21.752] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:41.335] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:41.344] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `en`.
+[00:05:41.350] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `en`.
+[00:05:41.356] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `en`.
+[00:05:41.594] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/en/contact color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/contact","o":"http://localhost:3000/en/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767692160926}
+[00:06:01.881] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/projects. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:06:02.058] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/en/projects color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/projects","o":"http://localhost:3000/en/projects","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767692181392}
+[00:06:10.013] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (We don't just create websites, we design <span class="text-orange-600 dark:text-orange-400 font-semibold">digital experiences</span> that drive your growth and engage your users.)
+[00:06:10.019] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (We don't just create websites, we design <span class="text-orange-600 dark:text-orange-400 font-semibold">digital experiences</span> that drive your growth and engage your users.)
+[00:06:10.023] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (We don't just create websites, we design <span class="text-orange-600 dark:text-orange-400 font-semibold">digital experiences</span> that drive your growth and engage your users.)
+[00:06:10.025] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/web. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:06:10.034] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Hero.description` in messages for locale `en`.
+[00:06:10.038] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Services.corporate.description` in messages for locale `en`.
+[00:06:10.430] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/en/web color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/web","o":"http://localhost:3000/en/web","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767692189672}
+[00:06:10.430] Browser WARN    Image with src "/shopping-cart.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:10.430] Browser WARN    Image with src "/building.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:10.430] Browser WARN    Image with src "/code.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:58.205] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/graphic. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:06:58.216] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.ServicesCards.uiux.description` in messages for locale `en`.
+[00:06:58.509] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/en/graphic color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/graphic","o":"http://localhost:3000/en/graphic","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767692237828}
+[00:08:33.494] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/graphic. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:33.527] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.ServicesCards.uiux.description` in messages for locale `en`.
+[00:08:34.339] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:08:34.339] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:08:34.339] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:08:34.339] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en/graphic" notFound={<SegmentViewNode>} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en/graphic" tree={[...]} params={{locale:"en"}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             className="dark"
+-                             style={{color-scheme:"dark"}}
+                            >
+                              <body
+                                aria-label="Global"
+-                               cz-shortcut-listen="true"
+                              >
+                      ...
+          ...
+
+[00:08:34.444] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:34.444] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:34.444] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/en/graphic","route":"/[locale]/graphic"}
+[00:08:34.444] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/en/graphic color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/graphic","o":"http://localhost:3000/en/graphic","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767692333785}
+[00:08:53.153] Server  LOG      ✓ Compiled in 120ms
+[00:08:56.568] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/graphic. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:56.578] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.ServicesCards.uiux.description` in messages for locale `en`.
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:5
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |     ^
+  339 |   );
+  340 | };
+  341 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:08:56.581] Browser ERROR   ./components/design/enhanced/PortfolioHighlight.tsx:338:6
+Parsing ecmascript source code failed
+  336 |         </div>
+  337 |       </div>
+> 338 |     </section>
+      |      ^^^^^^^^^
+  339 |   );
+  340 | };
+  341 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/design/enhanced/PortfolioHighlight.tsx
+    ./app/[locale]/(marketing)/graphic/page.tsx
+[00:09:04.383] Server  LOG      ✓ Compiled in 126ms

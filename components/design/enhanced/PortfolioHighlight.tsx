@@ -271,7 +271,7 @@ const PortfolioHighlight = ({ theme = "auto" }) => {
           ))}
         </div>
 
-        <div className="text-center mt-12 lg:mt-16">
+        {/* <div className="text-center mt-12 lg:mt-16">
           <button
             className="
             px-8 py-4
@@ -307,7 +307,7 @@ const PortfolioHighlight = ({ theme = "auto" }) => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto mt-20">
           {stats.map((stat, index) => (
