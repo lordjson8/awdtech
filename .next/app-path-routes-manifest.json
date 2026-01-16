@@ -4,10 +4,12 @@
   "/[locale]/(marketing)/mobile/page": "/[locale]/mobile",
   "/[locale]/(marketing)/page": "/[locale]",
   "/[locale]/(marketing)/projects/page": "/[locale]/projects",
+  "/[locale]/(marketing)/quote/page": "/[locale]/quote",
   "/[locale]/(marketing)/web/page": "/[locale]/web",
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/contact/route": "/api/contact",
+  "/api/quote/route": "/api/quote",
   "/robots.txt/route": "/robots.txt",
   "/sitemap.xml/route": "/sitemap.xml"
 }

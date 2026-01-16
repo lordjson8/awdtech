@@ -22,7 +22,8 @@
     "graphicDesignDescription": "Les données de vos clients seront en sécurité",
     "openMainMenu": "Ouvrir le menu principal",
     "closeMenu": "Fermer le menu",
-    "contact": "Contact"
+    "contact": "Contact",
+    "quote": "Devis"
   },
   "Products": {
     "title": "Nos Produits en interne",
@@ -601,5 +602,30 @@
   "Clients": {
     "title": "Nos Partenaires et Clients",
     "description": "Nous collaborons avec les leaders du marché pour offrir des solutions digitales innovantes."
+  },
+  "QuotePage": {
+    "title": "Demander un devis",
+    "description": "Remplissez le formulaire ci-dessous pour obtenir un devis pour votre projet. Nous vous répondrons dans les 24 heures."
+  },
+  "QuoteForm": {
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "email": "Adresse e-mail",
+    "emailPlaceholder": "jean@exemple.com",
+    "service": "Service",
+    "servicePlaceholder": "Sélectionnez un service",
+    "webDevelopment": "Développement Web",
+    "mobileDevelopment": "Développement Mobile",
+    "graphicDesign": "Conception Graphique",
+    "budget": "Fourchette budgétaire",
+    "budgetPlaceholder": "Sélectionnez une fourchette budgétaire",
+    "description": "Description du projet",
+    "descriptionPlaceholder": "Parlez-nous des exigences de votre projet...",
+    "submit": "Demander un devis",
+    "submitting": "Envoi en cours...",
+    "successTitle": "Demande de devis envoyée !",
+    "successMessage": "Merci pour votre demande. Nous vous répondrons avec un devis dans les 24 heures.",
+    "errorMessage": "Une erreur est survenue. Veuillez réessayer.",
+    "sendAnother": "Envoyer une autre demande"
   }
 }

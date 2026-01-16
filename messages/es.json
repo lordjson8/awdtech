@@ -22,7 +22,8 @@
     "graphicDesignDescription": "Los datos de tus clientes estarán seguros y protegidos",
     "openMainMenu": "Abrir menú principal",
     "closeMenu": "Cerrar menú",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "quote": "Presupuesto"
   },
   "Products": {
     "title": "Nuestros Productos Internos",
@@ -599,5 +600,30 @@
   "Clients": {
     "title": "Nuestros Socios y Clientes",
     "description": "Colaboramos con líderes del mercado para ofrecer soluciones digitales innovadoras."
+  },
+  "QuotePage": {
+    "title": "Solicitar un presupuesto",
+    "description": "Complete el siguiente formulario para obtener un presupuesto para su proyecto. Nos pondremos en contacto con usted en 24 horas."
+  },
+  "QuoteForm": {
+    "fullName": "Nombre completo",
+    "fullNamePlaceholder": "Juan Pérez",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "service": "Servicio",
+    "servicePlaceholder": "Seleccione un servicio",
+    "webDevelopment": "Desarrollo Web",
+    "mobileDevelopment": "Desarrollo Móvil",
+    "graphicDesign": "Diseño Gráfico",
+    "budget": "Rango de presupuesto",
+    "budgetPlaceholder": "Seleccione un rango de presupuesto",
+    "description": "Descripción del Proyecto",
+    "descriptionPlaceholder": "Háblenos de los requisitos de su proyecto...",
+    "submit": "Solicitar un presupuesto",
+    "submitting": "Enviando...",
+    "successTitle": "¡Solicitud de presupuesto enviada!",
+    "successMessage": "Gracias por su solicitud. Le enviaremos un presupuesto en 24 horas.",
+    "errorMessage": "Se ha producido un error. Por favor, inténtelo de nuevo.",
+    "sendAnother": "Enviar otra solicitud"
   }
 }

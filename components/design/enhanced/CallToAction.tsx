@@ -9,7 +9,7 @@ const CallToAction = ({ theme = "auto" }) => {
 
   const primaryAction = {
     text: t("primaryAction"),
-    href: "mailto:support.cm@awdpay.com",
+    href: "/quote?service=graphic-design",
   };
   const secondaryAction = { text: t("secondaryAction"), href: "/portfolio" };
 

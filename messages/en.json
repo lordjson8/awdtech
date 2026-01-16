@@ -22,7 +22,8 @@
     "graphicDesignDescription": "Your customers data will be safe and secure",
     "openMainMenu": "Open main menu",
     "closeMenu": "Close menu",
-    "contact": "Contact"
+    "contact": "Contact",
+    "quote": "Quote"
   },
   "Products": {
     "title": "Our internal Products",
@@ -600,5 +601,30 @@
   "Clients": {
     "title": "Our Partners and Clients",
     "description": "We collaborate with market leaders to offer innovative digital solutions."
+  },
+  "QuotePage": {
+    "title": "Request a Quote",
+    "description": "Fill out the form below to get a quote for your project. We'll get back to you within 24 hours."
+  },
+  "QuoteForm": {
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "service": "Service",
+    "servicePlaceholder": "Select a service",
+    "webDevelopment": "Web Development",
+    "mobileDevelopment": "Mobile Development",
+    "graphicDesign": "Graphic Design",
+    "budget": "Budget Range",
+    "budgetPlaceholder": "Select a budget range",
+    "description": "Project Description",
+    "descriptionPlaceholder": "Tell us about your project requirements...",
+    "submit": "Request a Quote",
+    "submitting": "Submitting...",
+    "successTitle": "Quote Request Sent!",
+    "successMessage": "Thank you for your request. We'll get back to you with a quote within 24 hours.",
+    "errorMessage": "An error occurred. Please try again.",
+    "sendAnother": "Send Another Request"
   }
 }

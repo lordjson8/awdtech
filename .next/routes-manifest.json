@@ -61,6 +61,14 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/projects(?:/)?$"
     },
     {
+      "page": "/[locale]/quote",
+      "regex": "^/([^/]+?)/quote(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/quote(?:/)?$"
+    },
+    {
       "page": "/[locale]/web",
       "regex": "^/([^/]+?)/web(?:/)?$",
       "routeKeys": {
@@ -87,6 +95,12 @@
       "regex": "^/api/contact(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/contact(?:/)?$"
+    },
+    {
+      "page": "/api/quote",
+      "regex": "^/api/quote(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/quote(?:/)?$"
     },
     {
       "page": "/robots.txt",

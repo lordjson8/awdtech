@@ -33,7 +33,7 @@ const CallToAction = () => {
                 className="bg-white text-orange-600 hover:bg-gray-100 dark:bg-gray-900 dark:text-orange-400 dark:hover:bg-gray-800 font-semibold py-6 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group"
               >
                 <Link
-                  href="mailto:support.cm@awdpay.com"
+                  href="/quote?service=web-development"
                   className="flex items-center gap-3"
                 >
                   <span>{t("button")}</span>
