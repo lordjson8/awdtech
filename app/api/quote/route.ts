@@ -63,14 +63,14 @@ export async function POST(request: NextRequest) {
       port: parseInt(process.env.SMTP_PORT || "587"),
       secure: process.env.SMTP_SECURE === "true",
       auth: {
-        user: process.env.SMTP_USER || "support.cm@awdpay.com",
+        user: process.env.SMTP_USER || "support@awdpay.com",
         pass: process.env.SMTP_PASSWORD,
       },
     });
 
     const adminMailOptions = {
       from: `"${fullName}" <${process.env.SMTP_USER}>`,
-      to: process.env.ADMIN_EMAIL || "support.cm@awdpay.com",
+      to: process.env.ADMIN_EMAIL || "support@awdpay.com",
       replyTo: email,
       subject: `New Quote Request for ${service}`,
       html: createQuoteEmailTemplate(validationResult.data),
