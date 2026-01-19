@@ -185,8 +185,8 @@ export default function ContactForm() {
     {
       icon: <FaEnvelope className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Email",
-      value: "support.cm@awdpay.com",
-      action: "mailto:support.cm@awdpay.com",
+      value: "support@awdpay.com",
+      action: "mailto:support@awdpay.com",
     },
     {
       icon: <FaPhone className="w-5 h-5 sm:w-6 sm:h-6" />,

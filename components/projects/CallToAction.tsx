@@ -20,7 +20,7 @@ const CallToAction = () => {
             asChild
             className="bg-white text-orange-600 hover:bg-gray-100 dark:bg-gray-900 dark:text-orange-400 dark:hover:bg-gray-800 font-semibold transition-all duration-300 transform hover:scale-105"
           >
-            <Link href="mailto:support.cm@awdpay.com">{t("button")}</Link>
+            <Link href="mailto:support@awdpay.com">{t("button")}</Link>
           </Button>
         </div>
       </div>

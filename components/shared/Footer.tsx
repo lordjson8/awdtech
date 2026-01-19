@@ -65,10 +65,10 @@ export default function Footer() {
             {/* Contact Email */}
             <div className="mt-6 text-center sm:text-left">
               <a
-                href="mailto:support.cm@awdpay.com"
+                href="mailto:support@awdpay.com"
                 className="text-orange-500 hover:text-orange-600 dark:hover:text-orange-400 font-medium transition-colors"
               >
-                support.cm@awdpay.com
+                support@awdpay.com
               </a>
             </div>
 
@@ -216,7 +216,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center gap-2 sm:justify-start transition hover:text-orange-500"
-                    href="mailto:support.cm@awdpay.com"
+                    href="mailto:support@awdpay.com"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +232,7 @@ export default function Footer() {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       ></path>
                     </svg>
-                    support.cm@awdpay.com
+                    support@awdpay.com
                   </a>
                 </li>
 

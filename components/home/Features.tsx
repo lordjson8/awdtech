@@ -154,7 +154,7 @@ export default function Features() {
             </h3>
             <p className="mb-6 opacity-90 max-w-2xl mx-auto">{t("joinUs")}</p>
             <Link
-              href="mailto:support.cm@awdpay.com"
+              href="mailto:support@awdpay.com"
               className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
               {t("contactUs")}

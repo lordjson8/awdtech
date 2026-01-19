@@ -27,7 +27,7 @@ export default function Hero() {
 
             <Link
               className="inline-block rounded border border-gray-200 px-5 py-3 font-medium shadow-sm transition-colors bg-gray-800 hover:text-gray-300 border-gray-700 text-gray-200 dark:hover:bg-gray-900 dark:hover:text-white"
-              href="mailto:support.cm@awdpay.com"
+              href="mailto:support@awdpay.com"
             >
               {t("learnMore")}
             </Link>

@@ -95,10 +95,10 @@ export default function WhyUs() {
                     {t("contactUs")}
                   </h4>
                   <a
-                    href="mailto:support.cm@awdpay.com"
+                    href="mailto:support@awdpay.com"
                     className="text-orange-500 hover:text-orange-600 font-medium text-lg transition-colors duration-300"
                   >
-                    support.cm@awdpay.com
+                    support@awdpay.com
                   </a>
                 </div>
               </div>
