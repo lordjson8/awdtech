@@ -16,7 +16,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_global-error",
       "dataRoute": "/_global-error.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -42,7 +41,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_not-found",
       "dataRoute": "/_not-found.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -72,7 +70,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/robots.txt",
       "dataRoute": null,
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -86,8 +83,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "d4b02c3692b723042fae5ce6d943bf53",
-    "previewModeSigningKey": "6099df3f549104b626aef93bb995d248fe37c986c1a1983b3ae7bbdd9afd52f7",
-    "previewModeEncryptionKey": "d723fc84d5a2337e011a04a8afa64d7a86f5049a701e345cc0f0120601a6203c"
+    "previewModeId": "be60b1373a426294a43c3f97de86c3b8",
+    "previewModeSigningKey": "586903e280ef7e50fec07fd42ab07232537087e105a2fc7e3c0398d7b2d2008d",
+    "previewModeEncryptionKey": "fd7102de6a55c09a099e51755de4db908f2bddcb9512ab00ceb9b16db1d16640"
   }
 }

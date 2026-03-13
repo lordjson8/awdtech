@@ -203,7 +203,7 @@ export default function ContactForm() {
     {
       icon: <FaPhone className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Côte d'Ivoire",
-      value: "+225 27 24 3 73010 / +225 27 24 3 73317",
+      value: "+225 07 67 00 64 33 / +225 27 24 3 73317",
       action: "tel:+225272473010",
     },
     {

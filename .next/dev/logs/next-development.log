@@ -1,14 +1,14 @@
-[00:00:02.190] Server  LOG      ✓ Ready in 1520ms
-[00:07:21.567] Server  LOG      ○ Compiling /[locale] ...
-[00:07:22.272] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
+[00:00:01.768] Server  LOG     ✓ Ready in 1430ms
+[00:00:20.629] Server  LOG     ○ Compiling /[locale] ...
+[00:00:21.588] Server  WARN    ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:07:22.813] Server  ERROR   Invalid DOM property `font-family`. Did you mean `fontFamily`?
-[00:07:22.814] Server  ERROR   Invalid DOM property `font-size`. Did you mean `fontSize`?
-[00:07:22.814] Server  ERROR   Invalid DOM property `font-weight`. Did you mean `fontWeight`?
-[00:07:23.658] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
-[00:07:23.658] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
-[00:07:23.658] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
-[00:07:23.658] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:22.158] Server  ERROR   Invalid DOM property `font-family`. Did you mean `fontFamily`?
+[00:00:22.158] Server  ERROR   Invalid DOM property `font-size`. Did you mean `fontSize`?
+[00:00:22.159] Server  ERROR   Invalid DOM property `font-weight`. Did you mean `fontWeight`?
+[00:00:23.941] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
+[00:00:23.941] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
+[00:00:23.941] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
+[00:00:23.941] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -27,10 +27,10 @@ It can also happen if the client has a browser extension installed which messes 
           <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
             <LoadingBoundary name="/" loading={null}>
               <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-                <HTTPAccessFallbackErrorBoundary pathname="/fr" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
                   <RedirectBoundary>
                     <RedirectErrorBoundary router={{...}}>
-                      <InnerLayoutRouter url="/fr" tree={[...]} params={{locale:"fr"}} cacheNode={{lazyData:null, ...}} ...>
+                      <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
                         <SegmentViewNode type="layout" pagePath="[locale]/l...">
                           <SegmentTrieNode>
                           <link>
@@ -39,135 +39,41 @@ It can also happen if the client has a browser extension installed which messes 
                           <script>
                           <LocaleLayout>
                             <html
-                              lang="fr"
+                              lang="en"
 -                             className="dark"
--                             data-foxclocks-statusbar-vertical-position="bottom"
--                             data-foxclocks-statusbar-priority="normal"
 -                             style={{color-scheme:"dark"}}
                             >
                       ...
           ...
 
-[00:07:23.751] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:07:23.751] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:07:23.751] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
-[00:07:23.751] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768832959374}
-[00:07:24.406] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:24.406] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:24.406] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:26.262] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:08:11.869] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:08:11.880] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:08:11.887] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:08:11.890] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/web. Please move it to viewport export instead.
+[00:00:24.064] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:24.064] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:24.064] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:24.585] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:24.585] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/en","route":"/[locale]"}
+[00:00:24.585] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/en color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/en","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773399295303} /_vercel/insights/view
+[00:00:24.585] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:28.289] Server  WARN    ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:08:11.901] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Hero.description` in messages for locale `fr`.
-[00:08:11.906] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Services.corporate.description` in messages for locale `fr`.
-[00:08:12.618] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/fr","id":"v3-1768832959373-9515869534440","route":"/[locale]","type":"TTFB","value":4496},{"href":"http://localhost:3000/fr","id":"v3-1768832959373-2418002819724","route":"/[locale]","type":"FCP","value":5808},{"attribution":{"eventTarget":"section.bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/hero.png')].bg-cover.bg-center.bg-no-repeat.h-[80vh].place-content-center.dark:bg-gray-900"},"href":"http://localhost:3000/fr","id":"v3-1768832959373-8110273362513","route":"/[locale]","type":"LCP","value":5808},{"attribution":{"eventTarget":"#radix-_R_16oslrkndj9etb_>svg.lucide.lucide-chevron-down.size-5.flex-none.dark:text-gray-500","eventType":"pointerdown"},"href":"http://localhost:3000/fr","id":"v3-1768832959373-6007544150468","route":"/[locale]","type":"FID","value":0.79}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
-[00:08:12.618] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr/web color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/web","o":"http://localhost:3000/fr/web","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768833008111}
-[00:08:12.618] Browser WARN    Image with src "/building.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:08:12.618] Browser WARN    Image with src "/shopping-cart.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:08:12.618] Browser WARN    Image with src "/code.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:46.919] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"","eventType":"pointerdown"},"href":"http://localhost:3000/fr/web","id":"v3-1768832959373-4696097480856","route":"/[locale]/web","type":"INP","value":128},{"attribution":{"eventTarget":"#foxclocks-statusbar-iframe"},"href":"http://localhost:3000/fr/web","id":"v3-1768832959941-7246275961537","route":"/[locale]/web","type":"CLS","value":0.0003}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
-[00:13:34.151] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:13:34.156] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:13:34.161] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:13:34.164] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/web. Please move it to viewport export instead.
+[00:00:28.320] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `en`.
+[00:00:28.328] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `en`.
+[00:00:28.334] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `en`.
+[00:00:28.693] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/en","id":"v3-1773399295305-7873732052975","route":"/[locale]","type":"FCP","value":6764},{"href":"http://localhost:3000/en","id":"v3-1773399295306-6061964733891","route":"/[locale]","type":"TTFB","value":4953},{"attribution":{"eventTarget":"div.space-y-3>h1.text-4xl.font-bold.text-gray-900.capitalize.lg:text-5xl.dark:text-white"},"href":"http://localhost:3000/en","id":"v3-1773399295305-7214628760535","route":"/[locale]","type":"LCP","value":7996},{"attribution":{"eventTarget":"a.text-white.text-sm/6.font-semibold.hover:text-primary.transition-colors.duration-200","eventType":"pointerdown"},"href":"http://localhost:3000/en","id":"v3-1773399295305-8403153154156","route":"/[locale]","type":"FID","value":0.89}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"} /_vercel/speed-insights/vitals
+[00:00:28.693] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/en/contact color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/contact","o":"http://localhost:3000/en/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773399299429} /_vercel/insights/view
+[00:00:59.748] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"","eventType":"pointerdown"},"href":"http://localhost:3000/en/contact","id":"v3-1773399295306-3986157106817","route":"/[locale]/contact","type":"INP","value":8},{"attribution":{"eventTarget":""},"href":"http://localhost:3000/en/contact","id":"v3-1773399295306-3069365970941","route":"/[locale]/contact","type":"CLS","value":0}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"} /_vercel/speed-insights/vitals
+[00:02:51.441] Server  LOG     ✓ Compiled in 327ms
+[00:05:36.997] Server  LOG     ✓ Compiled in 249ms
+[00:05:37.214] Server  WARN    ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:13:34.166] Server  LOG      ✓ Compiled in 59ms
-[00:13:34.173] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Hero.description` in messages for locale `fr`.
-[00:13:34.178] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Services.corporate.description` in messages for locale `fr`.
-[00:13:47.889] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:13:47.895] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:13:47.900] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:13:47.903] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/web. Please move it to viewport export instead.
+[00:05:37.316] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `en`.
+[00:05:37.327] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `en`.
+[00:05:37.338] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `en`.
+[00:05:37.439] Server  WARN    ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/contact. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:13:47.905] Server  LOG      ✓ Compiled in 57ms
-[00:13:47.915] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Hero.description` in messages for locale `fr`.
-[00:13:47.919] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Services.corporate.description` in messages for locale `fr`.
-[00:14:34.115] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:34.119] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:34.126] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:34.132] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/web. Please move it to viewport export instead.
+[00:05:37.455] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.title` in messages for locale `en`.
+[00:05:37.462] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.titleAccent` in messages for locale `en`.
+[00:05:37.470] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.description` in messages for locale `en`.
+[00:06:40.990] Server  WARN    ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:14:34.146] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Hero.description` in messages for locale `fr`.
-[00:14:34.154] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Services.corporate.description` in messages for locale `fr`.
-[00:14:34.253] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:34.260] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:34.265] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:34.268] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/web. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:14:34.276] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Hero.description` in messages for locale `fr`.
-[00:14:34.281] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Services.corporate.description` in messages for locale `fr`.
-[00:14:39.898] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:39.903] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:39.910] Server  ERROR   Error: INVALID_MESSAGE: INVALID_TAG (Nous ne créons pas simplement des sites web, nous concevons des <span class="text-orange-600 dark:text-orange-400 font-semibold">expériences digitales</span> qui propulsent votre croissance et engagent vos utilisateurs.)
-[00:14:39.914] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/web. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:14:39.917] Server  LOG      ✓ Compiled in 49ms
-[00:14:39.926] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Hero.description` in messages for locale `fr`.
-[00:14:39.931] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `ProjectsPage.Services.corporate.description` in messages for locale `fr`.
-[00:15:04.478] Server  LOG      ✓ Compiled in 63ms
-[00:15:15.177] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:15:15.436] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768829830810}
-[00:18:49.996] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:18:51.024] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-family fontFamily
-[00:18:51.024] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-size fontSize
-[00:18:51.024] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? font-weight fontWeight
-[00:18:51.024] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <RenderFromTemplateContext>
-      <ScrollAndFocusHandler segmentPath={[...]}>
-        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-            <LoadingBoundary name="/" loading={null}>
-              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-                <HTTPAccessFallbackErrorBoundary pathname="/fr" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                  <RedirectBoundary>
-                    <RedirectErrorBoundary router={{...}}>
-                      <InnerLayoutRouter url="/fr" tree={[...]} params={{locale:"fr"}} cacheNode={{lazyData:null, ...}} ...>
-                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
-                          <SegmentTrieNode>
-                          <link>
-                          <script>
-                          <script>
-                          <script>
-                          <LocaleLayout>
-                            <html
-                              lang="fr"
--                             className="dark"
--                             style={{color-scheme:"dark"}}
-                            >
-                              <body
-                                aria-label="Global"
--                               cz-shortcut-listen="true"
-                              >
-                      ...
-          ...
-
-[00:18:51.024] Browser WARN    Image with src "/projects/awdpay.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:51.024] Browser WARN    Image with src "/projects/awdpay-api.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:51.024] Browser WARN    Image with src "/projects/awdpdf.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:51.024] Browser LOG     %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:18:51.024] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:18:51.024] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/fr","route":"/[locale]"}
-[00:18:51.024] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/fr","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768830046410}
-[00:18:54.820] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:58.904] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/quote. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:18:59.174] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"href":"http://localhost:3000/fr","id":"v3-1768830046409-3436556199615","route":"/[locale]","type":"FCP","value":708},{"href":"http://localhost:3000/fr","id":"v3-1768830046409-2128534113190","route":"/[locale]","type":"TTFB","value":300},{"attribution":{"eventTarget":"div.space-y-6>div.space-y-6>p.text-lg.leading-relaxed.text-gray-600.dark:text-gray-300"},"href":"http://localhost:3000/fr","id":"v3-1768830046409-5953465766742","route":"/[locale]","type":"LCP","value":2224},{"attribution":{"eventTarget":"a.text-white.text-sm/6.font-semibold.hover:text-primary.transition-colors.duration-200","eventType":"pointerdown"},"href":"http://localhost:3000/fr","id":"v3-1768830046409-2782993687582","route":"/[locale]","type":"FID","value":0.29}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
-[00:18:59.174] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/fr/quote color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]/quote","o":"http://localhost:3000/fr/quote","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768830054502}
-[00:20:45.919] Browser LOG     %c[Vercel Speed Insights]%c [vitals] color: rgb(120, 120, 120) color: inherit {"metrics":[{"attribution":{"eventTarget":"","eventType":"pointerdown"},"href":"http://localhost:3000/fr/quote","id":"v3-1768830046409-4835160469034","route":"/[locale]/quote","type":"INP","value":16},{"attribution":{"eventTarget":"body>footer.bg-white.dark:bg-gray-900.text-gray-700.dark:text-white.transition-colors.duration-300"},"href":"http://localhost:3000/fr/quote","id":"v3-1768830046411-4613242571281","route":"/[locale]/quote","type":"CLS","value":0.043}],"scriptVersion":"0.1.3","sdkName":"@vercel/speed-insights/next","sdkVersion":"1.3.1","speed":"3g"}
+[00:06:41.291] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/en color: rgb(120, 120, 120) color: inherit {"dp":"/[locale]","o":"http://localhost:3000/en","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773399672026} /_vercel/insights/view
+[00:06:42.741] Browser WARN    Image with src "/projects/codewhigs.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
